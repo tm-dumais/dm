@@ -1,24 +1,10 @@
 {
   "sections": {
-    "video_XKDaVH": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "h2",
-        "cover_image": "shopify:\/\/shop_images\/Screenshot_2024-05-08_160349.jpg",
-        "video_url": "https:\/\/vimeo.com\/943769776?share=copy",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/240508_Dumais_hero.jpg",
+        "image": "shopify:\/\/shop_images\/Dumais_0313_79_adc903bb-ade5-482d-9282-bd9019ff4095.jpg",
+        "image_2": "shopify:\/\/shop_images\/Dumais_0312_174.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -43,15 +29,15 @@
         "4ef8fc5c-8192-4102-a90a-1a550a6614e6": {
           "type": "heading",
           "settings": {
-            "heading": "<p><em><strong>Experience an intimate look into the creative practice of our founder, Charlie Dumais.<\/strong><\/em><\/p>",
+            "heading": "<p><em><strong>Discover the collection of one-of-a-kind pieces, now available for order.<\/strong><\/em><\/p>",
             "heading_size": "h2"
           }
         },
         "button_XtAPbH": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
-            "button_link": "https:\/\/dumaismade.com\/pages\/31-days",
+            "button_label": "Explore",
+            "button_link": "shopify:\/\/collections\/31-days",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -67,7 +53,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "accent-1",
+        "color_scheme": "background-3",
         "full_width": true,
         "padding_top": 24,
         "padding_bottom": 24
@@ -447,7 +433,6 @@
     }
   },
   "order": [
-    "video_XKDaVH",
     "image_banner",
     "2c207f1a-1258-4648-9eff-342f729e4c37",
     "rich_text",
