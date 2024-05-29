@@ -88,7 +88,7 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 52,
+        "padding_top": 28,
         "padding_bottom": 0
       }
     },
@@ -98,7 +98,7 @@
         "custom_liquid": "<a href=\"#Slide-template--16833782251734__484c3238-f937-420d-b89b-dace073250dc-1\">\n<div class=\"home-arrow-down\" \nstyle=\"position: absolute;\nmargin-left: auto;\nmargin-right: auto;\nleft: 0;\nright: 0;\ntext-align: center;\nscroll-behavior: smooth;\n\">\n<svg width=\"8\" height=\"6\" viewBox=\"0 0 8 6\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.4876 5.62988L8 0.629883L6.80165 0.629883L4.03306 4.61749L1.26446 0.629882L0.0661177 0.629882L3.57851 5.62988L4.4876 5.62988Z\" fill=\"black\"\/>\n<\/svg>\n\n<\/div>\n<\/a>",
         "color_scheme": "background-1",
         "padding_top": 12,
-        "padding_bottom": 64
+        "padding_bottom": 40
       }
     },
     "52f2e727-b1ce-444c-b0d5-b23b9f45cd1c": {
