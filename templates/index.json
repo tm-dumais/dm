@@ -5,7 +5,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Dumais_0313_79_adc903bb-ade5-482d-9282-bd9019ff4095.jpg",
         "image_2": "shopify:\/\/shop_images\/Dumais_0312_174.jpg",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
