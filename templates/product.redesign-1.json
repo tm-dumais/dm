@@ -43,7 +43,7 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_pickup_availability": false,
-            "show_inventory": true,
+            "show_inventory": false,
             "extra_txt": "",
             "extra_txt_alignment": "left"
           }
