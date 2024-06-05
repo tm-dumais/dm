@@ -3,8 +3,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Dumais_0313_79_adc903bb-ade5-482d-9282-bd9019ff4095.jpg",
-        "image_2": "shopify:\/\/shop_images\/Dumais_0312_174.jpg",
+        "image": "shopify:\/\/shop_images\/240605_Core_Collection_hero_2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -22,22 +21,22 @@
         "189fc2f5-9841-46f8-bcba-c2e9c27e184c": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><strong>PRESENTING 31 DAYS.<\/strong><\/h2>",
+            "heading": "<h2><strong>INTRODUCING<\/strong><\/h2><h2><strong>THE CORE COLLECTION<\/strong><\/h2>",
             "heading_size": "hxl"
           }
         },
         "4ef8fc5c-8192-4102-a90a-1a550a6614e6": {
           "type": "heading",
           "settings": {
-            "heading": "<p><em><strong>Discover the collection of one-of-a-kind pieces, now available for purchase.<\/strong><\/em><\/p>",
+            "heading": "<p><em><strong>A collection that brings together our most-loved luminaires, ready-to-glaze and ship in 8-10 days.<\/strong><\/em><\/p>",
             "heading_size": "h2"
           }
         },
         "button_XtAPbH": {
           "type": "button",
           "settings": {
-            "button_label": "Explore",
-            "button_link": "shopify:\/\/collections\/31-days",
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/core-collection",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
