@@ -5,7 +5,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/240605_Core_Collection_hero_2_cfdc5ca2-d1cd-47f4-8d82-b2dbeceebf5e.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -133,6 +133,7 @@
         "template--16833782251734__52f2e727-b1ce-444c-b0d5-b23b9f45cd1c-167501942530475a7e-1",
         "5bd451cb-0575-43d2-8047-49bfc4a98f33"
       ],
+      "disabled": true,
       "settings": {
         "image_width": "full",
         "image_ratio": "adapt",
