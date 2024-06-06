@@ -36,7 +36,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP",
-            "button_link": "shopify:\/\/collections\/core-collection-1",
+            "button_link": "shopify:\/\/collections\/core-collection",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
