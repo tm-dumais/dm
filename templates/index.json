@@ -280,7 +280,7 @@
             "image": "shopify:\/\/shop_images\/231220_Process_DM_Studio_1.jpg",
             "caption": "",
             "heading": "<em>Handmade with care and delight in Litchfield.<\/em>",
-            "text": "<h3>ABOUT US<\/h3>",
+            "text": "<h3><a href=\"\/pages\/about\" title=\"About\">ABOUT US<\/a><\/h3>",
             "button_label": "",
             "button_link": ""
           }
