@@ -246,7 +246,7 @@
             "image": "shopify:\/\/shop_images\/DAY_23_2_1.jpg",
             "caption": "",
             "heading": "<em>A modernist take on ceramic lighting and furniture.<\/em>",
-            "text": "<h3><a href=\"https:\/\/dumaismade.com\/collections\/31-days\" title=\"https:\/\/dumaismade.com\/collections\/31-days\">31 DAYS<\/a><\/h3>",
+            "text": "<p><a href=\"https:\/\/dumaismade.com\/collections\/31-days\" title=\"https:\/\/dumaismade.com\/collections\/31-days\">31 DAYS<\/a><\/p>",
             "button_label": "",
             "button_link": "shopify:\/\/collections\/glaze-sample-kit"
           }
@@ -280,7 +280,7 @@
             "image": "shopify:\/\/shop_images\/231220_Process_DM_Studio_1.jpg",
             "caption": "",
             "heading": "<em>Handmade with care and delight in Litchfield.<\/em>",
-            "text": "<h3><a href=\"\/pages\/about\" title=\"About\">ABOUT US<\/a><\/h3>",
+            "text": "<p><a href=\"\/pages\/about\" title=\"About\">ABOUT US<\/a><\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -314,7 +314,7 @@
             "image": "shopify:\/\/shop_images\/Hutton-Table-5.jpg",
             "caption": "",
             "heading": "<em>For illuminating the everyday,    in-between moments.<\/em>",
-            "text": "<h3><a href=\"\/products\/hutton-table-1\" title=\"Hutton Side Table\">THE HUTTON SIDE TABLE<\/a><\/h3>",
+            "text": "<p><a href=\"\/products\/hutton-table-1\" title=\"Hutton Side Table\">THE HUTTON SIDE TABLE<\/a><\/p>",
             "button_label": "",
             "button_link": ""
           }
