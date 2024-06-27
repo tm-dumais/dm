@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -14,7 +23,7 @@
         "template--16896431325398__088f7544-fa0a-4bfe-b8e7-7c7d5797cee0-16838465326394b42a-1": {
           "type": "text",
           "settings": {
-            "text": "<p>COLLECTION 1<br\/><br\/>It began as you’d expect. The Paul Bert Flea Market in Paris. Fabulous things. Abounding inspiration. The return home and the eventual rumination on a single piece, a small wall hanging made of rectilinear clay paillettes carefully tied together. This is followed by flipping through favorite books and seeing the similarities in the textures and tactility of Anni Albers’s tapestries, which leads to Josef’s tessellating fireplaces and Eileen Gray’s graphic screens.<br\/><br\/>This collection is a tribute to these individuals. Composed of two folding screens, two tables, a pair of sconces, and a lamp, it is a study of order and relation, a study of design as Josef Albers would say. Patterns were developed, applied to the different pieces, and then mixed and remixed to achieve the most pleasing combinations. And, in a first for the studio, blackened steel was introduced, its smooth delicacy heightening the character of the clay.<br\/><br\/>Together, these pieces speak to one another through their playful contrasts, as well as their ultramarine interiors. Separately, they stand on their own (quite literally in the case of the table and screen), unpretentious objects that will be at home in spaces for years to come.<\/p>",
+            "text": "<p>PASSAGE COLLECTION<br\/><br\/>Inspired by cherished childhood memories, the Passage Collection<br\/>pays homage to Charlie’s father, Lawrence, who lovingly handcrafted wooden toys<br\/>for his children. Among these treasures were beloved wooden boats, which today<br\/>sit proudly in the Dumais Made studio as emblems of the special bond between<br\/>father and son. Charlie's father harbored a dream of crafting these toy boats<br\/>for others after retirement—a dream left unrealized. The Passage Collection<br\/>serves as a tribute to that vision and honors the rich heritage of handmade<br\/>craftsmanship that resonates through Charlie's family.<\/p>",
             "text_style": "body"
           }
         }
@@ -242,6 +251,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
+        "show_glazes": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 80,
@@ -279,7 +289,6 @@
         "template--16924426633430__ec478967-97df-4e5f-a1a6-c5c230f6312c-1689279880ad127bf4-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_177.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
