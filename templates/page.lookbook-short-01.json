@@ -32,7 +32,7 @@
         "template--16896431325398__088f7544-fa0a-4bfe-b8e7-7c7d5797cee0-16838465326394b42a-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_332.jpg",
+        "image": "shopify:\/\/shop_images\/Dumais_0312_263_1_39a2e210-e579-4815-8bad-516a7c804f44.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -51,7 +51,7 @@
         "template--16896431325398__9c122172-8945-4fa7-acb2-3f37d16af7b9-16838313647c0b541a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/c-1-i-4pg.jpg",
+            "image": "shopify:\/\/shop_images\/CD_Kid_Image_3_copy.jpg",
             "text": "<p>A necklace by Anni Albers made from found objects. Anni’s use of everyday items in her jewelry, such as aluminum washers, clips, drain strainers, and ball chains, served as inspiration for the collection’s metalwork.<\/p>",
             "link": "",
             "column_width": "2"
@@ -60,7 +60,7 @@
         "template--16896431325398__9c122172-8945-4fa7-acb2-3f37d16af7b9-16838313647c0b541a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_385.jpg",
+            "image": "shopify:\/\/shop_images\/CD_Kid_Image_4.jpg",
             "text": "<p>Josef’s ‘Upward’ (1926), made from sandblasted, flashed glass which was then back painted. This ultramarine undercoating finds its way into the collection’s screens, lamps, and tables.<\/p>",
             "link": "",
             "column_width": "2"
@@ -69,22 +69,31 @@
         "template--16896431325398__9c122172-8945-4fa7-acb2-3f37d16af7b9-16838313647c0b541a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/c-1-i-1.jpg",
+            "image": "shopify:\/\/shop_images\/CD_Kid_Image_1_copy.jpg",
             "text": "<p>One of several maquettes for a brick fireplace that Josef Albers designed for a house in Bethany, CT.<\/p>",
             "link": "shopify:\/\/products\/aelius-mirror-1",
             "column_width": "4"
+          }
+        },
+        "column_dUGdPT": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link": "",
+            "column_width": "1"
           }
         }
       },
       "block_order": [
         "template--16896431325398__9c122172-8945-4fa7-acb2-3f37d16af7b9-16838313647c0b541a-0",
         "template--16896431325398__9c122172-8945-4fa7-acb2-3f37d16af7b9-16838313647c0b541a-1",
-        "template--16896431325398__9c122172-8945-4fa7-acb2-3f37d16af7b9-16838313647c0b541a-2"
+        "template--16896431325398__9c122172-8945-4fa7-acb2-3f37d16af7b9-16838313647c0b541a-2",
+        "column_dUGdPT"
       ],
       "settings": {
         "image_width": "full",
         "image_ratio": "adapt",
-        "grid_align": "left",
+        "grid_align": "right",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
