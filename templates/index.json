@@ -13,6 +13,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Passage_charlie.jpg",
+        "image_2": "shopify:\/\/shop_images\/passage-process-v2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
