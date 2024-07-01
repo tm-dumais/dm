@@ -1,11 +1,20 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/240605_Core_Collection_hero_2_cfdc5ca2-d1cd-47f4-8d82-b2dbeceebf5e.jpg",
+        "image": "shopify:\/\/shop_images\/240701_Passage_Launch_hero_copy.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -21,14 +30,14 @@
         "189fc2f5-9841-46f8-bcba-c2e9c27e184c": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><strong>INTRODUCING<\/strong><\/h2><h2><strong>THE CORE COLLECTION<\/strong><\/h2><h2><\/h2>",
+            "heading": "<h2><strong>THE PASSAGE COLLECTION<\/strong><\/h2><h2><\/h2>",
             "heading_size": "hxl"
           }
         },
         "4ef8fc5c-8192-4102-a90a-1a550a6614e6": {
           "type": "heading",
           "settings": {
-            "heading": "<p><em><strong>Bringing together our most-loved pieces, ready-to-glaze and ship in 8-10 days<\/strong><\/em><\/p>",
+            "heading": "<p><strong>Star the summer with our new fleet of nostalgic, nautical vessels and lanterns.<\/strong><\/p>",
             "heading_size": "h2"
           }
         },
@@ -36,7 +45,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP",
-            "button_link": "shopify:\/\/collections\/core-collection",
+            "button_link": "shopify:\/\/collections\/passage-collection",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
