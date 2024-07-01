@@ -12,7 +12,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/240701_Passage_Launch_hero_copy.jpg",
+        "image": "shopify:\/\/shop_images\/Passage_charlie.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "bottom-center",
@@ -37,7 +37,7 @@
         "4ef8fc5c-8192-4102-a90a-1a550a6614e6": {
           "type": "heading",
           "settings": {
-            "heading": "<p><strong>Star the summer with our new fleet of nostalgic, nautical vessels and lanterns.<\/strong><\/p>",
+            "heading": "<p><strong>Start the summer with our new fleet of nostalgic, nautical vessels and lanterns.<\/strong><\/p>",
             "heading_size": "h2"
           }
         },
