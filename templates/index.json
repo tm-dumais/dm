@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Passage_charlie.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -37,7 +37,7 @@
         "4ef8fc5c-8192-4102-a90a-1a550a6614e6": {
           "type": "heading",
           "settings": {
-            "heading": "<p><strong>Start the summer with our new fleet of nostalgic, nautical vessels and lanterns.<\/strong><\/p>",
+            "heading": "<p>Start summer with our new fleet of nostalgic, nautical objects.<\/p>",
             "heading_size": "h2"
           }
         },
@@ -142,7 +142,6 @@
         "template--16833782251734__52f2e727-b1ce-444c-b0d5-b23b9f45cd1c-167501942530475a7e-1",
         "5bd451cb-0575-43d2-8047-49bfc4a98f33"
       ],
-      "disabled": true,
       "settings": {
         "image_width": "full",
         "image_ratio": "adapt",
@@ -153,51 +152,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 100
-      }
-    },
-    "ae30e3d3-33fd-41d1-b998-081140660176": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16833782251734__ae30e3d3-33fd-41d1-b998-081140660176-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Collection lookbook",
-            "heading_size": "h1"
-          }
-        },
-        "template--16833782251734__ae30e3d3-33fd-41d1-b998-081140660176-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16833782251734__ae30e3d3-33fd-41d1-b998-081140660176-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn more",
-            "button_link": "shopify:\/\/pages\/lookbook23"
-          }
-        }
-      },
-      "block_order": [
-        "template--16833782251734__ae30e3d3-33fd-41d1-b998-081140660176-heading-1",
-        "template--16833782251734__ae30e3d3-33fd-41d1-b998-081140660176-text-1",
-        "template--16833782251734__ae30e3d3-33fd-41d1-b998-081140660176-button-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_207.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "c2aab0b7-7fc4-4972-aa08-37e076a275b7": {
@@ -252,10 +206,10 @@
         "template--16833782251734__80e4eacf-3f73-4d39-8b38-543354399caa-row-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DAY_23_2_1.jpg",
+            "image": "shopify:\/\/shop_images\/Dumais_0313_174_alt.jpg",
             "caption": "",
             "heading": "<em>A modernist take on ceramic lighting and furniture.<\/em>",
-            "text": "<p><a href=\"https:\/\/dumaismade.com\/collections\/31-days\" title=\"https:\/\/dumaismade.com\/collections\/31-days\">31 DAYS<\/a><\/p>",
+            "text": "<p><a href=\"\/collections\/31-days\" title=\"31 DAYS\">DISCOVER 31 DAYS &gt;<\/a><\/p>",
             "button_label": "",
             "button_link": "shopify:\/\/collections\/glaze-sample-kit"
           }
@@ -286,10 +240,10 @@
         "template--16833782251734__2239314b-cf45-484e-99ae-ae3e77ed53f5-row-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/231220_Process_DM_Studio_1.jpg",
+            "image": "shopify:\/\/shop_images\/Dumais_March_1_2023_408_ALT.jpg",
             "caption": "",
             "heading": "<em>Handmade with care and delight in Litchfield.<\/em>",
-            "text": "<p><a href=\"\/pages\/about\" title=\"About\">ABOUT US<\/a><\/p>",
+            "text": "<p><a href=\"\/pages\/about\" title=\"About\">ABOUT US &gt;<\/a><\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -323,7 +277,7 @@
             "image": "shopify:\/\/shop_images\/Hutton-Table-5.jpg",
             "caption": "",
             "heading": "<em>For illuminating the everyday,    in-between moments.<\/em>",
-            "text": "<p><a href=\"\/products\/hutton-table-1\" title=\"Hutton Side Table\">THE HUTTON SIDE TABLE<\/a><\/p>",
+            "text": "<p><a href=\"\/products\/hutton-table-1\" title=\"Hutton Side Table\">SHOP THE HUTTON TABLE &gt;<\/a><\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -447,7 +401,6 @@
     "rich_text",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
     "52f2e727-b1ce-444c-b0d5-b23b9f45cd1c",
-    "ae30e3d3-33fd-41d1-b998-081140660176",
     "c2aab0b7-7fc4-4972-aa08-37e076a275b7",
     "80e4eacf-3f73-4d39-8b38-543354399caa",
     "2239314b-cf45-484e-99ae-ae3e77ed53f5",
