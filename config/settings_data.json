@@ -1,8 +1,17 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/dumais-made-logo.png",
+    "logo": "shopify:\/\/shop_images\/Dumais_Made_Logo_8173fbfd-cf8d-4117-9121-2a8ada1916e6.png",
     "logo_width": 50,
-    "favicon": "shopify:\/\/shop_images\/MASTER_D_Logo_07fe04a3-ec8e-44cb-a1be-db7895505cae.png",
+    "favicon": "shopify:\/\/shop_images\/Dumais_Logo.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
