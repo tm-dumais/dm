@@ -12,7 +12,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Passage_charlie.jpg",
+        "image": "shopify:\/\/shop_images\/231220_Blunk_Process_hero.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "bottom-center",
@@ -30,12 +30,13 @@
         "189fc2f5-9841-46f8-bcba-c2e9c27e184c": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><strong>THE PASSAGE COLLECTION<\/strong><\/h2><h2><\/h2>",
+            "heading": "<h2><strong>OBJECTS FOR LIVING<\/strong><\/h2>",
             "heading_size": "hxl"
           }
         },
         "4ef8fc5c-8192-4102-a90a-1a550a6614e6": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "<p><\/p><p><em>Start summer with our new fleet of nostalgic, nautical objects.<\/em><\/p>",
             "heading_size": "h2"
@@ -43,6 +44,7 @@
         },
         "button_XtAPbH": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "SHOP",
             "button_link": "shopify:\/\/collections\/passage-collection",
@@ -63,8 +65,8 @@
         "content_alignment": "center",
         "color_scheme": "background-3",
         "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 32,
+        "padding_bottom": 40
       }
     },
     "rich_text": {
