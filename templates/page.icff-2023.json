@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "bf11ecf4-e193-4260-82b2-eb804c321a33": {
@@ -6,14 +15,14 @@
         "template--16880504471766__bf11ecf4-e193-4260-82b2-eb804c321a33-168087618759e02ed6-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>31 DAYS<\/p>",
+            "heading": "<p>The Annual Studio Sale<\/p>",
             "heading_size": "h1"
           }
         },
         "text_GCkHnt": {
           "type": "text",
           "settings": {
-            "text": "<p>Charlie Dumais offers an intimate look into his creative practice with <em>31 DAYS, <\/em>on view during New York Design Week<br\/><\/p><p>Born from a resolution to return and recommit to creating, the exhibit represents the invigorating  journey of reintegrating the  rituals of making back into daily life.<\/p>"
+            "text": "<p>Sign up for exclusive early access to our once-a-year sale event, with in stock pieces and seconds at up to 50% off.<\/p>"
           }
         }
       },
@@ -30,47 +39,13 @@
         "padding_bottom": 0
       }
     },
-    "277e339a-36b8-4326-a692-c014ebb5d2e6": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_aCQqAq": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>195 Chrystie Street<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--16880504471766__277e339a-36b8-4326-a692-c014ebb5d2e6-16832996557855ce25-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Unit 102W<br\/>New York, New York<\/p><p>May 15-17<br\/>10am-5pm<br\/><\/p><p><a href=\"mailto:maia@dumaismade.com\" target=\"_blank\" title=\"Book an Appointment\">Book an Appointment<\/a><\/p>"
-          }
-        },
-        "template--16880504471766__277e339a-36b8-4326-a692-c014ebb5d2e6-16832996557855ce25-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Learn more",
-            "button_link": "https:\/\/icff.com\/fair\/wanted-design-manhattan-home\/",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_aCQqAq",
-        "template--16880504471766__277e339a-36b8-4326-a692-c014ebb5d2e6-16832996557855ce25-1",
-        "template--16880504471766__277e339a-36b8-4326-a692-c014ebb5d2e6-16832996557855ce25-2"
-      ],
+    "3f3bbccc-88b5-4c43-8651-13fde18c35bd": {
+      "type": "custom-liquid",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "custom_liquid": "<div class=\"klaviyo-form-Ym5Uep\"><\/div>",
         "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "96762dfe-0343-448e-bfb2-df68af3514c0": {
@@ -93,6 +68,7 @@
         "f99e8aa0-5fcb-4c34-ab5f-f423e425dadd",
         "583f4a80-e912-4f47-9199-45196ad6fad7"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -101,15 +77,6 @@
         "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
         "padding_top": 8,
-        "padding_bottom": 0
-      }
-    },
-    "3f3bbccc-88b5-4c43-8651-13fde18c35bd": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-XFsAct\"><\/div>",
-        "color_scheme": "background-1",
-        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -152,9 +119,8 @@
   },
   "order": [
     "bf11ecf4-e193-4260-82b2-eb804c321a33",
-    "277e339a-36b8-4326-a692-c014ebb5d2e6",
-    "96762dfe-0343-448e-bfb2-df68af3514c0",
     "3f3bbccc-88b5-4c43-8651-13fde18c35bd",
+    "96762dfe-0343-448e-bfb2-df68af3514c0",
     "b5312627-67aa-4640-8117-4a6d2dca5640",
     "main"
   ]
