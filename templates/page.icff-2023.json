@@ -22,13 +22,21 @@
         "text_GCkHnt": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up for exclusive early access to our once-a-year sale event, with in stock pieces and seconds at up to 50% off.<\/p>"
+            "text": "<p>Join us for our once-a-year studio sale event, with seconds and samples at up to 75% off. <\/p><p><\/p>"
+          }
+        },
+        "heading_AJJ8Ry": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><\/p><h3>Event Details<\/h3><p><br\/>Saturday, September 7<br\/>10am to 2pm<br\/><br\/>931 Bantam Road<br\/>Floor 3<br\/><br\/><a href=\"https:\/\/www.facebook.com\/events\/1230651971272850\" target=\"_blank\" title=\"Annual Studio Sale RSVP\">RSVP &gt;<\/a><\/p>",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
         "template--16880504471766__bf11ecf4-e193-4260-82b2-eb804c321a33-168087618759e02ed6-0",
-        "text_GCkHnt"
+        "text_GCkHnt",
+        "heading_AJJ8Ry"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -41,6 +49,7 @@
     },
     "3f3bbccc-88b5-4c43-8651-13fde18c35bd": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"klaviyo-form-UNfpjr\"><\/div>",
         "color_scheme": "background-1",
