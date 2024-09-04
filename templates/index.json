@@ -12,7 +12,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/231220_Blunk_Process_hero.jpg",
+        "image": "shopify:\/\/shop_images\/2023_06_16_KD_0213X_c06670b7-bac0-4c23-b793-a40e8e00f8fa.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -30,7 +30,7 @@
         "189fc2f5-9841-46f8-bcba-c2e9c27e184c": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><strong>OBJECTS FOR LIVING<\/strong><\/h2>",
+            "heading": "<h2><strong>THE STUDIO SALE<\/strong><\/h2><h3>Join us this Saturday from 10am - 2pm for up to 75% off seconds and samples.<\/h3>",
             "heading_size": "hxl"
           }
         },
@@ -44,10 +44,9 @@
         },
         "button_XtAPbH": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "SHOP",
-            "button_link": "shopify:\/\/collections\/passage-collection",
+            "button_label": "RSVP",
+            "button_link": "https:\/\/www.facebook.com\/events\/1230651971272850",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
