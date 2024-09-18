@@ -126,3 +126,8 @@
     font-size: calc(var(--font-heading-scale) * 1.75rem);
   }
 }
+
+/* Add this style for the button */
+.home-section-split .button {
+  background-color: transparent;
+}
