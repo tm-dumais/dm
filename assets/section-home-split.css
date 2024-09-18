@@ -111,3 +111,8 @@
     font-size: calc(var(--font-heading-scale) * 1.75rem);
   }
 }
+
+/* Add this new rule at the end of the file */
+.button {
+  text-transform: uppercase;
+}

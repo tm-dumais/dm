@@ -65,7 +65,7 @@
                   class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                   {{ block.shopify_attributes }}
                 >
-                  {{ block.settings.button_label | escape }}
+                  {{ block.settings.button_label | escape | upcase }}
                 </a>
               {%- endif -%}
           {%- endcase -%}
