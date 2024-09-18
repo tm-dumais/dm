@@ -29,7 +29,7 @@
           </h2>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
-          <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
+          <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button button--secondary">
             {{ section.settings.button_label | escape }}
           </a>
         {%- endif -%}
@@ -105,12 +105,6 @@
       "type": "url",
       "id": "button_link",
       "label": "Button link"
-    },
-    {
-      "type": "checkbox",
-      "id": "button_style_secondary",
-      "default": false,
-      "label": "Use secondary button style"
     },
     {
       "type": "select",
