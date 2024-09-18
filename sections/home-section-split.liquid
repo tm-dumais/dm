@@ -28,9 +28,6 @@
             {{ section.settings.heading }}
           </h2>
         {%- endif -%}
-        {%- if section.settings.text != blank -%}
-          <div class="home-section-split__text rte">{{ section.settings.text }}</div>
-        {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
             {{ section.settings.button_label | escape }}
@@ -97,12 +94,6 @@
       ],
       "default": "h1",
       "label": "Heading size"
-    },
-    {
-      "type": "richtext",
-      "id": "text",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Text"
     },
     {
       "type": "text",
