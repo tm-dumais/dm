@@ -9,19 +9,29 @@
 */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "section_home_hero_U9fz9y": {
+      "type": "section-home-hero",
       "settings": {
-        "image": "shopify:\/\/shop_images\/231220_Blunk_Process_hero.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "image": "shopify:\/\/shop_images\/bg.jpg",
+        "video_url": "",
+        "heading": "Welcome to our store",
+        "cta_text": "Discover 31 days",
+        "cta_link": ""
+      }
+    },
+    "home_section_split_6nUKbq": {
+      "type": "home-section-split",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_e147330c-fbfa-4056-9e53-caa3a048d348.jpg",
+        "image_position": "left",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
+        "eyebrow_text": "HEADLINE",
+        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. <br\/><br\/>Handmade with care and delight in Litchfield.<\/p>",
+        "heading_size": "h1",
+        "button_label": "About Us",
+        "button_link": "",
+        "background_color": "none"
       }
     },
     "6a149845-4a58-45e1-a2b9-fe9d41161640": {
@@ -124,29 +134,14 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "home_section_split_6nUKbq": {
-      "type": "home-section-split",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/1_e147330c-fbfa-4056-9e53-caa3a048d348.jpg",
-        "image_position": "left",
-        "vertical_alignment": "top",
-        "horizontal_alignment": "left",
-        "eyebrow_text": "HEADLINE",
-        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. <br\/><br\/>Handmade with care and delight in Litchfield.<\/p>",
-        "heading_size": "h1",
-        "button_label": "About Us",
-        "button_link": "",
-        "color_scheme": "color-1"
-      }
     }
   },
   "order": [
-    "image_banner",
+    "section_home_hero_U9fz9y",
+    "home_section_split_6nUKbq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
     "abead6bb-70e4-4ad9-8074-29b33417fc45",
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537",
-    "1678358495ad87d821",
-    "home_section_split_6nUKbq"
+    "1678358495ad87d821"
   ]
 }
