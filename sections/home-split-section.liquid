@@ -19,15 +19,6 @@
     display: block;
   }
 
-  .button--secondary {
-    background-color: transparent;
-    border: 2px solid currentColor;
-    color: {{ settings.colors.button }};
-  }
-  .button--secondary:hover {
-    background-color: {{ settings.colors.button }};
-    color: {{ settings.colors.button_text }};
-  }
 {%- endstyle -%}
 
 <div class="image-with-text image-with-text--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == settings.page_background_color %} color-{{ section.settings.color_scheme }}{% endunless %} gradient section-{{ section.id }}-padding">
@@ -65,7 +56,7 @@
               <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button button--{{ section.settings.button_style }}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
@@ -227,20 +218,10 @@
       "label": "Color scheme"
     },
     {
-      "type": "select",
-      "id": "button_style",
-      "options": [
-        {
-          "value": "primary",
-          "label": "Primary"
-        },
-        {
-          "value": "secondary",
-          "label": "Secondary"
-        }
-      ],
-      "default": "primary",
-      "label": "Button style"
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "Use secondary button style"
     },
     {
       "type": "select",
