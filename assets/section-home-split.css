@@ -28,29 +28,30 @@
 
 .home-section-split__text-item {
   display: flex;
-  flex-direction: column;
+  width: 50%;
 }
 
-.home-section-split__text-item--top {
-  justify-content: flex-start;
+.home-section-split__text-item--vertical-top {
+  align-items: flex-start;
 }
 
-.home-section-split__text-item--center {
-  justify-content: center;
+.home-section-split__text-item--vertical-center {
+  align-items: center;
 }
 
 .home-section-split__content {
   padding: 5rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.home-section-split__text-item--left .home-section-split__content {
+.home-section-split__text-item--horizontal-left .home-section-split__content {
   align-items: flex-start;
   text-align: left;
 }
 
-.home-section-split__text-item--center .home-section-split__content {
+.home-section-split__text-item--horizontal-center .home-section-split__content {
   align-items: center;
   text-align: center;
 }
