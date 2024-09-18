@@ -38,7 +38,7 @@
         {%- if section.settings.button_label != blank -%}
           <div class="home-section-split__button-wrapper">
             <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button button--secondary">
-              {{ section.settings.button_label | escape | upcase }}
+              {{ section.settings.button_label | escape }}
             </a>
           </div>
         {%- endif -%}
