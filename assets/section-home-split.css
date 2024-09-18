@@ -126,8 +126,15 @@
 .button {
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px solid currentColor;
+  border: none;
   color: inherit;
+  padding: 1rem 2rem;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.button:hover {
+  text-decoration: none;
 }
 
 .color-color-1 {
