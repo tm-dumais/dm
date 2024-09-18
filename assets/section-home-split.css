@@ -125,19 +125,23 @@
 
 .button {
   text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
 }
 
 .color-color-1 {
   background-color: #EBE2D9;
-  color: #000000; /* Adjust text color as needed */
 }
 
 .color-color-2 {
   background-color: #B0977B;
-  color: #FFFFFF; /* Adjust text color as needed */
 }
 
 .color-color-3 {
   background-color: #95794A;
-  color: #FFFFFF; /* Adjust text color as needed */
+}
+
+.home-section-split {
+  color: #000000; /* Or any other color you want for the text */
 }
