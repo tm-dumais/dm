@@ -28,7 +28,7 @@
     <div class="home-section-split__text-item">
       <div class="home-section-split__content content-container">
         {%- if section.settings.eyebrow_text != blank -%}
-          <p class="home-section-split__eyebrow caption-with-letter-spacing">{{ section.settings.eyebrow_text | upcase }}</p>
+          <p class="home-section-split__eyebrow">{{ section.settings.eyebrow_text | upcase }}</p>
         {%- endif -%}
         {%- if section.settings.heading != blank -%}
           <h2 class="home-section-split__heading {{ section.settings.heading_size }} rte" style="font-style: italic;">
@@ -36,9 +36,11 @@
           </h2>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
-          <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button button--secondary">
-            {{ section.settings.button_label | escape }}
-          </a>
+          <div class="home-section-split__button-wrapper">
+            <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button button--secondary">
+              {{ section.settings.button_label | escape }}
+            </a>
+          </div>
         {%- endif -%}
       </div>
     </div>

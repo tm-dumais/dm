@@ -30,16 +30,21 @@
   padding: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
 }
 
 .home-section-split__eyebrow {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: calc(1 + 0.3 / var(--font-body-scale));
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 .home-section-split__heading {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .home-section-split__heading.h0 {
@@ -52,6 +57,14 @@
 
 .home-section-split__heading.h2 {
   font-size: calc(var(--font-heading-scale) * 2rem);
+}
+
+.home-section-split__button-wrapper {
+  display: flex;
+}
+
+.home-section-split__button-wrapper .button {
+  min-width: fit-content;
 }
 
 @media screen and (max-width: 749px) {
