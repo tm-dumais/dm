@@ -84,6 +84,10 @@
   font-size: calc(var(--font-heading-scale) * 2rem);
 }
 
+.background-none {
+  background-color: transparent;
+}
+
 .background-color-1 {
   background-color: #EBE2D9;
 }
