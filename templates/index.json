@@ -134,6 +134,7 @@
         "heading_size": "medium",
         "button_label": "Button",
         "button_link": "",
+        "button_style": "secondary",
         "color_scheme": "default"
       }
     }
