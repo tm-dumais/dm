@@ -56,7 +56,15 @@
               <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                <a
+                  {% if block.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link }}"
+                  {% endif %}
+                  class="button button--{{ section.settings.button_style }}"
+                  {{ block.shopify_attributes }}
+                >
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
@@ -222,6 +230,22 @@
       "id": "button_style_secondary",
       "default": false,
       "label": "Use secondary button style"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:sections.all.buttons.button_style_primary.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:sections.all.buttons.button_style_secondary.label"
+        }
+      ],
+      "default": "primary",
+      "label": "t:sections.all.buttons.button_style.label"
     },
     {
       "type": "select",
