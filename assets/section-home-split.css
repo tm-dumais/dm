@@ -26,13 +26,23 @@
   object-fit: cover;
 }
 
+.home-section-split__text-item {
+  display: flex;
+}
+
+.home-section-split__text-item--top {
+  align-items: flex-start;
+}
+
+.home-section-split__text-item--center {
+  align-items: center;
+}
+
 .home-section-split__content {
   padding: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
-  height: 100%;
 }
 
 .home-section-split__eyebrow {
