@@ -25,7 +25,7 @@
         {%- endif -%}
       </div>
     </div>
-    <div class="home-section-split__text-item home-section-split__text-item--{{ section.settings.content_alignment }}">
+    <div class="home-section-split__text-item home-section-split__text-item--{{ section.settings.content_vertical_alignment }} home-section-split__text-item--{{ section.settings.content_horizontal_alignment }}">
       <div class="home-section-split__content content-container">
         {%- if section.settings.eyebrow_text != blank -%}
           <p class="home-section-split__eyebrow">{{ section.settings.eyebrow_text | upcase }}</p>
@@ -75,7 +75,7 @@
     },
     {
       "type": "select",
-      "id": "content_alignment",
+      "id": "content_vertical_alignment",
       "options": [
         {
           "value": "top",
@@ -87,7 +87,23 @@
         }
       ],
       "default": "top",
-      "label": "Content alignment"
+      "label": "Vertical content alignment"
+    },
+    {
+      "type": "select",
+      "id": "content_horizontal_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left",
+      "label": "Horizontal content alignment"
     },
     {
       "type": "text",
@@ -167,4 +183,5 @@
     }
   ]
 }
+{% endschema %}
 {% endschema %}
