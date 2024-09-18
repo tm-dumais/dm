@@ -1,0 +1,78 @@
+{{ 'section-home-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="home-hero">
+  {%- if section.settings.video_url != blank -%}
+    <div class="home-hero__video-container">
+      <video class="home-hero__video" autoplay loop muted playsinline>
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+      </video>
+    </div>
+  {%- elsif section.settings.image != blank -%}
+    <div class="home-hero__image-container">
+      {%- assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio -%}
+      {{ section.settings.image | image_url: width: 3000 | image_tag:
+        loading: 'lazy',
+        width: section.settings.image.width,
+        height: image_height,
+        class: "home-hero__image",
+        sizes: "100vw",
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000'
+      }}
+    </div>
+  {%- endif -%}
+
+  <div class="home-hero__content-container">
+    <div class="home-hero__content">
+      {%- if section.settings.heading != blank -%}
+        <h1 class="home-hero__heading">{{ section.settings.heading }}</h1>
+      {%- endif -%}
+      {%- if section.settings.cta_text != blank -%}
+        <a href="{{ section.settings.cta_link }}" class="home-hero__cta button">
+          {{ section.settings.cta_text }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Home Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Background Video URL",
+      "info": "Provide a direct link to an MP4 video file"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Welcome to our store"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Discover 31 days"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Hero",
+      "category": "Hero"
+    }
+  ]
+}
+{% endschema %}
