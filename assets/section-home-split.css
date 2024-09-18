@@ -28,17 +28,10 @@
 
 .home-section-split__text-item {
   display: flex;
+  flex-direction: column;
 }
 
 .home-section-split__text-item--top {
-  align-items: flex-start;
-}
-
-.home-section-split__text-item--center {
-  align-items: center;
-}
-
-.home-section-split__text-item--left {
   justify-content: flex-start;
 }
 
