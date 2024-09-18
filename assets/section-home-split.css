@@ -1,123 +1,62 @@
-.home-section-split {
+.home-section-split__grid {
   display: flex;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  align-items: center;
 }
 
-.home-section-split__image,
-.home-section-split__content {
+.home-section-split__media-item,
+.home-section-split__text-item {
   width: 50%;
 }
 
-.home-section-split__image {
-  position: relative;
-  overflow: hidden;
+.home-section-split__media-item--right {
+  order: 1;
 }
 
-.home-section-split__image--right {
-  order: 2;
+.home-section-split__media {
+  height: 100%;
 }
 
-.home-section-split__image-tag {
+.home-section-split__media-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .home-section-split__content {
+  padding: 5rem;
   display: flex;
-  align-items: center;
-  padding: 5% 5% 5% 5%;
-}
-
-.home-section-split__content-inner {
-  max-width: 500px;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .home-section-split__eyebrow {
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 .home-section-split__heading {
   margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-
-.home-section-split__heading.medium {
-  font-size: 32px;
-}
-
-.home-section-split__heading.large {
-  font-size: 64px;
 }
 
 .home-section-split__text {
   margin-bottom: 2rem;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.button--primary {
-  background-color: #000;
-  color: #fff;
-}
-
-.button--secondary {
-  background-color: transparent;
-  color: #000;
-  border: 2px solid #000;
-}
-
-.color-default {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.color-beige {
-  background-color: #f5f5dc;
-  color: #000000;
 }
 
 @media screen and (max-width: 749px) {
-  .home-section-split {
+  .home-section-split__grid {
     flex-direction: column;
   }
 
-  .home-section-split__image,
-  .home-section-split__content {
+  .home-section-split__media-item,
+  .home-section-split__text-item {
     width: 100%;
   }
 
-  .home-section-split__image {
-    height: 300px;
-  }
-
-  .home-section-split__image--right {
+  .home-section-split__media-item--right {
     order: 0;
   }
 
   .home-section-split__content {
-    padding: 2rem 1rem;
-  }
-
-  .home-section-split__heading.large {
-    font-size: 48px;
+    padding: 3rem 1.5rem;
   }
 }
