@@ -58,7 +58,7 @@
 
 .home-section-split__eyebrow {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: calc(1 + 0.3 / var(--font-body-scale));
@@ -84,12 +84,16 @@
   font-size: calc(var(--font-heading-scale) * 2rem);
 }
 
-.home-section-split__button-wrapper {
-  display: flex;
+.background-color-1 {
+  background-color: #EBE2D9;
 }
 
-.home-section-split__button-wrapper .button {
-  min-width: fit-content;
+.background-color-2 {
+  background-color: #B0977B;
+}
+
+.background-color-3 {
+  background-color: #95794A;
 }
 
 @media screen and (max-width: 749px) {
@@ -122,20 +126,3 @@
     font-size: calc(var(--font-heading-scale) * 1.75rem);
   }
 }
-
-/* Remove these button styles */
-.button {
-  text-transform: uppercase;
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  padding: 1rem 2rem;
-  text-decoration: underline;
-  display: inline-block;
-}
-
-.button:hover {
-  text-decoration: none;
-}
-
-/* Keep the rest of the CSS as is */

@@ -2,7 +2,7 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'section-home-split.css' | asset_url | stylesheet_tag }}
 
-<div class="home-section-split color-{{ section.settings.color_scheme }} gradient">
+<div class="home-section-split background-{{ section.settings.background_color }}">
   <div class="home-section-split__grid">
     <div class="home-section-split__media-item{% if section.settings.image_position == 'right' %} home-section-split__media-item--right{% endif %}">
       <div class="home-section-split__media media"
@@ -36,11 +36,12 @@
           </h2>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
-          <div class="home-section-split__button-wrapper">
-            <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button button--secondary">
-              {{ section.settings.button_label | escape }}
-            </a>
-          </div>
+          <a href="{{ section.settings.button_link }}"
+            class="button button--secondary"
+            {% if section.settings.button_link == blank %}aria-disabled="true"{% endif %}
+          >
+            {{ section.settings.button_label | escape }}
+          </a>
         {%- endif -%}
       </div>
     </div>
@@ -149,7 +150,7 @@
     },
     {
       "type": "select",
-      "id": "color_scheme",
+      "id": "background_color",
       "options": [
         {
           "value": "color-1",
