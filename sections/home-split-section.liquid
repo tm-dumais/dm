@@ -12,6 +12,21 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .image-with-text__media img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button--outline {
+    background-color: transparent;
+    border: 2px solid currentColor;
+    color: {{ settings.colors.button }};
+  }
+  .button--outline:hover {
+    background-color: {{ settings.colors.button }};
+    color: {{ settings.colors.button_text }};
+  }
 {%- endstyle -%}
 
 <div class="image-with-text image-with-text--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == settings.page_background_color %} color-{{ section.settings.color_scheme }}{% endunless %} gradient section-{{ section.id }}-padding">
@@ -50,7 +65,7 @@
               <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style == 'outline' %} button--outline{% else %} button--solid{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
@@ -390,6 +405,22 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            }
+          ],
+          "default": "solid",
+          "label": "Button style"
         }
       ]
     }
