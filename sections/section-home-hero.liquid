@@ -19,7 +19,7 @@
   <div class="home-hero__content-container">
     <div class="home-hero__content">
       {%- if section.settings.heading != blank -%}
-        <h2 class="home-hero__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+        <h1 class="home-hero__heading">{{ section.settings.heading }}</h1>
       {%- endif -%}
       {%- if section.settings.cta_text != blank -%}
         <a href="{{ section.settings.cta_link }}" class="home-hero__cta">
@@ -50,26 +50,6 @@
       "id": "heading",
       "label": "Heading",
       "default": "Welcome to our store"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "T2"
-        },
-        {
-          "value": "h1",
-          "label": "T1"
-        },
-        {
-          "value": "h0",
-          "label": "T0"
-        }
-      ],
-      "default": "h1",
-      "label": "Heading size"
     },
     {
       "type": "text",
