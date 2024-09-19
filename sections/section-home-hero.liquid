@@ -19,7 +19,7 @@
   <div class="home-hero__content-container">
     <div class="home-hero__content">
       {%- if section.settings.heading != blank -%}
-        <h1 class="home-hero__heading">{{ section.settings.heading }}</h1>
+        <div class="home-hero__heading rte">{{ section.settings.heading }}</div>
       {%- endif -%}
       {%- if section.settings.cta_text != blank -%}
         <a href="{{ section.settings.cta_link }}" class="home-hero__cta">
@@ -46,10 +46,10 @@
       "info": "Provide a direct link to an MP4 video file"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "heading",
       "label": "Heading",
-      "default": "Welcome to our store"
+      "default": "<p>Welcome to our store</p>"
     },
     {
       "type": "text",
