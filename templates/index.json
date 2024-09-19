@@ -50,7 +50,9 @@
         "heading_size": "h1",
         "button_label": "Shop the Modern Bohemia",
         "button_link": "",
-        "background_color": "none"
+        "background_color": "none",
+        "padding_top_enabled": false,
+        "padding_bottom_enabled": false
       }
     },
     "home_section_split_yL8grq": {
@@ -65,7 +67,9 @@
         "heading_size": "h0",
         "button_label": "",
         "button_link": "",
-        "background_color": "color-1"
+        "background_color": "color-1",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true
       }
     },
     "home_section_split_6nUKbq": {
@@ -80,7 +84,9 @@
         "heading_size": "h1",
         "button_label": "About Us",
         "button_link": "",
-        "background_color": "none"
+        "background_color": "none",
+        "padding_top_enabled": false,
+        "padding_bottom_enabled": false
       }
     },
     "6a149845-4a58-45e1-a2b9-fe9d41161640": {
