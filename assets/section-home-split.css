@@ -129,6 +129,11 @@
   .home-section-split__heading.h2 {
     font-size: calc(var(--font-heading-scale) * 1.75rem);
   }
+
+  .home-section-split--padding-horizontal {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /* Add this style for the button */
@@ -139,6 +144,8 @@
 .home-section-split {
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .home-section-split--padding-top {
@@ -147,4 +154,9 @@
 
 .home-section-split--padding-bottom {
   padding-bottom: 6rem;
+}
+
+.home-section-split--padding-horizontal {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
