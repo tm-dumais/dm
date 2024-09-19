@@ -38,6 +38,21 @@
         "video_url": "https:\/\/download-video.akamaized.net\/v3-1\/playback\/40f9a281-f7d8-42d4-aeb3-d536f19d2357\/157d7b3e-c30a2f4b?__token__=st=1726756926~exp=1726771326~acl=%2Fv3-1%2Fplayback%2F40f9a281-f7d8-42d4-aeb3-d536f19d2357%2F157d7b3e-c30a2f4b%2A~hmac=5449d395d2da3cf7a87fe804f3e1988702426675140b67e4e2ea4ae4b602c034&r=dXMtY2VudHJhbDE%3D"
       }
     },
+    "home_section_split_T3BbAC": {
+      "type": "home-section-split",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "image_position": "left",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
+        "eyebrow_text": "Modern Bohemia",
+        "heading": "<p>Introducing a collection inspired by the rich modernist heritage of Litchfield, our home.<\/p>",
+        "heading_size": "h1",
+        "button_label": "Shop the Modern Bohemia",
+        "button_link": "",
+        "background_color": "none"
+      }
+    },
     "home_section_split_6nUKbq": {
       "type": "home-section-split",
       "settings": {
@@ -60,54 +75,6 @@
         "color_scheme": "background-1",
         "padding_top": 12,
         "padding_bottom": 40
-      }
-    },
-    "abead6bb-70e4-4ad9-8074-29b33417fc45": {
-      "type": "image-banner",
-      "blocks": {
-        "template--16833782251734__abead6bb-70e4-4ad9-8074-29b33417fc45-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get to know our glazes",
-            "heading_size": "h2"
-          }
-        },
-        "template--16833782251734__abead6bb-70e4-4ad9-8074-29b33417fc45-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Handcrafted by our founder, Charlie",
-            "text_style": "body"
-          }
-        },
-        "template--16833782251734__abead6bb-70e4-4ad9-8074-29b33417fc45-buttons-1": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Discover",
-            "button_link_1": "shopify:\/\/pages\/glazes",
-            "button_style_secondary_1": true,
-            "button_label_2": "Order Samples",
-            "button_link_2": "shopify:\/\/products\/sample-kit",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "template--16833782251734__abead6bb-70e4-4ad9-8074-29b33417fc45-heading-1",
-        "template--16833782251734__abead6bb-70e4-4ad9-8074-29b33417fc45-text-1",
-        "template--16833782251734__abead6bb-70e4-4ad9-8074-29b33417fc45-buttons-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/ColumnEdition2Lamp6_cfb6255d-cdbe-43a0-803e-406bed86d113.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537": {
@@ -157,9 +124,9 @@
   },
   "order": [
     "section_home_hero_U9fz9y",
+    "home_section_split_T3BbAC",
     "home_section_split_6nUKbq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
-    "abead6bb-70e4-4ad9-8074-29b33417fc45",
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537",
     "1678358495ad87d821"
   ]
