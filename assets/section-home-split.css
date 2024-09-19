@@ -135,3 +135,16 @@
 .home-section-split .button {
   background-color: transparent;
 }
+
+.home-section-split {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.home-section-split--padding-top {
+  padding-top: 3rem;
+}
+
+.home-section-split--padding-bottom {
+  padding-bottom: 3rem;
+}

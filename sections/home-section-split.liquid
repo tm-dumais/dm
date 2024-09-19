@@ -2,14 +2,9 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'section-home-split.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top_enabled | default: false | ternary: '3rem', '0' }};
-    padding-bottom: {{ section.settings.padding_bottom_enabled | default: false | ternary: '3rem', '0' }};
-  }
-{%- endstyle -%}
-
-<div class="home-section-split background-{{ section.settings.background_color }} section-{{ section.id }}-padding">
+<div class="home-section-split background-{{ section.settings.background_color }}
+            {% if section.settings.padding_top_enabled %}home-section-split--padding-top{% endif %}
+            {% if section.settings.padding_bottom_enabled %}home-section-split--padding-bottom{% endif %}">
   <div class="home-section-split__grid">
     <div class="home-section-split__media-item{% if section.settings.image_position == 'right' %} home-section-split__media-item--right{% endif %}">
       <div class="home-section-split__media media"
