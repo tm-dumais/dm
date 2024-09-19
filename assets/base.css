@@ -3270,3 +3270,7 @@ text-wrap: auto !important;
 text-align: left !important;
 }
 }
+
+.otCookiesNotification #cookies-message-context {
+  align-items: start !important;
+}
