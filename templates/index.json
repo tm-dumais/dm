@@ -53,6 +53,21 @@
         "background_color": "none"
       }
     },
+    "home_section_split_yL8grq": {
+      "type": "home-section-split",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "horizontal_alignment": "center",
+        "eyebrow_text": "",
+        "heading": "<p>“These designs balance rational forms with the tactile, natural qualities of clay.”<\/p>",
+        "heading_size": "h0",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "color-1"
+      }
+    },
     "home_section_split_6nUKbq": {
       "type": "home-section-split",
       "settings": {
@@ -120,29 +135,15 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "home_section_split_yL8grq": {
-      "type": "home-section-split",
-      "settings": {
-        "image_position": "left",
-        "vertical_alignment": "top",
-        "horizontal_alignment": "left",
-        "eyebrow_text": "",
-        "heading": "<p>Split section heading<\/p>",
-        "heading_size": "h1",
-        "button_label": "Button label",
-        "button_link": "",
-        "background_color": "none"
-      }
     }
   },
   "order": [
     "section_home_hero_U9fz9y",
     "home_section_split_T3BbAC",
+    "home_section_split_yL8grq",
     "home_section_split_6nUKbq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537",
-    "1678358495ad87d821",
-    "home_section_split_yL8grq"
+    "1678358495ad87d821"
   ]
 }
