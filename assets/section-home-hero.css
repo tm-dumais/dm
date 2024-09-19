@@ -41,6 +41,10 @@
   font-style: italic;
 }
 
+.home-hero__heading p {
+  margin: 0; /* Remove margin from <p> inside heading */
+}
+
 .home-hero__text {
   margin-bottom: 0.25rem; /* Reduced from 1rem */
 }
