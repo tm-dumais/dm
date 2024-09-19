@@ -3263,3 +3263,10 @@ display: none !important;
 .otCookiesNotification * {
   font-family: 'Pitch', sans-serif !important;
 }
+
+@media only screen and (min-width:768px){
+.otCookiesNotification #cookies-message * {
+text-wrap: auto !important;
+text-align: left !important;
+}
+}
