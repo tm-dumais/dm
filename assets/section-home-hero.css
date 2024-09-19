@@ -37,17 +37,19 @@
 }
 
 .home-hero__heading {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem; /* Reduced from 1rem */
+  font-style: italic; /* Added italic style */
 }
 
 .home-hero__text {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Kept as 1rem for other text */
 }
 
 .home-hero__cta {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  margin-top: 0.5rem; /* Added to reduce space after heading if there's no text */
 }
 
 /* Responsive adjustments */
