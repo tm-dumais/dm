@@ -2790,16 +2790,17 @@ details[open] > .header__submenu {
 
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
-}
-
-.header__menu-item span {
-  transition: text-decoration var(--duration-short) ease;
-}
-
-.header__menu-item:hover span {
-  text-decoration: underline; text-decoration-skip-ink: none;
+  text-decoration: underline; /* Add underline on hover */
   text-underline-offset: 0.3rem;
-  text-decoration-skip-ink: none;
+  text-decoration-thickness: 0.1rem;
+}
+
+.header__icon--cart .header__menu-item {
+  text-decoration: none; /* Remove underline by default */
+}
+
+.header__icon--cart .header__menu-item:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 details[open] > .header__menu-item {
