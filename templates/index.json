@@ -11,12 +11,29 @@
   "sections": {
     "section_home_hero_U9fz9y": {
       "type": "section-home-hero",
+      "blocks": {
+        "heading_zYmn6k": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>For illuminating the everyday,<br\/>\u2028in-between moments.<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "cta_kULiiV": {
+          "type": "cta",
+          "settings": {
+            "cta_text": "Discover 31 days",
+            "cta_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_zYmn6k",
+        "cta_kULiiV"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/bg.jpg",
-        "video_url": "",
-        "heading": "For illuminating the everyday, \u2028in-between moments.",
-        "cta_text": "Discover 31 days",
-        "cta_link": ""
+        "video_url": ""
       }
     },
     "home_section_split_6nUKbq": {
