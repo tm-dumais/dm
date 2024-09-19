@@ -18,14 +18,22 @@
 
   <div class="home-hero__content-container">
     <div class="home-hero__content">
-      {%- if section.settings.heading != blank -%}
-        <div class="home-hero__heading rte">{{ section.settings.heading }}</div>
-      {%- endif -%}
-      {%- if section.settings.cta_text != blank -%}
-        <a href="{{ section.settings.cta_link }}" class="home-hero__cta">
-          {{ section.settings.cta_text }}
-        </a>
-      {%- endif -%}
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {%- when 'heading' -%}
+            <h2 class="home-hero__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              {{ block.settings.heading }}
+            </h2>
+          {%- when 'text' -%}
+            <div class="home-hero__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          {%- when 'cta' -%}
+            {%- if block.settings.cta_text != blank -%}
+              <a href="{{ block.settings.cta_link }}" class="home-hero__cta">
+                {{ block.settings.cta_text }}
+              </a>
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
   </div>
 </div>
@@ -44,29 +52,89 @@
       "id": "video_url",
       "label": "Background Video URL",
       "info": "Provide a direct link to an MP4 video file"
-    },
+    }
+  ],
+  "blocks": [
     {
-      "type": "richtext",
-      "id": "heading",
-      "label": "Heading",
-      "default": "<p>Welcome to our store</p>"
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default": "<p>Welcome to our store</p>"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h0",
+              "label": "H0"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "cta_text",
-      "label": "CTA Text",
-      "default": "Discover 31 days"
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Add additional information here.</p>"
+        }
+      ]
     },
     {
-      "type": "url",
-      "id": "cta_link",
-      "label": "CTA Link"
+      "type": "cta",
+      "name": "Call to Action",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "CTA Text",
+          "default": "Discover 31 days"
+        },
+        {
+          "type": "url",
+          "id": "cta_link",
+          "label": "CTA Link"
+        }
+      ]
     }
   ],
   "presets": [
     {
       "name": "Home Hero",
-      "category": "Hero"
+      "category": "Hero",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "cta"
+        }
+      ]
     }
   ]
 }
