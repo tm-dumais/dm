@@ -3257,3 +3257,9 @@ display: none !important;
 .featured-section-wrapper{
   max-height:100% !important;
 }
+
+/* Cookie notification styling */
+.otCookiesNotification,
+.otCookiesNotification * {
+  font-family: 'Pitch', sans-serif !important;
+}
