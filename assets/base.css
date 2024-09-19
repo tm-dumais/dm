@@ -2796,7 +2796,7 @@ details[open] > .header__submenu {
 }
 
 .header__icon--cart .header__menu-item {
-  text-decoration: none; /* Remove underline by default */
+  text-decoration: none !important; /* Remove underline by default */
 }
 
 .header__icon--cart .header__menu-item:hover {
