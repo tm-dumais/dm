@@ -19,7 +19,7 @@
   <div class="home-hero__content-container">
     <div class="home-hero__content">
       {%- if section.settings.heading != blank -%}
-        <h1 class="home-hero__heading h0">{{ section.settings.heading }}</h1>
+        <h1 class="home-hero__heading h0">{{ section.settings.heading | newline_to_br }}</h1>
       {%- endif -%}
       {%- if section.settings.cta_text != blank -%}
         <a href="{{ section.settings.cta_link }}" class="home-hero__cta">
@@ -46,10 +46,11 @@
       "info": "Provide a direct link to an MP4 video file"
     },
     {
-      "type": "text",
+      "type": "textarea",
       "id": "heading",
       "label": "Heading",
-      "default": "Welcome to our store"
+      "default": "Welcome to\nour store",
+      "info": "Use line breaks to create multiple lines"
     },
     {
       "type": "text",

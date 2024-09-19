@@ -42,6 +42,7 @@
   line-height: 1.2;
   margin-bottom: 1.5rem;
   font-style: italic;
+  white-space: pre-line; /* This will preserve line breaks */
 }
 
 .home-hero__cta {
