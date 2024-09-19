@@ -2,14 +2,14 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top_enabled | default: false | ternary: '3rem', '0' }};
+    padding-bottom: {{ section.settings.padding_bottom_enabled | default: false | ternary: '3rem', '0' }};
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top_enabled | default: false | ternary: '3rem', '0' }};
+      padding-bottom: {{ section.settings.padding_bottom_enabled | default: false | ternary: '3rem', '0' }};
     }
   }
 
@@ -256,24 +256,16 @@
       "content": "Section padding"
     },
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Padding top",
-      "default": 36
+      "type": "checkbox",
+      "id": "padding_top_enabled",
+      "label": "Enable top padding",
+      "default": false
     },
     {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Padding bottom",
-      "default": 36
+      "type": "checkbox",
+      "id": "padding_bottom_enabled",
+      "label": "Enable bottom padding",
+      "default": false
     }
   ],
   "blocks": [
