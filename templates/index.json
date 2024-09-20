@@ -144,6 +144,13 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "section_home_featured_products_bjzfpy": {
+      "type": "section-home-featured-products",
+      "settings": {
+        "product_1": "barragan-lamp-dipped",
+        "product_2": "aurora-mirror"
+      }
     }
   },
   "order": [
@@ -153,6 +160,7 @@
     "home_section_split_6nUKbq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537",
-    "1678358495ad87d821"
+    "1678358495ad87d821",
+    "section_home_featured_products_bjzfpy"
   ]
 }
