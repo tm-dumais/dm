@@ -17,6 +17,31 @@
   text-align: center;
 }
 
+.product-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-image {
+  margin-bottom: 1rem;
+}
+
+.product-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card-price {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 749px) {
   .featured-products-grid {
     flex-direction: column;

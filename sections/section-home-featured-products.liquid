@@ -39,7 +39,19 @@
       {%- assign product = section.settings[product_key] -%}
       {% if product != blank %}
         <div class="featured-product-card">
-          {% render 'product-card', product: product %}
+          <a href="{{ product.url }}" class="product-card-link">
+            <div class="product-card-image">
+              {% if product.featured_image != blank %}
+                <img src="{{ product.featured_image | img_url: '400x' }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy">
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-title">{{ product.title }}</h3>
+              <p class="product-card-price">{{ product.price | money }}</p>
+            </div>
+          </a>
         </div>
       {% endif %}
     {% endfor %}
