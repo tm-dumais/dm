@@ -3,9 +3,9 @@
 <div class="home-hero">
   <div class="home-hero__media-container">
     {%- if section.settings.video_url != blank -%}
-      <div class="home-hero__video-wrapper">
-        <iframe class="home-hero__video" src="{{ section.settings.video_url }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <video class="home-hero__video" autoplay loop muted playsinline>
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+      </video>
     {%- elsif section.settings.image != blank -%}
       {{ section.settings.image | image_url: width: 3000 | image_tag:
         loading: 'lazy',
@@ -51,7 +51,7 @@
       "type": "url",
       "id": "video_url",
       "label": "Background Video URL",
-      "info": "Provide a Vimeo video URL"
+      "info": "Provide a direct link to an MP4 video file"
     }
   ],
   "blocks": [
