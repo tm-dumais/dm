@@ -5,6 +5,12 @@
   "class": "section",
   "settings": [
     {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Featured Products"
+    },
+    {
       "type": "product",
       "id": "product_1",
       "label": "Featured Product 1"
@@ -13,12 +19,6 @@
       "type": "product",
       "id": "product_2",
       "label": "Featured Product 2"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Section Title",
-      "default": "Featured Products"
     }
   ],
   "presets": [
@@ -31,27 +31,19 @@
 
 <div class="page-width">
   {% if section.settings.title != blank %}
-    <h2 class="section-title">{{ section.settings.title }}</h2>
+    <h2 class="section__title">{{ section.settings.title }}</h2>
   {% endif %}
-  <ul class="grid product-grid grid--2-col-desktop grid--1-col-tablet-down">
+  <div class="featured-products-grid">
     {% for i in (1..2) %}
       {%- assign product_key = 'product_' | append: i -%}
       {%- assign product = section.settings[product_key] -%}
       {% if product != blank %}
-        <li class="grid__item">
-          {% render 'product-card-grid',
-            product_card_product: product,
-            media_size: "square",
-            show_secondary_image: true,
-            add_image_padding: false,
-            show_vendor: true
-          %}
-        </li>
+        <div class="featured-product-card">
+          {% render 'product-card', product: product %}
+        </div>
       {% endif %}
     {% endfor %}
-  </ul>
+  </div>
 </div>
 
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-home-featured-products.css' | asset_url | stylesheet_tag }}
