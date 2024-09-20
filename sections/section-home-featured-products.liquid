@@ -1,35 +1,33 @@
+{{ 'section-home-split.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width">
-  {% if section.settings.title != blank %}
-    <h2 class="section__title">{{ section.settings.title }}</h2>
-  {% endif %}
-  
-  <ul id="product-grid" 
-      data-id="{{ section.id }}"
-      class="
-        grid product-grid grid--2-col-tablet-down
-        grid--2-col-desktop
-      ">
+<div class="page-width section-home-featured-products">
+  <div class="split-section">
     {% for i in (1..2) %}
       {%- assign product_key = 'product_' | append: i -%}
       {%- assign product = section.settings[product_key] -%}
       {% if product != blank %}
-        <li class="grid__item">
-          {% render 'card-product',
-            card_product: product,
-            media_aspect_ratio: 'adapt',
-            show_secondary_image: false,
-            show_vendor: false,
-            show_rating: false,
-            show_quick_add: false,
-            section_id: section.id
-          %}
-        </li>
+        <div class="split-section__half">
+          <div class="product-card">
+            <a href="{{ product.url }}" class="product-card__link">
+              <div class="product-card__image-wrapper">
+                {% if product.featured_image != blank %}
+                  <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.featured_image.alt | escape }}" class="product-card__image" loading="lazy">
+                {% else %}
+                  {{ 'product-1' | placeholder_svg_tag: 'product-card__image placeholder-svg' }}
+                {% endif %}
+              </div>
+              <div class="product-card__info">
+                <h3 class="product-card__title">{{ product.title }}</h3>
+                <p class="product-card__price">{{ product.price | money }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
       {% endif %}
     {% endfor %}
-  </ul>
+  </div>
 </div>
 
 {% schema %}
@@ -38,12 +36,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Section Title",
-      "default": "Featured Products"
-    },
     {
       "type": "product",
       "id": "product_1",

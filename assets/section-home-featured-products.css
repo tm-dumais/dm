@@ -119,3 +119,15 @@
     max-width: 100%;
   }
 }
+
+.section-home-featured-products {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+@media screen and (max-width: 749px) {
+  .section-home-featured-products {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
