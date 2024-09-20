@@ -1,0 +1,49 @@
+{% schema %}
+{
+  "name": "Featured Products",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product_1",
+      "label": "Featured Product 1"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Featured Product 2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="page-width">
+  <div class="featured-products-grid">
+    {% for i in (1..2) %}
+      {% assign product = section.settings["product_" | append: i] %}
+      {% if product != blank %}
+        <div class="featured-product-card">
+          {% render 'product-card', product: product %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% stylesheet %}
+.featured-products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.featured-product-card {
+  width: 100%;
+}
+{% endstylesheet %}
