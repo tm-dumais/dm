@@ -30,11 +30,21 @@
       {%- assign product = section.settings[product_key] -%}
       {% if product != blank %}
         <div class="featured-product-card">
-          {% render 'product-card', product: product %}
+          {% render 'card-product',
+            card_product: product,
+            media_aspect_ratio: section.settings.image_ratio,
+            show_secondary_image: section.settings.show_secondary_image,
+            show_vendor: section.settings.show_vendor,
+            show_rating: section.settings.show_rating,
+            show_quick_add: section.settings.enable_quick_add,
+            section_id: section.id
+          %}
         </div>
       {% endif %}
     {% endfor %}
   </div>
 </div>
 
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-home-featured-products.css' | asset_url | stylesheet_tag }}
