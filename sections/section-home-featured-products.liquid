@@ -13,6 +13,12 @@
       "type": "product",
       "id": "product_2",
       "label": "Featured Product 2"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Featured Products"
     }
   ],
   "presets": [
@@ -24,25 +30,26 @@
 {% endschema %}
 
 <div class="page-width">
-  <div class="featured-products-grid">
+  {% if section.settings.title != blank %}
+    <h2 class="section-title">{{ section.settings.title }}</h2>
+  {% endif %}
+  <ul class="grid product-grid grid--2-col-desktop grid--1-col-tablet-down">
     {% for i in (1..2) %}
       {%- assign product_key = 'product_' | append: i -%}
       {%- assign product = section.settings[product_key] -%}
       {% if product != blank %}
-        <div class="featured-product-card">
-          {% render 'card-product',
-            card_product: product,
-            media_aspect_ratio: section.settings.image_ratio,
-            show_secondary_image: section.settings.show_secondary_image,
-            show_vendor: section.settings.show_vendor,
-            show_rating: section.settings.show_rating,
-            show_quick_add: section.settings.enable_quick_add,
-            section_id: section.id
+        <li class="grid__item">
+          {% render 'product-card-grid',
+            product_card_product: product,
+            media_size: "square",
+            show_secondary_image: true,
+            add_image_padding: false,
+            show_vendor: true
           %}
-        </div>
+        </li>
       {% endif %}
     {% endfor %}
-  </div>
+  </ul>
 </div>
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}

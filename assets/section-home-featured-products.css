@@ -16,3 +16,24 @@
     gap: 2rem;
   }
 }
+
+.section-title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.product-grid {
+  row-gap: 3rem;
+  column-gap: 3rem;
+}
+
+.product-grid .grid__item {
+  padding: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .product-grid {
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
