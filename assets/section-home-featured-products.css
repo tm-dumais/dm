@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .featured-product-card {
@@ -11,5 +13,6 @@
 @media screen and (max-width: 749px) {
   .featured-products-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
