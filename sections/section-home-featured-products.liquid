@@ -2,7 +2,10 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-home-featured-products.css' | asset_url | stylesheet_tag }}
 
-<div class="section-home-featured-products section-{{ section.id }}-padding">
+<div class="section-home-featured-products
+            {% if section.settings.padding_top_enabled %}section-home-featured-products--padding-top{% endif %}
+            {% if section.settings.padding_bottom_enabled %}section-home-featured-products--padding-bottom{% endif %}
+            {% if section.settings.padding_horizontal_enabled %}section-home-featured-products--padding-horizontal{% endif %}">
   <ul id="product-grid" 
       data-id="{{ section.id }}"
       class="
@@ -90,24 +93,22 @@
       "label": "Enable quick add"
     },
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Padding top",
-      "default": 36
+      "type": "checkbox",
+      "id": "padding_top_enabled",
+      "label": "Enable top padding",
+      "default": false
     },
     {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Padding bottom",
-      "default": 36
+      "type": "checkbox",
+      "id": "padding_bottom_enabled",
+      "label": "Enable bottom padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "padding_horizontal_enabled",
+      "label": "Enable horizontal padding",
+      "default": false
     }
   ],
   "presets": [
@@ -117,17 +118,3 @@
   ]
 }
 {% endschema %}
-
-{% style %}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{% endstyle %}

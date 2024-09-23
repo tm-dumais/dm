@@ -131,3 +131,31 @@
     padding-right: 2rem;
   }
 }
+
+.section-home-featured-products--padding-top {
+  padding-top: 6rem;
+}
+
+.section-home-featured-products--padding-bottom {
+  padding-bottom: 6rem;
+}
+
+.section-home-featured-products--padding-horizontal {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+@media screen and (max-width: 749px) {
+  .section-home-featured-products--padding-top {
+    padding-top: 2rem;
+  }
+
+  .section-home-featured-products--padding-bottom {
+    padding-bottom: 2rem;
+  }
+
+  .section-home-featured-products--padding-horizontal {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
