@@ -87,21 +87,27 @@
     }
   }
 
-  /* Add or update these styles to ensure the cart does not overflow */
   .cart-container {
+    display: inline-block;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: visible;
+    box-sizing: border-box;
+    min-width: 80px; /* Adjust this value as needed */
+  }
+
+  .header__icon--cart {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    box-sizing: border-box;
+    justify-content: flex-end;
+    width: auto;
+    padding-right: 10px;
   }
 
   .header__icons {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 </style>
 
