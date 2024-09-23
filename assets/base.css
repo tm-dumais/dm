@@ -1440,6 +1440,7 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
+  text-transform: uppercase; /* Added this line */
 }
 
 .button:before,
@@ -1529,10 +1530,12 @@ button.shopify-payment-button__button--unbranded {
   padding: 1rem 1.5rem;
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+  text-transform: uppercase; /* Added this line */
 }
 
 .button--small {
   padding: 1.2rem 2.6rem;
+  text-transform: uppercase; /* Added this line */
 }
 
 /* Button - other */
@@ -1602,6 +1605,7 @@ button.shopify-payment-button__button--unbranded {
   padding-left: 0;
   min-height: 4.4rem;
   text-decoration: none; /* Add this line to remove the underline */
+  text-transform: uppercase; /* Added this line */
 }
 
 details[open] > .share-button__fallback {
@@ -3187,6 +3191,7 @@ details-disclosure > details {
 .globo-form-id-104568 .globo-form-app .footer button.submit, .globo-form-id-104568 .globo-form-app .footer button.checkout, .globo-form-id-104568 .globo-form-app .footer button.action.loading .spinner{
   font-family: pitch, monospace !important;
   border-radius: 4px !important;
+  text-transform: uppercase; /* Added this line */
 }
 
 .globo-form-id-104568 .globo-form-app .footer button.submit, .globo-form-id-104568 .globo-form-app .footer button.checkout, .globo-form-id-104568 .globo-form-app .footer button.action.loading .spinner{
