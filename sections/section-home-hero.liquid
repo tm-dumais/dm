@@ -1,6 +1,6 @@
 {{ 'section-home-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="home-hero" style="background-color: #F2F2F2;">
+<div class="home-hero">
   <div class="home-hero__media-container">
     {%- if section.settings.video_url != blank -%}
       <video class="home-hero__video" autoplay loop muted playsinline>
