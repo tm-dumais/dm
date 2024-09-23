@@ -83,7 +83,10 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false
+        "enable_quick_add": false,
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": false
       }
     },
     "home_section_split_6nUKbq": {
