@@ -1942,6 +1942,7 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
+  text-transform: uppercase; /* Added this line */
 }
 
 .field__input:focus ~ .field__label,
