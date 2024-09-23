@@ -171,6 +171,19 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "section_home_text_banner_EaGiqj": {
+      "type": "section-home-text-banner",
+      "settings": {
+        "eyebrow_text": "EYEBROW",
+        "heading": "<p>Join us this Saturday from 10am - 2pm  for up to 75% off seconds and samples.</p>",
+        "heading_size": "h1",
+        "button_label": "Button label",
+        "button_link": "",
+        "background_color": "color-3",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true
+      }
     }
   },
   "order": [
@@ -182,6 +195,7 @@
     "section_home_image_RjaNNb",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537",
-    "1678358495ad87d821"
+    "1678358495ad87d821",
+    "section_home_text_banner_EaGiqj"
   ]
 }
