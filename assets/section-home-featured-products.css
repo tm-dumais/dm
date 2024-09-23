@@ -123,6 +123,7 @@
 .section-home-featured-products {
   padding-left: 6rem;
   padding-right: 6rem;
+  background-color: #F2F2F2;
 }
 
 @media screen and (max-width: 749px) {

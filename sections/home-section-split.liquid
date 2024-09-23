@@ -2,8 +2,10 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'section-home-split.css' | asset_url | stylesheet_tag }}
 
-<div class="section-home-split"
-     style="background-color: {{ section.settings.background_color | default: '#F2F2F2' }};">
+<div class="home-section-split background-{{ section.settings.background_color | default: 'standard' }}
+            {% if section.settings.padding_top_enabled %}home-section-split--padding-top{% endif %}
+            {% if section.settings.padding_bottom_enabled %}home-section-split--padding-bottom{% endif %}
+            {% if section.settings.padding_horizontal_enabled %}home-section-split--padding-horizontal{% endif %}">
   <div class="home-section-split__grid">
     <div class="home-section-split__media-item{% if section.settings.image_position == 'right' %} home-section-split__media-item--right{% endif %}">
       <div class="home-section-split__media media"
@@ -154,8 +156,8 @@
       "id": "background_color",
       "options": [
         {
-          "value": "none",
-          "label": "No background"
+          "value": "standard",
+          "label": "Standard background"
         },
         {
           "value": "color-1",
@@ -170,7 +172,7 @@
           "label": "Color 3"
         }
       ],
-      "default": "#F2F2F2",
+      "default": "standard",
       "label": "Background color"
     },
     {
