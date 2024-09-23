@@ -1,1 +1,135 @@
- 
+.home-section-text-banner__grid {
+  display: flex;
+  align-items: stretch;
+}
+
+.home-section-text-banner__text-item {
+  display: flex;
+  width: 100%;
+}
+
+.home-section-text-banner__text-item--vertical-top {
+  align-items: flex-start;
+}
+
+.home-section-text-banner__text-item--vertical-center {
+  align-items: center;
+}
+
+.home-section-text-banner__content {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-section-text-banner__text-item--horizontal-left .home-section-text-banner__content {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.home-section-text-banner__text-item--horizontal-center .home-section-text-banner__content {
+  align-items: center;
+  text-align: center;
+}
+
+.home-section-text-banner__eyebrow {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: calc(1 + 0.3 / var(--font-body-scale));
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.home-section-text-banner__heading {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.home-section-text-banner__heading.h0 {
+  font-size: calc(var(--font-heading-scale) * 4rem);
+}
+
+.home-section-text-banner__heading.h1 {
+  font-size: calc(var(--font-heading-scale) * 3rem);
+}
+
+.home-section-text-banner__heading.h2 {
+  font-size: calc(var(--font-heading-scale) * 2rem);
+}
+
+.background-none {
+  background-color: transparent;
+}
+
+.background-color-1 {
+  background-color: #EBE2D9;
+}
+
+.background-color-2 {
+  background-color: #B0977B;
+}
+
+.background-color-3 {
+  background-color: #95794A;
+}
+
+@media screen and (max-width: 749px) {
+  .home-section-text-banner__grid {
+    flex-direction: column;
+  }
+
+  .home-section-text-banner__content {
+    padding: 3rem 1.5rem;
+  }
+
+  .home-section-text-banner__heading.h0 {
+    font-size: calc(var(--font-heading-scale) * 3rem);
+  }
+
+  .home-section-text-banner__heading.h1 {
+    font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+
+  .home-section-text-banner__heading.h2 {
+    font-size: calc(var(--font-heading-scale) * 1.75rem);
+  }
+
+  .home-section-text-banner--padding-horizontal {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Add this style for the button */
+.home-section-text-banner .button {
+  background-color: transparent;
+}
+
+.home-section-text-banner {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-section-text-banner--padding-top {
+  padding-top: 6rem;
+}
+
+.home-section-text-banner--padding-bottom {
+  padding-bottom: 6rem;
+}
+
+.home-section-text-banner--padding-horizontal {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+/* Add this rule to set a minimum width for button--secondary */
+.button--secondary {
+    min-width: 250px;
+}

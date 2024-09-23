@@ -7,27 +7,6 @@
             {% if section.settings.padding_bottom_enabled %}home-section-text-banner--padding-bottom{% endif %}
             {% if section.settings.padding_horizontal_enabled %}home-section-text-banner--padding-horizontal{% endif %}">
   <div class="home-section-text-banner__grid">
-    <div class="home-section-text-banner__media-item{% if section.settings.image_position == 'right' %} home-section-text-banner__media-item--right{% endif %}">
-      <div class="home-section-text-banner__media media"
-        {% if section.settings.image != blank %}
-          style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
-        {% endif %}
-      >
-        {%- if section.settings.image != blank -%}
-          {%- assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio -%}
-          {{ section.settings.image | image_url: width: 1500 | image_tag:
-            loading: 'lazy',
-            width: section.settings.image.width,
-            height: image_height,
-            sizes: "100vw",
-            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-            class: "home-section-text-banner__media-image"
-          }}
-        {%- else -%}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
-      </div>
-    </div>
     <div class="home-section-text-banner__text-item home-section-text-banner__text-item--vertical-{{ section.settings.vertical_alignment }} home-section-text-banner__text-item--horizontal-{{ section.settings.horizontal_alignment }}">
       <div class="home-section-text-banner__content content-container">
         {%- if section.settings.eyebrow_text != blank -%}
@@ -56,27 +35,6 @@
   "name": "Home Text Banner Section",
   "class": "section",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    },
-    {
-      "type": "select",
-      "id": "image_position",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "left",
-      "label": "Image position"
-    },
     {
       "type": "select",
       "id": "vertical_alignment",
