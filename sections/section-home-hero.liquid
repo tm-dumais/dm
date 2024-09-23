@@ -1,6 +1,7 @@
 {{ 'section-home-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="home-hero">
+<div class="section-home-hero"
+     style="background-color: {{ section.settings.background_color | default: '#F2F2F2' }};">
   <div class="home-hero__media-container">
     {%- if section.settings.video_url != blank -%}
       <video class="home-hero__video" autoplay loop muted playsinline>
@@ -52,6 +53,12 @@
       "id": "video_url",
       "label": "Background Video URL",
       "info": "Provide a direct link to an MP4 video file"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#F2F2F2"
     }
   ],
   "blocks": [

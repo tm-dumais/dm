@@ -2399,6 +2399,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   align-items: center;
   width: 100%;
   max-width: 100%;
+  background-color: #F2F2F2;
 }
 
 @media screen and (min-width: 990px) {
