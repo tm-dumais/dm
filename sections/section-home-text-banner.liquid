@@ -5,7 +5,7 @@
 <div class="home-section-text-banner background-{{ section.settings.background_color }}
             {% if section.settings.padding_top_enabled %}home-section-text-banner--padding-top{% endif %}
             {% if section.settings.padding_bottom_enabled %}home-section-text-banner--padding-bottom{% endif %}">
-  <div class="home-section-text-banner__content content-container" style="max-width: 600px; text-align: center;">
+  <div class="home-section-text-banner__content content-container">
     {%- if section.settings.eyebrow_text != blank -%}
       <p class="home-section-text-banner__eyebrow">{{ section.settings.eyebrow_text | upcase }}</p>
     {%- endif -%}
