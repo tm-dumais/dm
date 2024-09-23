@@ -159,3 +159,7 @@
     padding-right: 2rem;
   }
 }
+
+.section-home-featured-products .card__information {
+  padding-bottom: 0;
+}
