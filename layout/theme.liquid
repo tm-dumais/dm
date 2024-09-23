@@ -222,6 +222,12 @@
           font-size: 1.6rem;
         }
       }
+
+      /* Ensure all button text is uppercase and have a minimum width */
+      button, .button {
+        text-transform: uppercase;
+        min-width: 250px;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
