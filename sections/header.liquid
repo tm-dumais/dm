@@ -86,6 +86,15 @@
       padding-top: 0.5rem;
     }
   }
+
+  /* Add or update these styles to ensure the cart does not overflow */
+  .cart-container {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 </style>
 
 {%- style -%}
@@ -618,13 +627,15 @@
 
     <div class="header__icons">
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
-        <span class="header__cart-item">
-          CART
-          {%- if cart.item_count > 0 -%}
-            ({{ cart.item_count }})
-          {%- endif -%}
-        </span>
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        <div class="cart-container">
+          <span class="header__cart-item">
+            CART
+            {%- if cart.item_count > 0 -%}
+              ({{ cart.item_count }})
+            {%- endif -%}
+          </span>
+          <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        </div>
       </a>
     </div>
   </header>

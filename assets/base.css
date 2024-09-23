@@ -3275,3 +3275,12 @@ text-align: left !important;
 .otCookiesNotification #cookies-message-context {
   align-items: start !important;
 }
+
+/* Add or update these styles to ensure the cart does not overflow */
+.cart-container {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+}
