@@ -3278,9 +3278,11 @@ text-align: left !important;
 
 /* Add or update these styles to ensure the cart does not overflow */
 .cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    max-width: 100%;
     box-sizing: border-box;
 }
