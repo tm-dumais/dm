@@ -197,3 +197,8 @@
   padding-left: 6rem; /* Match home-section-split */
   padding-right: 6rem; /* Match home-section-split */
 }
+
+/* Add this rule to set a minimum width for button--secondary */
+.button--secondary {
+    min-width: 250px;
+}

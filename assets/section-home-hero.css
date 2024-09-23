@@ -62,3 +62,8 @@
     max-width: 100%;
   }
 }
+
+/* Add this rule to set a minimum width for button--secondary */
+.button--secondary {
+    min-width: 250px;
+}
