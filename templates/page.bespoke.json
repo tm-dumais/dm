@@ -23,6 +23,7 @@
         "column_W8rnwH": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
             "caption_headline": "Caption Headline",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
@@ -30,6 +31,7 @@
         "column_xKCjhz": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
             "caption_headline": "Caption Headline",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
@@ -37,6 +39,7 @@
         "column_BTbtkR": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
             "caption_headline": "Caption Headline",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
@@ -55,7 +58,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "Button label",
         "button_link": "",
         "color_scheme": "background-1",
