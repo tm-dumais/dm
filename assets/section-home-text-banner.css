@@ -6,6 +6,7 @@
 .home-section-text-banner__text-item {
   display: flex;
   width: 100%;
+  justify-content: center; /* Center align the content horizontally */
 }
 
 .home-section-text-banner__text-item--vertical-top {
@@ -21,16 +22,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.home-section-text-banner__text-item--horizontal-left .home-section-text-banner__content {
-  align-items: flex-start;
-  text-align: left;
-}
-
-.home-section-text-banner__text-item--horizontal-center .home-section-text-banner__content {
-  align-items: center;
-  text-align: center;
+  align-items: center; /* Center align the content horizontally */
+  text-align: center; /* Center align the text */
 }
 
 .home-section-text-banner__eyebrow {
