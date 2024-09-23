@@ -202,23 +202,3 @@
 .button--secondary {
     min-width: 250px;
 }
-
-.home-section-text-banner {
-  text-align: center;
-}
-
-.home-section-text-banner--padding-top {
-  padding-top: 4rem; /* Double the padding of home-section-split */
-}
-
-.home-section-text-banner--padding-bottom {
-  padding-bottom: 4rem; /* Double the padding of home-section-split */
-}
-
-.home-section-text-banner__eyebrow {
-  /* Add any specific styles for the eyebrow text */
-}
-
-.home-section-text-banner__heading {
-  /* Add any specific styles for the heading */
-}
