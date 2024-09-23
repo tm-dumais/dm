@@ -110,12 +110,12 @@
     "section_home_image_RjaNNb": {
       "type": "section-home-image",
       "settings": {
-        "image": "shopify://shop_images/q69mDDPT.jpg",
+        "image": "shopify://shop_images/banner-pli.jpg",
         "caption": "",
         "background_color": "none",
-        "padding_top_enabled": false,
-        "padding_bottom_enabled": false,
-        "padding_horizontal_enabled": false
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": true
       }
     },
     "6a149845-4a58-45e1-a2b9-fe9d41161640": {
