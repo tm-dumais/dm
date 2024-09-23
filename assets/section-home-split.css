@@ -160,3 +160,38 @@
   padding-left: 6rem;
   padding-right: 6rem;
 }
+
+.home-section-image {
+  /* Ensure the section takes full width */
+  width: 100%;
+}
+
+.home-section-image__container {
+  /* Ensure the container takes full width */
+  width: 100%;
+}
+
+.home-section-image__media {
+  /* Ensure the media container takes full width */
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-section-image__media-image {
+  /* Ensure the image takes full width and maintains aspect ratio */
+  width: 100%;
+  height: auto;
+}
+
+.home-section-image--padding-top {
+  padding-top: 20px; /* Adjust as needed */
+}
+
+.home-section-image--padding-bottom {
+  padding-bottom: 20px; /* Adjust as needed */
+}
+
+.home-section-image--padding-horizontal {
+  padding-left: 20px; /* Adjust as needed */
+  padding-right: 20px; /* Adjust as needed */
+}

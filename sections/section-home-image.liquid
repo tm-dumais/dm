@@ -16,8 +16,8 @@
         {%- assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio -%}
         {{ section.settings.image | image_url: width: 1500 | image_tag:
           loading: 'lazy',
-          width: section.settings.image.width,
-          height: image_height,
+          width: "100%",
+          height: "auto",
           sizes: "100vw",
           widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
           class: "home-section-image__media-image"
