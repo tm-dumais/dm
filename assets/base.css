@@ -1600,6 +1600,7 @@ button.shopify-payment-button__button--unbranded {
   margin-left: 0;
   padding-left: 0;
   min-height: 4.4rem;
+  text-decoration: none; /* Add this line to remove the underline */
 }
 
 details[open] > .share-button__fallback {
@@ -3292,4 +3293,5 @@ text-align: left !important;
     justify-content: flex-end;
     width: auto;
     padding-right: 10px;
+    text-decoration: none; /* Add this line to remove the underline */
 }
