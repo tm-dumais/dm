@@ -184,14 +184,14 @@
 }
 
 .home-section-image--padding-top {
-  padding-top: 20px; /* Adjust as needed */
+  padding-top: 6rem; /* Match home-section-split */
 }
 
 .home-section-image--padding-bottom {
-  padding-bottom: 20px; /* Adjust as needed */
+  padding-bottom: 6rem; /* Match home-section-split */
 }
 
 .home-section-image--padding-horizontal {
-  padding-left: 20px; /* Adjust as needed */
-  padding-right: 20px; /* Adjust as needed */
+  padding-left: 6rem; /* Match home-section-split */
+  padding-right: 6rem; /* Match home-section-split */
 }
