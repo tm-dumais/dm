@@ -3293,5 +3293,11 @@ text-align: left !important;
     justify-content: flex-end;
     width: auto;
     padding-right: 10px;
-    text-decoration: none; /* Add this line to remove the underline */
+    text-decoration: none;
+}
+
+.header__icon--cart:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.1rem;
 }
