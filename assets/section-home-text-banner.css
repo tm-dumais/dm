@@ -101,6 +101,7 @@
 /* Add this style for the button */
 .home-section-text-banner .button {
   background-color: transparent;
+  text-transform: uppercase; /* Ensure button text is uppercase */
 }
 
 .home-section-text-banner {
