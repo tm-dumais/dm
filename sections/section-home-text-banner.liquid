@@ -5,7 +5,7 @@
 <div class="home-section-text-banner background-{{ section.settings.background_color }}
             {% if section.settings.padding_top_enabled %}home-section-text-banner--padding-top{% endif %}
             {% if section.settings.padding_bottom_enabled %}home-section-text-banner--padding-bottom{% endif %}">
-  <div class="home-section-text-banner__content content-container" style="max-width: 600px;">
+  <div class="home-section-text-banner__content content-container" style="max-width: 600px; text-align: center;">
     {%- if section.settings.eyebrow_text != blank -%}
       <p class="home-section-text-banner__eyebrow">{{ section.settings.eyebrow_text | upcase }}</p>
     {%- endif -%}
@@ -16,7 +16,7 @@
     {%- endif -%}
     {%- if section.settings.button_label != blank -%}
       <a href="{{ section.settings.button_link }}"
-        class="button button--primary"
+        class="button button--secondary"
         {% if section.settings.button_link == blank %}aria-disabled="true"{% endif %}
       >
         {{ section.settings.button_label | escape }}

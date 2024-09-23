@@ -149,11 +149,11 @@
 }
 
 .home-section-split--padding-top {
-  padding-top: 6rem;
+  padding-top: 6rem; /* Original value */
 }
 
 .home-section-split--padding-bottom {
-  padding-bottom: 6rem;
+  padding-bottom: 6rem; /* Original value */
 }
 
 .home-section-split--padding-horizontal {
@@ -201,4 +201,11 @@
 /* Add this rule to set a minimum width for button--secondary */
 .button--secondary {
     min-width: 250px;
+}
+
+/* Ensure the content is center-aligned */
+.home-section-text-banner__content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
