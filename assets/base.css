@@ -3304,8 +3304,9 @@ text-align: left !important;
     text-decoration-thickness: 0.1rem;
 }
 
-/* Ensure all button text is uppercase and have a minimum width */
-button, .button {
+/* Ensure all button text is uppercase and have a minimum width, except for newsletter-form__button */
+button:not(.newsletter-form__button), 
+.button:not(.newsletter-form__button) {
   text-transform: uppercase;
   min-width: 250px;
 }
