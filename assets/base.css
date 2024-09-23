@@ -1791,6 +1791,7 @@ details[open] > .share-button__fallback {
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
   border: 0;
+  text-transform: uppercase; /* Added this line */
 }
 
 .field:before,
@@ -3182,6 +3183,7 @@ details-disclosure > details {
   -webkit-box-shadow: 0 0 0 0 !important;
   border-radius: 4px !important;
   border: 1px solid #B5BBC2 !important;
+  text-transform: uppercase; /* Added this line */
 }
 
 .g-container .footer{
