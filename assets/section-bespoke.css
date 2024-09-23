@@ -12,3 +12,22 @@
     margin-right: auto;
   }
 }
+
+.custom-headline {
+  position: relative;
+  display: inline-block;
+  padding-right: 2rem; /* Adjust as needed */
+}
+
+.custom-headline::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem; /* Adjust as needed */
+  height: 1.5rem; /* Adjust as needed */
+  background-image: url('{{ "path/to/arrow-image.png" | asset_url }}'); /* Update with the correct path */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
