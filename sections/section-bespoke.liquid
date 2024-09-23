@@ -44,31 +44,39 @@
       <div class="bespoke-row center">
         {%- assign block = section.blocks[0] -%}
         <div class="bespoke-column">
-          {{ block.settings.image | image_tag: class: 'bespoke-image' }}
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url | image_tag: class: 'bespoke-image' }}
+          {%- endif -%}
           <h3 class="bespoke-caption">{{ block.settings.caption_headline | escape }}</h3>
-          <div class="bespoke-text">{{ block.settings.text | escape }}</div>
+          <div class="bespoke-text">{{ block.settings.text | raw }}</div>
         </div>
       </div>
       <div class="bespoke-row">
         {%- assign block = section.blocks[1] -%}
         <div class="bespoke-column">
-          {{ block.settings.image | image_tag: class: 'bespoke-image' }}
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url | image_tag: class: 'bespoke-image' }}
+          {%- endif -%}
           <h3 class="bespoke-caption">{{ block.settings.caption_headline | escape }}</h3>
-          <div class="bespoke-text">{{ block.settings.text | escape }}</div>
+          <div class="bespoke-text">{{ block.settings.text | raw }}</div>
         </div>
         {%- assign block = section.blocks[2] -%}
         <div class="bespoke-column">
-          {{ block.settings.image | image_tag: class: 'bespoke-image' }}
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url | image_tag: class: 'bespoke-image' }}
+          {%- endif -%}
           <h3 class="bespoke-caption">{{ block.settings.caption_headline | escape }}</h3>
-          <div class="bespoke-text">{{ block.settings.text | escape }}</div>
+          <div class="bespoke-text">{{ block.settings.text | raw }}</div>
         </div>
       </div>
       <div class="bespoke-row center">
         {%- assign block = section.blocks[3] -%}
         <div class="bespoke-column">
-          {{ block.settings.image | image_tag: class: 'bespoke-image' }}
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url | image_tag: class: 'bespoke-image' }}
+          {%- endif -%}
           <h3 class="bespoke-caption">{{ block.settings.caption_headline | escape }}</h3>
-          <div class="bespoke-text">{{ block.settings.text | escape }}</div>
+          <div class="bespoke-text">{{ block.settings.text | raw }}</div>
         </div>
       </div>
     </div>
