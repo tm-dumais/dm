@@ -1,0 +1,123 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'section-home-split.css' | asset_url | stylesheet_tag }}
+
+<div class="home-section-text-banner background-{{ section.settings.background_color }}
+            {% if section.settings.padding_top_enabled %}home-section-text-banner--padding-top{% endif %}
+            {% if section.settings.padding_bottom_enabled %}home-section-text-banner--padding-bottom{% endif %}">
+  <div class="home-section-text-banner__content content-container">
+    {%- if section.settings.eyebrow_text != blank -%}
+      <p class="home-section-text-banner__eyebrow">{{ section.settings.eyebrow_text | upcase }}</p>
+    {%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      <h2 class="home-section-text-banner__heading {{ section.settings.heading_size }} rte" style="font-style: italic;">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+    {%- if section.settings.button_label != blank -%}
+      <a href="{{ section.settings.button_link }}"
+        class="button button--secondary"
+        {% if section.settings.button_link == blank %}aria-disabled="true"{% endif %}
+      >
+        {{ section.settings.button_label | escape }}
+      </a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Home Text Banner",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow text"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "default": "<p>Text banner heading</p>",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "T2"
+        },
+        {
+          "value": "h1",
+          "label": "T1"
+        },
+        {
+          "value": "h0",
+          "label": "T0"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        {
+          "value": "none",
+          "label": "No background"
+        },
+        {
+          "value": "color-1",
+          "label": "Color 1"
+        },
+        {
+          "value": "color-2",
+          "label": "Color 2"
+        },
+        {
+          "value": "color-3",
+          "label": "Color 3"
+        }
+      ],
+      "default": "none",
+      "label": "Background color"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "padding_top_enabled",
+      "label": "Enable top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "padding_bottom_enabled",
+      "label": "Enable bottom padding",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Text Banner",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}
