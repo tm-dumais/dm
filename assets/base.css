@@ -1602,7 +1602,6 @@ button.shopify-payment-button__button--unbranded {
   min-height: 4.4rem;
   text-decoration: none; /* Add this line to remove the underline */
   text-transform: uppercase; /* Add this line to make button text uppercase */
-  min-width: 250px; /* Add this line to ensure a minimum width of 250px */
 }
 
 details[open] > .share-button__fallback {
@@ -3304,9 +3303,7 @@ text-align: left !important;
     text-decoration-thickness: 0.1rem;
 }
 
-/* Ensure all button text is uppercase and have a minimum width, except for newsletter-form__button */
-button:not(.newsletter-form__button), 
-.button:not(.newsletter-form__button) {
+/* Ensure all button text is uppercase */
+button, .button {
   text-transform: uppercase;
-  min-width: 250px;
 }
