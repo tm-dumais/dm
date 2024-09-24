@@ -9,86 +9,6 @@
 */
 {
   "sections": {
-    "bespoke_intro_JrF3g3": {
-      "type": "bespoke-intro",
-      "blocks": {
-        "heading_dwkctq": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image and text",
-            "heading_size": "h1"
-          }
-        },
-        "text_xY7B47": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dwkctq",
-        "text_xY7B47"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_and_text_a8HMBD": {
-      "type": "image-and-text",
-      "blocks": {
-        "heading_BNG7jp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_HC7Ajx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_yErVa4": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_BNG7jp",
-        "text_HC7Ajx",
-        "button_yErVa4"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_half_text_KLfg4b": {
       "type": "image-half-text",
       "blocks": {
@@ -102,6 +22,9 @@
       },
       "block_order": [
         "text_GmNBVg"
+      ],
+      "custom_css": [
+        ".image-half-text__text p{font-size:30px; line-height:115%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/1_e147330c-fbfa-4056-9e53-caa3a048d348.jpg",
@@ -217,8 +140,6 @@
     }
   },
   "order": [
-    "bespoke_intro_JrF3g3",
-    "image_and_text_a8HMBD",
     "image_half_text_KLfg4b",
     "section_bespoke_1_qnAAb6",
     "section_bespoke_2_8NVNqN",
