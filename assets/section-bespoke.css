@@ -38,10 +38,27 @@
   margin: 0;
 }
 
+.stof-card__image-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.stof-card__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.stof-card__info {
+  margin-top: 1rem;
+}
+
 .caption-headline {
   font-size: 16px;
   font-family: 'Pitch', sans-serif;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .rte.new-caledonia {
@@ -53,6 +70,7 @@
   .stof-list {
     grid-template-columns: 1fr;
     width: 90vw;
+    gap: 4rem;
   }
 
   .stof-list__item:first-child,

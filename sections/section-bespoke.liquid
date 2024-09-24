@@ -19,10 +19,12 @@
               <div class="stof-card__image-wrapper">
                 {{
                   block.settings.image
-                  | image_url: width: 1420
+                  | image_url: width: 800
                   | image_tag:
                     loading: 'lazy',
-                    class: 'stof-card__image'
+                    class: 'stof-card__image',
+                    widths: '400, 600, 800',
+                    sizes: '(min-width: 750px) 50vw, 100vw'
                 }}
               </div>
             {%- endif -%}
