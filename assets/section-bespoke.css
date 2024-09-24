@@ -112,7 +112,8 @@
 }
 
 .stof-container {
-  max-width: 1200px;
+  width: 60vw;
+  max-width: 950px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -190,6 +191,11 @@
 }
 
 @media screen and (max-width: 749px) {
+  .stof-container {
+    width: 100%; /* Full width on mobile */
+    padding: 0 15px; /* Adjust padding for mobile if needed */
+  }
+
   .stof-item--half,
   .stof-item--full {
     width: 100%;
