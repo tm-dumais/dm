@@ -3,19 +3,19 @@
 <div class="stof-container section-bespoke-2">
   <div class="stof-content">
     <div class="stof-item stof-item--half">
-      {%- for i in (1..2) -%}
+      {% for i in (1..2) %}
         <div class="stof-card">
-          {%- if section.settings.image_{{ i }} != blank -%}
-            {{ section.settings.image_{{ i }} | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
+          {%- if section.settings['image_' | append: i] != blank -%}
+            {{ section.settings['image_' | append: i] | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
           {%- endif -%}
-          {%- if section.settings.caption_headline_{{ i }} != blank -%}
-            <h3 class="caption-headline">{{ section.settings.caption_headline_{{ i }} | escape }}</h3>
+          {%- if section.settings['caption_headline_' | append: i] != blank -%}
+            <h3 class="caption-headline">{{ section.settings['caption_headline_' | append: i] | escape }}</h3>
           {%- endif -%}
-          {%- if section.settings.text_{{ i }} != blank -%}
-            <div class="rte new-caledonia">{{ section.settings.text_{{ i }} }}</div>
+          {%- if section.settings['text_' | append: i] != blank -%}
+            <div class="rte new-caledonia">{{ section.settings['text_' | append: i] }}</div>
           {%- endif -%}
         </div>
-      {%- endfor -%}
+      {% endfor %}
     </div>
   </div>
   <div class="stof-arrow"></div>
