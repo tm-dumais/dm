@@ -1,0 +1,81 @@
+{{ 'section-bespoke.css' | asset_url | stylesheet_tag }}
+
+<div class="stof-container section-bespoke-1">
+  <div class="stof-headline">
+    {%- unless section.settings.title == blank -%}
+      <h2 class="title {{ section.settings.heading_size }} custom-headline">
+        {{ section.settings.title | escape }}
+      </h2>
+    {%- endunless -%}
+  </div>
+
+  <div class="stof-content">
+    <div class="stof-item stof-item--full" {{ block.shopify_attributes }}>
+      <div class="stof-card">
+        {%- if section.settings.image != blank -%}
+          {{ section.settings.image | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
+        {%- endif -%}
+        {%- if section.settings.caption_headline != blank -%}
+          <h3 class="caption-headline">{{ section.settings.caption_headline | escape }}</h3>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <div class="rte new-caledonia">{{ section.settings.text }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  <div class="stof-arrow"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Bespoke 1",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "caption_headline",
+      "label": "Caption Headline"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bespoke 1"
+    }
+  ]
+}
+{% endschema %}

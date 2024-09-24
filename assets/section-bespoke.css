@@ -122,3 +122,95 @@
   /* font-size: 1rem; */ /* Ensure this line is removed */
   line-height: 1.15; /* Set line height to 115% */
 }
+
+.stof-container {
+  width: 60vw;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stof-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stof-item {
+  display: grid;
+}
+
+.stof-item--full {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.stof-item--full .stof-card {
+  width: 50%;
+}
+
+.stof-item--half {
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem; /* As requested, 6rem gap between columns */
+}
+
+.stof-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.stof-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.caption-headline {
+  font-family: 'Pitch', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.rte.new-caledonia {
+  font-family: 'New Caledonia', serif;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.stof-arrow {
+  width: 50px;
+  height: 90px;
+  background-image: url('{{ "arrow-down.png" | asset_url }}');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-self: center;
+  margin: 40px auto;
+}
+
+/* Specific styles for each section */
+.section-bespoke-1,
+.section-bespoke-2,
+.section-bespoke-3 {
+  margin-bottom: 80px; /* Adjust as needed for spacing between sections */
+}
+
+@media screen and (max-width: 749px) {
+  .stof-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .stof-item--full .stof-card,
+  .stof-item--half {
+    grid-template-columns: 1fr;
+  }
+
+  .stof-item--full .stof-card {
+    width: 100%;
+  }
+
+  .stof-item--half {
+    gap: 3rem; /* Reduced gap for mobile */
+  }
+}
