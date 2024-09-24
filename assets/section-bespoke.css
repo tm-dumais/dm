@@ -85,3 +85,15 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+}
+
+.caption-headline {
+  font-family: 'Pitch', sans-serif; /* Set font to Pitch */
+  text-transform: uppercase; /* Set text to uppercase */
+  font-size: 1rem; /* Adjust to match the button font size */
+}
+
+.rte.new-caledonia {
+  font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
+  font-size: 1rem; /* Adjust text size as needed */
+}
