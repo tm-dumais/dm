@@ -60,9 +60,9 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background-image: url('{{ "arrow-right.png" | asset_url }}');
+  width: 1.5rem; /* Adjust as needed */
+  height: 1.5rem; /* Adjust as needed */
+  background-image: url('{{ "path/to/arrow-image.png" | asset_url }}'); /* Update with the correct path */
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -111,87 +111,14 @@
   }
 }
 
-.stof-container {
-  width: 60vw;
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.stof-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 80px; /* Adjust this value to increase/decrease space between rows */
-}
-
-.stof-item {
-  display: grid;
-}
-
-.stof-item--full {
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
-.stof-item--full .stof-card {
-  width: 50%;
-}
-
-.stof-item--half {
-  grid-template-columns: 1fr 1fr;
-  gap: 40px; /* This adds space between the two columns */
-}
-
-.stof-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.stof-card__image {
-  width: 100%;
-  height: auto;
-}
-
 .caption-headline {
-  font-family: 'Pitch', sans-serif;
   font-size: 16px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  font-family: 'Pitch', sans-serif; /* Set font to Pitch */
+  text-transform: uppercase; /* Transform text to uppercase */
 }
 
 .rte.new-caledonia {
-  font-family: 'New Caledonia', serif;
-  line-height: 1.15;
-  margin: 0;
-}
-
-.stof-arrow {
-  width: 50px;
-  height: 90px;
-  background-image: url('{{ "arrow-down.png" | asset_url }}');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-self: center;
-}
-
-@media screen and (max-width: 749px) {
-  .stof-container {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .stof-content {
-    gap: 60px; /* Reduced gap for mobile */
-  }
-
-  .stof-item--full .stof-card,
-  .stof-item--half {
-    grid-template-columns: 1fr;
-  }
-
-  .stof-item--full .stof-card {
-    width: 100%;
-  }
+  font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
+  /* font-size: 1rem; */ /* Ensure this line is removed */
+  line-height: 1.15; /* Set line height to 115% */
 }
