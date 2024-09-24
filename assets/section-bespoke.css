@@ -137,7 +137,7 @@
 }
 
 .stof-item {
-  margin-bottom: 60px; /* Increased from 40px */
+  margin-bottom: 80px; /* Increased spacing between rows */
 }
 
 .stof-item--full {
@@ -160,7 +160,7 @@
 }
 
 .stof-card__image-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Maintain existing spacing between image and text */
 }
 
 .stof-card__image {
@@ -187,13 +187,17 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 40px 0; /* Increased from 20px */
+  margin: 60px 0; /* Increased spacing around arrows */
 }
 
 @media screen and (max-width: 749px) {
   .stof-container {
     width: 100%; /* Full width on mobile */
     padding: 0 15px; /* Adjust padding for mobile if needed */
+  }
+
+  .stof-item {
+    margin-bottom: 60px; /* Slightly reduced spacing for mobile */
   }
 
   .stof-item--half,
@@ -203,5 +207,9 @@
 
   .stof-item--full .stof-card {
     width: 100%;
+  }
+
+  .stof-arrow {
+    margin: 40px 0; /* Reduced spacing around arrows for mobile */
   }
 }
