@@ -346,6 +346,22 @@
   margin-top: 1rem; /* Add some space between the section and the arrow */
 }
 
+/* Ensure the ::before pseudo-element is applied correctly */
+.section-bespoke-2 .stof-card.second-column::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7.5rem; /* Move the arrow further up */
+  left: 55%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 90px;
+  background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-left.png?v=1593634124"); /* Original image URL */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 1rem; /* Add some space between the section and the arrow */
+}
+
 .section-bespoke-2::after {
   content: "";
   display: block;
