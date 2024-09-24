@@ -149,12 +149,12 @@
   font-style: italic; /* Set the headline in italic */
 }
 
-.stof-headline .title::after {
+.stof-headline::after {
   content: "";
   display: block;
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 0%;
+  left: 0%;
   transform: translateX(-50%);
   width: 50px;
   height: 90px;
