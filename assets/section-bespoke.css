@@ -286,6 +286,6 @@
 }
 
 .stof-container.section-bespoke-2 .stof-item--half .stof-card:nth-child(2) {
-  margin-top: 2rem; /* Adjust the value as needed */
-  padding-top: 2rem; /* Adjust the value as needed */
+  margin-top: 6rem; /* Increased by three times */
+  padding-top: 6rem; /* Increased by three times */
 }
