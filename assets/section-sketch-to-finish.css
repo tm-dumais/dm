@@ -71,6 +71,7 @@
 
 .stof-list h3 {
   line-height: calc(1 + 0.5 / max(1, var(--font-heading-scale)));
+  font-size: 16px; /* Set caption headline to 16px */
 }
 
 .stof-list h3,
@@ -80,13 +81,13 @@
 }
 
 .stof-card-spacing {
-  padding-top: 2.5rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  padding-top: 1.25rem; /* Decrease padding top by half */
+  margin-left: 1.25rem; /* Decrease margin left by half */
+  margin-right: 1.25rem; /* Decrease margin right by half */
 }
 
 .stof-card__info > :nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 0.5rem; /* Decrease margin top by half */
 }
 
 .stof-list__item.center .media--adapt,
@@ -153,31 +154,31 @@
 }
 
 .background-none .stof-card__image-wrapper + .stof-card__info {
-  padding-top: 2.5rem;
+  padding-top: 1.25rem; /* Decrease padding top by half */
 }
 
 .background-none .slider .stof-card__info {
-  padding-left: 0.5rem;
+  padding-left: 0.25rem; /* Decrease padding left by half */
 }
 
 .background-none
   .slider
   .stof-card__image-wrapper
   + .stof-card__info {
-  padding-left: 1.5rem;
+  padding-left: 0.75rem; /* Decrease padding left by half */
 }
 
 .background-none
   .stof-list:not(.slider)
   .center
   .stof-card__info {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.25rem; /* Decrease padding left by half */
+  padding-right: 1.25rem; /* Decrease padding right by half */
 }
 
 @media screen and (max-width: 749px) {
   .background-none .slider .stof-card__info {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem; /* Decrease padding bottom by half */
   }
 
   .stof.background-none .slider.slider--mobile {
@@ -187,8 +188,8 @@
 
 @media screen and (min-width: 750px) {
   .background-none .stof-card__image-wrapper {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 0.75rem; /* Decrease margin left by half */
+    margin-right: 0.75rem; /* Decrease margin right by half */
   }
 
   .background-none .stof-list .stof-card__info,
@@ -196,8 +197,8 @@
     .stof-list:not(.slider)
     .center
     .stof-card__info {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.75rem; /* Decrease padding left by half */
+    padding-right: 0.75rem; /* Decrease padding right by half */
   }
 }
 
