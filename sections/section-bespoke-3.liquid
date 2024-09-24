@@ -2,20 +2,32 @@
 
 <div class="stof-container section-bespoke-3">
   <div class="stof-content">
-    <div class="stof-item stof-item--full" {{ block.shopify_attributes }}>
+    <div class="stof-item stof-item--half">
       <div class="stof-card">
-        {%- if section.settings.image != blank -%}
-          {{ section.settings.image | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
+        {%- if section.settings.image_1 != blank -%}
+          {{ section.settings.image_1 | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
         {%- endif -%}
-        {%- if section.settings.caption_headline != blank -%}
-          <h3 class="caption-headline">{{ section.settings.caption_headline | escape }}</h3>
+        {%- if section.settings.caption_headline_1 != blank -%}
+          <h3 class="caption-headline">{{ section.settings.caption_headline_1 | escape }}</h3>
         {%- endif -%}
-        {%- if section.settings.text != blank -%}
-          <div class="rte new-caledonia">{{ section.settings.text }}</div>
+        {%- if section.settings.text_1 != blank -%}
+          <div class="rte new-caledonia">{{ section.settings.text_1 }}</div>
+        {%- endif -%}
+      </div>
+      <div class="stof-card second-column">
+        {%- if section.settings.image_2 != blank -%}
+          {{ section.settings.image_2 | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
+        {%- endif -%}
+        {%- if section.settings.caption_headline_2 != blank -%}
+          <h3 class="caption-headline">{{ section.settings.caption_headline_2 | escape }}</h3>
+        {%- endif -%}
+        {%- if section.settings.text_2 != blank -%}
+          <div class="rte new-caledonia">{{ section.settings.text_2 }}</div>
         {%- endif -%}
       </div>
     </div>
   </div>
+  <div class="stof-arrow"></div>
 </div>
 
 {% schema %}
@@ -24,18 +36,33 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "image",
-      "label": "Image"
+      "id": "image_1",
+      "label": "Image 1"
     },
     {
       "type": "text",
-      "id": "caption_headline",
-      "label": "Caption Headline"
+      "id": "caption_headline_1",
+      "label": "Caption Headline 1"
     },
     {
       "type": "richtext",
-      "id": "text",
-      "label": "Text"
+      "id": "text_1",
+      "label": "Text 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "text",
+      "id": "caption_headline_2",
+      "label": "Caption Headline 2"
+    },
+    {
+      "type": "richtext",
+      "id": "text_2",
+      "label": "Text 2"
     }
   ],
   "presets": [

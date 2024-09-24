@@ -123,7 +123,7 @@
 }
 
 .stof-container {
-    width: 60vw;
+    width: 70vw; /* Updated to 70vw */
     max-width: 950px;
     margin: 0 auto;
     padding: 0 20px;
@@ -439,4 +439,14 @@
     height: auto;
     margin-bottom: 1rem; /* Add some space between the image and the title */
     border-radius: 4px; /* Adjust border-radius to match base.css */
+}
+
+.section-semi-bespoke-1 .stof-container,
+.section-bespoke-1 .stof-container,
+.section-bespoke-2 .stof-container,
+.section-bespoke-3 .stof-container {
+    width: 70vw; /* Ensure the width is the same for all sections */
+    max-width: 950px; /* Ensure the max-width is the same for all sections */
+    margin: 0 auto;
+    padding: 0 20px; /* Ensure the padding is the same for all sections */
 }
