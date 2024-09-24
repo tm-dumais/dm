@@ -38,10 +38,10 @@
         class="stof-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
-        style="position: relative;" <!-- Set ul to position relative -->
+        style="position: relative;"
       >
         <!-- Headline inside the grid -->
-        <li class="stof-list__item grid__item custom-headline-container" style="position: absolute;"> <!-- Set li to position absolute -->
+        <li class="stof-list__item grid__item custom-headline-container" style="position: absolute;">
           {%- unless section.settings.title == blank -%}
             <h2 class="title {{ section.settings.heading_size }} custom-headline">
               {{ section.settings.title | escape }}
