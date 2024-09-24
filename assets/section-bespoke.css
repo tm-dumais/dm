@@ -529,4 +529,10 @@
     .shopify-section:last-child .section-bespoke-3 {
         margin-bottom: 0;
     }
+
+    .section-bespoke-2::after {
+        bottom: -10rem; /* Adjust the bottom position for mobile */
+        left: 50%; /* Center the arrow horizontally */
+        transform: translateX(-50%); /* Ensure perfect centering */
+    }
 }
