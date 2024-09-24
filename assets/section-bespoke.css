@@ -6,14 +6,10 @@
 
 @media screen and (min-width: 750px) {
   .stof-list {
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: 1fr 1fr; /* Define two equal columns */
     width: 60vw;
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
-    row-gap: 6rem; /* Add gap between rows */
-    column-gap: 6rem; /* Add gap between columns */
   }
 }
 
@@ -94,9 +90,7 @@
 .caption-headline {
   font-family: 'Pitch', sans-serif; /* Set font to Pitch */
   text-transform: uppercase; /* Set text to uppercase */
-  font-size: 16px; /* Set font size to 16px */
-  padding-bottom: 0.5rem; /* Adjust padding bottom */
-  margin-bottom: 0.5rem; /* Adjust margin bottom */
+  /* font-size: 1rem; */ /* Ensure this line is removed */
 }
 
 .rte.new-caledonia {
