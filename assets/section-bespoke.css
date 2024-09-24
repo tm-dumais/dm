@@ -325,7 +325,13 @@
   margin-top: 0; /* Reset the margin-top */
 }
 
+/* Remove the ::before pseudo-element from .section-bespoke-2 */
 .section-bespoke-2::before {
+  content: none;
+}
+
+/* Add the ::before pseudo-element to the second column within .section-bespoke-2 */
+.section-bespoke-2 .stof-card.second-column::before {
   content: "";
   display: block;
   position: absolute;
