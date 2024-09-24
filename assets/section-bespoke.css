@@ -284,3 +284,8 @@
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
 }
+
+.stof-container.section-bespoke-2 .stof-item--half .stof-card:nth-child(2) {
+  margin-top: 2rem; /* Adjust the value as needed */
+  padding-top: 2rem; /* Adjust the value as needed */
+}
