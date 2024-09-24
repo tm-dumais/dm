@@ -314,3 +314,19 @@
   margin: 0 auto;
   padding: 0 15px; /* Adjust as needed */
 }
+
+.background-none {
+  background-color: transparent;
+}
+
+.background-color-1 {
+  background-color: #f0f0f0; /* Replace with actual color */
+}
+
+.background-color-2 {
+  background-color: #e0e0e0; /* Replace with actual color */
+}
+
+.background-color-3 {
+  background-color: #d0d0d0; /* Replace with actual color */
+}
