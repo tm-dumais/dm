@@ -17,55 +17,89 @@
     }
   }
 
-  .custom-center-column {
-    width: 50%;
-    margin-left: 25%;
-  }
-
-  .custom-half-column {
-    width: 50%;
-  }
-
-  .caption-headline {
-    font-size: 16px;
-  }
-
   .stof-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stof-headline {
-    margin-bottom: 20px;
+    width: 60vw;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .stof-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px; /* Adjust this value to increase/decrease space between rows */
   }
 
   .stof-item {
-    flex-basis: 100%;
-    margin-bottom: 20px;
+    display: grid;
   }
 
   .stof-item--full {
-    flex-basis: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .stof-item--full .stof-card {
+    width: 50%;
   }
 
   .stof-item--half {
-    flex-basis: calc(50% - 10px);
+    grid-template-columns: 1fr 1fr;
+    gap: 40px; /* This adds space between the two columns */
+  }
+
+  .stof-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stof-card__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .caption-headline {
+    font-family: 'Pitch', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .rte.new-caledonia {
+    font-family: 'New Caledonia', serif;
+    line-height: 1.15;
+    margin: 0;
   }
 
   .stof-arrow {
-    flex-basis: 20px;
-    height: 20px;
-    background-image: url('path-to-your-arrow-image.png');
+    width: 50px;
+    height: 90px;
+    background-image: url('{{ "arrow-down.png" | asset_url }}');
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    justify-self: center;
+  }
+
+  @media screen and (max-width: 749px) {
+    .stof-container {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    .stof-content {
+      gap: 60px; /* Reduced gap for mobile */
+    }
+
+    .stof-item--full .stof-card,
+    .stof-item--half {
+      grid-template-columns: 1fr;
+    }
+
+    .stof-item--full .stof-card {
+      width: 100%;
+    }
   }
 {%- endstyle -%}
 
@@ -80,7 +114,6 @@
 <div class="stof color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width section-{{ section.id }}-padding isolate">
     <div class="stof-container">
-      <!-- Headline at the top -->
       <div class="stof-headline">
         {%- unless section.settings.title == blank -%}
           <h2 class="title {{ section.settings.heading_size }} custom-headline">
@@ -89,13 +122,29 @@
         {%- endunless -%}
       </div>
 
-      <!-- Content items -->
       <div class="stof-content">
         {%- for block in section.blocks -%}
           <div class="stof-item {% if forloop.index == 1 or forloop.last %}stof-item--full{% else %}stof-item--half{% endif %}" {{ block.shopify_attributes }}>
-            <div class="stof-card content-container">
+            <div class="stof-card">
               {%- if block.settings.image != blank -%}
-                <div class="stof-card__image-wrapper">
+                {{
+                  block.settings.image
+                  | image_url: width: 1420
+                  | image_tag:
+                    loading: 'lazy',
+                    class: 'stof-card__image'
+                }}
+              {%- endif -%}
+              {%- if block.settings.caption_headline != blank -%}
+                <h3 class="caption-headline">{{ block.settings.caption_headline | escape }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div class="rte new-caledonia">{{ block.settings.text }}</div>
+              {%- endif -%}
+            </div>
+            {% if forloop.index == 1 or forloop.index == 3 %}
+              <div class="stof-card">
+                {%- if block.settings.image != blank -%}
                   {{
                     block.settings.image
                     | image_url: width: 1420
@@ -103,9 +152,7 @@
                       loading: 'lazy',
                       class: 'stof-card__image'
                   }}
-                </div>
-              {%- endif -%}
-              <div class="stof-card__info">
+                {%- endif -%}
                 {%- if block.settings.caption_headline != blank -%}
                   <h3 class="caption-headline">{{ block.settings.caption_headline | escape }}</h3>
                 {%- endif -%}
@@ -113,7 +160,7 @@
                   <div class="rte new-caledonia">{{ block.settings.text }}</div>
                 {%- endif -%}
               </div>
-            </div>
+            {% endif %}
           </div>
           {%- if forloop.index == 1 or forloop.index == 3 -%}
             <div class="stof-arrow"></div>

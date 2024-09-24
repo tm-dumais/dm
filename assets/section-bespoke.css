@@ -118,32 +118,19 @@
   padding: 0 20px;
 }
 
-.stof-headline {
-  text-align: center;
-  margin-bottom: 60px; /* Increased space below the headline */
-}
-
-.custom-headline {
-  display: inline-block;
-  font-style: italic;
-  position: relative;
-  padding-right: 40px;
-}
-
 .stof-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px; /* Adjust this value to increase/decrease space between rows */
 }
 
 .stof-item {
-  width: 100%;
-  margin-bottom: 100px; /* Increased space between items */
+  display: grid;
 }
 
 .stof-item--full {
-  display: flex;
-  justify-content: center;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .stof-item--full .stof-card {
@@ -151,23 +138,13 @@
 }
 
 .stof-item--half {
-  width: 100%;
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px; /* This adds space between the two columns without pushing content down */
-}
-
-.stof-item--half .stof-card {
-  width: 100%; /* Changed from calc(50% - 20px) to 100% */
+  gap: 40px; /* This adds space between the two columns */
 }
 
 .stof-card {
   display: flex;
   flex-direction: column;
-}
-
-.stof-card__image-wrapper {
-  /* margin-bottom: 20px; */ /* This line has been removed */
 }
 
 .stof-card__image {
@@ -179,12 +156,14 @@
   font-family: 'Pitch', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .rte.new-caledonia {
   font-family: 'New Caledonia', serif;
   line-height: 1.15;
+  margin: 0;
 }
 
 .stof-arrow {
@@ -194,7 +173,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 60px 0; /* Space around arrows */
+  justify-self: center;
 }
 
 @media screen and (max-width: 749px) {
@@ -203,21 +182,16 @@
     padding: 0 15px;
   }
 
-  .stof-item {
-    margin-bottom: 60px;
+  .stof-content {
+    gap: 60px; /* Reduced gap for mobile */
   }
 
   .stof-item--full .stof-card,
-  .stof-item--half .stof-card {
-    width: 100%;
-  }
-
   .stof-item--half {
-    grid-template-columns: 1fr; /* Change to a single column for mobile */
-    gap: 60px; /* Increased gap for mobile view */
+    grid-template-columns: 1fr;
   }
 
-  .stof-arrow {
-    margin: 40px 0;
+  .stof-item--full .stof-card {
+    width: 100%;
   }
 }
