@@ -79,6 +79,7 @@
         "column_ddJmKw",
         "column_mbVkpD"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
@@ -216,11 +217,11 @@
   },
   "order": [
     "image_half_text_KLfg4b",
+    "section_bespoke_1_qnAAb6",
+    "section_bespoke_3_3Mf34V",
     "section_bespoke_6Tfd4d",
     "main",
     "36cc1bae-2088-45e4-b6eb-f4db54ca13e2",
-    "section_bespoke_1_qnAAb6",
-    "section_bespoke_3_3Mf34V",
     "836d8415-0c97-4bca-b60c-33c0f3cd7b52"
   ]
 }
