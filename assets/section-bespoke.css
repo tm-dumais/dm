@@ -290,7 +290,7 @@
   display: block;
   position: absolute;
   top: 5rem; /* Move the arrow further up */
-  left: 60%;
+  left: 55%;
   transform: translateX(-50%);
   width: 50px;
   height: 90px;
