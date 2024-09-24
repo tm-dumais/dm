@@ -120,7 +120,7 @@
 
 .stof-headline {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px; /* Increased space below the headline */
 }
 
 .custom-headline {
@@ -132,16 +132,16 @@
 
 .stof-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stof-item {
-  margin-bottom: 80px; /* Increased spacing between rows */
+  width: 100%;
+  margin-bottom: 100px; /* Increased space between items */
 }
 
 .stof-item--full {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -151,6 +151,12 @@
 }
 
 .stof-item--half {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stof-item--half .stof-card {
   width: calc(50% - 20px);
 }
 
@@ -160,7 +166,7 @@
 }
 
 .stof-card__image-wrapper {
-  margin-bottom: 20px; /* Maintain existing spacing between image and text */
+  margin-bottom: 20px; /* Space between image and text */
 }
 
 .stof-card__image {
@@ -181,35 +187,35 @@
 }
 
 .stof-arrow {
-  width: 100%;
+  width: 50px;
   height: 90px;
   background-image: url('{{ "arrow-down.png" | asset_url }}');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 60px 0; /* Increased spacing around arrows */
+  margin: 60px 0; /* Space around arrows */
 }
 
 @media screen and (max-width: 749px) {
   .stof-container {
-    width: 100%; /* Full width on mobile */
-    padding: 0 15px; /* Adjust padding for mobile if needed */
+    width: 100%;
+    padding: 0 15px;
   }
 
   .stof-item {
-    margin-bottom: 60px; /* Slightly reduced spacing for mobile */
+    margin-bottom: 60px;
   }
 
-  .stof-item--half,
-  .stof-item--full {
+  .stof-item--full .stof-card,
+  .stof-item--half .stof-card {
     width: 100%;
   }
 
-  .stof-item--full .stof-card {
-    width: 100%;
+  .stof-item--half {
+    flex-direction: column;
   }
 
   .stof-arrow {
-    margin: 40px 0; /* Reduced spacing around arrows for mobile */
+    margin: 40px 0;
   }
 }
