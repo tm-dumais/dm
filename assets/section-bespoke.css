@@ -148,6 +148,27 @@
 .stof-card__image {
     width: 100%;
     height: auto;
+    margin-bottom: 1rem; /* Add some space between the image and the title */
+    border-radius: 4px; /* Adjust border-radius to match base.css */
+}
+
+.title {
+    align-self: flex-start; /* Ensure the title aligns to the start (top) */
+    margin-bottom: 1rem; /* Add some space between the title and the next element */
+}
+
+.caption-headline {
+    font-family: 'Pitch', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.rte.new-caledonia {
+    font-family: 'New Caledonia', serif;
+    line-height: 1.15;
+    margin: 0;
 }
 
 .stof-arrow {
@@ -282,8 +303,6 @@
     position: relative; /* Ensure the section is positioned relative */
 }
 
-
-
 .section-bespoke-2::after {
     content: "";
     display: block;
@@ -347,8 +366,6 @@
     position: relative;
 }
 
-
-
 /* Add the ::before pseudo-element back to the main component .section-bespoke-2 */
 .section-bespoke-2::before {
     content: "";
@@ -365,8 +382,6 @@
     margin-top: 1rem; /* Add some space between the section and the arrow */
     z-index: 10; /* Ensure the arrow is above other elements */
 }
-
-
 
 .section-bespoke-2::after {
     content: "";
@@ -416,4 +431,12 @@
 
 .background-color-3 {
     background-color: #95794A; /* Color 3 from section-home-split.css */
+}
+
+.section-semi-bespoke-1 .stof-card__image,
+.section-bespoke-1 .stof-card__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem; /* Add some space between the image and the title */
+    border-radius: 4px; /* Adjust border-radius to match base.css */
 }
