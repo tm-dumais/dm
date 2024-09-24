@@ -227,26 +227,21 @@
   position: relative;
 }
 
-/* Remove the ::before pseudo-element from the second column within .section-bespoke-2 */
+/* Add the ::before pseudo-element to the second column within .section-bespoke-2 */
 .section-bespoke-2 .stof-card.second-column::before {
-  content: none;
-}
-
-/* Add the ::before pseudo-element back to the main component .section-bespoke-2 */
-.section-bespoke-2::before {
   content: "";
   display: block;
   position: absolute;
   top: -7.5rem; /* Move the arrow further up */
-  left: 55%;
-  transform: translateX(-50%);
+  left: 0; /* Align the arrow to the left edge of the second column */
   width: 50px;
   height: 90px;
   background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-left.png?v=1593634124"); /* Original image URL */
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
-  z-index: 10; /* Ensure the arrow is above other elements */
+  z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
+  background-color: red; /* Debugging: Add a background color to see if the element is being rendered */
 }
 
 /* Remove the ::before pseudo-element from the main component .section-bespoke-2 */
@@ -268,6 +263,7 @@
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
   z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
+  background-color: blue; /* Debugging: Add a background color to see if the element is being rendered */
 }
 
 .section-semi-bespoke-1 {
