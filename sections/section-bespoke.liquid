@@ -1,41 +1,30 @@
 {{ 'section-bespoke.css' | asset_url | stylesheet_tag }}
-{{ 'component-rte.css' | asset_url | stylesheet_tag }}
 
-<div class="stof color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width section-{{ section.id }}-padding isolate">
-    <div class="stof-list">
-      <div class="custom-headline-container">
-        {%- unless section.settings.title == blank -%}
-          <h2 class="title {{ section.settings.heading_size }}">
-            {{ section.settings.title | escape }}
-          </h2>
-        {%- endunless -%}
-      </div>
-
+<div class="bespoke color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="bespoke-grid">
       {%- for block in section.blocks -%}
-        <div class="stof-list__item" {{ block.shopify_attributes }}>
-          <div class="stof-card content-container">
-            {%- if block.settings.image != blank -%}
-              <div class="stof-card__image-wrapper">
-                {{
-                  block.settings.image
-                  | image_url: width: 800
-                  | image_tag:
-                    loading: 'lazy',
-                    class: 'stof-card__image',
-                    widths: '400, 600, 800',
-                    sizes: '(min-width: 750px) 50vw, 100vw'
-                }}
-              </div>
-            {%- endif -%}
-            <div class="stof-card__info">
-              {%- if block.settings.caption_headline != blank -%}
-                <h3 class="caption-headline">{{ block.settings.caption_headline | escape }}</h3>
-              {%- endif -%}
-              {%- if block.settings.text != blank -%}
-                <div class="rte new-caledonia">{{ block.settings.text }}</div>
-              {%- endif -%}
+        <div class="bespoke-item{% if forloop.index == 1 or forloop.index == 4 %} bespoke-item--centered{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            <div class="bespoke-item__image-wrapper">
+              {{
+                block.settings.image
+                | image_url: width: 800
+                | image_tag:
+                  loading: 'lazy',
+                  class: 'bespoke-item__image',
+                  widths: '400, 600, 800',
+                  sizes: '(min-width: 750px) 50vw, 100vw'
+              }}
             </div>
+          {%- endif -%}
+          <div class="bespoke-item__content">
+            {%- if block.settings.headline != blank -%}
+              <h3 class="bespoke-item__headline">{{ block.settings.headline | escape }}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <div class="bespoke-item__text">{{ block.settings.text }}</div>
+            {%- endif -%}
           </div>
         </div>
       {%- endfor -%}
@@ -49,32 +38,6 @@
   "class": "section",
   "tag": "section",
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "default": "Bespoke",
-      "label": "Title"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "Small"
-        },
-        {
-          "value": "h1",
-          "label": "Medium"
-        },
-        {
-          "value": "h0",
-          "label": "Large"
-        }
-      ],
-      "default": "h1",
-      "label": "Heading size"
-    },
     {
       "type": "select",
       "id": "color_scheme",
@@ -106,8 +69,8 @@
   ],
   "blocks": [
     {
-      "type": "column",
-      "name": "Column",
+      "type": "bespoke_item",
+      "name": "Bespoke Item",
       "settings": [
         {
           "type": "image_picker",
@@ -116,14 +79,14 @@
         },
         {
           "type": "text",
-          "id": "caption_headline",
-          "default": "Caption Headline",
-          "label": "Caption Headline"
+          "id": "headline",
+          "default": "Headline",
+          "label": "Headline"
         },
         {
           "type": "richtext",
           "id": "text",
-          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "default": "<p>Add your content here.</p>",
           "label": "Text"
         }
       ]
@@ -134,16 +97,16 @@
       "name": "Bespoke",
       "blocks": [
         {
-          "type": "column"
+          "type": "bespoke_item"
         },
         {
-          "type": "column"
+          "type": "bespoke_item"
         },
         {
-          "type": "column"
+          "type": "bespoke_item"
         },
         {
-          "type": "column"
+          "type": "bespoke_item"
         }
       ]
     }
