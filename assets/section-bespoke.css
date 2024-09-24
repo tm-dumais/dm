@@ -42,3 +42,46 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@media screen and (min-width: 990px) {
+  .custom-headline-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .stof-list .grid__item.first-row::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .stof-list .grid__item.second-row::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
