@@ -187,19 +187,15 @@
   display: flex;
   flex-direction: column;
   position: relative; /* Ensure the content is positioned relative to the card */
+  border-radius: 10px; /* Add border-radius to the card container */
+  overflow: hidden; /* Ensure the content inside the card respects the border-radius */
 }
 
 .stof-card__image {
   width: 100%;
   height: auto;
   margin-bottom: 1rem; /* Add some space between the image and the title */
-}
-
-.stof-card__content {
-  padding-top: 1rem; /* Add padding to ensure content is not flush with the edges */
-  padding-bottom: 1rem; /* Add padding to ensure content is not flush with the edges */
-  padding-left: 0; /* Remove left padding */
-  padding-right: 0; /* Remove right padding */
+  border-radius: 10px; /* Add border-radius to the image */
 }
 
 .title {
