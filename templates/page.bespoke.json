@@ -9,6 +9,50 @@
 */
 {
   "sections": {
+    "image_and_text_a8HMBD": {
+      "type": "image-and-text",
+      "blocks": {
+        "heading_BNG7jp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_HC7Ajx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_yErVa4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_BNG7jp",
+        "text_HC7Ajx",
+        "button_yErVa4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_half_text_KLfg4b": {
       "type": "image-half-text",
       "blocks": {
@@ -224,53 +268,10 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
-    },
-    "image_and_text_a8HMBD": {
-      "type": "image-and-text",
-      "blocks": {
-        "heading_BNG7jp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_HC7Ajx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_yErVa4": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_BNG7jp",
-        "text_HC7Ajx",
-        "button_yErVa4"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
+    "image_and_text_a8HMBD",
     "image_half_text_KLfg4b",
     "section_bespoke_1_qnAAb6",
     "section_bespoke_2_8NVNqN",
@@ -278,7 +279,6 @@
     "section_bespoke_6Tfd4d",
     "main",
     "36cc1bae-2088-45e4-b6eb-f4db54ca13e2",
-    "836d8415-0c97-4bca-b60c-33c0f3cd7b52",
-    "image_and_text_a8HMBD"
+    "836d8415-0c97-4bca-b60c-33c0f3cd7b52"
   ]
 }
