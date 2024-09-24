@@ -307,6 +307,8 @@
 .section-semi-bespoke-1 {
   width: 100vw;
   overflow: hidden;
+  padding-top: 6rem; /* Add padding top */
+  padding-bottom: 6rem; /* Add padding bottom */
 }
 
 .section-semi-bespoke-1 .stof-container {
