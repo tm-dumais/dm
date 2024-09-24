@@ -131,6 +131,7 @@
 }
 
 .stof-content {
+  position: relative; /* Ensure the headline is positioned relative to the content */
   display: grid;
   grid-template-columns: 1fr;
 }
