@@ -289,11 +289,18 @@
 }
 
 /* Specific styles for each section */
-.section-bespoke-1 {
+.section-bespoke-1,
+.section-bespoke-3 {
     position: relative; /* Ensure the section is positioned relative */
     margin-bottom: 80px; /* Adjust as needed for spacing between sections */
     margin-top: 6rem; /* Add margin-top for spacing above the section */
     padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
+}
+
+.section-bespoke-1 .stof-item--full .stof-card,
+.section-bespoke-3 .stof-item--full .stof-card {
+    width: 50%; /* Ensure the card is centered and has the same width */
+    margin: 0 auto; /* Center the card */
 }
 
 .section-bespoke-2 {
