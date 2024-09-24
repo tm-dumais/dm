@@ -89,6 +89,8 @@
 
 .caption-headline {
   font-size: 16px;
+  font-family: 'Pitch', sans-serif; /* Set font to Pitch */
+  text-transform: uppercase; /* Transform text to uppercase */
 }
 
 .rte.new-caledonia {
