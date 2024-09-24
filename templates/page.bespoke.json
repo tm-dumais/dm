@@ -9,39 +9,6 @@
 */
 {
   "sections": {
-    "image_half_text_KLfg4b": {
-      "type": "image-half-text",
-      "blocks": {
-        "text_GmNBVg": {
-          "type": "text",
-          "settings": {
-            "text": "<p><em>We work closely with clients to create bespoke pieces for residential and hospitality spaces, whether adapting an existing piece or imagining something entirely new. </em></p><p><em>We view the process as a collaboration. It’s an opportunity to invite you into our world and better understand yours—how you live, what you’re drawn to and, ultimately, how the piece will function in your life. </em></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "text_GmNBVg"
-      ],
-      "custom_css": [
-        ".image-half-text__text p {font-size: 30px; line-height: 115%;}",
-        "@media screen and (min-width: 750px) {.image-half-text-wrapper {padding: 2.5rem; height: 100vh; max-height: 100vh; }}",
-        "@media screen and (min-width: 750px) {.image-half-text__media {min-height: 100%; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/1_e147330c-fbfa-4056-9e53-caa3a048d348.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 100
-      }
-    },
     "home_section_split_MX3xCT": {
       "type": "home-section-split",
       "settings": {
@@ -54,7 +21,7 @@
         "heading_size": "h1",
         "button_label": "",
         "button_link": "",
-        "background_color": "none",
+        "background_color": "color-1",
         "padding_top_enabled": false,
         "padding_bottom_enabled": false,
         "padding_horizontal_enabled": false
@@ -160,7 +127,6 @@
     }
   },
   "order": [
-    "image_half_text_KLfg4b",
     "home_section_split_MX3xCT",
     "section_bespoke_1_qnAAb6",
     "section_bespoke_2_8NVNqN",
