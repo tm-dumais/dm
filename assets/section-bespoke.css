@@ -18,11 +18,10 @@
 }
 
 .custom-headline {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   display: inline-block;
   padding-right: 2rem; /* Adjust as needed */
+  font-style: italic; /* Set the headline in italic */
 }
 
 .custom-headline::after {
