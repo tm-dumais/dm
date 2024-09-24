@@ -1,0 +1,108 @@
+.image-and-text-wrapper {
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  padding: 1.5rem;
+  margin: 0;
+  background-color: #FFF9F3;
+}
+
+@media screen and (min-width: 750px) {
+  .image-and-text-wrapper {
+    padding: 2.5rem;
+    height: 85vh;
+    max-height: 85vh;
+  }
+}
+
+.image-and-text .grid {
+  margin-bottom: 0;
+}
+
+.image-and-text .grid__item {
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .image-and-text__grid--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.image-and-text__media {
+  min-height: 45vh;
+  height: 45vh;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 750px) {
+  .image-and-text__media {
+    min-height: 85vh;
+    height: 85vh;
+  }
+}
+
+.image-and-text__media--small,
+.image-and-text__media--medium,
+.image-and-text__media--large {
+  height: 85vh;
+}
+
+.image-and-text__media--placeholder {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-and-text__media--placeholder:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+.image-and-text__content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+  padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
+  position: relative;
+  z-index: 1;
+  background: none;
+}
+
+// ... (continue with the rest of the styles, replacing 'image-half-text' with 'image-and-text')
+
+.image-and-text__text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-family: new-caledonia, serif;
+}
+
+@media screen and (max-width: 749px) {
+  .image-and-text__content {
+    padding: 2rem calc(0rem / var(--font-body-scale)) 5rem;
+  }
+
+  .image-and-text__text p {
+    line-height: 2.2rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .image-and-text__content {
+    padding: 2rem calc(2rem / var(--font-body-scale)) 5rem;
+  }
+
+  .image-and-text__text p {
+    line-height: 2.2rem;
+    font-size: 2rem;
+  }
+}
