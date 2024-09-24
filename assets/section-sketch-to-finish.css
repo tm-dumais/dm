@@ -242,16 +242,20 @@
     /* background: pink */
   }
   .stof-list.grid{
-    column-gap:21.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax value as needed */
+    column-gap: 21.5%; /* Add column gap */
+  }
+
+  .stof-list.grid--2-col-desktop {
+    grid-template-columns: repeat(2, 1fr); /* Define 2 columns for desktop */
   }
 
   .stof-list.grid--2-col-desktop .grid__item {
-    width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2) !important;
-    max-width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2) !important;
+    width: auto; /* Remove width constraints */
+    max-width: none; /* Remove max-width constraints */
   }
-}
 
-@media screen and (min-width: 990px){
   .stof-list.grid--2-col-desktop .grid__item:nth-child(1):after{
     background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-right.png?v=1593633369);
     background-size: 50px 90px;
@@ -268,7 +272,6 @@
   .stof-list.grid--2-col-desktop .grid__item:nth-child(2){
     margin-top:60vh;
   }
-
 
   .stof-list.grid--2-col-desktop .grid__item:nth-child(2):after{
     background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-left.png?v=1593634124);
@@ -296,6 +299,6 @@
 
 .stof-card__info h3 {
   font-size: 16px !important; /* Set font size to 16px with !important */
-  margin-block-start: 0.5em; /* Set margin-block-start to 0.5em */
-  margin-block-end: 0.5em; /* Set margin-block-end to 0.5em */
+  margin-block-start: 0.5em !important; /* Set margin-block-start to 0.5em with !important */
+  margin-block-end: 0.5em !important; /* Set margin-block-end to 0.5em with !important */
 }
