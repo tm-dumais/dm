@@ -119,7 +119,22 @@
         "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
         "caption_headline": "",
         "text": "<p>We offer a semi-bespoke experience for our designers who want to modify an existing design’s scale, glaze, texture or shade to suit your space.</p>",
-        "background_color": "color-2"
+        "background_color": "color-3"
+      }
+    },
+    "section_home_text_banner_KxhiGy": {
+      "type": "section-home-text-banner",
+      "settings": {
+        "vertical_alignment": "top",
+        "eyebrow_text": "",
+        "heading": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
+        "heading_size": "h1",
+        "button_label": "Contact Sales",
+        "button_link": "mailto:studio@dumaismade.com",
+        "background_color": "none",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": false
       }
     },
     "main": {
@@ -157,6 +172,7 @@
         "template--16834058158294__836d8415-0c97-4bca-b60c-33c0f3cd7b52-16746738185959ea04-0",
         "template--16834058158294__836d8415-0c97-4bca-b60c-33c0f3cd7b52-16746738185959ea04-2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-2",
         "full_width": true,
@@ -172,6 +188,7 @@
     "section_bespoke_2_8NVNqN",
     "section_bespoke_3_3Mf34V",
     "section_semi_bespoke_KHWPBH",
+    "section_home_text_banner_KxhiGy",
     "main",
     "836d8415-0c97-4bca-b60c-33c0f3cd7b52"
   ]
