@@ -90,7 +90,9 @@
 .caption-headline {
   font-family: 'Pitch', sans-serif; /* Set font to Pitch */
   text-transform: uppercase; /* Set text to uppercase */
-  /* font-size: 1rem; */ /* Ensure this line is removed */
+  font-size: 16px; /* Set font size to 16px */
+  padding-bottom: 0.5rem; /* Adjust padding bottom */
+  margin-bottom: 0.5rem; /* Adjust margin bottom */
 }
 
 .rte.new-caledonia {
