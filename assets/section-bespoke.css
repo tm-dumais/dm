@@ -124,17 +124,57 @@
 }
 
 .stof-container {
-  width: 70vw; /* Increase the width to 70vw */
+  width: 60vw;
   max-width: 950px;
   margin: 0 auto;
   padding: 0 20px;
-  position: relative; /* Ensure the container is positioned relative to the section */
 }
 
 .stof-content {
-  position: relative; /* Ensure the headline is positioned relative to the content */
   display: grid;
   grid-template-columns: 1fr;
+  gap: 80px;
+}
+
+.stof-item--half {
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem; /* Added gap between columns */
+}
+
+.stof-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.stof-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.stof-arrow {
+  position: relative;
+  left: 30%; /* Move arrow further to the right */
+}
+
+@media screen and (max-width: 749px) {
+  .stof-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .stof-item--half {
+    grid-template-columns: 1fr;
+  }
+
+  .stof-arrow {
+    left: 0; /* Reset arrow position for mobile */
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .stof-item--half .second-column {
+    margin-top: 9rem; /* Updated margin-top for second column */
+  }
 }
 
 .stof-headline {
