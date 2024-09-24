@@ -2,51 +2,49 @@
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-  }
-  
-  .custom-half-column {
+}
+
+.custom-half-column {
     width: 50%;
     float: left;
-  }
-  
-  .stof-list {
+}
+
+.stof-list {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .stof-list__item {
+}
+
+.stof-list__item {
     margin-bottom: 2rem;
-  }
-  
-  @media screen and (max-width: 749px) {
+}
+
+@media screen and (max-width: 749px) {
     .custom-center-column,
     .custom-half-column {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
     }
-  }
+}
 
-  
-  
-  @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
     .stof-list {
-      width: 60vw;
-      max-width: 950px;
-      margin-left: auto;
-      margin-right: auto;
+        width: 60vw;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
     }
-  }
-  
-  .custom-headline-container {
+}
+
+.custom-headline-container {
     position: absolute; /* Position the container absolutely within the ul */
     top: 0; /* Align the container with the top of the ul */
     left: 0; /* Align the container with the left of the ul */
     width: 100%; /* Ensure the container spans the entire width of the ul */
-  }
-  
-  .custom-headline-container .title {
+}
+
+.custom-headline-container .title {
     display: inline-block;
     padding-right: 2rem !important; /* Adjust as needed */
     font-style: italic !important; /* Set the headline in italic */
@@ -54,9 +52,9 @@
     padding-bottom: 0 !important; /* Remove padding bottom */
     margin-top: 0 !important; /* Remove margin top */
     margin-bottom: 0 !important; /* Remove margin bottom */
-  }
-  
-  .custom-headline::after {
+}
+
+.custom-headline::after {
     content: '';
     position: absolute;
     right: 0;
@@ -64,135 +62,134 @@
     transform: translateY(-50%);
     width: 1.5rem; /* Adjust as needed */
     height: 1.5rem; /* Adjust as needed */
-    background-image: url({{ "path/to/arrow-image.png" | asset_url }}); /* Update with the correct path */
+    background-image: url("path/to/arrow-image.png"); /* Update with the correct path */
     background-size: contain;
     background-repeat: no-repeat;
-  }
-  
-  @media screen and (min-width: 990px) {
+}
+
+@media screen and (min-width: 990px) {
     .custom-headline-container::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      transform: translateX(-50%);
-      width: 50px;
-      height: 90px;
-      background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369);
-      background-size: contain;
-      background-repeat: no-repeat;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 90px;
+        background-image: url("https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-  
+
     .stof-list .grid__item.first-row::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 50px;
-      height: 90px;
-      background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369);
-      background-size: contain;
-      background-repeat: no-repeat;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 90px;
+        background-image: url("https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-  
+
     .stof-list .grid__item.second-row::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 50px;
-      height: 90px;
-      background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369);
-      background-size: contain;
-      background-repeat: no-repeat;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 90px;
+        background-image: url("https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-  }
-  
-  .caption-headline {
+}
+
+.caption-headline {
     font-size: 16px;
     font-family: 'Pitch', sans-serif; /* Set font to Pitch */
     text-transform: uppercase; /* Transform text to uppercase */
-  }
-  
-  .rte.new-caledonia {
+}
+
+.rte.new-caledonia {
     font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
-    /* font-size: 1rem; */ /* Ensure this line is removed */
     line-height: 1.15; /* Set line height to 115% */
-  }
-  
-  .stof-container {
+}
+
+.stof-container {
     width: 60vw;
     max-width: 950px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .stof-content {
+}
+
+.stof-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 80px;
-  }
-  
-  .stof-item--half {
+}
+
+.stof-item--half {
     grid-template-columns: 1fr 1fr;
     gap: 6rem; /* Added gap between columns */
-  }
-  
-  .stof-card {
+}
+
+.stof-card {
     display: flex;
     flex-direction: column;
-  }
-  
-  .stof-card__image {
+}
+
+.stof-card__image {
     width: 100%;
     height: auto;
-  }
-  
-  .stof-arrow {
+}
+
+.stof-arrow {
     position: relative;
     left: 30%; /* Move arrow further to the right */
-  }
-  
-  @media screen and (max-width: 749px) {
+}
+
+@media screen and (max-width: 749px) {
     .stof-container {
-      width: 100%;
-      padding: 0 15px;
+        width: 100%;
+        padding: 0 15px;
     }
-  
+
     .stof-item--half {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-  
+
     .stof-arrow {
-      left: 0; /* Reset arrow position for mobile */
+        left: 0; /* Reset arrow position for mobile */
     }
-  }
-  
-  @media screen and (min-width: 750px) {
+}
+
+@media screen and (min-width: 750px) {
     .stof-item--half .second-column {
-      margin-top: 9rem; /* Updated margin-top for second column */
+        margin-top: 9rem; /* Updated margin-top for second column */
     }
-  }
-  
-  .stof-headline {
+}
+
+.stof-headline {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     /* Remove padding */
-  }
-  
-  .stof-headline .title {
+}
+
+.stof-headline .title {
     margin: 0 !important; /* Remove all margins */
     font-style: italic; /* Set the headline in italic */
-  }
-  
-  .stof-headline::after {
+}
+
+.stof-headline::after {
     content: "";
     display: block;
     position: absolute;
@@ -205,87 +202,87 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 1rem; /* Add some space between the title and the arrow */
-  }
-  
-  .stof-item {
+}
+
+.stof-item {
     display: grid;
-  }
-  
-  .stof-item--full {
+}
+
+.stof-item--full {
     grid-template-columns: 1fr;
     justify-items: center;
-  }
-  
-  .stof-item--full .stof-card {
+}
+
+.stof-item--full .stof-card {
     width: 50%;
-  }
-  
-  .stof-item--half {
+}
+
+.stof-item--half {
     grid-template-columns: 1fr 1fr;
     gap: 12rem; /* Further increased gap between columns */
-  }
-  
-  .stof-card {
+}
+
+.stof-card {
     display: flex;
     flex-direction: column;
     position: relative; /* Ensure the content is positioned relative to the card */
     border-radius: 4px; /* Adjust border-radius to match base.css */
     overflow: hidden; /* Ensure the content inside the card respects the border-radius */
-  }
-  
-  .stof-card__image {
+}
+
+.stof-card__image {
     width: 100%;
     height: auto;
     margin-bottom: 1rem; /* Add some space between the image and the title */
     border-radius: 4px; /* Adjust border-radius to match base.css */
-  }
-  
-  .title {
+}
+
+.title {
     align-self: flex-start; /* Ensure the title aligns to the start (top) */
     margin-bottom: 1rem; /* Add some space between the title and the next element */
-  }
-  
-  .caption-headline {
+}
+
+.caption-headline {
     font-family: 'Pitch', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 5px;
-  }
-  
-  .rte.new-caledonia {
+}
+
+.rte.new-caledonia {
     font-family: 'New Caledonia', serif;
     line-height: 1.15;
     margin: 0;
-  }
-  
-  .stof-arrow {
+}
+
+.stof-arrow {
     width: 50px;
     height: 90px;
-    background-image: url({{ "arrow-down.png" | asset_url }});
+    background-image: url("arrow-down.png"); /* Update with the correct path */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     justify-self: center;
     margin: 40px auto;
-  }
-  
-  /* Specific styles for each section */
-  .section-bespoke-1 {
+}
+
+/* Specific styles for each section */
+.section-bespoke-1 {
     position: relative; /* Ensure the section is positioned relative */
     margin-bottom: 80px; /* Adjust as needed for spacing between sections */
     margin-top: 6rem; /* Add margin-top for spacing above the section */
     padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
-  }
-  
-  .section-bespoke-2 {
+}
+
+.section-bespoke-2 {
     margin-bottom: 80px; /* Adjust as needed for spacing between sections */
     margin-top: 6rem; /* Add margin-top for spacing above the section */
     padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
     position: relative; /* Ensure the section is positioned relative */
-  }
-  
-  .section-bespoke-2::before {
+}
+
+.section-bespoke-2::before {
     content: "";
     display: block;
     position: absolute;
@@ -298,9 +295,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 10; /* Ensure the arrow is above other elements */
-  }
-  
-  .section-bespoke-2::after {
+}
+
+.section-bespoke-2::after {
     content: "";
     display: block;
     position: absolute;
@@ -314,36 +311,36 @@
     background-repeat: no-repeat;
     margin-top: 1rem; /* Add some space between the section and the arrow */
     z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
-  }
-  
-  .section-bespoke-3 {
+}
+
+.section-bespoke-3 {
     margin-bottom: 80px; /* Adjust as needed for spacing between sections */
     margin-top: 6rem; /* Add margin-top for spacing above the section */
     padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
     position: relative; /* Ensure the section is positioned relative */
-  }
-  
-  @media screen and (max-width: 749px) {
+}
+
+@media screen and (max-width: 749px) {
     .stof-container {
-      width: 100%;
-      padding: 0 15px;
+        width: 100%;
+        padding: 0 15px;
     }
-  
+
     .stof-item--full .stof-card,
     .stof-item--half {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-  
+
     .stof-item--full .stof-card {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .stof-item--half {
-      gap: 3rem; /* Reduced gap for mobile */
+        gap: 3rem; /* Reduced gap for mobile */
     }
-  }
-  
-  .section-bespoke-1::after {
+}
+
+.section-bespoke-1::after {
     content: "";
     display: block;
     position: absolute;
@@ -356,20 +353,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 0; /* Reset the margin-top */
-  }
-  
-  /* Ensure the second column is positioned relative */
-  .section-bespoke-2 .stof-card.second-column {
+}
+
+/* Ensure the second column is positioned relative */
+.section-bespoke-2 .stof-card.second-column {
     position: relative;
-  }
-  
-  /* Remove the ::before pseudo-element from the second column within .section-bespoke-2 */
-  .section-bespoke-2 .stof-card.second-column::before {
+}
+
+/* Remove the ::before pseudo-element from the second column within .section-bespoke-2 */
+.section-bespoke-2 .stof-card.second-column::before {
     content: none;
-  }
-  
-  /* Add the ::before pseudo-element back to the main component .section-bespoke-2 */
-  .section-bespoke-2::before {
+}
+
+/* Add the ::before pseudo-element back to the main component .section-bespoke-2 */
+.section-bespoke-2::before {
     content: "";
     display: block;
     position: absolute;
@@ -383,14 +380,14 @@
     background-repeat: no-repeat;
     margin-top: 1rem; /* Add some space between the section and the arrow */
     z-index: 10; /* Ensure the arrow is above other elements */
-  }
-  
-  /* Remove the ::before pseudo-element from the main component .section-bespoke-2 */
-  .section-bespoke-2::before {
+}
+
+/* Remove the ::before pseudo-element from the main component .section-bespoke-2 */
+.section-bespoke-2::before {
     content: none;
-  }
-  
-  .section-bespoke-2::after {
+}
+
+.section-bespoke-2::after {
     content: "";
     display: block;
     position: absolute;
@@ -404,38 +401,38 @@
     background-repeat: no-repeat;
     margin-top: 1rem; /* Add some space between the section and the arrow */
     z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
-  }
-  
-  .section-semi-bespoke-1 {
+}
+
+.section-semi-bespoke-1 {
     width: 100vw;
     overflow: hidden;
     padding-top: 12rem; /* Add padding top */
     padding-bottom: 10rem; /* Add padding bottom */
-  }
-  
-  .section-semi-bespoke-1 .stof-container {
+}
+
+.section-semi-bespoke-1 .stof-container {
     width: 70vw; /* Ensure the width is the same as section-bespoke-1 */
     max-width: 950px; /* Ensure the max-width is the same as section-bespoke-1 */
     margin: 0 auto;
     padding: 0 20px; /* Ensure the padding is the same as section-bespoke-1 */
-  }
-  
-  .section-semi-bespoke-1 .stof-content {
+}
+
+.section-semi-bespoke-1 .stof-content {
     position: relative; /* Ensure the content is positioned relative */
-  }
-  
-  .background-none {
+}
+
+.background-none {
     background-color: transparent;
-  }
-  
-  .background-color-1 {
+}
+
+.background-color-1 {
     background-color: #EBE2D9; /* Color 1 from section-home-split.css */
-  }
-  
-  .background-color-2 {
+}
+
+.background-color-2 {
     background-color: #B0977B; /* Color 2 from section-home-split.css */
-  }
-  
-  .background-color-3 {
+}
+
+.background-color-3 {
     background-color: #95794A; /* Color 3 from section-home-split.css */
-  }
+}
