@@ -2,17 +2,19 @@
 
 <div class="stof-container section-bespoke-1">
   <div class="stof-content">
+    <div class="stof-headline">
+      {%- unless section.settings.title == blank -%}
+        <h2 class="title {{ section.settings.heading_size }} custom-headline">
+          {{ section.settings.title | escape }}
+        </h2>
+      {%- endunless -%}
+    </div>
     <div class="stof-item stof-item--full" {{ block.shopify_attributes }}>
       <div class="stof-card">
         {%- if section.settings.image != blank -%}
           {{ section.settings.image | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
         {%- endif -%}
         <div class="stof-card__content">
-          {%- unless section.settings.title == blank -%}
-            <h2 class="title {{ section.settings.heading_size }} custom-headline">
-              {{ section.settings.title | escape }}
-            </h2>
-          {%- endunless -%}
           {%- if section.settings.caption_headline != blank -%}
             <h3 class="caption-headline">{{ section.settings.caption_headline | escape }}</h3>
           {%- endif -%}
