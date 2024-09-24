@@ -180,7 +180,7 @@
 
 .stof-item--half {
   grid-template-columns: 1fr 1fr;
-  gap: 6rem; /* As requested, 6rem gap between columns */
+  gap: 12rem; /* Further increased gap between columns */
 }
 
 .stof-card {
