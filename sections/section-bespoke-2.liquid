@@ -14,7 +14,7 @@
           <div class="rte new-caledonia">{{ section.settings.text_1 }}</div>
         {%- endif -%}
       </div>
-      <div class="stof-card">
+      <div class="stof-card second-column">
         {%- if section.settings.image_2 != blank -%}
           {{ section.settings.image_2 | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
         {%- endif -%}
@@ -110,6 +110,12 @@
 
     .section-bespoke-2 .stof-item--half {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-bespoke-2 .stof-item--half .second-column {
+      margin-top: 6rem;
     }
   }
 {%- endstyle -%}
