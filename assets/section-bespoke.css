@@ -387,6 +387,10 @@
     padding: 0 20px; /* Ensure the padding is the same as section-bespoke-1 */
   }
   
+  .section-semi-bespoke-1 .stof-content {
+    position: relative; /* Ensure the content is positioned relative */
+  }
+  
   .background-none {
     background-color: transparent;
   }
