@@ -343,7 +343,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
-  z-index: 10; /* Ensure the arrow is above other elements */
+  z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
+  background-color: red; /* Debugging: Add a background color to see if the element is being rendered */
 }
 
 /* Remove the ::before pseudo-element from the main component .section-bespoke-2 */
@@ -364,7 +365,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
-  z-index: 10; /* Ensure the arrow is above other elements */
+  z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
+  background-color: blue; /* Debugging: Add a background color to see if the element is being rendered */
 }
 
 .section-semi-bespoke-1 {
