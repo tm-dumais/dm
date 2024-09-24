@@ -9,112 +9,26 @@
 */
 {
   "sections": {
-    "bespoke_intro_JrF3g3": {
-      "type": "bespoke-intro",
-      "blocks": {
-        "heading_dwkctq": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image and text",
-            "heading_size": "h1"
-          }
-        },
-        "text_xY7B47": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dwkctq",
-        "text_xY7B47"
+    "home_section_split_MX3xCT": {
+      "type": "home-section-split",
+      "custom_css": [
+        ".home-section-split--padding-horizontal {padding-left: 3rem; padding-right: 3rem;}",
+        ".home-section-split--padding-top {padding-top: 3rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_and_text_a8HMBD": {
-      "type": "image-and-text",
-      "blocks": {
-        "heading_BNG7jp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_HC7Ajx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_yErVa4": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_BNG7jp",
-        "text_HC7Ajx",
-        "button_yErVa4"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_half_text_KLfg4b": {
-      "type": "image-half-text",
-      "blocks": {
-        "text_GmNBVg": {
-          "type": "text",
-          "settings": {
-            "text": "<p><em>We work closely with clients to create bespoke pieces for residential and hospitality spaces, whether adapting an existing piece or imagining something entirely new. </em></p><p><em>We view the process as a collaboration. It’s an opportunity to invite you into our world and better understand yours—how you live, what you’re drawn to and, ultimately, how the piece will function in your life. </em></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "text_GmNBVg"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/1_e147330c-fbfa-4056-9e53-caa3a048d348.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image_position": "left",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
+        "eyebrow_text": "",
+        "heading": "<p>We work closely with clients to create bespoke pieces for residential and hospitality spaces, whether adapting an existing piece or imagining something entirely new. We view the process as a collaboration. It’s an opportunity to invite you into our world and better understand yours—how you live, what you’re drawn to and, ultimately, how the piece will function in your life. </p>",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "color-1",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": true
       }
     },
     "section_bespoke_1_qnAAb6": {
@@ -123,7 +37,7 @@
         "title": "Bespoke",
         "heading_size": "h1",
         "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "caption_headline": "TEST",
+        "caption_headline": "1 Design Inception",
         "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
       }
     },
@@ -131,8 +45,8 @@
       "type": "section-bespoke-2",
       "settings": {
         "image_1": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "caption_headline_1": "LOREM",
-        "text_1": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>",
+        "caption_headline_1": "2 Prototype and Refine",
+        "text_1": "<p>Once the initial concept is approved, we will create detailed sketches and glaze samples for the piece. If we’re producing greater quantities for a hospitality or wholesale partnership, we createprototypes to ensure the design is structurally sound and achieves the desired effect.</p>",
         "image_2": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
         "caption_headline_2": "",
         "text_2": ""
@@ -142,8 +56,8 @@
       "type": "section-bespoke-3",
       "settings": {
         "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
-        "caption_headline": "TEST",
-        "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
+        "caption_headline": "3 Design, Realized",
+        "text": "<p>Once approved, we put our collaborative and imaginative pieces into production: we’ll cut, assemble, dry, fire, glaze, fire, fit, shade and test your finished product. This process takes between 10 to 14 weeks.</p>"
       }
     },
     "section_semi_bespoke_KHWPBH": {
@@ -217,9 +131,7 @@
     }
   },
   "order": [
-    "bespoke_intro_JrF3g3",
-    "image_and_text_a8HMBD",
-    "image_half_text_KLfg4b",
+    "home_section_split_MX3xCT",
     "section_bespoke_1_qnAAb6",
     "section_bespoke_2_8NVNqN",
     "section_bespoke_3_3Mf34V",
