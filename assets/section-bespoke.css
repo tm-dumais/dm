@@ -20,12 +20,14 @@
   width: 100%; /* Ensure the container spans the entire width of the ul */
 }
 
-.custom-headline {
+.custom-headline .title {
   display: inline-block;
-  padding-right: 2rem; /* Adjust as needed */
-  font-style: italic; /* Set the headline in italic */
-  padding-top: 0; /* Remove padding top */
-  padding-bottom: 0; /* Remove padding bottom */
+  padding-right: 2rem !important; /* Adjust as needed */
+  font-style: italic !important; /* Set the headline in italic */
+  padding-top: 0 !important; /* Remove padding top */
+  padding-bottom: 0 !important; /* Remove padding bottom */
+  margin-top: 0 !important; /* Remove margin top */
+  margin-bottom: 0 !important; /* Remove margin bottom */
 }
 
 .custom-headline::after {
