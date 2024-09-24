@@ -156,7 +156,7 @@
 .stof-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start (top) */
+  position: relative; /* Ensure the content is positioned relative to the card */
 }
 
 .stof-card__image {
@@ -165,8 +165,17 @@
   margin-bottom: 1rem; /* Add some space between the image and the title */
 }
 
+.stof-card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem; /* Add padding to ensure content is not flush with the edges */
+}
+
 .title {
   align-self: flex-start; /* Ensure the title aligns to the start (top) */
+  margin-bottom: 1rem; /* Add some space between the title and the next element */
 }
 
 .caption-headline {
