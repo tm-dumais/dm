@@ -42,6 +42,24 @@
         "padding_bottom": 100
       }
     },
+    "home_section_split_MX3xCT": {
+      "type": "home-section-split",
+      "settings": {
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "image_position": "left",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
+        "eyebrow_text": "",
+        "heading": "<p>We work closely with clients to create bespoke pieces for residential and hospitality spaces, whether adapting an existing piece or imagining something entirely new. We view the process as a collaboration. It’s an opportunity to invite you into our world and better understand yours—how you live, what you’re drawn to and, ultimately, how the piece will function in your life. </p>",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "none",
+        "padding_top_enabled": false,
+        "padding_bottom_enabled": false,
+        "padding_horizontal_enabled": false
+      }
+    },
     "section_bespoke_1_qnAAb6": {
       "type": "section-bespoke-1",
       "settings": {
@@ -143,6 +161,7 @@
   },
   "order": [
     "image_half_text_KLfg4b",
+    "home_section_split_MX3xCT",
     "section_bespoke_1_qnAAb6",
     "section_bespoke_2_8NVNqN",
     "section_bespoke_3_3Mf34V",
