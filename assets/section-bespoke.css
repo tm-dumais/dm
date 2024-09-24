@@ -6,14 +6,10 @@
 
 @media screen and (min-width: 750px) {
   .stof-list {
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define flexible columns */
     width: 60vw;
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
-    column-gap: 6rem; /* Add gap between columns */
-    row-gap: 6rem; /* Add gap between rows */
   }
 }
 
