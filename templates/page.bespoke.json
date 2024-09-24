@@ -12,8 +12,7 @@
     "home_section_split_MX3xCT": {
       "type": "home-section-split",
       "custom_css": [
-        ".home-section-split--padding-horizontal {padding-left: 3rem;padding-right: 3rem;}",
-        ".home-section-split--padding-bottom {padding-bottom: 3rem;}",
+        ".home-section-split--padding-horizontal {padding-left: 3rem; padding-right: 3rem;}",
         ".home-section-split--padding-top {padding-top: 3rem;}"
       ],
       "settings": {
