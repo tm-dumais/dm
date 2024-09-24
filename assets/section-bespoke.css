@@ -457,3 +457,18 @@
     margin: 0 auto;
     padding: 0 20px; /* Ensure the padding is the same for all sections */
 }
+
+.section-bespoke-3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3rem; /* Move the arrow further down */
+    left: 40%; /* Move the arrow further to the left */
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10; /* Ensure the arrow is above other elements */
+}
