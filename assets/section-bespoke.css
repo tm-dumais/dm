@@ -394,8 +394,8 @@
     content: "";
     display: block;
     position: absolute;
-    bottom: 0; /* Position the arrow at the bottom */
-    left: 50%;
+    bottom: -5; /* Position the arrow at the bottom */
+    left: 35%;
     transform: translateX(-50%);
     width: 50px;
     height: 90px;
