@@ -131,7 +131,6 @@
 }
 
 .stof-content {
-  position: relative; /* Ensure the headline is positioned relative to the content */
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -142,6 +141,10 @@
   left: 0;
   width: 100%;
   padding: 1rem; /* Add padding to ensure content is not flush with the edges */
+}
+
+.stof-headline .title {
+  margin: 0 !important; /* Remove all margins */
 }
 
 .stof-item {
