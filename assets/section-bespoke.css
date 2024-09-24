@@ -545,3 +545,9 @@
         padding-bottom: 8rem; /* 8rem bottom padding for mobile */
     }
 }
+
+@media screen and (max-width: 749px) {
+    .section-bespoke-1 {
+        margin-top: 0rem; /* Set margin-top to 0 for mobile */
+    }
+}
