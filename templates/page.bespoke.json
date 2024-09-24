@@ -37,6 +37,35 @@
         "padding_bottom": 36
       }
     },
+    "section_bespoke_1_qnAAb6": {
+      "type": "section-bespoke-1",
+      "settings": {
+        "title": "Bespoke",
+        "heading_size": "h1",
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "caption_headline": "TEST",
+        "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
+      }
+    },
+    "section_bespoke_2_8NVNqN": {
+      "type": "section-bespoke-2",
+      "settings": {
+        "image_1": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "caption_headline_1": "LOREM",
+        "text_1": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>",
+        "image_2": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "caption_headline_2": "",
+        "text_2": ""
+      }
+    },
+    "section_bespoke_3_3Mf34V": {
+      "type": "section-bespoke-3",
+      "settings": {
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "caption_headline": "TEST",
+        "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
+      }
+    },
     "section_bespoke_6Tfd4d": {
       "type": "section-bespoke",
       "blocks": {
@@ -162,24 +191,6 @@
         "padding_bottom": 36
       }
     },
-    "section_bespoke_1_qnAAb6": {
-      "type": "section-bespoke-1",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "caption_headline": "TEST",
-        "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
-      }
-    },
-    "section_bespoke_3_3Mf34V": {
-      "type": "section-bespoke-3",
-      "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
-        "caption_headline": "TEST",
-        "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
-      }
-    },
     "836d8415-0c97-4bca-b60c-33c0f3cd7b52": {
       "type": "newsletter",
       "blocks": {
@@ -218,6 +229,7 @@
   "order": [
     "image_half_text_KLfg4b",
     "section_bespoke_1_qnAAb6",
+    "section_bespoke_2_8NVNqN",
     "section_bespoke_3_3Mf34V",
     "section_bespoke_6Tfd4d",
     "main",
