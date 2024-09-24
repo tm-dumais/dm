@@ -472,3 +472,30 @@
 .section-bespoke-3::after {
     content: none;
 }
+
+@media screen and (max-width: 749px) {
+    .section-bespoke-1 .stof-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .section-bespoke-1 .stof-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-bespoke-1 .stof-headline {
+        position: static;
+        order: -1; /* This moves the headline to the top */
+        margin-bottom: 2rem; /* Add some space between the headline and the content */
+    }
+
+    .section-bespoke-1 .stof-item--full .stof-card {
+        width: 100%; /* Make the card take up full width on mobile */
+    }
+
+    .section-bespoke-1 .stof-card__image {
+        width: 100%;
+        height: auto;
+    }
+}
