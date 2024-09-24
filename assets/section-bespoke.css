@@ -14,14 +14,18 @@
 }
 
 .custom-headline-container {
-  grid-column: 1 / -1; /* Make the headline span the entire width of the grid */
+  position: absolute; /* Position the container absolutely within the ul */
+  top: 0; /* Align the container with the top of the ul */
+  left: 0; /* Align the container with the left of the ul */
+  width: 100%; /* Ensure the container spans the entire width of the ul */
 }
 
 .custom-headline {
-  position: relative;
   display: inline-block;
   padding-right: 2rem; /* Adjust as needed */
   font-style: italic; /* Set the headline in italic */
+  padding-top: 0; /* Remove padding top */
+  padding-bottom: 0; /* Remove padding bottom */
 }
 
 .custom-headline::after {
