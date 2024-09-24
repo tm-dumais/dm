@@ -9,63 +9,38 @@
 */
 {
   "sections": {
-    "section_bespoke_6Tfd4d": {
-      "type": "section-bespoke",
+    "image_half_text_KLfg4b": {
+      "type": "image-half-text",
       "blocks": {
-        "column_QzbQVY": {
-          "type": "column",
+        "text_GmNBVg": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-            "caption_headline": "1. Design Inception",
-            "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
-          }
-        },
-        "column_W8rnwH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
-            "caption_headline": "2 Prototype and Refine ",
-            "text": "<p>Once the initial concept is approved, we will create detailed sketches and glaze samples for the piece. If we’re producing greater quantities for a hospitality or wholesale partnership, we createprototypes to ensure the design is structurally sound and achieves the desired effect.</p>"
-          }
-        },
-        "column_xKCjhz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-            "caption_headline": "",
-            "text": ""
-          }
-        },
-        "column_BTbtkR": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
-            "caption_headline": "3 Design, Realized",
-            "text": "<p>Once approved, we put our collaborative and imaginative pieces into production: we’ll cut, assemble, dry, fire, glaze, fire, fit, shade and test your finished product. This process takes between 10 to 14 weeks.</p>"
+            "text": "<p><em>We work closely with clients to create bespoke pieces for residential and hospitality spaces, whether adapting an existing piece or imagining something entirely new. </em></p><p><em>We view the process as a collaboration. It’s an opportunity to invite you into our world and better understand yours—how you live, what you’re drawn to and, ultimately, how the piece will function in your life. </em></p>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "column_QzbQVY",
-        "column_W8rnwH",
-        "column_xKCjhz",
-        "column_BTbtkR"
+        "text_GmNBVg"
       ],
       "settings": {
-        "title": "Bespoke",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "Button label",
-        "button_link": "",
+        "image": "shopify://shop_images/1_e147330c-fbfa-4056-9e53-caa3a048d348.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "section_bespoke_6Tfd4d": {
+      "type": "section-bespoke",
+      "settings": {
+        "color_scheme": "background-1"
       }
     },
     "main": {
@@ -74,65 +49,6 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "418c546c-894d-4096-82a3-8b4f8accfb79": {
-      "type": "page-intro-section",
-      "blocks": {
-        "template--16834058158294__418c546c-894d-4096-82a3-8b4f8accfb79-16746058327e3ec2ed-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Process"
-          }
-        },
-        "template--16834058158294__418c546c-894d-4096-82a3-8b4f8accfb79-16746058327e3ec2ed-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>All our pieces are handmade in our studio in Litchfield, Connecticut. Their straightforward, simplicity inspired by modernist sculpture. Their textures and finish drawn from our natural surroundings—the rough softness of lichen, the layers of peeling bark on a plane tree. Balancing form and function, they are meant to be lived with, revealing their character the longer you spend with them.</p>"
-          }
-        },
-        "b1f406e7-3987-494a-a320-536801b1b7cf": {
-          "type": "caption",
-          "settings": {
-            "caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16834058158294__418c546c-894d-4096-82a3-8b4f8accfb79-16746058327e3ec2ed-0",
-        "template--16834058158294__418c546c-894d-4096-82a3-8b4f8accfb79-16746058327e3ec2ed-1",
-        "b1f406e7-3987-494a-a320-536801b1b7cf"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/process-illustration.jpg",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "375b34b2-3c3e-45df-8e8f-57a3d3c40872": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16834058158294__375b34b2-3c3e-45df-8e8f-57a3d3c40872-1674666231bb1f3af0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p><strong>FROM SKETCH TO</strong><br/><em>Finished piece</em></p>",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "template--16834058158294__375b34b2-3c3e-45df-8e8f-57a3d3c40872-1674666231bb1f3af0-0"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 52
       }
     },
     "36cc1bae-2088-45e4-b6eb-f4db54ca13e2": {
@@ -228,10 +144,9 @@
     }
   },
   "order": [
+    "image_half_text_KLfg4b",
     "section_bespoke_6Tfd4d",
     "main",
-    "418c546c-894d-4096-82a3-8b4f8accfb79",
-    "375b34b2-3c3e-45df-8e8f-57a3d3c40872",
     "36cc1bae-2088-45e4-b6eb-f4db54ca13e2",
     "836d8415-0c97-4bca-b60c-33c0f3cd7b52"
   ]
