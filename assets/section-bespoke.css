@@ -90,10 +90,11 @@
 .caption-headline {
   font-family: 'Pitch', sans-serif; /* Set font to Pitch */
   text-transform: uppercase; /* Set text to uppercase */
-  font-size: 1rem; /* Adjust to match the button font size */
+  font-size: 1rem; /* Set font size to 1rem */
 }
 
 .rte.new-caledonia {
   font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
-  font-size: 1rem; /* Adjust text size as needed */
+  font-size: 1rem; /* Set font size to 1rem */
+  line-height: 1.15; /* Set line height to 115% */
 }
