@@ -3,19 +3,28 @@
 <div class="stof-container section-bespoke-2">
   <div class="stof-content">
     <div class="stof-item stof-item--half">
-      {% for i in (1..2) %}
-        <div class="stof-card">
-          {%- if section.settings['image_' | append: i] != blank -%}
-            {{ section.settings['image_' | append: i] | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
-          {%- endif -%}
-          {%- if section.settings['caption_headline_' | append: i] != blank -%}
-            <h3 class="caption-headline">{{ section.settings['caption_headline_' | append: i] | escape }}</h3>
-          {%- endif -%}
-          {%- if section.settings['text_' | append: i] != blank -%}
-            <div class="rte new-caledonia">{{ section.settings['text_' | append: i] }}</div>
-          {%- endif -%}
-        </div>
-      {% endfor %}
+      <div class="stof-card">
+        {%- if section.settings.image_1 != blank -%}
+          {{ section.settings.image_1 | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
+        {%- endif -%}
+        {%- if section.settings.caption_headline_1 != blank -%}
+          <h3 class="caption-headline">{{ section.settings.caption_headline_1 | escape }}</h3>
+        {%- endif -%}
+        {%- if section.settings.text_1 != blank -%}
+          <div class="rte new-caledonia">{{ section.settings.text_1 }}</div>
+        {%- endif -%}
+      </div>
+      <div class="stof-card">
+        {%- if section.settings.image_2 != blank -%}
+          {{ section.settings.image_2 | image_url: width: 1420 | image_tag: loading: 'lazy', class: 'stof-card__image' }}
+        {%- endif -%}
+        {%- if section.settings.caption_headline_2 != blank -%}
+          <h3 class="caption-headline">{{ section.settings.caption_headline_2 | escape }}</h3>
+        {%- endif -%}
+        {%- if section.settings.text_2 != blank -%}
+          <div class="rte new-caledonia">{{ section.settings.text_2 }}</div>
+        {%- endif -%}
+      </div>
     </div>
   </div>
   <div class="stof-arrow"></div>
@@ -23,7 +32,7 @@
 
 {% schema %}
 {
-  "name": "Bespoke 222",
+  "name": "Bespoke 2",
   "settings": [
     {
       "type": "image_picker",
@@ -58,7 +67,7 @@
   ],
   "presets": [
     {
-      "name": "Bespoke 222"
+      "name": "Bespoke 2"
     }
   ]
 }
