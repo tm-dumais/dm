@@ -154,6 +154,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 40px; /* This adds space between the two columns */
 }
 
 .stof-item--half .stof-card {
@@ -166,7 +167,7 @@
 }
 
 .stof-card__image-wrapper {
-  margin-bottom: 20px; /* Space between image and text */
+  /* margin-bottom: 20px; */ /* This line has been removed */
 }
 
 .stof-card__image {
@@ -213,6 +214,7 @@
 
   .stof-item--half {
     flex-direction: column;
+    gap: 60px; /* Increased gap for mobile view */
   }
 
   .stof-arrow {
