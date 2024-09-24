@@ -20,7 +20,7 @@
   width: 100%; /* Ensure the container spans the entire width of the ul */
 }
 
-.custom-headline .title {
+.custom-headline-container .title {
   display: inline-block;
   padding-right: 2rem !important; /* Adjust as needed */
   font-style: italic !important; /* Set the headline in italic */
