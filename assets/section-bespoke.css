@@ -15,6 +15,14 @@
     column-gap: 6rem; /* Add gap between columns */
     row-gap: 6rem; /* Add gap between rows */
   }
+
+  .stof-list__item:nth-child(1) {
+    grid-column: span 2; /* Make the first item span two columns */
+  }
+
+  .stof-list__item:nth-child(4) {
+    grid-column: span 2; /* Make the fourth item span two columns */
+  }
 }
 
 .custom-headline-container {
