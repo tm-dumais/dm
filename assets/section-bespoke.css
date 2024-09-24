@@ -72,12 +72,12 @@
     content: "";
     display: block;
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 0%;
+    left: 0%;
     transform: translateX(-50%);
     width: 50px;
     height: 90px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
+    background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -91,7 +91,7 @@
     transform: translateX(-50%);
     width: 50px;
     height: 90px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
+    background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -105,7 +105,7 @@
     transform: translateX(-50%);
     width: 50px;
     height: 90px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
+    background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -149,17 +149,19 @@
   font-style: italic; /* Set the headline in italic */
 }
 
-.stof-headline .title::after {
+.stof-headline::after {
   content: "";
   display: block;
   position: absolute;
-  top: 2rem; /* Move the arrow down a bit */
-  left: -1rem; /* Offset the arrow from the left */
+  top: 0%;
+  left: 0%;
+  transform: translateX(-50%);
   width: 50px;
   height: 90px;
-  background-image: url(https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369);
+  background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369");
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 1rem; /* Add some space between the title and the arrow */
 }
 
 .stof-item {
