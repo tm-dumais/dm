@@ -315,14 +315,14 @@
   margin-top: 1rem; /* Add some space between the section and the arrow */
 }
 
-.section-semi-bespoke {
+.section-semi-bespoke-1 {
   width: 100vw;
   overflow: hidden;
   padding-top: 12rem; /* Add padding top */
   padding-bottom: 10rem; /* Add padding bottom */
 }
 
-.section-semi-bespoke .stof-container {
+.section-semi-bespoke-1 .stof-container {
   width: 70vw; /* Ensure the width is the same as section-bespoke-1 */
   max-width: 950px; /* Ensure the max-width is the same as section-bespoke-1 */
   margin: 0 auto;
