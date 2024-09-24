@@ -141,6 +141,12 @@
 
 .stof-item--full {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.stof-item--full .stof-card {
+  width: 50%;
 }
 
 .stof-item--half {
@@ -184,7 +190,12 @@
 }
 
 @media screen and (max-width: 749px) {
-  .stof-item--half {
+  .stof-item--half,
+  .stof-item--full {
+    width: 100%;
+  }
+
+  .stof-item--full .stof-card {
     width: 100%;
   }
 }
