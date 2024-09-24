@@ -18,8 +18,8 @@
   grid-column: span 1;
 }
 
-.stof-list__item:first-child,
-.stof-list__item:last-child {
+.stof-list__item:nth-child(1),
+.stof-list__item:nth-child(4) {
   grid-column: 1 / -1;
   justify-self: center;
   width: 50%;
@@ -73,8 +73,8 @@
     gap: 4rem;
   }
 
-  .stof-list__item:first-child,
-  .stof-list__item:last-child {
+  .stof-list__item:nth-child(1),
+  .stof-list__item:nth-child(4) {
     width: 100%;
   }
 }
