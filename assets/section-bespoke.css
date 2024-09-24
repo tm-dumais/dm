@@ -13,8 +13,8 @@
   }
 }
 
-.headline-container {
-  position: relative;
+.custom-headline-container {
+  grid-column: 1 / -1; /* Make the headline span the entire width of the grid */
 }
 
 .custom-headline {
