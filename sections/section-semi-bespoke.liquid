@@ -3,7 +3,7 @@
 <div class="section-semi-bespoke-1 background-{{ section.settings.background_color }}">
   <div class="stof-container">
     <div class="stof-content">
-      <div class="stof-headline">
+      <div class="stof-headline custom-headline-container"> <!-- Add custom-headline-container class -->
         {%- unless section.settings.title == blank -%}
           <h2 class="title {{ section.settings.heading_size }} custom-headline">
             {{ section.settings.title | escape }}
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-    <div class="stof-arrow"></div>
+    <div class="stof-arrow"></div> <!-- Ensure this is inside the container -->
   </div>
 </div>
 

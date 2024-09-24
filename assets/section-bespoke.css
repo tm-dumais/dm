@@ -38,7 +38,7 @@
 }
 
 .custom-headline-container {
-  position: absolute; /* Position the container absolutely within the ul */
+  position: relative; /* Change from absolute to relative */
   top: 0; /* Align the container with the top of the ul */
   left: 0; /* Align the container with the left of the ul */
   width: 100%; /* Ensure the container spans the entire width of the ul */
@@ -152,119 +152,16 @@
 }
 
 .stof-arrow {
-  position: relative;
-  left: 30%; /* Move arrow further to the right */
-}
-
-@media screen and (max-width: 749px) {
-  .stof-container {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .stof-item--half {
-    grid-template-columns: 1fr;
-  }
-
-  .stof-arrow {
-    left: 0; /* Reset arrow position for mobile */
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .stof-item--half .second-column {
-    margin-top: 9rem; /* Updated margin-top for second column */
-  }
-}
-
-.stof-headline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* Remove padding */
-}
-
-.stof-headline .title {
-  margin: 0 !important; /* Remove all margins */
-  font-style: italic; /* Set the headline in italic */
-}
-
-.stof-headline::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 2rem;
-  left: 4rem;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 90px;
-  background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 1rem; /* Add some space between the title and the arrow */
-}
-
-.stof-item {
-  display: grid;
-}
-
-.stof-item--full {
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
-.stof-item--full .stof-card {
-  width: 50%;
-}
-
-.stof-item--half {
-  grid-template-columns: 1fr 1fr;
-  gap: 12rem; /* Further increased gap between columns */
-}
-
-.stof-card {
-  display: flex;
-  flex-direction: column;
-  position: relative; /* Ensure the content is positioned relative to the card */
-  border-radius: 4px; /* Adjust border-radius to match base.css */
-  overflow: hidden; /* Ensure the content inside the card respects the border-radius */
-}
-
-.stof-card__image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem; /* Add some space between the image and the title */
-  border-radius: 4px; /* Adjust border-radius to match base.css */
-}
-
-.title {
-  align-self: flex-start; /* Ensure the title aligns to the start (top) */
-  margin-bottom: 1rem; /* Add some space between the title and the next element */
-}
-
-.caption-headline {
-  font-family: 'Pitch', sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.rte.new-caledonia {
-  font-family: 'New Caledonia', serif;
-  line-height: 1.15;
-  margin: 0;
-}
-
-.stof-arrow {
+  position: absolute; /* Change from relative to absolute */
+  bottom: 0; /* Position the arrow at the bottom */
+  left: 50%; /* Center the arrow horizontally */
+  transform: translateX(-50%); /* Center the arrow horizontally */
   width: 50px;
   height: 90px;
   background-image: url({{ "arrow-down.png" | asset_url }});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  justify-self: center;
   margin: 40px auto;
 }
 
