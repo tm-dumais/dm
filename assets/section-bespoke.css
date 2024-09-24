@@ -300,6 +300,22 @@
     z-index: 10; /* Ensure the arrow is above other elements */
   }
   
+  .section-bespoke-2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0; /* Position the arrow at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369"); /* Updated image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem; /* Add some space between the section and the arrow */
+    z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
+  }
+  
   .section-bespoke-3 {
     margin-bottom: 80px; /* Adjust as needed for spacing between sections */
     margin-top: 6rem; /* Add margin-top for spacing above the section */
