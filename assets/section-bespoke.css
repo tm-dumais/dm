@@ -14,10 +14,9 @@
 }
 
 .custom-headline-container {
-  position: absolute; /* Position the container absolutely within the ul */
-  top: 0; /* Align the container with the top of the ul */
-  left: 0; /* Align the container with the left of the ul */
-  width: 100%; /* Ensure the container spans the entire width of the ul */
+  position: relative; /* Updated to position: relative */
+  width: 100%; /* Updated to width: 100% */
+  grid-column: 1 / -1; /* Added grid-column property */
 }
 
 .custom-headline-container .title {
@@ -58,21 +57,8 @@
     background-repeat: no-repeat;
   }
 
-  .stof-list .grid__item.first-row::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 90px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .stof-list .grid__item.second-row::after {
+  .stof-list__item:first-child::after,
+  .stof-list__item:nth-child(2)::after {
     content: "";
     display: block;
     position: absolute;
@@ -95,6 +81,5 @@
 
 .rte.new-caledonia {
   font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
-  /* font-size: 1rem; */ /* Ensure this line is removed */
   line-height: 1.15; /* Set line height to 115% */
 }
