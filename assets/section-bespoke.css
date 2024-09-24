@@ -128,6 +128,7 @@
   max-width: 950px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative; /* Ensure the container is positioned relative to the section */
 }
 
 .stof-content {
@@ -232,12 +233,19 @@
 }
 
 /* Specific styles for each section */
-.section-bespoke-1,
+.section-bespoke-1 {
+  position: relative; /* Ensure the section is positioned relative */
+  margin-bottom: 80px; /* Adjust as needed for spacing between sections */
+  margin-top: 6rem; /* Add margin-top for spacing above the section */
+  padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
+}
+
 .section-bespoke-2,
 .section-bespoke-3 {
   margin-bottom: 80px; /* Adjust as needed for spacing between sections */
   margin-top: 6rem; /* Add margin-top for spacing above the section */
   padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
+  position: relative; /* Ensure the section is positioned relative */
 }
 
 @media screen and (max-width: 749px) {
