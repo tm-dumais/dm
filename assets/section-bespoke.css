@@ -344,6 +344,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
+  z-index: 10; /* Ensure the arrow is above other elements */
 }
 
 /* Ensure the ::before pseudo-element is applied correctly */
@@ -360,6 +361,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
+  z-index: 10; /* Ensure the arrow is above other elements */
 }
 
 .section-bespoke-2::after {
@@ -375,6 +377,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
+  z-index: 10; /* Ensure the arrow is above other elements */
 }
 
 .section-semi-bespoke-1 {
