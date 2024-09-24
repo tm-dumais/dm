@@ -141,7 +141,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem; /* Add padding to ensure content is not flush with the edges */
+  /* Remove padding */
 }
 
 .stof-headline .title {
