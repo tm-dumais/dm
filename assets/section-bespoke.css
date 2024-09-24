@@ -303,3 +303,14 @@
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
 }
+
+.section-semi-bespoke-1 {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.section-semi-bespoke-1 .stof-container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 0 15px; /* Adjust as needed */
+}
