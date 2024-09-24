@@ -325,17 +325,6 @@
   margin-top: 0; /* Reset the margin-top */
 }
 
-/* Ensure the second column is positioned relative */
-.section-bespoke-2 .stof-card.second-column {
-  position: relative;
-}
-
-/* Remove the ::before pseudo-element from the second column within .section-bespoke-2 */
-.section-bespoke-2 .stof-card.second-column::before {
-  content: none;
-}
-
-/* Add the ::before pseudo-element back to the main component .section-bespoke-2 */
 .section-bespoke-2::before {
   content: "";
   display: block;
@@ -349,12 +338,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
-  z-index: 10; /* Ensure the arrow is above other elements */
-}
-
-/* Remove the ::before pseudo-element from the main component .section-bespoke-2 */
-.section-bespoke-2::before {
-  content: none;
 }
 
 .section-bespoke-2::after {
@@ -370,7 +353,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
-  z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
 }
 
 .section-semi-bespoke-1 {
