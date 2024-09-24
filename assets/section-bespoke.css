@@ -535,4 +535,8 @@
         left: 50%; /* Center the arrow horizontally */
         transform: translateX(-50%); /* Ensure perfect centering */
     }
+
+    .section-bespoke-3 {
+        margin-bottom: 0; /* Remove bottom margin for mobile */
+    }
 }
