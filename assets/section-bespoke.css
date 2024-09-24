@@ -146,6 +146,7 @@
 
 .stof-headline .title {
   margin: 0 !important; /* Remove all margins */
+  font-style: italic; /* Set the headline in italic */
 }
 
 .stof-item {
@@ -179,7 +180,10 @@
 }
 
 .stof-card__content {
-  padding: 1rem; /* Add padding to ensure content is not flush with the edges */
+  padding-top: 1rem; /* Add padding to ensure content is not flush with the edges */
+  padding-bottom: 1rem; /* Add padding to ensure content is not flush with the edges */
+  padding-left: 0; /* Remove left padding */
+  padding-right: 0; /* Remove right padding */
 }
 
 .title {
