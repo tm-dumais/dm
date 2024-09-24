@@ -10,6 +10,8 @@
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
+    row-gap: 6rem; /* Add gap between rows */
+    column-gap: 6rem; /* Add gap between columns */
   }
 }
 
