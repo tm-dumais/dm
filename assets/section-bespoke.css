@@ -289,7 +289,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: -50px; /* Move the arrow further up */
+  top: -5rem; /* Move the arrow further up */
   left: 50%;
   transform: translateX(-50%);
   width: 50px;
