@@ -4,82 +4,59 @@
   margin-right: auto;
 }
 
-@media screen and (min-width: 750px) {
-  .stof-list {
-    width: 60vw;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.stof-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  width: 60vw;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stof-list__item {
+  grid-column: span 1;
+}
+
+.stof-list__item:first-child,
+.stof-list__item:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 50%;
 }
 
 .custom-headline-container {
-  position: relative; /* Updated to position: relative */
-  width: 100%; /* Updated to width: 100% */
-  grid-column: 1 / -1; /* Added grid-column property */
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 6rem;
 }
 
 .custom-headline-container .title {
   display: inline-block;
-  padding-right: 2rem !important; /* Adjust as needed */
-  font-style: italic !important; /* Set the headline in italic */
-  padding-top: 0 !important; /* Remove padding top */
-  padding-bottom: 0 !important; /* Remove padding bottom */
-  margin-top: 0 !important; /* Remove margin top */
-  margin-bottom: 0 !important; /* Remove margin bottom */
-}
-
-.custom-headline::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.5rem; /* Adjust as needed */
-  height: 1.5rem; /* Adjust as needed */
-  background-image: url('{{ "path/to/arrow-image.png" | asset_url }}'); /* Update with the correct path */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 990px) {
-  .custom-headline-container::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 90px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .stof-list__item:first-child::after,
-  .stof-list__item:nth-child(2)::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 90px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  font-style: italic;
+  padding: 0;
+  margin: 0;
 }
 
 .caption-headline {
   font-size: 16px;
-  font-family: 'Pitch', sans-serif; /* Set font to Pitch */
-  text-transform: uppercase; /* Transform text to uppercase */
+  font-family: 'Pitch', sans-serif;
+  text-transform: uppercase;
 }
 
 .rte.new-caledonia {
-  font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
-  line-height: 1.15; /* Set line height to 115% */
+  font-family: 'New Caledonia', serif;
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 749px) {
+  .stof-list {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+
+  .stof-list__item:first-child,
+  .stof-list__item:last-child {
+    width: 100%;
+  }
 }
