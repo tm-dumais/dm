@@ -152,13 +152,13 @@
 
 .stof-item--half {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px; /* This adds space between the two columns */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; /* This adds space between the two columns without pushing content down */
 }
 
 .stof-item--half .stof-card {
-  width: calc(50% - 20px);
+  width: 100%; /* Changed from calc(50% - 20px) to 100% */
 }
 
 .stof-card {
@@ -213,7 +213,7 @@
   }
 
   .stof-item--half {
-    flex-direction: column;
+    grid-template-columns: 1fr; /* Change to a single column for mobile */
     gap: 60px; /* Increased gap for mobile view */
   }
 
