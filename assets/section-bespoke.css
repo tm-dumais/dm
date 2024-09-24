@@ -274,7 +274,7 @@
   content: "";
   display: block;
   position: absolute;
-  bottom: -50px; /* Move the arrow further down */
+  bottom: 3rem; /* Move the arrow further down */
   left: 50%;
   transform: translateX(-50%);
   width: 50px;
