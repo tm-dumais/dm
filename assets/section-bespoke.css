@@ -240,7 +240,13 @@
   padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
 }
 
-.section-bespoke-2,
+.section-bespoke-2 {
+  margin-bottom: 80px; /* Adjust as needed for spacing between sections */
+  margin-top: 6rem; /* Add margin-top for spacing above the section */
+  padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
+  position: relative; /* Ensure the section is positioned relative */
+}
+
 .section-bespoke-3 {
   margin-bottom: 80px; /* Adjust as needed for spacing between sections */
   margin-top: 6rem; /* Add margin-top for spacing above the section */
@@ -269,32 +275,6 @@
 }
 
 .section-bespoke-1::after,
-.section-bespoke-2::after,
-.section-bespoke-3::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 90px;
-  background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-left.png?v=1593634124");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 1rem; /* Add some space between the section and the arrow */
-}
-
-.stof-container.section-bespoke-2 .stof-item--half .stof-card:nth-child(2) {
-  margin-top: 6rem; /* Increased by three times */
-  padding-top: 6rem; /* Increased by three times */
-}
-
-.stof-item--half {
-  grid-template-columns: 1fr 1fr;
-  gap: 12rem; /* Further increased gap between columns */
-}
-
 .section-bespoke-2::after {
   content: "";
   display: block;
@@ -304,7 +284,7 @@
   transform: translateX(-50%);
   width: 50px;
   height: 90px;
-  background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369"); /* Updated image URL */
+  background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-left.png?v=1593634124");
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; /* Add some space between the section and the arrow */
