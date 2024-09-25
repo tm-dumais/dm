@@ -38,6 +38,7 @@
         "text_GCkHnt",
         "heading_AJJ8Ry"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -49,11 +50,10 @@
     },
     "3f3bbccc-88b5-4c43-8651-13fde18c35bd": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"klaviyo-form-Y2Pnh2\"></div>",
         "color_scheme": "background-1",
-        "padding_top": 0,
+        "padding_top": 20,
         "padding_bottom": 0
       }
     },
