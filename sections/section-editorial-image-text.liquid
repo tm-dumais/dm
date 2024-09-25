@@ -15,7 +15,7 @@
     </div>
     <div class="section-editorial-image-text__text-container">
       {% if section.settings.heading != blank %}
-        <h2 class="section-editorial-image-text__heading {{ section.settings.heading_size }}" style="font-family: 'New Caledonia', serif; font-style: italic;">
+        <h2 class="section-editorial-image-text__heading {{ section.settings.heading_size }}">
           {{ section.settings.heading }}
         </h2>
       {% endif %}
@@ -43,15 +43,15 @@
       "options": [
         {
           "value": "h2",
-          "label": "T2"
+          "label": "Small"
         },
         {
           "value": "h1",
-          "label": "T1"
+          "label": "Medium"
         },
         {
           "value": "h0",
-          "label": "T0"
+          "label": "Large"
         }
       ],
       "default": "h1",

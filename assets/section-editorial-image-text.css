@@ -21,10 +21,13 @@
   height: auto;
 }
 
+.section-editorial-image-text__text-container {
+  padding: 2rem 4rem;
+}
+
 .section-editorial-image-text__heading {
   font-family: 'New Caledonia', serif;
   font-style: italic;
-  padding: 2rem;
 }
 
 .section-editorial-image-text__heading.h0 {
@@ -63,5 +66,17 @@
 
   .section-editorial-image-text__text-container {
     padding: 2rem 1rem;
+  }
+
+  .section-editorial-image-text__heading.h0 {
+    font-size: 2.5rem;
+  }
+
+  .section-editorial-image-text__heading.h1 {
+    font-size: 2rem;
+  }
+
+  .section-editorial-image-text__heading.h2 {
+    font-size: 1.75rem;
   }
 }
