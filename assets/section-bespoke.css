@@ -491,25 +491,9 @@
     .section-bespoke-1 .stof-headline,
     .section-bespoke-3 .stof-headline,
     .section-semi-bespoke-1 .stof-headline {
-        position: relative;
+        position: static;
         order: -1; /* This moves the headline to the top */
-        margin-bottom: 6rem; /* Increase space to accommodate the arrow */
-    }
-
-    .section-bespoke-1 .stof-headline::after,
-    .section-semi-bespoke-1 .stof-headline::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 100%; /* Position the arrow below the headline */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50px;
-        height: 90px;
-        background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-down.png?v=1593633369");
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 1rem; /* Add some space between the headline and the arrow */
+        margin-bottom: 2rem; /* Add some space between the headline and the content */
     }
 
     .section-bespoke-1 .stof-item--full .stof-card,
@@ -559,11 +543,5 @@
     .section-semi-bespoke-1 {
         padding-top: 10rem; /* 10rem top padding for mobile */
         padding-bottom: 8rem; /* 8rem bottom padding for mobile */
-    }
-}
-
-@media screen and (max-width: 749px) {
-    .section-bespoke-1 {
-        margin-top: 0rem; /* Set margin-top to 0 for mobile */
     }
 }
