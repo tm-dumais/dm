@@ -22,7 +22,7 @@
 }
 
 .section-editorial-double-image__caption {
-  font-family: 'Pitch', sans-serif;
+  font-family: 'pitch', monospace;
   font-size: 0.875rem;
   text-transform: uppercase;
   margin-top: 1rem;

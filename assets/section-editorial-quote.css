@@ -12,6 +12,7 @@
 }
 
 .section-editorial-quote__text {
+  font-family: 'new-caledonia', serif;
   font-style: italic;
   text-align: center;
 }
