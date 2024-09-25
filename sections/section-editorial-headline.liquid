@@ -1,7 +1,7 @@
 {{ 'section-editorial-headline.css' | asset_url | stylesheet_tag }}
 
-<div class="section-editorial-headline">
-  <div class="section-editorial-headline__content content-container">
+<div class="editorial-section section-editorial-headline background-{{ section.settings.background_color }}">
+  <div class="editorial-section__inner section-editorial-headline__content">
     {% if section.settings.headline != blank %}
       <h2 class="section-editorial-headline__text {{ section.settings.heading_size }}">
         {{ section.settings.headline }}
@@ -39,6 +39,30 @@
       ],
       "default": "h1",
       "label": "Heading size"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        {
+          "value": "none",
+          "label": "No background"
+        },
+        {
+          "value": "color-1",
+          "label": "Color 1"
+        },
+        {
+          "value": "color-2",
+          "label": "Color 2"
+        },
+        {
+          "value": "color-3",
+          "label": "Color 3"
+        }
+      ],
+      "default": "none",
+      "label": "Background color"
     }
   ],
   "presets": [

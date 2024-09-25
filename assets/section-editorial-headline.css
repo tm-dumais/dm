@@ -1,12 +1,3 @@
-.section-editorial-headline {
-  padding: 4rem 0;
-}
-
-.section-editorial-headline__content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .section-editorial-headline__text {
   font-family: 'new-caledonia', serif;
   font-style: italic;

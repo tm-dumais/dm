@@ -1,0 +1,72 @@
+{{ 'editorial-template.css' | asset_url | stylesheet_tag }}
+
+<div class="template-editorial">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'editorial_headline' %}
+        {% render 'section-editorial-headline', section: block %}
+      {% when 'editorial_single_image' %}
+        {% render 'section-editorial-single-image', section: block %}
+      {% when 'editorial_double_image' %}
+        {% render 'section-editorial-double-image', section: block %}
+      {% when 'editorial_quote' %}
+        {% render 'section-editorial-quote', section: block %}
+      {% when 'editorial_image_text' %}
+        {% render 'section-editorial-image-text', section: block %}
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Page",
+  "blocks": [
+    {
+      "type": "editorial_headline",
+      "name": "Editorial Headline",
+      "limit": 1,
+      "settings": [
+        // Copy settings from section-editorial-headline.liquid
+      ]
+    },
+    {
+      "type": "editorial_single_image",
+      "name": "Editorial Single Image",
+      "settings": [
+        // Copy settings from section-editorial-single-image.liquid
+      ]
+    },
+    {
+      "type": "editorial_double_image",
+      "name": "Editorial Double Image",
+      "settings": [
+        // Copy settings from section-editorial-double-image.liquid
+      ]
+    },
+    {
+      "type": "editorial_quote",
+      "name": "Editorial Quote",
+      "settings": [
+        // Copy settings from section-editorial-quote.liquid
+      ]
+    },
+    {
+      "type": "editorial_image_text",
+      "name": "Editorial Image and Text",
+      "settings": [
+        // Copy settings from section-editorial-image-text.liquid
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Page",
+      "blocks": [
+        {
+          "type": "editorial_headline"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
