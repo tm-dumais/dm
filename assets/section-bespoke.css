@@ -235,6 +235,15 @@
     margin-top: 1rem; /* Add some space between the title and the arrow */
 }
 
+
+@media screen and (max-width: 749px) {
+
+    .section-bespoke-1 .stof-headline::after {
+        top: 4rem; /* Adjust the top position for mobile */
+    }
+}
+
+
 .stof-item {
     display: grid;
 }
