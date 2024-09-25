@@ -554,6 +554,6 @@
 @media screen and (max-width: 749px) {
 
     .section-bespoke-1 .stof-headline::after {
-        bottom: 8rem; /* Adjust the top position for mobile */
+        top: 6rem !important; /* Adjust the top position for mobile */
     }
 }
