@@ -1,0 +1,146 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "home_section_split_MX3xCT": {
+      "type": "home-section-split",
+      "custom_css": [
+        ".home-section-split--padding-horizontal {padding-left: 3rem; padding-right: 3rem;}",
+        ".home-section-split--padding-top {padding-top: 3rem;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "image_position": "left",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
+        "eyebrow_text": "",
+        "heading": "<p>We work closely with clients to create bespoke pieces for residential and hospitality spaces, whether adapting an existing piece or imagining something entirely new. We view the process as a collaboration. It’s an opportunity to invite you into our world and better understand yours—how you live, what you’re drawn to and, ultimately, how the piece will function in your life. </p>",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "color-1",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": true
+      }
+    },
+    "section_bespoke_1_qnAAb6": {
+      "type": "section-bespoke-1",
+      "settings": {
+        "title": "Bespoke",
+        "heading_size": "h1",
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "caption_headline": "1 Design Inception",
+        "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
+      }
+    },
+    "section_bespoke_2_8NVNqN": {
+      "type": "section-bespoke-2",
+      "settings": {
+        "image_1": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "caption_headline_1": "2 Prototype and Refine",
+        "text_1": "<p>Once the initial concept is approved, we will create detailed sketches and glaze samples for the piece. If we’re producing greater quantities for a hospitality or wholesale partnership, we createprototypes to ensure the design is structurally sound and achieves the desired effect.</p>",
+        "image_2": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "caption_headline_2": "",
+        "text_2": ""
+      }
+    },
+    "section_bespoke_3_3Mf34V": {
+      "type": "section-bespoke-3",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "caption_headline": "3 Design, Realized",
+        "text": "<p>Once approved, we put our collaborative and imaginative pieces into production: we’ll cut, assemble, dry, fire, glaze, fire, fit, shade and test your finished product. This process takes between 10 to 14 weeks.</p>"
+      }
+    },
+    "section_semi_bespoke_KHWPBH": {
+      "type": "section-semi-bespoke",
+      "settings": {
+        "title": "Semi-Bespoke",
+        "heading_size": "h1",
+        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "caption_headline": "",
+        "text": "<p>We offer a semi-bespoke experience for our designers who want to modify an existing design’s scale, glaze, texture or shade to suit your space.</p>",
+        "background_color": "color-3",
+        "image_alt": ""
+      }
+    },
+    "section_home_text_banner_KxhiGy": {
+      "type": "section-home-text-banner",
+      "settings": {
+        "vertical_alignment": "top",
+        "eyebrow_text": "",
+        "heading": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
+        "heading_size": "h1",
+        "button_label": "Contact Sales",
+        "button_link": "mailto:studio@dumaismade.com",
+        "background_color": "none",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "836d8415-0c97-4bca-b60c-33c0f3cd7b52": {
+      "type": "newsletter",
+      "blocks": {
+        "7857ab6d-dc8c-43ef-b268-03e60a86dc92": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        },
+        "template--16834058158294__836d8415-0c97-4bca-b60c-33c0f3cd7b52-16746738185959ea04-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up to our Newsletter",
+            "heading_size": "h2"
+          }
+        },
+        "template--16834058158294__836d8415-0c97-4bca-b60c-33c0f3cd7b52-16746738185959ea04-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7857ab6d-dc8c-43ef-b268-03e60a86dc92",
+        "template--16834058158294__836d8415-0c97-4bca-b60c-33c0f3cd7b52-16746738185959ea04-0",
+        "template--16834058158294__836d8415-0c97-4bca-b60c-33c0f3cd7b52-16746738185959ea04-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "home_section_split_MX3xCT",
+    "section_bespoke_1_qnAAb6",
+    "section_bespoke_2_8NVNqN",
+    "section_bespoke_3_3Mf34V",
+    "section_semi_bespoke_KHWPBH",
+    "section_home_text_banner_KxhiGy",
+    "main",
+    "836d8415-0c97-4bca-b60c-33c0f3cd7b52"
+  ]
+}
