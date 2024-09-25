@@ -1,0 +1,14 @@
+.section-editorial-headline {
+  padding: 4rem 0;
+}
+
+.section-editorial-headline__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-editorial-headline__text {
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+}

@@ -1,0 +1,75 @@
+{{ 'section-editorial-quote.css' | asset_url | stylesheet_tag }}
+
+<div class="section-editorial-quote background-{{ section.settings.background_color }}" style="height: 100vh;">
+  <div class="section-editorial-quote__content content-container">
+    {% if section.settings.quote != blank %}
+      <blockquote class="section-editorial-quote__text {{ section.settings.quote_size }}" style="font-style: italic;">
+        {{ section.settings.quote }}
+      </blockquote>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Quote",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "quote",
+      "label": "Quote",
+      "default": "<p>Your quote here</p>"
+    },
+    {
+      "type": "select",
+      "id": "quote_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "T2"
+        },
+        {
+          "value": "h1",
+          "label": "T1"
+        },
+        {
+          "value": "h0",
+          "label": "T0"
+        }
+      ],
+      "default": "h1",
+      "label": "Quote size"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        {
+          "value": "none",
+          "label": "No background"
+        },
+        {
+          "value": "color-1",
+          "label": "Color 1"
+        },
+        {
+          "value": "color-2",
+          "label": "Color 2"
+        },
+        {
+          "value": "color-3",
+          "label": "Color 3"
+        }
+      ],
+      "default": "none",
+      "label": "Background color"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Quote",
+      "category": "Editorial"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,31 @@
+{{ 'section-editorial-headline.css' | asset_url | stylesheet_tag }}
+
+<div class="section-editorial-headline">
+  <div class="section-editorial-headline__content content-container">
+    {% if section.settings.headline != blank %}
+      <div class="section-editorial-headline__text rte">
+        {{ section.settings.headline }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Headline",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "headline",
+      "label": "Headline",
+      "default": "<p>Your headline here</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Headline",
+      "category": "Editorial"
+    }
+  ]
+}
+{% endschema %}

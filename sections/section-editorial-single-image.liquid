@@ -1,0 +1,49 @@
+{{ 'section-editorial-single-image.css' | asset_url | stylesheet_tag }}
+
+<div class="section-editorial-single-image">
+  <div class="section-editorial-single-image__content content-container">
+    {% if section.settings.image != blank %}
+      <div class="section-editorial-single-image__image-container {% if section.settings.image.aspect_ratio > 1 %}landscape{% else %}portrait{% endif %}">
+        {{ section.settings.image | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          class: "section-editorial-single-image__image",
+          sizes: "100vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt | default: section.settings.caption | default: 'Editorial image'
+        }}
+      </div>
+    {% endif %}
+    {% if section.settings.caption != blank %}
+      <p class="section-editorial-single-image__caption">{{ section.settings.caption | upcase }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Single Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image alt text (optional)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Single Image",
+      "category": "Editorial"
+    }
+  ]
+}
+{% endschema %}

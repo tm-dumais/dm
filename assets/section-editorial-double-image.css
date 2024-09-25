@@ -1,0 +1,35 @@
+.section-editorial-double-image {
+  padding: 4rem 0;
+}
+
+.section-editorial-double-image__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-editorial-double-image__grid {
+  display: flex;
+  gap: 3rem;
+}
+
+.section-editorial-double-image__item {
+  flex: 1;
+}
+
+.section-editorial-double-image__image {
+  width: 100%;
+  height: auto;
+}
+
+.section-editorial-double-image__caption {
+  font-family: 'Pitch', sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 749px) {
+  .section-editorial-double-image__grid {
+    flex-direction: column;
+  }
+}
