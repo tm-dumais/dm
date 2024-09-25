@@ -58,6 +58,17 @@
         "image_alt": ""
       }
     },
+    "section_editorial_double_image_qRDnec": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image_1": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-2.jpg",
+        "caption_1": "This is an image caption for editorial pieces",
+        "image_2": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n-1.jpg",
+        "caption_2": "This is an image caption for editorial pieces",
+        "image_1_alt": "",
+        "image_2_alt": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -109,6 +120,7 @@
     "section_editorial_single_image_qRDNRw",
     "section_editorial_quote_i7MYhw",
     "section_editorial_single_image_VKCTNG",
+    "section_editorial_double_image_qRDnec",
     "main",
     "836d8415-0c97-4bca-b60c-33c0f3cd7b52"
   ]
