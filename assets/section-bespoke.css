@@ -555,5 +555,10 @@
 
     .section-bespoke-1 .stof-headline::after {
         top: 6rem !important; /* Adjust the top position for mobile */
+        bottom:0 !important;
+    }
+
+    .section-bespoke-1{
+        margin-top: 0 !important;
     }
 }
