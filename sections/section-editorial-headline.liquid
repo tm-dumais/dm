@@ -3,9 +3,9 @@
 <div class="section-editorial-headline">
   <div class="section-editorial-headline__content content-container">
     {% if section.settings.headline != blank %}
-      <div class="section-editorial-headline__text rte">
+      <h2 class="section-editorial-headline__text {{ section.settings.heading_size }}">
         {{ section.settings.headline }}
-      </div>
+      </h2>
     {% endif %}
   </div>
 </div>
@@ -15,10 +15,30 @@
   "name": "Editorial Headline",
   "settings": [
     {
-      "type": "richtext",
+      "type": "text",
       "id": "headline",
       "label": "Headline",
-      "default": "<p>Your headline here</p>"
+      "default": "Your headline here"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
     }
   ],
   "presets": [
