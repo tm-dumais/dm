@@ -18,6 +18,7 @@
     "section_editorial_single_image_j37nL8": {
       "type": "section-editorial-single-image",
       "settings": {
+        "image": "shopify://shop_images/image_149.jpg",
         "caption": "",
         "image_alt": ""
       }
