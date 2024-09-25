@@ -15,20 +15,20 @@
         "template--16880504471766__bf11ecf4-e193-4260-82b2-eb804c321a33-168087618759e02ed6-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>The Annual Studio Sale<\/p>",
+            "heading": "<p>The Annual Studio Sale</p>",
             "heading_size": "h1"
           }
         },
         "text_GCkHnt": {
           "type": "text",
           "settings": {
-            "text": "<p>Join us for our once-a-year studio sale event, with seconds and samples at up to 75% off. <\/p><p><\/p>"
+            "text": "<p>Join us for our once-a-year studio sale event, with seconds and samples at up to 75% off. </p><p></p>"
           }
         },
         "heading_AJJ8Ry": {
           "type": "heading",
           "settings": {
-            "heading": "<p><\/p><h3>Event Details<\/h3><p><br\/>Saturday, September 7<br\/>10am to 2pm<br\/><br\/>931 Bantam Road<br\/>Floor 3<br\/><br\/><a href=\"https:\/\/www.facebook.com\/events\/1230651971272850\" target=\"_blank\" title=\"Annual Studio Sale RSVP\">RSVP &gt;<\/a><\/p>",
+            "heading": "<p></p><h3>Event Details</h3><p><br/>Saturday, September 7<br/>10am to 2pm<br/><br/>931 Bantam Road<br/>Floor 3<br/><br/><a href=\"https://www.facebook.com/events/1230651971272850\" target=\"_blank\" title=\"Annual Studio Sale RSVP\">RSVP &gt;</a></p>",
             "heading_size": "h1"
           }
         }
@@ -51,7 +51,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-UNfpjr\"><\/div>",
+        "custom_liquid": "<div class=\"klaviyo-form-Y2Pnh2\"></div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
@@ -63,13 +63,13 @@
         "f99e8aa0-5fcb-4c34-ab5f-f423e425dadd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/31_Days_hero_slate.jpg"
+            "image": "shopify://shop_images/31_Days_hero_slate.jpg"
           }
         },
         "583f4a80-e912-4f47-9199-45196ad6fad7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dumais_0313_79_a72811b2-1d3e-4928-93ec-f28feef9f7d5.jpg"
+            "image": "shopify://shop_images/Dumais_0313_79_a72811b2-1d3e-4928-93ec-f28feef9f7d5.jpg"
           }
         }
       },
@@ -101,7 +101,7 @@
         "template--16834058191062__b5312627-67aa-4640-8117-4a6d2dca5640-1674677405316e6cf5-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           }
         }
       },
