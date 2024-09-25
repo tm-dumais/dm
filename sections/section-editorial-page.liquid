@@ -4,15 +4,15 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'editorial_headline' %}
-        {% render 'section-editorial-headline', section: block %}
+        {% render 'section-editorial-headline', block: block %}
       {% when 'editorial_single_image' %}
-        {% render 'section-editorial-single-image', section: block %}
+        {% render 'section-editorial-single-image', block: block %}
       {% when 'editorial_double_image' %}
-        {% render 'section-editorial-double-image', section: block %}
+        {% render 'section-editorial-double-image', block: block %}
       {% when 'editorial_quote' %}
-        {% render 'section-editorial-quote', section: block %}
+        {% render 'section-editorial-quote', block: block %}
       {% when 'editorial_image_text' %}
-        {% render 'section-editorial-image-text', section: block %}
+        {% render 'section-editorial-image-text', block: block %}
     {% endcase %}
   {% endfor %}
 </div>
@@ -26,46 +26,39 @@
       "name": "Editorial Headline",
       "limit": 1,
       "settings": [
-        // Copy settings from section-editorial-headline.liquid
+        {
+          "type": "text",
+          "id": "headline",
+          "label": "Headline",
+          "default": "Your headline here"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        }
       ]
     },
-    {
-      "type": "editorial_single_image",
-      "name": "Editorial Single Image",
-      "settings": [
-        // Copy settings from section-editorial-single-image.liquid
-      ]
-    },
-    {
-      "type": "editorial_double_image",
-      "name": "Editorial Double Image",
-      "settings": [
-        // Copy settings from section-editorial-double-image.liquid
-      ]
-    },
-    {
-      "type": "editorial_quote",
-      "name": "Editorial Quote",
-      "settings": [
-        // Copy settings from section-editorial-quote.liquid
-      ]
-    },
-    {
-      "type": "editorial_image_text",
-      "name": "Editorial Image and Text",
-      "settings": [
-        // Copy settings from section-editorial-image-text.liquid
-      ]
-    }
+    // ... (include other block types here)
   ],
   "presets": [
     {
-      "name": "Editorial Page",
-      "blocks": [
-        {
-          "type": "editorial_headline"
-        }
-      ]
+      "name": "Editorial Page"
     }
   ]
 }

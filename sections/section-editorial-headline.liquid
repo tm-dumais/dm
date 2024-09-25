@@ -1,10 +1,10 @@
 {{ 'section-editorial-headline.css' | asset_url | stylesheet_tag }}
 
-<div class="editorial-section section-editorial-headline background-{{ section.settings.background_color }}">
+<div class="editorial-section section-editorial-headline background-{{ block.settings.background_color }}">
   <div class="editorial-section__inner section-editorial-headline__content">
-    {% if section.settings.headline != blank %}
-      <h2 class="section-editorial-headline__text {{ section.settings.heading_size }}">
-        {{ section.settings.headline }}
+    {% if block.settings.headline != blank %}
+      <h2 class="section-editorial-headline__text {{ block.settings.heading_size }}">
+        {{ block.settings.headline }}
       </h2>
     {% endif %}
   </div>
