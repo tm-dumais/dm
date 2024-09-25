@@ -26,7 +26,9 @@
     "section_editorial_double_image_6wc6GF": {
       "type": "section-editorial-double-image",
       "settings": {
+        "image_1": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n.jpg",
         "caption_1": "",
+        "image_2": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
         "caption_2": "",
         "image_1_alt": "",
         "image_2_alt": ""
@@ -35,16 +37,17 @@
     "section_editorial_single_image_qRDNRw": {
       "type": "section-editorial-single-image",
       "settings": {
-        "caption": "",
+        "image": "shopify://shop_images/image_151.jpg",
+        "caption": "This is an image caption for editorial pieces",
         "image_alt": ""
       }
     },
     "section_editorial_quote_i7MYhw": {
       "type": "section-editorial-quote",
       "settings": {
-        "quote": "<p>Your quote here</p>",
+        "quote": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
         "quote_size": "h1",
-        "background_color": "none"
+        "background_color": "color-2"
       }
     },
     "main": {
