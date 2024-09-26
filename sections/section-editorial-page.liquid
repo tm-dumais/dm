@@ -4,15 +4,102 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'editorial_headline' %}
-        {% render 'section-editorial-headline', block: block %}
+        <div class="editorial-section section-editorial-headline background-{{ block.settings.background_color }}">
+          <div class="editorial-section__inner section-editorial-headline__content">
+            {% if block.settings.headline != blank %}
+              <h2 class="section-editorial-headline__text {{ block.settings.heading_size }}">
+                {{ block.settings.headline }}
+              </h2>
+            {% endif %}
+          </div>
+        </div>
       {% when 'editorial_single_image' %}
-        {% render 'section-editorial-single-image', block: block %}
+        <div class="section-editorial-single-image">
+          <div class="section-editorial-single-image__content content-container">
+            {% if block.settings.image != blank %}
+              <div class="section-editorial-single-image__image-container {% if block.settings.image.aspect_ratio > 1 %}landscape{% else %}portrait{% endif %}">
+                {{ block.settings.image | image_url: width: 1500 | image_tag:
+                  loading: 'lazy',
+                  class: "section-editorial-single-image__image",
+                  sizes: "100vw",
+                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                  alt: block.settings.image.alt | default: block.settings.caption | default: 'Editorial image'
+                }}
+              </div>
+            {% endif %}
+            {% if block.settings.caption != blank %}
+              <p class="section-editorial-single-image__caption">{{ block.settings.caption | upcase }}</p>
+            {% endif %}
+          </div>
+        </div>
       {% when 'editorial_double_image' %}
-        {% render 'section-editorial-double-image', block: block %}
+        <div class="section-editorial-double-image">
+          <div class="section-editorial-double-image__content content-container">
+            <div class="section-editorial-double-image__grid">
+              <div class="section-editorial-double-image__item">
+                {% if block.settings.image_1 != blank %}
+                  {{ block.settings.image_1 | image_url: width: 750 | image_tag:
+                    loading: 'lazy',
+                    class: "section-editorial-double-image__image",
+                    sizes: "(min-width: 750px) 50vw, 100vw",
+                    widths: '375, 550, 750, 1100, 1500',
+                    alt: block.settings.image_1.alt | default: block.settings.caption_1 | default: 'Editorial image 1'
+                  }}
+                {% endif %}
+                {% if block.settings.caption_1 != blank %}
+                  <p class="section-editorial-double-image__caption">{{ block.settings.caption_1 | upcase }}</p>
+                {% endif %}
+              </div>
+              <div class="section-editorial-double-image__item">
+                {% if block.settings.image_2 != blank %}
+                  {{ block.settings.image_2 | image_url: width: 750 | image_tag:
+                    loading: 'lazy',
+                    class: "section-editorial-double-image__image",
+                    sizes: "(min-width: 750px) 50vw, 100vw",
+                    widths: '375, 550, 750, 1100, 1500',
+                    alt: block.settings.image_2.alt | default: block.settings.caption_2 | default: 'Editorial image 2'
+                  }}
+                {% endif %}
+                {% if block.settings.caption_2 != blank %}
+                  <p class="section-editorial-double-image__caption">{{ block.settings.caption_2 | upcase }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
       {% when 'editorial_quote' %}
-        {% render 'section-editorial-quote', block: block %}
+        <div class="section-editorial-quote background-{{ block.settings.background_color }}" style="height: 100vh;">
+          <div class="section-editorial-quote__content content-container">
+            {% if block.settings.quote != blank %}
+              <blockquote class="section-editorial-quote__text {{ block.settings.quote_size }}" style="font-style: italic;">
+                {{ block.settings.quote }}
+              </blockquote>
+            {% endif %}
+          </div>
+        </div>
       {% when 'editorial_image_text' %}
-        {% render 'section-editorial-image-text', block: block %}
+        <div class="section-editorial-image-text background-{{ block.settings.background_color }}">
+          <div class="section-editorial-image-text__grid{% if block.settings.image_position == 'right' %} section-editorial-image-text__grid--reverse{% endif %}">
+            <div class="section-editorial-image-text__image-container">
+              {% if block.settings.image != blank %}
+                {{ block.settings.image | image_url: width: 750 | image_tag:
+                  loading: 'lazy',
+                  class: "section-editorial-image-text__image",
+                  sizes: "(min-width: 750px) 50vw, 100vw",
+                  widths: '375, 550, 750, 1100, 1500',
+                  alt: block.settings.image.alt | default: block.settings.heading | default: 'Editorial image'
+                }}
+              {% endif %}
+            </div>
+            <div class="section-editorial-image-text__text-container">
+              {% if block.settings.heading != blank %}
+                <h2 class="section-editorial-image-text__heading {{ block.settings.heading_size }}">
+                  {{ block.settings.heading }}
+                </h2>
+              {% endif %}
+            </div>
+          </div>
+        </div>
     {% endcase %}
   {% endfor %}
 </div>
@@ -24,7 +111,6 @@
     {
       "type": "editorial_headline",
       "name": "Editorial Headline",
-      "limit": 1,
       "settings": [
         {
           "type": "text",
@@ -51,10 +137,227 @@
           ],
           "default": "h1",
           "label": "Heading size"
+        },
+        {
+          "type": "select",
+          "id": "background_color",
+          "options": [
+            {
+              "value": "none",
+              "label": "No background"
+            },
+            {
+              "value": "color-1",
+              "label": "Color 1"
+            },
+            {
+              "value": "color-2",
+              "label": "Color 2"
+            },
+            {
+              "value": "color-3",
+              "label": "Color 3"
+            }
+          ],
+          "default": "none",
+          "label": "Background color"
         }
       ]
     },
-    // ... (include other block types here)
+    {
+      "type": "editorial_single_image",
+      "name": "Editorial Single Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image alt text (optional)"
+        }
+      ]
+    },
+    {
+      "type": "editorial_double_image",
+      "name": "Editorial Double Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "text",
+          "id": "caption_1",
+          "label": "Caption 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "text",
+          "id": "caption_2",
+          "label": "Caption 2"
+        },
+        {
+          "type": "text",
+          "id": "image_1_alt",
+          "label": "Image 1 alt text (optional)"
+        },
+        {
+          "type": "text",
+          "id": "image_2_alt",
+          "label": "Image 2 alt text (optional)"
+        }
+      ]
+    },
+    {
+      "type": "editorial_quote",
+      "name": "Editorial Quote",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Quote",
+          "default": "<p>Your quote here</p>"
+        },
+        {
+          "type": "select",
+          "id": "quote_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Quote size"
+        },
+        {
+          "type": "select",
+          "id": "background_color",
+          "options": [
+            {
+              "value": "none",
+              "label": "No background"
+            },
+            {
+              "value": "color-1",
+              "label": "Color 1"
+            },
+            {
+              "value": "color-2",
+              "label": "Color 2"
+            },
+            {
+              "value": "color-3",
+              "label": "Color 3"
+            }
+          ],
+          "default": "none",
+          "label": "Background color"
+        }
+      ]
+    },
+    {
+      "type": "editorial_image_text",
+      "name": "Editorial Image and Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left",
+          "label": "Image position"
+        },
+        {
+          "type": "select",
+          "id": "background_color",
+          "options": [
+            {
+              "value": "none",
+              "label": "No background"
+            },
+            {
+              "value": "color-1",
+              "label": "Color 1"
+            },
+            {
+              "value": "color-2",
+              "label": "Color 2"
+            },
+            {
+              "value": "color-3",
+              "label": "Color 3"
+            }
+          ],
+          "default": "none",
+          "label": "Background color"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image alt text (optional)"
+        }
+      ]
+    }
   ],
   "presets": [
     {
