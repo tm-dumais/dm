@@ -4,15 +4,15 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'editorial_headline' %}
-        {% render 'section-editorial-headline', block: block %}
+        {% render 'section-editorial-headline', block: block, page_handle: page.handle %}
       {% when 'editorial_single_image' %}
-        {% render 'section-editorial-single-image', block: block %}
+        {% render 'section-editorial-single-image', block: block, page_handle: page.handle %}
       {% when 'editorial_double_image' %}
-        {% render 'section-editorial-double-image', block: block %}
+        {% render 'section-editorial-double-image', block: block, page_handle: page.handle %}
       {% when 'editorial_quote' %}
-        {% render 'section-editorial-quote', block: block %}
+        {% render 'section-editorial-quote', block: block, page_handle: page.handle %}
       {% when 'editorial_image_text' %}
-        {% render 'section-editorial-image-text', block: block %}
+        {% render 'section-editorial-image-text', block: block, page_handle: page.handle %}
     {% endcase %}
   {% endfor %}
 </div>
