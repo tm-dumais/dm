@@ -104,7 +104,7 @@
         "id": "enable_page_sections",
         "label": "Enable page sections",
         "default": true
-      }
+      },
       {
         "type": "color",
         "id": "colors_accent_1",
@@ -847,7 +847,5 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       }
     ]
-  }
-]
   }
 ]
