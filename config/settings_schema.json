@@ -787,8 +787,8 @@
             "label": "Default"
           },
           {
-            "value": "page.editorial",
-            "label": "Editorial"
+            "value": "page.flexible",
+            "label": "Flexible"
           }
         ],
         "default": "page"
