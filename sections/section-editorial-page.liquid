@@ -1,0 +1,101 @@
+<div class="editorial-page">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'headline' %}
+        {% render 'section-editorial-headline', block: block %}
+      {% when 'single_image' %}
+        {% render 'section-editorial-single-image', block: block %}
+      {% when 'double_image' %}
+        {% render 'section-editorial-double-image', block: block %}
+      {% when 'quote' %}
+        {% render 'section-editorial-quote', block: block %}
+      {% when 'text' %}
+        <div class="editorial-text">{{ block.settings.text }}</div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Page",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "headline",
+      "name": "Headline",
+      "settings": [
+        {
+          "type": "text",
+          "id": "headline",
+          "label": "Headline"
+        }
+      ]
+    },
+    {
+      "type": "single_image",
+      "name": "Single Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    },
+    {
+      "type": "double_image",
+      "name": "Double Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        {
+          "type": "text",
+          "id": "quote_text",
+          "label": "Quote Text"
+        },
+        {
+          "type": "text",
+          "id": "quote_author",
+          "label": "Quote Author"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Page"
+    }
+  ]
+}
+{% endschema %}
