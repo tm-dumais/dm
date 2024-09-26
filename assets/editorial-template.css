@@ -2,4 +2,18 @@
   background-color: #EBE2D9;
 }
 
+.editorial-content,
+.editorial-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.editorial-content__inner,
+.editorial-section__inner {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
 /* Add styles for each editorial component here */

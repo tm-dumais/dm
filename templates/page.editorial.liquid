@@ -1,11 +1,13 @@
 {{ 'editorial-template.css' | asset_url | stylesheet_tag }}
 
-<div class="template-editorial" style="background-color: #EBE2D9;">
+<div class="template-editorial">
   <h1 class="visually-hidden">{{ page.title }}</h1>
-  <div class="page-width">
-    <div class="rte">
-      {{ page.content }}
+  <div class="editorial-content">
+    <div class="editorial-content__inner">
+      <div class="rte">
+        {{ page.content }}
+      </div>
     </div>
-    {% section 'editorial-sections' %}
   </div>
+  {% section 'editorial-sections' %}
 </div>
