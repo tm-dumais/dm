@@ -1,0 +1,196 @@
+{{ 'editorial-template.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-content" style="background-color: #EBE2D9;">
+  <div class="page-width">
+    <div class="rte">
+      {{ section.settings.content }}
+    </div>
+    <div class="editorial-sections">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'editorial_headline' %}
+            {% render 'editorial-headline', block: block %}
+          {% when 'editorial_single_image' %}
+            {% render 'editorial-single-image', block: block %}
+          {% when 'editorial_double_image' %}
+            {% render 'editorial-double-image', block: block %}
+          {% when 'editorial_quote' %}
+            {% render 'editorial-quote', block: block %}
+          {% when 'editorial_image_text' %}
+            {% render 'editorial-image-text', block: block %}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Content",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "editorial_headline",
+      "name": "Editorial Headline",
+      "settings": [
+        {
+          "type": "text",
+          "id": "headline",
+          "label": "Headline"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        }
+      ]
+    },
+    {
+      "type": "editorial_single_image",
+      "name": "Editorial Single Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    },
+    {
+      "type": "editorial_double_image",
+      "name": "Editorial Double Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "text",
+          "id": "caption_1",
+          "label": "Caption 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "text",
+          "id": "caption_2",
+          "label": "Caption 2"
+        }
+      ]
+    },
+    {
+      "type": "editorial_quote",
+      "name": "Editorial Quote",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "select",
+          "id": "quote_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Quote size"
+        }
+      ]
+    },
+    {
+      "type": "editorial_image_text",
+      "name": "Editorial Image and Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left",
+          "label": "Image position"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
