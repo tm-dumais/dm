@@ -166,7 +166,6 @@
           },
           "editorial_single_image_MwtprH": {
             "type": "editorial_single_image",
-            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
               "caption": "",
