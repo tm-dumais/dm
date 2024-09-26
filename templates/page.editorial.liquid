@@ -3,21 +3,6 @@
 <div class="template-editorial">
   <h1 class="visually-hidden">{{ page.title }}</h1>
   <div class="page-width">
-    {% for block in page.content.blocks %}
-      {% case block.type %}
-        {% when 'editorial_headline' %}
-          {% render 'section-editorial-headline', block: block %}
-        {% when 'editorial_single_image' %}
-          {% render 'section-editorial-single-image', block: block %}
-        {% when 'editorial_double_image' %}
-          {% render 'section-editorial-double-image', block: block %}
-        {% when 'editorial_quote' %}
-          {% render 'section-editorial-quote', block: block %}
-        {% when 'editorial_image_text' %}
-          {% render 'section-editorial-image-text', block: block %}
-        {% else %}
-          {{ block }}
-      {% endcase %}
-    {% endfor %}
+    {% section 'section-editorial-page' %}
   </div>
 </div>
