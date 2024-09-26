@@ -4,31 +4,31 @@
   <div class="section-editorial-double-image__content content-container">
     <div class="section-editorial-double-image__grid">
       <div class="section-editorial-double-image__item">
-        {% if section.settings.image_1 != blank %}
-          {{ section.settings.image_1 | image_url: width: 750 | image_tag:
+        {% if block.settings.image_1 != blank %}
+          {{ block.settings.image_1 | image_url: width: 750 | image_tag:
             loading: 'lazy',
             class: "section-editorial-double-image__image",
             sizes: "(min-width: 750px) 50vw, 100vw",
             widths: '375, 550, 750, 1100, 1500',
-            alt: section.settings.image_1.alt | default: section.settings.caption_1 | default: 'Editorial image 1'
+            alt: block.settings.image_1.alt | default: block.settings.caption_1 | default: 'Editorial image 1'
           }}
         {% endif %}
-        {% if section.settings.caption_1 != blank %}
-          <p class="section-editorial-double-image__caption">{{ section.settings.caption_1 | upcase }}</p>
+        {% if block.settings.caption_1 != blank %}
+          <p class="section-editorial-double-image__caption">{{ block.settings.caption_1 | upcase }}</p>
         {% endif %}
       </div>
       <div class="section-editorial-double-image__item">
-        {% if section.settings.image_2 != blank %}
-          {{ section.settings.image_2 | image_url: width: 750 | image_tag:
+        {% if block.settings.image_2 != blank %}
+          {{ block.settings.image_2 | image_url: width: 750 | image_tag:
             loading: 'lazy',
             class: "section-editorial-double-image__image",
             sizes: "(min-width: 750px) 50vw, 100vw",
             widths: '375, 550, 750, 1100, 1500',
-            alt: section.settings.image_2.alt | default: section.settings.caption_2 | default: 'Editorial image 2'
+            alt: block.settings.image_2.alt | default: block.settings.caption_2 | default: 'Editorial image 2'
           }}
         {% endif %}
-        {% if section.settings.caption_2 != blank %}
-          <p class="section-editorial-double-image__caption">{{ section.settings.caption_2 | upcase }}</p>
+        {% if block.settings.caption_2 != blank %}
+          <p class="section-editorial-double-image__caption">{{ block.settings.caption_2 | upcase }}</p>
         {% endif %}
       </div>
     </div>

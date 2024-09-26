@@ -1,10 +1,10 @@
 {{ 'section-editorial-quote.css' | asset_url | stylesheet_tag }}
 
-<div class="section-editorial-quote background-{{ section.settings.background_color }}" style="height: 100vh;">
+<div class="section-editorial-quote background-{{ block.settings.background_color }}" style="height: 100vh;">
   <div class="section-editorial-quote__content content-container">
-    {% if section.settings.quote != blank %}
-      <blockquote class="section-editorial-quote__text {{ section.settings.quote_size }}" style="font-style: italic;">
-        {{ section.settings.quote }}
+    {% if block.settings.quote != blank %}
+      <blockquote class="section-editorial-quote__text {{ block.settings.quote_size }}" style="font-style: italic;">
+        {{ block.settings.quote }}
       </blockquote>
     {% endif %}
   </div>
@@ -26,15 +26,15 @@
       "options": [
         {
           "value": "h2",
-          "label": "T2"
+          "label": "Small"
         },
         {
           "value": "h1",
-          "label": "T1"
+          "label": "Medium"
         },
         {
           "value": "h0",
-          "label": "T0"
+          "label": "Large"
         }
       ],
       "default": "h1",
@@ -63,12 +63,6 @@
       ],
       "default": "none",
       "label": "Background color"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Editorial Quote",
-      "category": "Editorial"
     }
   ]
 }
