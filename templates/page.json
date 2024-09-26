@@ -16,9 +16,29 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "section_editorial_headline_CPnUH9": {
+      "type": "section-editorial-headline",
+      "settings": {
+        "headline": "Your headline here",
+        "heading_size": "h1",
+        "background_color": "none"
+      }
+    },
+    "section_editorial_double_image_UcY7QP": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image_1": "shopify://shop_images/362662714_18276607135182672_8720385442993652601_n.jpg",
+        "caption_1": "",
+        "caption_2": "",
+        "image_1_alt": "",
+        "image_2_alt": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_editorial_headline_CPnUH9",
+    "section_editorial_double_image_UcY7QP"
   ]
 }

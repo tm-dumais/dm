@@ -162,10 +162,19 @@
               "headline": "Your headline here",
               "heading_size": "h1"
             }
+          },
+          "editorial_single_image_MwtprH": {
+            "type": "editorial_single_image",
+            "settings": {
+              "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
+              "caption": "",
+              "image_alt": ""
+            }
           }
         },
         "block_order": [
-          "editorial_headline_atCMJy"
+          "editorial_headline_atCMJy",
+          "editorial_single_image_MwtprH"
         ],
         "settings": {
         }
