@@ -1,15 +1,5 @@
 .template-editorial {
-  background-color: #F5F5F5; /* Change this to your desired background color */
+  background-color: #EBE2D9;
 }
 
-.editorial-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 4rem 0;
-}
-
-.editorial-section__inner {
-  width: 80vw;
-  max-width: 1240px;
-  margin: 0 auto;
-}
+/* Add styles for each editorial component here */
