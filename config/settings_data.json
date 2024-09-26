@@ -159,28 +159,16 @@
           "editorial_headline_atCMJy": {
             "type": "editorial_headline",
             "settings": {
-              "headline": "Your headline here",
-              "heading_size": "h1",
-              "background_color": "none"
             }
           },
           "editorial_single_image_MwtprH": {
             "type": "editorial_single_image",
             "settings": {
-              "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
-              "caption": "",
-              "image_alt": ""
             }
           },
           "editorial_double_image_JpUEmV": {
             "type": "editorial_double_image",
             "settings": {
-              "image_1": "shopify://shop_images/362662714_18276607135182672_8720385442993652601_n.jpg",
-              "caption_1": "",
-              "image_2": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-1.jpg",
-              "caption_2": "",
-              "image_1_alt": "",
-              "image_2_alt": ""
             }
           }
         },
@@ -188,6 +176,38 @@
           "editorial_headline_atCMJy",
           "editorial_single_image_MwtprH",
           "editorial_double_image_JpUEmV"
+        ],
+        "settings": {
+        }
+      },
+      "editorial-sections": {
+        "type": "editorial-sections",
+        "blocks": {
+          "editorial_headline_JMVfix": {
+            "type": "editorial_headline",
+            "settings": {
+              "headline": "Your headline here",
+              "heading_size": "h1"
+            }
+          },
+          "editorial_single_image_fraknN": {
+            "type": "editorial_single_image",
+            "settings": {
+              "caption": ""
+            }
+          },
+          "editorial_double_image_HMd6yF": {
+            "type": "editorial_double_image",
+            "settings": {
+              "caption_1": "",
+              "caption_2": ""
+            }
+          }
+        },
+        "block_order": [
+          "editorial_headline_JMVfix",
+          "editorial_single_image_fraknN",
+          "editorial_double_image_HMd6yF"
         ],
         "settings": {
         }
