@@ -9,6 +9,15 @@
 */
 {
   "sections": {
+    "custom_liquid_CGcXPW": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script>\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    var sectionDiv = document.getElementById(\"section-{{ section.id }}\");\n    \n    if (sectionDiv) {\n      sectionDiv.classList.add('page-editorial');\n    }\n  });\n</script>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -20,23 +29,17 @@
     "section_editorial_headline_CPnUH9": {
       "type": "section-editorial-headline",
       "settings": {
-        "headline": "Your headline here",
-        "heading_size": "h1",
-        "background_color": "none"
+        "headline": "Your headline here"
       }
     },
     "section_editorial_double_image_UcY7QP": {
       "type": "section-editorial-double-image",
       "settings": {
-        "image_1": "shopify://shop_images/362662714_18276607135182672_8720385442993652601_n.jpg",
-        "caption_1": "",
-        "caption_2": "",
-        "image_1_alt": "",
-        "image_2_alt": ""
       }
     }
   },
   "order": [
+    "custom_liquid_CGcXPW",
     "main",
     "section_editorial_headline_CPnUH9",
     "section_editorial_double_image_UcY7QP"

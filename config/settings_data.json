@@ -153,11 +153,6 @@
           "color_scheme": "background-1"
         }
       },
-      "editorial-page-header": {
-        "type": "editorial-page-header",
-        "settings": {
-        }
-      },
       "section-editorial-page": {
         "type": "section-editorial-page",
         "blocks": {
