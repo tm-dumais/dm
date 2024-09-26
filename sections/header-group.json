@@ -166,24 +166,6 @@
       "settings": {
       }
     },
-    "section_editorial_headline_mnngkA": {
-      "type": "section-editorial-headline",
-      "settings": {
-        "headline": "Your headline here",
-        "heading_size": "h1",
-        "background_color": "none"
-      }
-    },
-    "section_editorial_image_text_rYHFX9": {
-      "type": "section-editorial-image-text",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "image_position": "left",
-        "background_color": "none",
-        "image_alt": ""
-      }
-    },
     "split_recover_old_Y9ARCi": {
       "type": "split-recover-old",
       "blocks": {
@@ -214,6 +196,7 @@
         "text_cTrbem",
         "button_JVjUmm"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -233,8 +216,6 @@
     "announcement-bar",
     "header",
     "custom-options",
-    "section_editorial_headline_mnngkA",
-    "section_editorial_image_text_rYHFX9",
     "split_recover_old_Y9ARCi"
   ]
 }
