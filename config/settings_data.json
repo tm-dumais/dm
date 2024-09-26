@@ -153,26 +153,31 @@
           "color_scheme": "background-1"
         }
       },
-      "editorial-page-content": {
-        "type": "editorial-page-content",
+      "editorial-page-header": {
+        "type": "editorial-page-header",
+        "settings": {
+        }
+      },
+      "section-editorial-page": {
+        "type": "section-editorial-page",
         "blocks": {
-          "text_UgLFeR": {
-            "type": "text",
+          "single_image_3qwqpp": {
+            "type": "single_image",
             "settings": {
-              "text": ""
+              "caption": ""
             }
           },
-          "image_djHq6b": {
-            "type": "image",
+          "quote_WMzpGB": {
+            "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/FunnelTableLampChalk_Paper6.jpg",
-              "image_alt": ""
+              "quote_text": "",
+              "quote_author": ""
             }
           }
         },
         "block_order": [
-          "text_UgLFeR",
-          "image_djHq6b"
+          "single_image_3qwqpp",
+          "quote_WMzpGB"
         ],
         "settings": {
         }
