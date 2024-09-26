@@ -79,6 +79,12 @@
         "info": "t:settings_schema.colors.settings.colors_solid_button_labels.info"
       },
       {
+        "type": "checkbox",
+        "id": "enable_page_sections",
+        "label": "Enable page sections",
+        "default": true
+      },
+      {
         "type": "color",
         "id": "colors_accent_1",
         "default": "#121212",
