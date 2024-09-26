@@ -1,0 +1,22 @@
+<div class="editorial-single-image">
+  <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.caption }}">
+  <p>{{ block.settings.caption }}</p>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Single Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption"
+    }
+  ]
+}
+{% endschema %}

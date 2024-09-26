@@ -1,0 +1,22 @@
+<div class="editorial-double-image">
+  <img src="{{ block.settings.image1 | img_url: 'master' }}" alt="Image 1">
+  <img src="{{ block.settings.image2 | img_url: 'master' }}" alt="Image 2">
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Double Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image 2"
+    }
+  ]
+}
+{% endschema %}
