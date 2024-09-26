@@ -1,0 +1,91 @@
+<div class="flexible-page-content">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'text' %}
+        <div class="text-block">
+          {{ block.settings.text }}
+        </div>
+      {% when 'image' %}
+        <div class="image-block">
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image_alt }}">
+        </div>
+      {% when 'video' %}
+        <div class="video-block">
+          {{ block.settings.video_embed_code }}
+        </div>
+      {% when 'custom_html' %}
+        <div class="custom-html-block">
+          {{ block.settings.custom_html }}
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Flexible Page Content",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text content"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Alt text"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "html",
+          "id": "video_embed_code",
+          "label": "Video embed code"
+        }
+      ]
+    },
+    {
+      "type": "custom_html",
+      "name": "Custom HTML",
+      "settings": [
+        {
+          "type": "html",
+          "id": "custom_html",
+          "label": "Custom HTML"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flexible Page Content",
+      "blocks": [
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
