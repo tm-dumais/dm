@@ -2,13 +2,13 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'headline' %}
-        {% section 'section-editorial-headline', block: block %}
+        {% render 'section-editorial-headline', block: block %}
       {% when 'single_image' %}
-        {% section 'section-editorial-single-image', block: block %}
+        {% render 'section-editorial-single-image', block: block %}
       {% when 'double_image' %}
-        {% section 'section-editorial-double-image', block: block %}
+        {% render 'section-editorial-double-image', block: block %}
       {% when 'quote' %}
-        {% section 'section-editorial-quote', block: block %}
+        {% render 'section-editorial-quote', block: block %}
       {% when 'text' %}
         <div class="editorial-text">{{ block.settings.text }}</div>
     {% endcase %}
