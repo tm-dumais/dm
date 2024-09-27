@@ -1,6 +1,8 @@
 .editorial-headline {
   width: 100vw;
   background-color: #EBE2D9;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .content-wrapper {
@@ -14,6 +16,8 @@
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text-center {
