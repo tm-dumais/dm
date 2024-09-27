@@ -5,7 +5,7 @@
     <div class="image-container">
       {% if section.settings.image1 != blank %}
         <div class="image-wrapper">
-          <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="{{ section.settings.image1.alt | escape }}">
+          <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="{{ section.settings.image1.alt | escape }}" class="rounded-image">
           {% if section.settings.caption1 != blank %}
             <p class="caption">{{ section.settings.caption1 }}</p>
           {% endif %}
@@ -13,7 +13,7 @@
       {% endif %}
       {% if section.settings.image2 != blank %}
         <div class="image-wrapper">
-          <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="{{ section.settings.image2.alt | escape }}">
+          <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="{{ section.settings.image2.alt | escape }}" class="rounded-image">
           {% if section.settings.caption2 != blank %}
             <p class="caption">{{ section.settings.caption2 }}</p>
           {% endif %}

@@ -11,7 +11,7 @@
 
 .image-container {
   display: flex;
-  gap: 3rem;  /* Changed from 6rem to 3rem */
+  gap: 3rem;
 }
 
 .image-wrapper {
@@ -21,10 +21,12 @@
 .image-wrapper img {
   width: 100%;
   height: auto;
+  border-radius: 4px; /* Rounded corners from base.css */
 }
 
 .caption {
   font-family: 'Pitch', sans-serif;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 0.5rem; /* Reduced from 1rem to 0.5rem */
+  font-size: 1.4rem; /* Updated to 1.4rem */
 }
