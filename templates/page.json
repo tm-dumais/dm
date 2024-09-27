@@ -20,15 +20,14 @@
     "section_editorial_headline_CPnUH9": {
       "type": "section-editorial-headline",
       "settings": {
-        "headline": "Your headline here"
+        "headline": "31 Days – a modernist take on ceramic lighting and furniture."
       }
     },
     "section_editorial_double_image_UcY7QP": {
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
-        "image2": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n.jpg",
-        "caption": "lorem"
+        "image2": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n.jpg"
       }
     }
   },
