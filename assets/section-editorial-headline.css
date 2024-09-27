@@ -13,7 +13,7 @@
 
 .headline {
   font-style: italic;
-  max-width: 650px;
+  max-width: 600px;  /* Changed from 650px to 600px */
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
