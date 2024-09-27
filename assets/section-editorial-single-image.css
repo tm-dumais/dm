@@ -1,0 +1,28 @@
+.editorial-single-image {
+  width: 100vw;
+  background-color: #EBE2D9;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container.landscape img {
+  width: 100%;
+}
+
+.image-container.portrait img {
+  width: 50%;
+}
+
+.caption {
+  font-family: 'Pitch', sans-serif;
+  text-transform: uppercase;
+}

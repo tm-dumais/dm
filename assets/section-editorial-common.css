@@ -1,0 +1,10 @@
+.editorial-section {
+  width: 100vw;
+  background-color: #EBE2D9;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}

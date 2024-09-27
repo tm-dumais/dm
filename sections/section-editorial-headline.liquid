@@ -1,5 +1,9 @@
-<div class="editorial-headline">
-  <h1>{{ block.settings.headline }}</h1>
+{{ 'section-editorial-headline.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-headline background-color-ebe2d9">
+  <div class="content-wrapper">
+    <h1 class="headline">{{ section.settings.headline }}</h1>
+  </div>
 </div>
 
 {% schema %}

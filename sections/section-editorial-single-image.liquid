@@ -1,6 +1,14 @@
-<div class="editorial-single-image">
-  <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.caption }}">
-  <p>{{ block.settings.caption }}</p>
+{{ 'section-editorial-single-image.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-single-image background-color-ebe2d9">
+  <div class="content-wrapper">
+    <div class="image-container {% if block.settings.image.aspect_ratio > 1 %}landscape{% else %}portrait{% endif %}">
+      <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
+    </div>
+    {% if block.settings.caption != blank %}
+      <p class="caption">{{ block.settings.caption }}</p>
+    {% endif %}
+  </div>
 </div>
 
 {% schema %}

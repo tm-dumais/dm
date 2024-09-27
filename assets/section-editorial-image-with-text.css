@@ -1,0 +1,26 @@
+.editorial-image-with-text {
+  width: 100vw;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.image-text-container {
+  display: flex;
+  gap: 6rem;
+}
+
+.image-container, .text-container {
+  width: 50%;
+}
+
+.image-text-container.image-second {
+  flex-direction: row-reverse;
+}
+
+.heading {
+  font-style: italic;
+}

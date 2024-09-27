@@ -1,6 +1,15 @@
-<div class="editorial-double-image">
-  <img src="{{ block.settings.image1 | img_url: 'master' }}" alt="Image 1">
-  <img src="{{ block.settings.image2 | img_url: 'master' }}" alt="Image 2">
+{{ 'section-editorial-double-image.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-double-image background-color-ebe2d9">
+  <div class="content-wrapper">
+    <div class="image-container">
+      <img src="{{ block.settings.image1 | img_url: 'master' }}" alt="{{ block.settings.image1.alt }}">
+      <img src="{{ block.settings.image2 | img_url: 'master' }}" alt="{{ block.settings.image2.alt }}">
+    </div>
+    {% if block.settings.caption != blank %}
+      <p class="caption">{{ block.settings.caption }}</p>
+    {% endif %}
+  </div>
 </div>
 
 {% schema %}
@@ -16,6 +25,11 @@
       "type": "image_picker",
       "id": "image2",
       "label": "Image 2"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption"
     }
   ]
 }

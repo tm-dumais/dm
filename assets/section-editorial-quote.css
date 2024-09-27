@@ -1,0 +1,21 @@
+.editorial-quote {
+  width: 100vw;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.quote-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
