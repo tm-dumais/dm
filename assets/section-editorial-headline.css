@@ -18,6 +18,8 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 2.25rem; /* This is equivalent to 36px */
+  line-height: 1.2; /* Adjust this value as needed for better readability */
 }
 
 .headline-large {
