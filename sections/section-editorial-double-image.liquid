@@ -3,12 +3,23 @@
 <div class="editorial-double-image background-color-ebe2d9">
   <div class="content-wrapper">
     <div class="image-container">
-      <img src="{{ block.settings.image1 | img_url: 'master' }}" alt="{{ block.settings.image1.alt }}">
-      <img src="{{ block.settings.image2 | img_url: 'master' }}" alt="{{ block.settings.image2.alt }}">
+      {% if section.settings.image1 != blank %}
+        <div class="image-wrapper">
+          <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="{{ section.settings.image1.alt | escape }}">
+          {% if section.settings.caption1 != blank %}
+            <p class="caption">{{ section.settings.caption1 }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if section.settings.image2 != blank %}
+        <div class="image-wrapper">
+          <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="{{ section.settings.image2.alt | escape }}">
+          {% if section.settings.caption2 != blank %}
+            <p class="caption">{{ section.settings.caption2 }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
-    {% if block.settings.caption != blank %}
-      <p class="caption">{{ block.settings.caption }}</p>
-    {% endif %}
   </div>
 </div>
 
@@ -22,14 +33,19 @@
       "label": "Image 1"
     },
     {
+      "type": "text",
+      "id": "caption1",
+      "label": "Caption for Image 1"
+    },
+    {
       "type": "image_picker",
       "id": "image2",
       "label": "Image 2"
     },
     {
       "type": "text",
-      "id": "caption",
-      "label": "Caption"
+      "id": "caption2",
+      "label": "Caption for Image 2"
     }
   ]
 }

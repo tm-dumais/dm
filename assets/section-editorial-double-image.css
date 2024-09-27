@@ -14,7 +14,17 @@
   gap: 6rem;
 }
 
+.image-wrapper {
+  flex: 1;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
 .caption {
   font-family: 'Pitch', sans-serif;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
