@@ -13,11 +13,15 @@
 
 .headline {
   font-style: italic;
-  max-width: 600px;  /* Changed from 650px to 600px */
+  max-width: 550px;  /* Changed from 600px to 550px */
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.headline-large {
+  font-size: 1.25em;  /* Increase font size by 25% */
 }
 
 .text-center {
