@@ -11,7 +11,7 @@
 
 .image-container {
   display: flex;
-  gap: 6rem;
+  gap: 3rem;  /* Changed from 6rem to 3rem */
 }
 
 .image-wrapper {
