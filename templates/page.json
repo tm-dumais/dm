@@ -23,6 +23,13 @@
         "headline": "31 Days – a modernist take on ceramic lighting and furniture."
       }
     },
+    "section_editorial_single_image_8trzjt": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/image_149.jpg",
+        "caption": ""
+      }
+    },
     "section_editorial_double_image_UcY7QP": {
       "type": "section-editorial-double-image",
       "settings": {
@@ -36,6 +43,7 @@
   "order": [
     "main",
     "section_editorial_headline_CPnUH9",
+    "section_editorial_single_image_8trzjt",
     "section_editorial_double_image_UcY7QP"
   ]
 }
