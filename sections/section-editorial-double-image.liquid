@@ -1,6 +1,8 @@
 {{ 'section-editorial-double-image.css' | asset_url | stylesheet_tag }}
 
-<div class="editorial-double-image background-color-ebe2d9">
+<div class="editorial-double-image background-color-ebe2d9
+            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
+            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
   <div class="content-wrapper">
     <div class="image-container">
       {% if section.settings.image1 != blank %}
@@ -46,6 +48,18 @@
       "type": "text",
       "id": "caption2",
       "label": "Caption for Image 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_top_padding",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bottom_padding",
+      "label": "Add bottom padding",
+      "default": false
     }
   ],
   "presets": [

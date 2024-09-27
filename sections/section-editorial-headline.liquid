@@ -1,6 +1,8 @@
 {{ 'section-editorial-headline.css' | asset_url | stylesheet_tag }}
 
-<div class="editorial-headline background-color-ebe2d9">
+<div class="editorial-headline background-color-ebe2d9
+            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
+            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
   <div class="content-wrapper">
     <h1 class="headline text-center headline-large">{{ section.settings.headline }}</h1>
   </div>
@@ -14,6 +16,18 @@
       "type": "text",
       "id": "headline",
       "label": "Headline"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_top_padding",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bottom_padding",
+      "label": "Add bottom padding",
+      "default": false
     }
   ],
   "presets": [

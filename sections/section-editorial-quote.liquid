@@ -1,6 +1,8 @@
 {{ 'section-editorial-quote.css' | asset_url | stylesheet_tag }}
 
-<div class="editorial-quote background-{{ section.settings.background_color }}">
+<div class="editorial-quote background-{{ section.settings.background_color }}
+            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
+            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
   <div class="content-wrapper">
     <div class="quote-container">
       <h2 class="quote {{ section.settings.heading_size }}">{{ section.settings.quote }}</h2>
@@ -60,6 +62,18 @@
       ],
       "default": "none",
       "label": "Background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_top_padding",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bottom_padding",
+      "label": "Add bottom padding",
+      "default": false
     }
   ],
   "presets": [

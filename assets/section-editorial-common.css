@@ -8,3 +8,11 @@
   max-width: 1240px;
   margin: 0 auto;
 }
+
+.padding-top-6 {
+  padding-top: 6rem;
+}
+
+.padding-bottom-6 {
+  padding-bottom: 6rem;
+}
