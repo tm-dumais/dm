@@ -20,14 +20,18 @@
     "section_editorial_headline_CPnUH9": {
       "type": "section-editorial-headline",
       "settings": {
-        "headline": "31 Days – a modernist take on ceramic lighting and furniture."
+        "headline": "31 Days – a modernist take on ceramic lighting and furniture.",
+        "add_top_padding": false,
+        "add_bottom_padding": false
       }
     },
     "section_editorial_single_image_8trzjt": {
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/image_149.jpg",
-        "caption": ""
+        "caption": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
       }
     },
     "section_editorial_double_image_UcY7QP": {
@@ -36,7 +40,9 @@
         "image1": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
         "caption1": "LOREM IPSUM",
         "image2": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n.jpg",
-        "caption2": "DOLOR SIT AMET"
+        "caption2": "DOLOR SIT AMET",
+        "add_top_padding": false,
+        "add_bottom_padding": false
       }
     }
   },
