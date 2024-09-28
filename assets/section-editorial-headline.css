@@ -29,3 +29,8 @@
 .text-center {
   text-align: center;
 }
+
+.headline-36px {
+  font-size: 36px;
+  line-height: 1.2; /* Adjust this value as needed for proper line spacing */
+}
