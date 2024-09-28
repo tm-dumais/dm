@@ -10,9 +10,9 @@
 }
 
 .padding-top-6 {
-  padding-top: 6rem;
+  padding-top: 6rem !important;
 }
 
 .padding-bottom-6 {
-  padding-bottom: 6rem;
+  padding-bottom: 6rem !important;
 }
