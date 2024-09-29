@@ -1,6 +1,8 @@
 .editorial-quote {
   width: 100vw;
-  background-color: #EBE2D9;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
 }
 
 .content-wrapper {
@@ -13,14 +15,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
 }
 
 .quote {
   font-family: 'new-caledonia', serif;
   font-style: italic;
   text-align: center;
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -48,4 +49,21 @@
   .quote.h0 {
     font-size: 4.2rem;
   }
+}
+
+/* Background color classes */
+.background-none {
+  background-color: transparent;
+}
+
+.background-color-1 {
+  background-color: #EBE2D9;
+}
+
+.background-color-2 {
+  background-color: #B0977B;
+}
+
+.background-color-3 {
+  background-color: #95794A;
 }
