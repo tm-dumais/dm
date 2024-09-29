@@ -10,7 +10,7 @@
         <div class="image-wrapper">
           <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="{{ section.settings.image1.alt | escape }}" class="rounded-image">
           {% if section.settings.caption1 != blank %}
-            <p class="caption">{{ section.settings.caption1 }}</p>
+            <p class="caption double-image-caption">{{ section.settings.caption1 }}</p>
           {% endif %}
         </div>
       {% endif %}
@@ -18,7 +18,7 @@
         <div class="image-wrapper">
           <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="{{ section.settings.image2.alt | escape }}" class="rounded-image">
           {% if section.settings.caption2 != blank %}
-            <p class="caption">{{ section.settings.caption2 }}</p>
+            <p class="caption double-image-caption">{{ section.settings.caption2 }}</p>
           {% endif %}
         </div>
       {% endif %}
