@@ -1,0 +1,81 @@
+{{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
+{{ 'section-editorial-cta.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-cta editorial-section background-{{ section.settings.background_color }}
+            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
+            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
+  <div class="content-wrapper">
+    <div class="cta-container">
+      {% if section.settings.button_link != blank and section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link }}" class="button button--secondary">
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        {
+          "value": "none",
+          "label": "No background"
+        },
+        {
+          "value": "color-1",
+          "label": "Color 1"
+        },
+        {
+          "value": "color-2",
+          "label": "Color 2"
+        },
+        {
+          "value": "color-3",
+          "label": "Color 3"
+        }
+      ],
+      "default": "none",
+      "label": "Background color"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_top_padding",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bottom_padding",
+      "label": "Add bottom padding",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial CTA",
+      "category": "Editorial"
+    }
+  ]
+}
+{% endschema %}
