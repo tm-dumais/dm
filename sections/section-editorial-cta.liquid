@@ -1,7 +1,7 @@
 {{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
 {{ 'section-editorial-cta.css' | asset_url | stylesheet_tag }}
 
-<div class="editorial-cta editorial-section background-{{ section.settings.background_color }}
+<div class="editorial-cta background-{{ section.settings.background_color }}
             {% if section.settings.add_top_padding %}editorial-cta--padding-top{% endif %}
             {% if section.settings.add_bottom_padding %}editorial-cta--padding-bottom{% endif %}">
   <div class="content-wrapper">

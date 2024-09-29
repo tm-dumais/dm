@@ -1,5 +1,8 @@
 .editorial-cta {
-  width: 100vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .content-wrapper {
@@ -17,6 +20,7 @@
 
 .button--secondary {
   min-width: 250px;
+  background-color: transparent;
 }
 
 .editorial-cta--padding-top {
@@ -42,4 +46,11 @@
 
 .background-color-3 {
   background-color: #95794A;
+}
+
+@media screen and (max-width: 749px) {
+  .editorial-cta--padding-horizontal {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
