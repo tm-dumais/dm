@@ -1,0 +1,47 @@
+{{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
+{{ 'section-editorial-text.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-text background-color-ebe2d9
+            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
+            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
+  <div class="content-wrapper">
+    <div class="text-container">
+      {{ section.settings.text }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text content"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_top_padding",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bottom_padding",
+      "label": "Add bottom padding",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Text",
+      "category": "Editorial"
+    }
+  ]
+}
+{% endschema %}
