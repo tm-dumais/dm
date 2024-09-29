@@ -24,13 +24,4 @@
   border-radius: 4px; /* Rounded corners from base.css */
 }
 
-.caption {
-  font-family: 'Pitch', sans-serif;
-  text-transform: uppercase;
-  margin-top: 0.5rem; /* Already reduced from 1rem to 0.5rem */
-  font-size: 1.4rem;
-}
-
-.caption.reduced-margin {
-  margin-top: 0;
-}
+/* Removed caption styles from here */

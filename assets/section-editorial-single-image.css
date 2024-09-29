@@ -10,19 +10,13 @@
 }
 
 .image-container {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 0;
 }
 
-.image-container.landscape img {
+.image-container img {
   width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
-.image-container.portrait img {
-  width: 50%;
-}
-
-.caption {
-  font-family: 'Pitch', sans-serif;
-  text-transform: uppercase;
-}
+/* Removed caption styles from here */
