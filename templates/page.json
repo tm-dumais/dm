@@ -130,7 +130,7 @@
       "settings": {
         "button_text": "Learn More",
         "button_link": "shopify://products/anemone-wall-mirror",
-        "background_color": "color-3",
+        "background_color": "color-1",
         "add_top_padding": false,
         "add_bottom_padding": false
       }
