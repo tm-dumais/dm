@@ -11,10 +11,10 @@
       {% else %}
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {% endif %}
-      {% if section.settings.caption != blank %}
-        <p class="caption">{{ section.settings.caption }}</p>
-      {% endif %}
     </div>
+    {% if section.settings.caption != blank %}
+      <p class="caption">{{ section.settings.caption }}</p>
+    {% endif %}
   </div>
 </div>
 
