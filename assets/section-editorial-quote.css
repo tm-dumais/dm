@@ -1,5 +1,6 @@
 .editorial-quote {
   width: 100vw;
+  background-color: #EBE2D9;
 }
 
 .content-wrapper {
@@ -9,13 +10,42 @@
 }
 
 .quote-container {
-  max-width: 650px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
 }
 
 .quote {
+  font-family: 'new-caledonia', serif;
   font-style: italic;
   text-align: center;
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.quote.h2 {
+  font-size: 2.4rem;
+}
+
+.quote.h1 {
+  font-size: 3rem;
+}
+
+.quote.h0 {
+  font-size: 3.6rem;
+}
+
+@media screen and (min-width: 750px) {
+  .quote.h2 {
+    font-size: 3rem;
+  }
+
+  .quote.h1 {
+    font-size: 3.6rem;
+  }
+
+  .quote.h0 {
+    font-size: 4.2rem;
+  }
 }
