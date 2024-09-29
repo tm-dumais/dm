@@ -1,1 +1,37 @@
- 
+.editorial-text {
+  width: 100vw;
+  background-color: #EBE2D9;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.text-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Add any additional styles for the rich text content here */
+.text-container p {
+  margin-bottom: 1rem;
+}
+
+.text-container h1,
+.text-container h2,
+.text-container h3,
+.text-container h4,
+.text-container h5,
+.text-container h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-container ul,
+.text-container ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
