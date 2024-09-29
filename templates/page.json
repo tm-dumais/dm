@@ -19,6 +19,7 @@
     },
     "section_editorial_headline_CPnUH9": {
       "type": "section-editorial-headline",
+      "disabled": true,
       "settings": {
         "headline": "31 Days – a modernist take on ceramic lighting and furniture.",
         "add_top_padding": false,
@@ -139,6 +140,7 @@
     "section_editorial_cta_eKRrPh": {
       "type": "section-editorial-cta",
       "settings": {
+        "button_label": "Button label",
         "button_link": "shopify://products/anemone-wall-mirror",
         "background_color": "color-1",
         "add_top_padding": false,
