@@ -77,6 +77,17 @@
       "settings": {
         "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-1.jpg",
         "caption": "Lorem ipsum dolor sit amen",
+        "add_top_padding": true,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_double_image_Vicm3k": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n-1.jpg",
+        "caption1": "Lorem ipsum dolor sit",
+        "image2": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-2.jpg",
+        "caption2": "Lorem ipsum dolor sit",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -90,6 +101,7 @@
     "section_editorial_double_image_UcY7QP",
     "section_editorial_single_image_khYihV",
     "section_editorial_quote_iYB9GH",
-    "section_editorial_single_image_fbDPQ6"
+    "section_editorial_single_image_fbDPQ6",
+    "section_editorial_double_image_Vicm3k"
   ]
 }
