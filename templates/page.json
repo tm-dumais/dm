@@ -39,7 +39,7 @@
       "settings": {
         "text": "<p>Lamps are where we got our start. Today, we offer a range: from smaller table lamps that sit comfortably on a shelf, to substantial floor lamps that anchor an entire room. </p>",
         "add_top_padding": false,
-        "add_bottom_padding": false
+        "add_bottom_padding": true
       }
     },
     "section_editorial_double_image_UcY7QP": {
@@ -52,6 +52,15 @@
         "add_top_padding": false,
         "add_bottom_padding": false
       }
+    },
+    "section_editorial_single_image_khYihV": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/image_151.jpg",
+        "caption": "Lorem ipsum dolor sit amen",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
     }
   },
   "order": [
@@ -59,6 +68,7 @@
     "section_editorial_headline_CPnUH9",
     "section_editorial_single_image_8trzjt",
     "section_editorial_text_rrdEW8",
-    "section_editorial_double_image_UcY7QP"
+    "section_editorial_double_image_UcY7QP",
+    "section_editorial_single_image_khYihV"
   ]
 }
