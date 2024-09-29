@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.new-caledonia-font {
+  font-family: 'new-caledonia', serif;
+}
+
 /* Add any additional styles for the rich text content here */
 .text-container p {
   margin-bottom: 1rem;
@@ -28,6 +32,7 @@
 .text-container h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-family: 'new-caledonia', serif;
 }
 
 .text-container ul,
