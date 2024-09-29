@@ -7,7 +7,7 @@
   <div class="content-wrapper">
     <div class="image-container {% if section.settings.image.aspect_ratio > 1 %}landscape{% else %}portrait{% endif %}">
       {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}">
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" class="single-image {% if section.settings.image.aspect_ratio > 1 %}landscape{% else %}portrait{% endif %}">
       {% else %}
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {% endif %}

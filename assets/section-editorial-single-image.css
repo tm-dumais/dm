@@ -11,12 +11,31 @@
 
 .image-container {
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.image-container img {
-  width: 100%;
+.single-image {
   height: auto;
   border-radius: 4px;
 }
 
-/* Removed caption styles from here */
+.single-image.landscape {
+  width: 100%;
+}
+
+.single-image.portrait {
+  width: 50%;
+}
+
+@media screen and (max-width: 749px) {
+  .single-image.portrait {
+    width: 100%;
+  }
+}
+
+/* Caption styles */
+.caption {
+  margin-top: 0.5rem;
+  text-align: center;
+}
