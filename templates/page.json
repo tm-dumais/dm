@@ -100,7 +100,7 @@
         "heading_size": "h1",
         "image_position": "right",
         "background_color": "color-2",
-        "add_top_padding": false,
+        "add_top_padding": true,
         "add_bottom_padding": true
       }
     }
