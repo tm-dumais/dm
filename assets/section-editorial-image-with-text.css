@@ -12,7 +12,7 @@
 .editorial-image-with-text__container {
   display: flex;
   align-items: flex-start;
-  gap: 6rem; /* Changed from 3rem to 6rem to double the gap */
+  gap: 3rem; /* Changed from 6rem to 3rem to match the double image section */
 }
 
 .editorial-image-with-text__image-container,
@@ -47,7 +47,7 @@
 @media screen and (max-width: 749px) {
   .editorial-image-with-text__container {
     flex-direction: column;
-    gap: 3rem; /* Reduce gap for mobile to maintain proportions */
+    gap: 3rem; /* Keep the same gap for mobile */
   }
 
   .editorial-image-with-text__image-container,
