@@ -124,6 +124,16 @@
         "add_top_padding": true,
         "add_bottom_padding": true
       }
+    },
+    "section_editorial_cta_eKRrPh": {
+      "type": "section-editorial-cta",
+      "settings": {
+        "button_text": "Learn More",
+        "button_link": "shopify://products/anemone-wall-mirror",
+        "background_color": "color-3",
+        "add_top_padding": false,
+        "add_bottom_padding": false
+      }
     }
   },
   "order": [
@@ -138,6 +148,7 @@
     "section_editorial_double_image_Vicm3k",
     "section_editorial_image_with_text_aFcTAp",
     "section_editorial_single_image_H4tVVD",
-    "section_editorial_image_with_text_GPkpQU"
+    "section_editorial_image_with_text_GPkpQU",
+    "section_editorial_cta_eKRrPh"
   ]
 }
