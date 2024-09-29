@@ -30,4 +30,5 @@
 .caption.double-image-caption {
   margin-top: 0.5rem;
   margin-bottom: 0;
+  text-align: left; /* Add this line to ensure left alignment */
 }

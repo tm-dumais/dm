@@ -37,5 +37,5 @@
 /* Caption styles */
 .caption {
   margin-top: 0.5rem;
-  text-align: center;
+  text-align: left; /* Change this line from center to left */
 }
