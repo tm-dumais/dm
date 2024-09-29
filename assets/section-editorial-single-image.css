@@ -38,18 +38,25 @@
   width: 100%;
 }
 
+/* New styles for portrait images and captions */
 .image-container.portrait {
+  width: 50%;
+}
+
+.image-container.portrait .single-image {
   width: 100%;
 }
 
-
+.image-container.portrait + .caption {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media screen and (max-width: 749px) {
-  .single-image.portrait {
-    width: 100%;
-  }
-
-  .image-container.portrait {
+  .single-image.portrait,
+  .image-container.portrait,
+  .image-container.portrait + .caption {
     width: 100%;
   }
 }
