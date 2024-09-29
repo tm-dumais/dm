@@ -7,12 +7,14 @@
   width: 80vw;
   max-width: 1240px;
   margin: 0 auto;
+  padding: 0; /* Add this line to remove any potential padding */
 }
 
 .text-container {
   max-width: 600px;
-  margin: 0 auto;
-  text-align: left; /* Changed from center to left */
+  margin: 0 auto; /* Changed from "0 auto" to remove top and bottom margins */
+  text-align: left;
+  padding: 0; /* Add this line to remove any potential padding */
 }
 
 .new-caledonia-font {
@@ -21,9 +23,10 @@
 
 /* Updated styles for paragraphs */
 .text-container p {
+  margin-top: 0; /* Add this line to remove top margin */
   margin-bottom: 1rem;
   font-size: 20px;
-  line-height: 115%;
+  line-height: 120%;
 }
 
 .text-container h1,
@@ -39,6 +42,16 @@
 
 .text-container ul,
 .text-container ol {
+  margin-top: 0; /* Add this line to remove top margin */
   margin-bottom: 1rem;
   padding-left: 2rem;
+}
+
+/* Add this rule to remove margin from the first and last elements */
+.text-container > :first-child {
+  margin-top: 0;
+}
+
+.text-container > :last-child {
+  margin-bottom: 0;
 }
