@@ -174,7 +174,9 @@
     },
     "section_home_text_banner_EaGiqj": {
       "type": "section-home-text-banner",
+      "disabled": true,
       "settings": {
+        "vertical_alignment": "top",
         "eyebrow_text": "EYEBROW",
         "heading": "<p>Join us this Saturday from 10am - 2pm  for up to 75% off seconds and samples.</p>",
         "heading_size": "h1",
@@ -182,7 +184,8 @@
         "button_link": "",
         "background_color": "color-3",
         "padding_top_enabled": true,
-        "padding_bottom_enabled": true
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": false
       }
     }
   },
