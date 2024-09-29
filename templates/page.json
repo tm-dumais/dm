@@ -103,6 +103,27 @@
         "add_top_padding": true,
         "add_bottom_padding": true
       }
+    },
+    "section_editorial_single_image_H4tVVD": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/image_150.jpg",
+        "caption": "",
+        "add_top_padding": true,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_image_with_text_GPkpQU": {
+      "type": "section-editorial-image-with-text",
+      "settings": {
+        "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
+        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. </p>",
+        "heading_size": "h1",
+        "image_position": "left",
+        "background_color": "color-3",
+        "add_top_padding": true,
+        "add_bottom_padding": true
+      }
     }
   },
   "order": [
@@ -115,6 +136,8 @@
     "section_editorial_quote_iYB9GH",
     "section_editorial_single_image_fbDPQ6",
     "section_editorial_double_image_Vicm3k",
-    "section_editorial_image_with_text_aFcTAp"
+    "section_editorial_image_with_text_aFcTAp",
+    "section_editorial_single_image_H4tVVD",
+    "section_editorial_image_with_text_GPkpQU"
   ]
 }
