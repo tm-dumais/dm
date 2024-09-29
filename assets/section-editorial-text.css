@@ -12,16 +12,18 @@
 .text-container {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left; /* Changed from center to left */
 }
 
 .new-caledonia-font {
   font-family: 'new-caledonia', serif;
 }
 
-/* Add any additional styles for the rich text content here */
+/* Updated styles for paragraphs */
 .text-container p {
   margin-bottom: 1rem;
+  font-size: 20px;
+  line-height: 115%;
 }
 
 .text-container h1,
