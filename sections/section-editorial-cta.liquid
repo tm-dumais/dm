@@ -2,15 +2,18 @@
 {{ 'section-editorial-cta.css' | asset_url | stylesheet_tag }}
 
 <div class="editorial-cta editorial-section background-{{ section.settings.background_color }}
-            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
-            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
+            {% if section.settings.add_top_padding %}editorial-cta--padding-top{% endif %}
+            {% if section.settings.add_bottom_padding %}editorial-cta--padding-bottom{% endif %}">
   <div class="content-wrapper">
     <div class="cta-container">
-      {% if section.settings.button_link != blank and section.settings.button_text != blank %}
-        <a href="{{ section.settings.button_link }}" class="button button--secondary">
-          {{ section.settings.button_text }}
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}"
+          class="button button--secondary"
+          {% if section.settings.button_link == blank %}aria-disabled="true"{% endif %}
+        >
+          {{ section.settings.button_label | escape }}
         </a>
-      {% endif %}
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -21,9 +24,9 @@
   "settings": [
     {
       "type": "text",
-      "id": "button_text",
-      "label": "Button text",
-      "default": "Learn More"
+      "id": "button_label",
+      "default": "Button label",
+      "label": "Button label"
     },
     {
       "type": "url",
