@@ -21,7 +21,5 @@
 .image-wrapper img {
   width: 100%;
   height: auto;
-  border-radius: 4px; /* Rounded corners from base.css */
+  border-radius: 4px;
 }
-
-/* Removed caption styles from here */

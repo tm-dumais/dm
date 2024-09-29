@@ -24,11 +24,13 @@
   margin-top: 0.5rem;
   margin-bottom: 0;
   font-size: 1.4rem;
+  line-height: 1.2; /* Add this to control line height */
 }
 
 /* New class for double image captions */
 .double-image-caption {
   margin-top: 0.5rem;
+  margin-bottom: 0; /* Ensure no bottom margin */
 }
 
 .reduced-margin {
