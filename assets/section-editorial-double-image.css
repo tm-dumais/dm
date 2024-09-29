@@ -16,10 +16,18 @@
 
 .image-wrapper {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-wrapper img {
   width: 100%;
   height: auto;
   border-radius: 4px;
+  display: block; /* Change from default inline */
+}
+
+.caption.double-image-caption {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
