@@ -1,16 +1,16 @@
 {{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
 {{ 'section-editorial-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="editorial-image-with-text background-{{ section.settings.background_color }}
+<div class="editorial-image-with-text editorial-image-with-text--background-{{ section.settings.background_color }}
             {% if section.settings.add_top_padding %}padding-top-6{% endif %}
             {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
-  <div class="content-wrapper">
-    <div class="image-text-container {% if section.settings.image_position == 'right' %}image-second{% endif %}">
-      <div class="image-container">
+  <div class="editorial-image-with-text__content-wrapper">
+    <div class="editorial-image-with-text__container {% if section.settings.image_position == 'right' %}editorial-image-with-text__image-second{% endif %}">
+      <div class="editorial-image-with-text__image-container">
         <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}">
       </div>
-      <div class="text-container">
-        <h2 class="heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+      <div class="editorial-image-with-text__text-container">
+        <h2 class="editorial-image-with-text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
       </div>
     </div>
   </div>

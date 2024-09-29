@@ -12,12 +12,12 @@
 .editorial-image-with-text__container {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 
-.editorial-image-with-text__image-container {
+.editorial-image-with-text__image-container,
+.editorial-image-with-text__text-container {
   flex: 1;
-  max-width: 50%;
+  width: 50%;
 }
 
 .editorial-image-with-text__image-container img {
@@ -27,14 +27,10 @@
   border-radius: 4px;
 }
 
-.editorial-image-with-text__text-container {
-  flex: 1;
-  max-width: 50%;
-}
-
 .editorial-image-with-text__heading {
   font-family: 'new-caledonia', serif;
   margin: 0;
+  padding: 0 2rem;
 }
 
 .editorial-image-with-text__image-second {
@@ -48,7 +44,11 @@
 
   .editorial-image-with-text__image-container,
   .editorial-image-with-text__text-container {
-    max-width: 100%;
+    width: 100%;
+  }
+
+  .editorial-image-with-text__heading {
+    padding: 2rem 0;
   }
 
   .editorial-image-with-text__image-second {
