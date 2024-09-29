@@ -28,14 +28,29 @@
   width: 50%;
 }
 
+/* Caption styles */
+.caption {
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+/* New styles for portrait image alignment */
+.image-container.portrait {
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container.portrait .caption {
+  width: 50%;
+  align-self: flex-start;
+}
+
 @media screen and (max-width: 749px) {
   .single-image.portrait {
     width: 100%;
   }
-}
 
-/* Caption styles */
-.caption {
-  margin-top: 0.5rem;
-  text-align: left; /* Change this line from center to left */
+  .image-container.portrait .caption {
+    width: 100%;
+  }
 }
