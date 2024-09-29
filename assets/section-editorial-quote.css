@@ -57,13 +57,13 @@
 }
 
 .background-color-1 {
-  background-color: #EBE2D9;
+  background-color: #EBE2D9 !important;
 }
 
 .background-color-2 {
-  background-color: #B0977B;
+  background-color: #B0977B !important;
 }
 
 .background-color-3 {
-  background-color: #95794A;
+  background-color: #95794A !important;
 }
