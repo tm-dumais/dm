@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0;
+  padding: 8.1rem 0; /* Increased from 6rem to 8.1rem (35% increase) */
 }
 
 .button--secondary {
@@ -24,11 +24,11 @@
 }
 
 .editorial-cta--padding-top {
-  padding-top: 6rem;
+  padding-top: 8.1rem; /* Increased from 6rem to 8.1rem (35% increase) */
 }
 
 .editorial-cta--padding-bottom {
-  padding-bottom: 6rem;
+  padding-bottom: 8.1rem; /* Increased from 6rem to 8.1rem (35% increase) */
 }
 
 /* Background color classes */

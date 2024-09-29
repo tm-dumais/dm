@@ -10,11 +10,11 @@
 }
 
 .padding-top-6 {
-  padding-top: 6rem !important;
+  padding-top: 8.1rem !important; /* Increased from 6rem to 8.1rem (35% increase) */
 }
 
 .padding-bottom-6 {
-  padding-bottom: 6rem !important;
+  padding-bottom: 8.1rem !important; /* Increased from 6rem to 8.1rem (35% increase) */
 }
 
 /* Updated caption styles */
