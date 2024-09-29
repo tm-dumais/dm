@@ -1,6 +1,5 @@
 .editorial-cta {
   width: 100vw;
-  background-color: #EBE2D9;
 }
 
 .content-wrapper {
@@ -13,12 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 .button--secondary {
   min-width: 250px;
-  text-align: center;
 }
 
 /* Background color classes */
@@ -36,4 +34,24 @@
 
 .background-color-3 {
   background-color: #95794A;
+}
+
+.editorial-cta--padding-top {
+  padding-top: 6rem;
+}
+
+.editorial-cta--padding-bottom {
+  padding-bottom: 6rem;
+}
+
+.editorial-cta--padding-horizontal {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+@media screen and (max-width: 749px) {
+  .editorial-cta--padding-horizontal {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
