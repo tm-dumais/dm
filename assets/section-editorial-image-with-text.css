@@ -32,6 +32,7 @@
   font-family: 'new-caledonia', serif;
   margin: 0;
   font-style: italic;
+  max-width: 90%; /* Added this line to set max-width to 90% */
 }
 
 /* Remove margin for p elements within the heading */
