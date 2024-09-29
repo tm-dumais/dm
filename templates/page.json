@@ -39,7 +39,7 @@
       "settings": {
         "text": "<p>Lamps are where we got our start. Today, we offer a range: from smaller table lamps that sit comfortably on a shelf, to substantial floor lamps that anchor an entire room. </p>",
         "add_top_padding": false,
-        "add_bottom_padding": false
+        "add_bottom_padding": true
       }
     },
     "section_editorial_double_image_UcY7QP": {
