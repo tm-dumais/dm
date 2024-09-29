@@ -39,8 +39,10 @@
 }
 
 .image-container.portrait {
-  width: 50%;
+  width: 100%;
 }
+
+
 
 @media screen and (max-width: 749px) {
   .single-image.portrait {
