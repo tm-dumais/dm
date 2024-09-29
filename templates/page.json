@@ -67,7 +67,7 @@
       "settings": {
         "quote": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
         "heading_size": "h0",
-        "background_color": "color-3",
+        "background_color": "color-1",
         "add_top_padding": false,
         "add_bottom_padding": false
       }
@@ -75,9 +75,10 @@
     "section_editorial_single_image_fbDPQ6": {
       "type": "section-editorial-single-image",
       "settings": {
-        "caption": "",
+        "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-1.jpg",
+        "caption": "Lorem ipsum dolor sit amen",
         "add_top_padding": false,
-        "add_bottom_padding": false
+        "add_bottom_padding": true
       }
     }
   },
