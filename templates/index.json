@@ -107,7 +107,6 @@
     },
     "section_home_featured_products_bjzfpy": {
       "type": "section-home-featured-products",
-      "disabled": true,
       "settings": {
         "product_1": "funnel-floor-lamp",
         "product_2": "pitch-sconce",
