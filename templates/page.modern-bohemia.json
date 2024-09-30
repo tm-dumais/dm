@@ -172,8 +172,8 @@
     "section_editorial_cta_eKRrPh": {
       "type": "section-editorial-cta",
       "settings": {
-        "button_label": "Button label",
-        "button_link": "shopify://products/anemone-wall-mirror",
+        "button_label": "Shop Modern Bohemia",
+        "button_link": "shopify://collections/modern-bohemia",
         "background_color": "color-1",
         "add_top_padding": false,
         "add_bottom_padding": false
