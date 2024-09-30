@@ -162,6 +162,7 @@
     },
     "section_editorial_single_image_9kptjj": {
       "type": "section-editorial-single-image",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0000_12_Dumais_Litchfield_In_Situ_2024_84.jpg",
         "caption": "",
