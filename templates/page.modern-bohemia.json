@@ -112,6 +112,14 @@
         "add_bottom_padding": true
       }
     },
+    "section_editorial_text_XCHNbb": {
+      "type": "section-editorial-text",
+      "settings": {
+        "text": "<p>It was Breuer’s influence, in particular, that left a lasting imprint on the creative world of Litchfield and, consequently, my own imagination. These works introduced me to the culture of modernism and artistic innovation cultivated by previous generations, who championed then avant-garde ideas about modernist architecture existing against the decidedly rural landscape we live in. These pieces mirror this tension, juxtaposing the rationality of our slab-building methods with the softer, natural quality of clay.</p>",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
     "section_editorial_image_with_text_aFcTAp": {
       "type": "section-editorial-image-with-text",
       "settings": {
@@ -179,6 +187,7 @@
     "section_editorial_double_image_Vicm3k",
     "section_editorial_single_image_khYihV",
     "section_editorial_double_image_LXfcRJ",
+    "section_editorial_text_XCHNbb",
     "section_editorial_image_with_text_aFcTAp",
     "section_editorial_single_image_H4tVVD",
     "section_editorial_image_with_text_GPkpQU",
