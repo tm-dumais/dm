@@ -120,47 +120,52 @@
         "add_bottom_padding": true
       }
     },
-    "section_editorial_image_with_text_aFcTAp": {
-      "type": "section-editorial-image-with-text",
-      "settings": {
-        "image": "shopify://shop_images/362662714_18276607135182672_8720385442993652601_n.jpg",
-        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. <br/><br/>Handmade with care and delight in Litchfield.</p>",
-        "heading_size": "h1",
-        "image_position": "right",
-        "background_color": "color-2",
-        "add_top_padding": true,
-        "add_bottom_padding": true
-      }
-    },
-    "section_editorial_single_image_H4tVVD": {
-      "type": "section-editorial-single-image",
-      "settings": {
-        "image": "shopify://shop_images/image_150.jpg",
-        "caption": "",
-        "add_top_padding": true,
-        "add_bottom_padding": true
-      }
-    },
-    "section_editorial_image_with_text_GPkpQU": {
-      "type": "section-editorial-image-with-text",
-      "settings": {
-        "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
-        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. </p>",
-        "heading_size": "h1",
-        "image_position": "left",
-        "background_color": "color-3",
-        "add_top_padding": true,
-        "add_bottom_padding": true
-      }
-    },
     "section_editorial_double_image_wBUMkU": {
       "type": "section-editorial-double-image",
       "settings": {
-        "image1": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n-1.jpg",
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0005_7A_Dumais_Litchfield_In_Situ_2024_104.jpg",
         "caption1": "",
-        "image2": "shopify://shop_images/442426721_18317611729182672_2558474744177278031_n-1.jpg",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0004_7B_Dumais_Litchfield_In_Situ_2024_111.jpg",
         "caption2": "",
-        "add_top_padding": true,
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_aqGayQ": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0003_8A_Dumais_Litchfield_In_Situ_2024_97.jpg",
+        "caption": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_double_image_AppnKk": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0001_10A_Dumais_Litchfield_In_Situ_2024_60.jpg",
+        "caption1": "",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0002_9A_Dumais_Litchfield_In_Situ_2024_64.jpg",
+        "caption2": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_Jc8mH4": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0001_11A_Dumais_Litchfield_In_Situ_2024_119.jpg",
+        "caption": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_9kptjj": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0000_12_Dumais_Litchfield_In_Situ_2024_84.jpg",
+        "caption": "",
+        "add_top_padding": false,
         "add_bottom_padding": false
       }
     },
@@ -188,10 +193,11 @@
     "section_editorial_single_image_khYihV",
     "section_editorial_double_image_LXfcRJ",
     "section_editorial_text_XCHNbb",
-    "section_editorial_image_with_text_aFcTAp",
-    "section_editorial_single_image_H4tVVD",
-    "section_editorial_image_with_text_GPkpQU",
     "section_editorial_double_image_wBUMkU",
+    "section_editorial_single_image_aqGayQ",
+    "section_editorial_double_image_AppnKk",
+    "section_editorial_single_image_Jc8mH4",
+    "section_editorial_single_image_9kptjj",
     "section_editorial_cta_eKRrPh"
   ]
 }
