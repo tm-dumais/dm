@@ -53,7 +53,7 @@
         "add_bottom_padding": true
       }
     },
-    "section_editorial_single_image_khYihV": {
+    "section_editorial_single_image_Le4Xgp": {
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0002_Background.jpg",
@@ -81,22 +81,33 @@
         "add_bottom_padding": false
       }
     },
-    "section_editorial_single_image_fbDPQ6": {
-      "type": "section-editorial-single-image",
-      "settings": {
-        "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-1.jpg",
-        "caption": "Lorem ipsum dolor sit amen",
-        "add_top_padding": true,
-        "add_bottom_padding": true
-      }
-    },
     "section_editorial_double_image_Vicm3k": {
       "type": "section-editorial-double-image",
       "settings": {
-        "image1": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-2.jpg",
-        "caption1": "Lorem ipsum dolor sit",
-        "image2": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-2.jpg",
-        "caption2": "Lorem ipsum dolor sit",
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0010_4A_Dumais_Litchfield_In_Situ_2024_18.jpg",
+        "caption1": "",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0009_4B_Dumais_Litchfield_In_Situ_2024_7.jpg",
+        "caption2": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_khYihV": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0008_5A_Dumais_Litchfield_In_Situ_2024_24.jpg",
+        "caption": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_double_image_LXfcRJ": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0007_6A_Dumais_Litchfield_In_Situ_2024_19.jpg",
+        "caption1": "",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0006_6B_Dumais_Litchfield_In_Situ_2024_46.jpg",
+        "caption2": "",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -162,11 +173,12 @@
     "section_editorial_single_image_8trzjt",
     "section_editorial_text_rrdEW8",
     "section_editorial_double_image_UcY7QP",
-    "section_editorial_single_image_khYihV",
+    "section_editorial_single_image_Le4Xgp",
     "section_editorial_text_gyj8Hm",
     "section_editorial_quote_iYB9GH",
-    "section_editorial_single_image_fbDPQ6",
     "section_editorial_double_image_Vicm3k",
+    "section_editorial_single_image_khYihV",
+    "section_editorial_double_image_LXfcRJ",
     "section_editorial_image_with_text_aFcTAp",
     "section_editorial_single_image_H4tVVD",
     "section_editorial_image_with_text_GPkpQU",
