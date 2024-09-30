@@ -16,7 +16,7 @@
         ".home-section-split--padding-top {padding-top: 3rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "image": "shopify://shop_images/bespoke-1_0001_Hero_Option_1_CT_Product_Photographer_Dumais_139.jpg",
         "image_position": "left",
         "vertical_alignment": "top",
         "horizontal_alignment": "left",
@@ -36,7 +36,7 @@
       "settings": {
         "title": "Bespoke",
         "heading_size": "h1",
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "image": "shopify://shop_images/bespoke-1_0007_1_Inception_Option_2_20230419_154319_1.jpg",
         "caption_headline": "1 Design Inception",
         "text": "<p>We begin with a conversation to understand your vision, exploring visual inspiration and developing a deeper understanding of the piece’s desired form and function. We gather the details—dimensions, glazes, textures—that serve as a basis for the design.</p>"
       }
@@ -44,10 +44,10 @@
     "section_bespoke_2_8NVNqN": {
       "type": "section-bespoke-2",
       "settings": {
-        "image_1": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "image_1": "shopify://shop_images/bespoke-1_0005_2_Prototype_Opt_1_Dumais_March_1_2023_188.jpg",
         "caption_headline_1": "2 Prototype and Refine",
         "text_1": "<p>Once the initial concept is approved, we will create detailed sketches and glaze samples for the piece. If we’re producing greater quantities for a hospitality or wholesale partnership, we createprototypes to ensure the design is structurally sound and achieves the desired effect.</p>",
-        "image_2": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "image_2": "shopify://shop_images/bespoke-1_0002_Dumais_March_1_2023_185.jpg",
         "caption_headline_2": "",
         "text_2": ""
       }
@@ -57,7 +57,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
+        "image": "shopify://shop_images/bespoke-1_0003_3_Final_Opt_1_September_28_2022_349.jpg",
         "caption_headline": "3 Design, Realized",
         "text": "<p>Once approved, we put our collaborative and imaginative pieces into production: we’ll cut, assemble, dry, fire, glaze, fire, fit, shade and test your finished product. This process takes between 10 to 14 weeks.</p>"
       }
