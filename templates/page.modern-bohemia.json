@@ -45,10 +45,10 @@
     "section_editorial_double_image_UcY7QP": {
       "type": "section-editorial-double-image",
       "settings": {
-        "image1": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
-        "caption1": "LOREM IPSUM",
-        "image2": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
-        "caption2": "DOLOR SIT AMET",
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
+        "caption1": "",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0011_2B_Dumais_Litchfield_In_Situ_2024_22.jpg",
+        "caption2": "",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -56,14 +56,23 @@
     "section_editorial_single_image_khYihV": {
       "type": "section-editorial-single-image",
       "settings": {
-        "image": "shopify://shop_images/image_151.jpg",
-        "caption": "Lorem ipsum dolor sit amen",
+        "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0002_Background.jpg",
+        "caption": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_text_gyj8Hm": {
+      "type": "section-editorial-text",
+      "settings": {
+        "text": "<p>When we first moved, one of our early friends and supporters welcomed us to their home, Gagarin II, one in a series of residences designed by Marcel Breuer, commissioned by local businessmen James Gagarin and Robert Stillman. This revealed to us one of Litchfield’s best kept secrets. Along its tree-laden streets, buildings by Eliot Noyes, Edward Larrabee Barnes, John Johansen, Edward Durell Stone and, of course, Marcel Breuer, stand quietly against the rural landscape.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
     },
     "section_editorial_quote_iYB9GH": {
       "type": "section-editorial-quote",
+      "disabled": true,
       "settings": {
         "quote": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
         "heading_size": "h0",
@@ -154,6 +163,7 @@
     "section_editorial_text_rrdEW8",
     "section_editorial_double_image_UcY7QP",
     "section_editorial_single_image_khYihV",
+    "section_editorial_text_gyj8Hm",
     "section_editorial_quote_iYB9GH",
     "section_editorial_single_image_fbDPQ6",
     "section_editorial_double_image_Vicm3k",
