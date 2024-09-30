@@ -151,6 +151,14 @@
         "add_bottom_padding": true
       }
     },
+    "section_editorial_text_fPbhLc": {
+      "type": "section-editorial-text",
+      "settings": {
+        "text": "<p>“There’s a beautiful tension to these designs,\" says Charlie, “We construct our pieces through slab-building, which is inherently rational and architectural, but clay has its own point of view; it bestows a softer, natural quality to the pieces. Breuer’s midcentury works in Litchfield have a similar tension. The starkly mid century modern homes all exist in reverence to their bucolic landscape.”</p>",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
     "section_editorial_single_image_Jc8mH4": {
       "type": "section-editorial-single-image",
       "settings": {
@@ -197,6 +205,7 @@
     "section_editorial_double_image_wBUMkU",
     "section_editorial_single_image_aqGayQ",
     "section_editorial_double_image_AppnKk",
+    "section_editorial_text_fPbhLc",
     "section_editorial_single_image_Jc8mH4",
     "section_editorial_single_image_9kptjj",
     "section_editorial_cta_eKRrPh"
