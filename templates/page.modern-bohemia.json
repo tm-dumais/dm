@@ -20,7 +20,7 @@
     "section_editorial_headline_CPnUH9": {
       "type": "section-editorial-headline",
       "settings": {
-        "headline": "Modern Bohemia",
+        "headline": "Introducing Modern Bohemia",
         "add_top_padding": false,
         "add_bottom_padding": false
       }
@@ -29,7 +29,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0000_1_Dumais_Litchfield_In_Situ_2024_70_alt_copy.jpg",
-        "caption": "",
+        "caption": "Gagarin II by Marcel Breuer.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -46,9 +46,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
-        "caption1": "",
+        "caption1": "The Pitch Sconce in Ochre.",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0011_2B_Dumais_Litchfield_In_Situ_2024_22.jpg",
-        "caption2": "",
+        "caption2": "The Small Funnel Lamp in Ochre. Exclusive to Design Within Reach.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -57,7 +57,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0002_Background.jpg",
-        "caption": "",
+        "caption": "The B32 Vessel Series in our signature glazes. Exclusive to Design Within Reach.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -85,9 +85,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0010_4A_Dumais_Litchfield_In_Situ_2024_18.jpg",
-        "caption1": "",
+        "caption1": "The Funnel Floor Lamp in Chalk.",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0009_4B_Dumais_Litchfield_In_Situ_2024_7.jpg",
-        "caption2": "",
+        "caption2": "The Funnel Lamp, Archival Paper shade in Ochre.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -96,7 +96,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0008_5A_Dumais_Litchfield_In_Situ_2024_24.jpg",
-        "caption": "",
+        "caption": "The Ultramarine Juicebox Lamp.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
