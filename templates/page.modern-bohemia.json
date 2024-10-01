@@ -105,9 +105,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0007_6A_Dumais_Litchfield_In_Situ_2024_19.jpg",
-        "caption1": "",
+        "caption1": "The Funnel Table Lamp, Archival Paper Shade in Chalk.",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0006_6B_Dumais_Litchfield_In_Situ_2024_46.jpg",
-        "caption2": "",
+        "caption2": "The Funnel Side Table in Chalk.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -124,9 +124,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0005_7A_Dumais_Litchfield_In_Situ_2024_104.jpg",
-        "caption1": "",
+        "caption1": "The Pillbox Torin Mirror in Chalk.",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0004_7B_Dumais_Litchfield_In_Situ_2024_111.jpg",
-        "caption2": "",
+        "caption2": "The Pillbox Torin Mirror in Ochre.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -135,7 +135,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0003_8A_Dumais_Litchfield_In_Situ_2024_97.jpg",
-        "caption": "",
+        "caption": "The Torin Mirror in Verdigris.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -144,7 +144,7 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0001_10A_Dumais_Litchfield_In_Situ_2024_60.jpg",
-        "caption1": "",
+        "caption1": "The Funnel Side Table in Chalk.",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0002_9A_Dumais_Litchfield_In_Situ_2024_64.jpg",
         "caption2": "",
         "add_top_padding": false,
@@ -163,7 +163,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0001_11A_Dumais_Litchfield_In_Situ_2024_119.jpg",
-        "caption": "",
+        "caption": "The Funnel Side Table in Ochre, Walnut and Chalk on the grounds of Gagarin II.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
