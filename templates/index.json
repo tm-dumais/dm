@@ -40,17 +40,60 @@
     },
     "home_section_split_T3BbAC": {
       "type": "home-section-split",
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0001_10A_Dumais_Litchfield_In_Situ_2024_60.jpg",
         "image_position": "left",
         "vertical_alignment": "center",
         "horizontal_alignment": "left",
-        "eyebrow_text": "Modern Bohemia",
-        "heading": "<p>Introducing a collection inspired by the rich modernist heritage of Litchfield, our home.</p>",
+        "eyebrow_text": "INTRODUCING MODERN BOHEMIA",
+        "heading": "<p>A collection inspired by the rich modernist heritage of our home.</p>",
         "heading_size": "h1",
-        "button_label": "Shop Modern Bohemia",
-        "button_link": "shopify://collections/modern-bohemia",
+        "button_label": "DISCOVER THE COLLECTION",
+        "button_link": "shopify://pages/modern-bohemia",
+        "background_color": "none",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": true
+      }
+    },
+    "home_section_split_yL8grq": {
+      "type": "home-section-split",
+      "settings": {
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "horizontal_alignment": "center",
+        "eyebrow_text": "MODERN BOHEMIA COLLECTION",
+        "heading": "<p>“Our town has an unexpected and remarkable undercurrent of midcentury design – a legacy that inspired these pieces.”</p>",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "color-1",
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": true
+      }
+    },
+    "section_home_featured_products_bjzfpy": {
+      "type": "section-home-featured-products",
+      "settings": {
+        "product_1": "funnel-floor-lamp",
+        "product_2": "pitch-sconce",
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": false
+      }
+    },
+    "section_home_image_RjaNNb": {
+      "type": "section-home-image",
+      "settings": {
+        "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0001_11A_Dumais_Litchfield_In_Situ_2024_119.jpg",
+        "caption": "The Funnel Side Tables from Modern Bohemia on the grounds of Gagain II.",
         "background_color": "none",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
@@ -65,7 +108,7 @@
         "vertical_alignment": "top",
         "horizontal_alignment": "left",
         "eyebrow_text": "",
-        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. <br/><br/>Handmade with care and delight in Litchfield.</p>",
+        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. <br/><br/>We create objects for living.</p>",
         "heading_size": "h1",
         "button_label": "About Us",
         "button_link": "shopify://pages/about",
@@ -73,52 +116,6 @@
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
         "padding_horizontal_enabled": true
-      }
-    },
-    "home_section_split_yL8grq": {
-      "type": "home-section-split",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_501284a7-f56a-48a8-814e-882fab2f3ce7.jpg",
-        "image_position": "right",
-        "vertical_alignment": "center",
-        "horizontal_alignment": "center",
-        "eyebrow_text": "",
-        "heading": "<p>“These designs balance rational forms with the tactile, natural qualities of clay.”</p>",
-        "heading_size": "h0",
-        "button_label": "",
-        "button_link": "",
-        "background_color": "color-1",
-        "padding_top_enabled": true,
-        "padding_bottom_enabled": true,
-        "padding_horizontal_enabled": true
-      }
-    },
-    "section_home_image_RjaNNb": {
-      "type": "section-home-image",
-      "settings": {
-        "image": "shopify://shop_images/2023_06_16_KD_0102X_1fa23855-260d-4f6c-b286-bfa2f431c4ea.jpg",
-        "caption": "",
-        "background_color": "none",
-        "padding_top_enabled": true,
-        "padding_bottom_enabled": true,
-        "padding_horizontal_enabled": true
-      }
-    },
-    "section_home_featured_products_bjzfpy": {
-      "type": "section-home-featured-products",
-      "disabled": true,
-      "settings": {
-        "product_1": "funnel-floor-lamp",
-        "product_2": "pitch-sconce",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "padding_top_enabled": true,
-        "padding_bottom_enabled": true,
-        "padding_horizontal_enabled": false
       }
     },
     "6a149845-4a58-45e1-a2b9-fe9d41161640": {
@@ -195,10 +192,10 @@
   "order": [
     "section_home_hero_U9fz9y",
     "home_section_split_T3BbAC",
-    "home_section_split_6nUKbq",
     "home_section_split_yL8grq",
-    "section_home_image_RjaNNb",
     "section_home_featured_products_bjzfpy",
+    "section_home_image_RjaNNb",
+    "home_section_split_6nUKbq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537",
     "1678358495ad87d821",
