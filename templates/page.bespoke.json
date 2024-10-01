@@ -46,7 +46,7 @@
       "settings": {
         "image_1": "shopify://shop_images/bespoke-1_0005_2_Prototype_Opt_1_Dumais_March_1_2023_188.jpg",
         "caption_headline_1": "2 Prototype and Refine",
-        "text_1": "<p>Once the initial concept is approved, we will create detailed sketches and glaze samples for the piece. If we’re producing greater quantities for a hospitality or wholesale partnership, we createprototypes to ensure the design is structurally sound and achieves the desired effect.</p>",
+        "text_1": "<p>Once the initial concept is approved, we create detailed sketches and glaze samples for the piece. If we’re producing greater quantities for a hospitality or wholesale partnership, we create prototypes to ensure the design is structurally sound and achieves the desired effect.</p>",
         "image_2": "shopify://shop_images/bespoke-1_0002_Dumais_March_1_2023_185.jpg",
         "caption_headline_2": "",
         "text_2": ""
@@ -67,9 +67,9 @@
       "settings": {
         "title": "Semi-Bespoke",
         "heading_size": "h1",
-        "image": "shopify://shop_images/Dumais_Litchfield_In_Situ_2024_81_c17fa621-5839-44c8-9c40-c683ec863104.jpg",
+        "image": "shopify://shop_images/Frasier-Lamp_-Overlap-3.jpg",
         "caption_headline": "",
-        "text": "<p>We offer a semi-bespoke experience for our designers who want to modify an existing design’s scale, glaze, texture or shade to suit your space.</p>",
+        "text": "<p>We also offer a semi-bespoke experience for our designers who want to modify an existing design’s scale, glaze, texture or shade to suit your space.</p>",
         "background_color": "color-3",
         "image_alt": ""
       }
