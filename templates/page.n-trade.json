@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -21,7 +30,7 @@
         "template--16837377163478__d55197ba-860b-4b5f-a49d-3b9419c755f2-16751132044f04d7cd-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We regularly work with designers and architects to scale or adapt existing designs, or create completely new ones. If this is something you're interested in, let us know in the notes field when you set up your account  and we’ll get in touch. <\/p>",
+            "text": "<p>We regularly work with designers and architects to scale or adapt existing designs, or create completely new ones. If this is something you're interested in, let us know in the notes field when you set up your account  and we’ll get in touch. </p>",
             "text_style": "subtitle"
           }
         }
@@ -30,8 +39,9 @@
         "3c216b81-cf30-4d9e-8eb9-38e766def8f6",
         "template--16837377163478__d55197ba-860b-4b5f-a49d-3b9419c755f2-16751132044f04d7cd-1"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/trade.jpg",
+        "image": "shopify://shop_images/trade.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -43,10 +53,51 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1728482708d75b4a95": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_igngCb": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "200389",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 30,
+            "padding_bottom": 30,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_igngCb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "section_home_image_QCh4fK": {
+      "type": "section-home-image",
+      "settings": {
+        "image": "shopify://shop_images/2023_06_16_KD_0102X_1fa23855-260d-4f6c-b286-bfa2f431c4ea.jpg",
+        "caption": "",
+        "background_color": "none",
+        "padding_top_enabled": false,
+        "padding_bottom_enabled": false,
+        "padding_horizontal_enabled": false
+      }
     }
   },
   "order": [
     "main",
-    "d55197ba-860b-4b5f-a49d-3b9419c755f2"
+    "section_home_image_QCh4fK",
+    "d55197ba-860b-4b5f-a49d-3b9419c755f2",
+    "1728482708d75b4a95"
   ]
 }
