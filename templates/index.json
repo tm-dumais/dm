@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section_home_hero_U9fz9y": {
@@ -66,8 +66,8 @@
         "eyebrow_text": "MODERN BOHEMIA COLLECTION",
         "heading": "<p>“Our town has an unexpected and remarkable undercurrent of midcentury design – a legacy that inspired these pieces.”</p>",
         "heading_size": "h1",
-        "button_label": "",
-        "button_link": "",
+        "button_label": "Discover",
+        "button_link": "shopify://pages/modern-bohemia",
         "background_color": "color-1",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
