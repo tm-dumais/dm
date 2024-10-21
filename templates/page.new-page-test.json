@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "section_editorial_headline_CPnUH9": {
+      "type": "section-editorial-headline",
+      "settings": {
+        "headline": "Introducing Modern Bohemia",
+        "add_top_padding": false,
+        "add_bottom_padding": false
+      }
+    },
+    "section_editorial_single_image_8trzjt": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0000_1_Dumais_Litchfield_In_Situ_2024_70_alt_copy.jpg",
+        "caption": "Gagarin II by Marcel Breuer.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_text_rrdEW8": {
+      "type": "section-editorial-text",
+      "settings": {
+        "text": "<p>Modern Bohemia is a collection that’s near and dear to our hearts, paying tribute to the rich modernist heritage woven into the natural beauty of our home in Litchfield, Connecticut. Primarily known for its colonial architecture, our town harbors an unexpected and remarkable undercurrent of mid century modern design – a legacy that inspired these pieces.</p>",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_double_image_UcY7QP": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
+        "caption1": "The Pitch Sconce in Ochre.",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0011_2B_Dumais_Litchfield_In_Situ_2024_22.jpg",
+        "caption2": "The Small Funnel Lamp in Ochre. Exclusive to Design Within Reach.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_Le4Xgp": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0002_Background.jpg",
+        "caption": "The B32 Vessel Series in our signature glazes. Exclusive to Design Within Reach.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_text_gyj8Hm": {
+      "type": "section-editorial-text",
+      "settings": {
+        "text": "<p>When we first moved, one of our early friends and supporters welcomed us to their home, Gagarin II, one in a series of residences designed by Marcel Breuer, commissioned by local businessmen James Gagarin and Robert Stillman. This revealed to us one of Litchfield’s best kept secrets. Along its tree-laden streets, buildings by Eliot Noyes, Edward Larrabee Barnes, John Johansen, Edward Durell Stone and, of course, Marcel Breuer, stand quietly against the rural landscape.</p>",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_quote_iYB9GH": {
+      "type": "section-editorial-quote",
+      "disabled": true,
+      "settings": {
+        "quote": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
+        "heading_size": "h0",
+        "background_color": "color-3",
+        "add_top_padding": false,
+        "add_bottom_padding": false
+      }
+    },
+    "section_editorial_double_image_Vicm3k": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0010_4A_Dumais_Litchfield_In_Situ_2024_18.jpg",
+        "caption1": "The Funnel Floor Lamp in Chalk.",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0009_4B_Dumais_Litchfield_In_Situ_2024_7.jpg",
+        "caption2": "The Funnel Lamp, Archival Paper shade in Ochre.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_khYihV": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0008_5A_Dumais_Litchfield_In_Situ_2024_24.jpg",
+        "caption": "The Ultramarine Juicebox Lamp.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_double_image_LXfcRJ": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0007_6A_Dumais_Litchfield_In_Situ_2024_19.jpg",
+        "caption1": "The Funnel Table Lamp, Archival Paper Shade in Chalk.",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0006_6B_Dumais_Litchfield_In_Situ_2024_46.jpg",
+        "caption2": "The Funnel Side Table in Chalk.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_text_XCHNbb": {
+      "type": "section-editorial-text",
+      "settings": {
+        "text": "<p>It was Breuer’s influence, in particular, that left a lasting imprint on the creative world of Litchfield and, consequently, my own imagination. These works introduced me to the culture of modernism and artistic innovation cultivated by previous generations, who championed then avant-garde ideas about modernist architecture existing against the decidedly rural landscape we live in. These pieces mirror this tension, juxtaposing the rationality of our slab-building methods with the softer, natural quality of clay.</p>",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_double_image_wBUMkU": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0005_7A_Dumais_Litchfield_In_Situ_2024_104.jpg",
+        "caption1": "The Pillbox Torin Mirror in Chalk.",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0004_7B_Dumais_Litchfield_In_Situ_2024_111.jpg",
+        "caption2": "The Pillbox Torin Mirror in Ochre.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_aqGayQ": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0003_8A_Dumais_Litchfield_In_Situ_2024_97.jpg",
+        "caption": "The Torin Mirror in Verdigris.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_double_image_AppnKk": {
+      "type": "section-editorial-double-image",
+      "settings": {
+        "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0001_10A_Dumais_Litchfield_In_Situ_2024_60.jpg",
+        "caption1": "The Funnel Side Table in Chalk.",
+        "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0002_9A_Dumais_Litchfield_In_Situ_2024_64.jpg",
+        "caption2": "",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_text_fPbhLc": {
+      "type": "section-editorial-text",
+      "settings": {
+        "text": "<p>“There’s a beautiful tension to these designs,” says Charlie, “We construct our pieces through slab-building, which is inherently rational and architectural, but clay has its own point of view; it bestows a softer, natural quality to the pieces. Breuer’s midcentury works in Litchfield have a similar tension. The starkly mid century modern homes all exist in reverence to their bucolic landscape.”</p>",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_Jc8mH4": {
+      "type": "section-editorial-single-image",
+      "settings": {
+        "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0001_11A_Dumais_Litchfield_In_Situ_2024_119.jpg",
+        "caption": "The Funnel Side Table in Ochre, Walnut and Chalk on the grounds of Gagarin II.",
+        "add_top_padding": false,
+        "add_bottom_padding": true
+      }
+    },
+    "section_editorial_single_image_9kptjj": {
+      "type": "section-editorial-single-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0000_12_Dumais_Litchfield_In_Situ_2024_84.jpg",
+        "caption": "",
+        "add_top_padding": false,
+        "add_bottom_padding": false
+      }
+    },
+    "section_editorial_cta_eKRrPh": {
+      "type": "section-editorial-cta",
+      "settings": {
+        "button_label": "Shop Modern Bohemia",
+        "button_link": "shopify://collections/modern-bohemia",
+        "background_color": "color-1",
+        "add_top_padding": false,
+        "add_bottom_padding": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_editorial_headline_CPnUH9",
+    "section_editorial_single_image_8trzjt",
+    "section_editorial_text_rrdEW8",
+    "section_editorial_double_image_UcY7QP",
+    "section_editorial_single_image_Le4Xgp",
+    "section_editorial_text_gyj8Hm",
+    "section_editorial_quote_iYB9GH",
+    "section_editorial_double_image_Vicm3k",
+    "section_editorial_single_image_khYihV",
+    "section_editorial_double_image_LXfcRJ",
+    "section_editorial_text_XCHNbb",
+    "section_editorial_double_image_wBUMkU",
+    "section_editorial_single_image_aqGayQ",
+    "section_editorial_double_image_AppnKk",
+    "section_editorial_text_fPbhLc",
+    "section_editorial_single_image_Jc8mH4",
+    "section_editorial_single_image_9kptjj",
+    "section_editorial_cta_eKRrPh"
+  ]
+}
