@@ -39,9 +39,9 @@
 
 .caption a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .caption a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
