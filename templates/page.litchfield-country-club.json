@@ -28,7 +28,7 @@
     "section_editorial_single_image_8trzjt": {
       "type": "section-editorial-single-image",
       "settings": {
-        "image": "shopify://shop_images/image_149.jpg",
+        "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_3.jpg",
         "caption": "",
         "add_top_padding": false,
         "add_bottom_padding": true
@@ -45,9 +45,9 @@
     "section_editorial_double_image_UcY7QP": {
       "type": "section-editorial-double-image",
       "settings": {
-        "image1": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
+        "image1": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_6.jpg",
         "caption1": "LOREM IPSUM",
-        "image2": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
+        "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_43.jpg",
         "caption2": "DOLOR SIT AMET",
         "add_top_padding": false,
         "add_bottom_padding": true
@@ -56,7 +56,7 @@
     "section_editorial_single_image_khYihV": {
       "type": "section-editorial-single-image",
       "settings": {
-        "image": "shopify://shop_images/image_151.jpg",
+        "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_44.jpg",
         "caption": "Lorem ipsum dolor sit amen",
         "add_top_padding": false,
         "add_bottom_padding": true
@@ -75,7 +75,7 @@
     "section_editorial_single_image_fbDPQ6": {
       "type": "section-editorial-single-image",
       "settings": {
-        "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-1.jpg",
+        "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_50.jpg",
         "caption": "Lorem ipsum dolor sit amen",
         "add_top_padding": true,
         "add_bottom_padding": true
@@ -84,9 +84,9 @@
     "section_editorial_double_image_Vicm3k": {
       "type": "section-editorial-double-image",
       "settings": {
-        "image1": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-2.jpg",
+        "image1": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_27.jpg",
         "caption1": "Lorem ipsum dolor sit",
-        "image2": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n-2.jpg",
+        "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_26.jpg",
         "caption2": "Lorem ipsum dolor sit",
         "add_top_padding": false,
         "add_bottom_padding": true
@@ -94,6 +94,7 @@
     },
     "section_editorial_image_with_text_aFcTAp": {
       "type": "section-editorial-image-with-text",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/362662714_18276607135182672_8720385442993652601_n.jpg",
         "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. <br/><br/>Handmade with care and delight in Litchfield.</p>",
@@ -151,12 +152,12 @@
     "main",
     "section_editorial_headline_CPnUH9",
     "section_editorial_single_image_8trzjt",
-    "section_editorial_text_rrdEW8",
     "section_editorial_double_image_UcY7QP",
     "section_editorial_single_image_khYihV",
+    "section_editorial_text_rrdEW8",
+    "section_editorial_double_image_Vicm3k",
     "section_editorial_quote_iYB9GH",
     "section_editorial_single_image_fbDPQ6",
-    "section_editorial_double_image_Vicm3k",
     "section_editorial_image_with_text_aFcTAp",
     "section_editorial_single_image_H4tVVD",
     "section_editorial_image_with_text_GPkpQU",
