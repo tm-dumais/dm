@@ -209,3 +209,12 @@
   font-size: 1.4rem;
   line-height: 1.2;
 }
+
+.home-section-image__caption a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.home-section-image__caption a:hover {
+  text-decoration: underline;
+}
