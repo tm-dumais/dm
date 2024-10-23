@@ -36,3 +36,12 @@
 .reduced-margin {
   margin-top: 0;
 }
+
+.caption a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.caption a:hover {
+  text-decoration: none;
+}
