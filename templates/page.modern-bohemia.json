@@ -29,7 +29,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0000_1_Dumais_Litchfield_In_Situ_2024_70_alt_copy.jpg",
-        "caption": "Gagarin II by Marcel Breuer.",
+        "caption": "<p>Gagarin II by Marcel Breuer.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -46,9 +46,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
-        "caption1": "The Pitch Sconce in Ochre.",
+        "caption1": "<p>The <a href=\"/products/pitch-sconce\" title=\"Pitch Sconce\">Pitch Sconce</a> in Ochre.</p>",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0011_2B_Dumais_Litchfield_In_Situ_2024_22.jpg",
-        "caption2": "The Small Funnel Lamp in Ochre. Exclusive to Design Within Reach.",
+        "caption2": "<p>The Small Funnel Lamp in Ochre. Exclusive to Design Within Reach.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -57,7 +57,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0002_Background.jpg",
-        "caption": "The B32 Vessel Series in our signature glazes. Exclusive to Design Within Reach.",
+        "caption": "<p>The B32 Vessel Series in our signature glazes. Exclusive to Design Within Reach.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -85,9 +85,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0010_4A_Dumais_Litchfield_In_Situ_2024_18.jpg",
-        "caption1": "The Funnel Floor Lamp in Chalk.",
+        "caption1": "<p>The Funnel Floor Lamp in Chalk.</p>",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0009_4B_Dumais_Litchfield_In_Situ_2024_7.jpg",
-        "caption2": "The Funnel Lamp, Archival Paper shade in Ochre.",
+        "caption2": "<p>The Funnel Lamp, Archival Paper shade in Ochre.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -96,7 +96,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0008_5A_Dumais_Litchfield_In_Situ_2024_24.jpg",
-        "caption": "The Ultramarine Juicebox Lamp.",
+        "caption": "<p>The Ultramarine Juicebox Lamp.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -105,9 +105,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0007_6A_Dumais_Litchfield_In_Situ_2024_19.jpg",
-        "caption1": "The Funnel Table Lamp, Archival Paper Shade in Chalk.",
+        "caption1": "<p>The Funnel Table Lamp, Archival Paper Shade in Chalk.</p>",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0006_6B_Dumais_Litchfield_In_Situ_2024_46.jpg",
-        "caption2": "The Funnel Side Table in Chalk.",
+        "caption2": "<p>The Funnel Side Table in Chalk.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -124,9 +124,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0005_7A_Dumais_Litchfield_In_Situ_2024_104.jpg",
-        "caption1": "The Pillbox Torin Mirror in Chalk.",
+        "caption1": "<p>The Pillbox Torin Mirror in Chalk.</p>",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0004_7B_Dumais_Litchfield_In_Situ_2024_111.jpg",
-        "caption2": "The Pillbox Torin Mirror in Ochre.",
+        "caption2": "<p>The Pillbox Torin Mirror in Ochre.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -135,7 +135,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0003_8A_Dumais_Litchfield_In_Situ_2024_97.jpg",
-        "caption": "The Torin Mirror in Verdigris.",
+        "caption": "<p>The Torin Mirror in Verdigris.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -144,7 +144,7 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0001_10A_Dumais_Litchfield_In_Situ_2024_60.jpg",
-        "caption1": "The Funnel Side Table in Chalk.",
+        "caption1": "<p>The Funnel Side Table in Chalk.</p>",
         "image2": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0002_9A_Dumais_Litchfield_In_Situ_2024_64.jpg",
         "caption2": "",
         "add_top_padding": false,
@@ -163,7 +163,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0001_11A_Dumais_Litchfield_In_Situ_2024_119.jpg",
-        "caption": "The Funnel Side Table in Ochre, Walnut and Chalk on the grounds of Gagarin II.",
+        "caption": "<p>The Funnel Side Table in Ochre, Walnut and Chalk on the grounds of Gagarin II.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
