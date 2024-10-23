@@ -46,9 +46,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_6.jpg",
-        "caption1": "LOREM IPSUM",
+        "caption1": "Handles Lamp in Ochre (left) and Probber Chiller in Verdigris (right).",
         "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_43.jpg",
-        "caption2": "DOLOR SIT AMET",
+        "caption2": "The Probber Candle Hlders in Ochre (left) and Verdigris (right).",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
