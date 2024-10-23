@@ -76,7 +76,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_23.jpg",
-        "caption": "",
+        "caption": "Jug Vessel in Parchment (left) and Barragan Lamp in Verdigris Pour (right).",
         "add_top_padding": true,
         "add_bottom_padding": true
       }
@@ -93,9 +93,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_27.jpg",
-        "caption1": "Lorem ipsum dolor sit",
+        "caption1": "Barragan Lamp in Verdigris Pour.",
         "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_26.jpg",
-        "caption2": "Lorem ipsum dolor sit",
+        "caption2": "Crock Vessel (left) and Probber Pitcher (right) in Parchment.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -117,19 +117,6 @@
         "caption2": "",
         "add_top_padding": false,
         "add_bottom_padding": false
-      }
-    },
-    "section_editorial_image_with_text_GPkpQU": {
-      "type": "section-editorial-image-with-text",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/442418639_18317611738182672_5528560715301036877_n.jpg",
-        "heading": "<p>Dumais Made is a pottery studio based in Litchfield, Connecticut, specializing in handmade lamps and accessories. </p>",
-        "heading_size": "h1",
-        "image_position": "left",
-        "background_color": "color-3",
-        "add_top_padding": true,
-        "add_bottom_padding": true
       }
     },
     "section_editorial_cta_eKRrPh": {
@@ -156,7 +143,6 @@
     "section_editorial_double_image_Vicm3k",
     "section_editorial_text_AUW66i",
     "section_editorial_double_image_mQtmp8",
-    "section_editorial_image_with_text_GPkpQU",
     "section_editorial_cta_eKRrPh"
   ]
 }
