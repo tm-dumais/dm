@@ -105,15 +105,17 @@
       "settings": {
         "text": "<p>Lamps are where we got our start. Today, we offer a range: from smaller table lamps that sit comfortably on a shelf, to substantial floor lamps that anchor an entire room. </p>",
         "add_top_padding": false,
-        "add_bottom_padding": false
+        "add_bottom_padding": true
       }
     },
-    "section_editorial_single_image_cX9RWV": {
-      "type": "section-editorial-single-image",
+    "section_editorial_double_image_mQtmp8": {
+      "type": "section-editorial-double-image",
       "settings": {
-        "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_58.jpg",
-        "caption": "",
-        "add_top_padding": true,
+        "image1": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_58.jpg",
+        "caption1": "",
+        "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_64.jpg",
+        "caption2": "",
+        "add_top_padding": false,
         "add_bottom_padding": false
       }
     },
@@ -153,7 +155,7 @@
     "section_editorial_text_PyQzBA",
     "section_editorial_double_image_Vicm3k",
     "section_editorial_text_AUW66i",
-    "section_editorial_single_image_cX9RWV",
+    "section_editorial_double_image_mQtmp8",
     "section_editorial_image_with_text_GPkpQU",
     "section_editorial_cta_eKRrPh"
   ]
