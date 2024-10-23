@@ -1,6 +1,7 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'section-home-split.css' | asset_url | stylesheet_tag }}
+{{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
 
 <div class="home-section-image background-{{ section.settings.background_color }}
             {% if section.settings.padding_top_enabled %}home-section-image--padding-top{% endif %}
@@ -22,7 +23,7 @@
       {%- endif -%}
     </div>
     {%- if section.settings.caption != blank -%}
-      <p class="home-section-image__caption">{{ section.settings.caption }}</p>
+      <div class="caption home-section-image__caption">{{ section.settings.caption }}</div>
     {%- endif -%}
   </div>
 </div>
@@ -38,7 +39,7 @@
       "label": "Image"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "caption",
       "label": "Caption"
     },

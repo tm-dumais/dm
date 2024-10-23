@@ -202,3 +202,10 @@
 .button--secondary {
     min-width: 250px;
 }
+
+.home-section-image__caption {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
