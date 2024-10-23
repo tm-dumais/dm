@@ -13,7 +13,12 @@
       {% endif %}
     </div>
     {% if section.settings.caption != blank %}
-      <p class="caption">{{ section.settings.caption }}</p>
+      <p class="caption">
+        {{ section.settings.caption }}
+        {% if section.settings.caption_link != blank and section.settings.caption_link_text != blank %}
+          <a href="{{ section.settings.caption_link }}" class="caption-link">{{ section.settings.caption_link_text }}</a>
+        {% endif %}
+      </p>
     {% endif %}
   </div>
 </div>
@@ -31,6 +36,16 @@
       "type": "text",
       "id": "caption",
       "label": "Caption"
+    },
+    {
+      "type": "url",
+      "id": "caption_link",
+      "label": "Caption Link"
+    },
+    {
+      "type": "text",
+      "id": "caption_link_text",
+      "label": "Caption Link Text"
     },
     {
       "type": "header",

@@ -10,7 +10,12 @@
         <div class="image-wrapper">
           <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="{{ section.settings.image1.alt | escape }}" class="rounded-image">
           {% if section.settings.caption1 != blank %}
-            <p class="caption double-image-caption">{{ section.settings.caption1 }}</p>
+            <p class="caption double-image-caption">
+              {{ section.settings.caption1 }}
+              {% if section.settings.caption1_link != blank and section.settings.caption1_link_text != blank %}
+                <a href="{{ section.settings.caption1_link }}" class="caption-link">{{ section.settings.caption1_link_text }}</a>
+              {% endif %}
+            </p>
           {% endif %}
         </div>
       {% endif %}
@@ -18,7 +23,12 @@
         <div class="image-wrapper">
           <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="{{ section.settings.image2.alt | escape }}" class="rounded-image">
           {% if section.settings.caption2 != blank %}
-            <p class="caption double-image-caption">{{ section.settings.caption2 }}</p>
+            <p class="caption double-image-caption">
+              {{ section.settings.caption2 }}
+              {% if section.settings.caption2_link != blank and section.settings.caption2_link_text != blank %}
+                <a href="{{ section.settings.caption2_link }}" class="caption-link">{{ section.settings.caption2_link_text }}</a>
+              {% endif %}
+            </p>
           {% endif %}
         </div>
       {% endif %}
@@ -41,6 +51,16 @@
       "label": "Caption for Image 1"
     },
     {
+      "type": "url",
+      "id": "caption1_link",
+      "label": "Caption 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "caption1_link_text",
+      "label": "Caption 1 Link Text"
+    },
+    {
       "type": "image_picker",
       "id": "image2",
       "label": "Image 2"
@@ -49,6 +69,16 @@
       "type": "text",
       "id": "caption2",
       "label": "Caption for Image 2"
+    },
+    {
+      "type": "url",
+      "id": "caption2_link",
+      "label": "Caption 2 Link"
+    },
+    {
+      "type": "text",
+      "id": "caption2_link_text",
+      "label": "Caption 2 Link Text"
     },
     {
       "type": "header",
