@@ -39,7 +39,17 @@
       "settings": {
         "text": "<p>Nested in the winding hillside, the Litchfield Country Club offers curated comfort to our local community. Collaborating with our friends at Champalimaud Design, Charlie reimagined the dining clubhouse with semi-bespoke luminaires and iconic accessories.</p><p>Select pieces from the Litchfield Country Club are in-stock and ship immediately—ideal for thoughtful gifting this holiday season.</p>",
         "add_top_padding": false,
-        "add_bottom_padding": true
+        "add_bottom_padding": false
+      }
+    },
+    "section_editorial_cta_PfcyfU": {
+      "type": "section-editorial-cta",
+      "settings": {
+        "button_label": "Discover the Fall Drop",
+        "button_link": "shopify://collections/country-club",
+        "background_color": "color-1",
+        "add_top_padding": false,
+        "add_bottom_padding": false
       }
     },
     "section_editorial_double_image_UcY7QP": {
@@ -123,8 +133,8 @@
     "section_editorial_cta_eKRrPh": {
       "type": "section-editorial-cta",
       "settings": {
-        "button_label": "Button label",
-        "button_link": "shopify://products/anemone-wall-mirror",
+        "button_label": "Discover the Fall Drop",
+        "button_link": "shopify://collections/country-club",
         "background_color": "color-1",
         "add_top_padding": false,
         "add_bottom_padding": false
@@ -136,6 +146,7 @@
     "section_editorial_headline_CPnUH9",
     "section_editorial_single_image_8trzjt",
     "section_editorial_text_rrdEW8",
+    "section_editorial_cta_PfcyfU",
     "section_editorial_double_image_UcY7QP",
     "section_editorial_single_image_fbDPQ6",
     "section_editorial_text_AUW66i",
