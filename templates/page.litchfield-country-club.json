@@ -46,7 +46,7 @@
       "type": "section-editorial-cta",
       "settings": {
         "button_label": "Discover the Fall Drop",
-        "button_link": "shopify://collections/country-club",
+        "button_link": "shopify://collections/fall-gifting-drop",
         "background_color": "color-1",
         "add_top_padding": false,
         "add_bottom_padding": false
@@ -134,7 +134,7 @@
       "type": "section-editorial-cta",
       "settings": {
         "button_label": "Discover the Fall Drop",
-        "button_link": "shopify://collections/country-club",
+        "button_link": "shopify://collections/fall-gifting-drop",
         "background_color": "color-1",
         "add_top_padding": false,
         "add_bottom_padding": false
