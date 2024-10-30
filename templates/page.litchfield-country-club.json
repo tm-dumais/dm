@@ -29,7 +29,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_3.jpg",
-        "caption": "",
+        "caption": "Photography by Allegra Anderson.",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -37,7 +37,7 @@
     "section_editorial_text_rrdEW8": {
       "type": "section-editorial-text",
       "settings": {
-        "text": "<p>Nestled in the winding hillside, the Litchfield Country Club offers a certain curated comfort to our local community. Collaborating with our friends at Champalimaud Design, Charlie—formerly an architectural lighting designer—reimagined the dining clubhouse with semi-bespoke luminaires and iconic accessories.</p>",
+        "text": "<p>Nested in the winding hillside, the Litchfield Country Club offers curated comfort to our local community. Collaborating with our friends at Champalimaud Design, Charlie reimagined the dining clubhouse with semi-bespoke luminaires and iconic accessories.</p><p>Select pieces from the Litchfield Country Club are in-stock and ship immediately—ideal for thoughtful gifting this holiday season.</p>",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -62,12 +62,10 @@
         "add_bottom_padding": true
       }
     },
-    "section_editorial_quote_iYB9GH": {
-      "type": "section-editorial-quote",
+    "section_editorial_text_AUW66i": {
+      "type": "section-editorial-text",
       "settings": {
-        "quote": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
-        "heading_size": "h0",
-        "background_color": "color-3",
+        "text": "<p>Our notable gift-worthy pieces, like the Probber Chiller and Pitcher, don the dining room of the clubhouse while our semi-bespoke lighting, from the Barragan Lamp to the Handles Lamp, illuminate from within.</p>",
         "add_top_padding": false,
         "add_bottom_padding": false
       }
@@ -78,14 +76,6 @@
         "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_23.jpg",
         "caption": "Jug Vessel in Parchment (left) and Barragan Lamp in Verdigris Pour (right).",
         "add_top_padding": true,
-        "add_bottom_padding": true
-      }
-    },
-    "section_editorial_text_PyQzBA": {
-      "type": "section-editorial-text",
-      "settings": {
-        "text": "<p>The clubhouse is a restored mid-century farmhouse overlooking the vast green—an ideal location for the holiday that invokes the warmth and comfort of the season.</p>",
-        "add_top_padding": false,
         "add_bottom_padding": true
       }
     },
@@ -100,12 +90,14 @@
         "add_bottom_padding": true
       }
     },
-    "section_editorial_text_AUW66i": {
-      "type": "section-editorial-text",
+    "section_editorial_quote_iYB9GH": {
+      "type": "section-editorial-quote",
       "settings": {
-        "text": "<p>Our notable gift-worthy pieces, like the Probber Chiller and Pitcher, don the dining room of the clubhouse while our semi-bespoke lighting, like the Barragan Lamp and Handles Lamp, illuminate from within.</p>",
+        "quote": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
+        "heading_size": "h0",
+        "background_color": "color-3",
         "add_top_padding": false,
-        "add_bottom_padding": true
+        "add_bottom_padding": false
       }
     },
     "section_editorial_double_image_mQtmp8": {
@@ -115,8 +107,17 @@
         "caption1": "Solana Mirror in Hide (left) and Bespoke Sconce in Mushroom (right).",
         "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_64.jpg",
         "caption2": "Palm Springs Floor Lamp in Matte-Black and Lead Overlap (left) and Hutton Side Table in Verdigris (right).",
-        "add_top_padding": false,
+        "add_top_padding": true,
         "add_bottom_padding": false
+      }
+    },
+    "section_editorial_text_PyQzBA": {
+      "type": "section-editorial-text",
+      "disabled": true,
+      "settings": {
+        "text": "<p>The clubhouse is a restored farmhouse overlooking the vast green, invoking the warmth and comfort of the holiday season.</p>",
+        "add_top_padding": false,
+        "add_bottom_padding": true
       }
     },
     "section_editorial_cta_eKRrPh": {
@@ -137,12 +138,12 @@
     "section_editorial_text_rrdEW8",
     "section_editorial_double_image_UcY7QP",
     "section_editorial_single_image_fbDPQ6",
-    "section_editorial_quote_iYB9GH",
-    "section_editorial_single_image_bWY4xX",
-    "section_editorial_text_PyQzBA",
-    "section_editorial_double_image_Vicm3k",
     "section_editorial_text_AUW66i",
+    "section_editorial_single_image_bWY4xX",
+    "section_editorial_double_image_Vicm3k",
+    "section_editorial_quote_iYB9GH",
     "section_editorial_double_image_mQtmp8",
+    "section_editorial_text_PyQzBA",
     "section_editorial_cta_eKRrPh"
   ]
 }
