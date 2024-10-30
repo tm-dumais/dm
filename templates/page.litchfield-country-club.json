@@ -56,9 +56,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_6.jpg",
-        "caption1": "Handles Lamp in Ochre (left) and Probber Chiller in Verdigris (right).",
+        "caption1": "Handles Lamp in Hide (left) and Probber Chiller in Verdigris (right).",
         "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_43.jpg",
-        "caption2": "The Probber Candle Holders in Ochre (left) and Verdigris (right).",
+        "caption2": "The Probber Candle Holders in Hide (left) and Verdigris (right).",
         "add_top_padding": false,
         "add_bottom_padding": true
       }
@@ -67,7 +67,7 @@
       "type": "section-editorial-single-image",
       "settings": {
         "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_44.jpg",
-        "caption": "Hirsch Pendant in a Chalk and Sea Pour (above); Probber Candle Holders in Ochre and Verdigris (left and middle); and Rogers Vessel in Parchment (right).",
+        "caption": "Hirsch Pendant in a Chalk and Parchment Pour (above); Probber Candle Holders in Hide and Verdigris (left and middle); and Rogers Vessel in Parchment (right).",
         "add_top_padding": true,
         "add_bottom_padding": true
       }
@@ -114,9 +114,9 @@
       "type": "section-editorial-double-image",
       "settings": {
         "image1": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_58.jpg",
-        "caption1": "Solana Mirror in Hide (left) and Bespoke Sconce in Mushroom (right).",
+        "caption1": "Solana Mirror in Hide (left) and a Bespoke Sconce in Mushroom (right).",
         "image2": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_64.jpg",
-        "caption2": "Palm Springs Floor Lamp in Matte-Black and Lead Overlap (left) and Hutton Side Table in Verdigris (right).",
+        "caption2": "Palm Springs Floor Lamp in Matte-Black, Lead and Chalk Overlap (left) and Hutton Side Table in Verdigris Pour (right).",
         "add_top_padding": true,
         "add_bottom_padding": false
       }
