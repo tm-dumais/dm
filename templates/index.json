@@ -44,16 +44,31 @@
         "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_43_3acc5de8-e479-4f5f-899c-72ddbfda6051.jpg",
         "image_position": "left",
         "vertical_alignment": "center",
-        "horizontal_alignment": "left",
+        "horizontal_alignment": "center",
         "eyebrow_text": "THE FALL GIFTING DROP",
-        "heading": "<p><em>From illuminating candle holders to bountiful vessels, discover in stock and gift-worthy pieces.</em></p>",
+        "heading": "<p><em>From illuminating candle holders to bountiful vessels, discover gift-worthy pieces in stock.</em></p>",
         "heading_size": "h1",
-        "button_label": "SHOP THE DROP",
-        "button_link": "shopify://collections/fall-gifting-drop",
-        "background_color": "none",
+        "button_label": "DISCOVER THE DESIGNS",
+        "button_link": "shopify://pages/dumais-made-litchfield-country-club",
+        "background_color": "color-2",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
         "padding_horizontal_enabled": true
+      }
+    },
+    "section_home_featured_products_bjzfpy": {
+      "type": "section-home-featured-products",
+      "settings": {
+        "product_1": "pitcher-vase",
+        "product_2": "probber-candle-holder",
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": false
       }
     },
     "home_section_split_yL8grq": {
@@ -72,21 +87,6 @@
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
         "padding_horizontal_enabled": true
-      }
-    },
-    "section_home_featured_products_bjzfpy": {
-      "type": "section-home-featured-products",
-      "settings": {
-        "product_1": "funnel-floor-lamp",
-        "product_2": "pitch-sconce",
-        "image_ratio": "portrait",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "padding_top_enabled": true,
-        "padding_bottom_enabled": true,
-        "padding_horizontal_enabled": false
       }
     },
     "section_home_image_RjaNNb": {
@@ -192,8 +192,8 @@
   "order": [
     "section_home_hero_U9fz9y",
     "home_section_split_T3BbAC",
-    "home_section_split_yL8grq",
     "section_home_featured_products_bjzfpy",
+    "home_section_split_yL8grq",
     "section_home_image_RjaNNb",
     "home_section_split_6nUKbq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
