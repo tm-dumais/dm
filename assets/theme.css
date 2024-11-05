@@ -1,11 +1,1 @@
-/* Footer menu links uppercase styling */
-.footer-block_details-content .list-menu_item--link,
-.footer-block_details-content .link--text,
-.footer .list-menu__item,
-.footer-block_details-content a {
-    text-transform: uppercase !important;
-}
-
-.header {
-    background: yellow !important;
-} 
+/* Empty or remove the previous styles */
