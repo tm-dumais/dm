@@ -2,5 +2,5 @@
 .footer-block_details-content .list-menu__item,
 .footer-block_details-content .list-menu__item li a,
 .footer-block_details-content .list-menu_item--link {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 } 
