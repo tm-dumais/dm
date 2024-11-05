@@ -62,6 +62,7 @@
 .collection-hero__description{
   font-family: new-caledonia, serif;
   font-weight: 400 !important;
+  font-style: italic !important;
 }
 
 .collection-hero__description h3,
@@ -134,4 +135,9 @@
     margin-left: 3rem;
     min-height: 20rem;
   }
+}
+
+/* Reverting back to original styles */
+.collection-hero__description h3{
+  font-size: 1em !important;
 }
