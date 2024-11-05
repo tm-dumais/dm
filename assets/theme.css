@@ -1,11 +1,7 @@
-/* Remove previous color styling and add background color to footer block details */
+/* Footer menu links uppercase styling */
 .footer-block_details-content .list-menu_item--link,
 .footer-block_details-content .link--text,
 .footer .list-menu__item,
 .footer-block_details-content a {
     text-transform: uppercase !important;
-}
-
-.footer-block__details-content {
-    background-color: red !important;
 } 
