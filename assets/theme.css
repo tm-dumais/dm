@@ -1,0 +1,4 @@
+/* Add this CSS rule to transform footer menu links to uppercase */
+.footer-block_details-content .list-menu__item {
+    text-transform: uppercase;
+} 
