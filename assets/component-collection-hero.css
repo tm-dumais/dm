@@ -67,7 +67,7 @@
 .collection-hero__description h3,
 .collection-hero__description h3 em {
     font-style: italic !important;
-    font-size: 2.75rem !important;
+    font-size: 2rem !important;
     line-height: 1.2 !important;
     font-family: var(--font-heading-family);
 }
@@ -75,7 +75,7 @@
 @media screen and (max-width: 749px) {
     .collection-hero__description h3,
     .collection-hero__description h3 em {
-        font-size: 2.25rem !important;
+        font-size: 1.8rem !important;
     }
 }
 
