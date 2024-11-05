@@ -1,7 +1,8 @@
-/* Add this CSS rule to transform footer menu links to uppercase */
+/* Add this CSS rule to transform footer menu links to uppercase and make them pink */
 .footer-block_details-content .list-menu_item--link,
 .footer-block_details-content .link--text,
 .footer .list-menu__item,
 .footer-block_details-content a {
     text-transform: uppercase !important;
+    color: pink !important;
 } 
