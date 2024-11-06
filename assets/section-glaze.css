@@ -337,6 +337,7 @@ section:last-child .glazes-wrapper{
   color: #717173;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  text-transform: uppercase;
 }
 
 .glazes-images .multicolumn-card__info{
