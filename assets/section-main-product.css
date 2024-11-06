@@ -446,7 +446,7 @@ a.product__text {
 }
 
 .product__title h2 {
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .product__title > * {
