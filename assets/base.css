@@ -3344,8 +3344,7 @@ text-align: left !important;
 }
 
 /* Trade form styles */
-._textHeading_2aowh_35._textHeading_1ll8d_33,
-._formHeader_1ll8d_19 h2 {
+.shopify-app-block h2 {
   font-family: new-caledonia, serif !important;
   font-style: italic !important;
   font-weight: normal !important;
