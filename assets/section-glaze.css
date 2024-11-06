@@ -340,6 +340,9 @@ section:last-child .glazes-wrapper{
   text-transform: uppercase;
 }
 
+.multicolumn-card__info .rte p{
+  text-transform: uppercase;
+}
 .glazes-images .multicolumn-card__info{
   padding-top: 1rem;
   padding-left: 0;
