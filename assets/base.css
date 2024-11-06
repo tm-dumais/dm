@@ -3344,20 +3344,25 @@ text-align: left !important;
 }
 
 /* Trade form styles */
-#app-embed h2{
+._textHeading_2aowh_35._textHeading_1ll8d_33,
+._formHeader_1ll8d_19 h2 {
   font-family: new-caledonia, serif;
   font-style: italic;
   font-weight: normal;
 }
 
 /* Make form elements uppercase */
-#app-embed input,
-#app-embed select,
-#app-embed label{
+._formContainer_stahb_30 input,
+._formContainer_stahb_30 select,
+._formContainer_stahb_30 label,
+._formFieldset_1ll8d_67 input,
+._formFieldset_1ll8d_67 select,
+._formFieldset_1ll8d_67 label {
   text-transform: uppercase !important;
 }
 
 /* Keep placeholder text uppercase */
-#app-embed input::placeholder {
+._formContainer_stahb_30 input::placeholder,
+._formFieldset_1ll8d_67 input::placeholder {
   text-transform: uppercase;
 }
