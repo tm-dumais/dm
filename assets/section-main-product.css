@@ -375,6 +375,7 @@ fieldset.product-form__input .form__label {
   font-size: 1.4rem;
   padding-bottom:2.5rem;
   border-bottom: 1px solid black;
+  text-transform: uppercase;
 }
 .product__description .certification-image {
   display: flex;
