@@ -3343,35 +3343,13 @@ text-align: left !important;
     text-transform: uppercase !important;
 }
 
+#app-embed{
+
+  h2{
+    font-family: new-caledonia, serif !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+  }
 
 
-/* Make form elements uppercase */
-._formContainer_stahb_30 input,
-._formContainer_stahb_30 select,
-._formContainer_stahb_30 label,
-._formFieldset_1ll8d_67 input,
-._formFieldset_1ll8d_67 select,
-._formFieldset_1ll8d_67 label {
-  text-transform: uppercase !important;
-}
-
-/* Keep placeholder text uppercase */
-._formContainer_stahb_30 input::placeholder,
-._formFieldset_1ll8d_67 input::placeholder {
-  text-transform: uppercase;
-}
-
-/* Trade form styles */
-#app-embed ._textHeading_2aowh_35._textHeading_1ll8d_33,
-#app-embed ._formHeader_1ll8d_19 h2 {
-  font-family: new-caledonia, serif !important;
-  font-style: italic !important;
-  font-weight: normal !important;
-}
-
-/* Trade form styles */
-#app-embed div[data-form-root="true"] ._formHeader_1ll8d_19 h2 {
-  font-family: new-caledonia, serif !important;
-  font-style: italic !important;
-  font-weight: normal !important;
 }
