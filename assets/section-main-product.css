@@ -5,7 +5,7 @@ html {
 .main-product-wrapper{
   width: 100%;
   height: auto;
-  border-bottom: 0px;
+  border-bottom: 0px solid black;
 }
 
 .main-product:not(.page-width-tablet){
