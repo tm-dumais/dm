@@ -990,7 +990,7 @@ a.product__text {
 .product__atc-etxt {
   margin-bottom: 1.2rem;
   font-size: 1.2rem;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 /* Product popup */
