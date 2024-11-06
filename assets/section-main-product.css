@@ -1598,10 +1598,11 @@ a.product__text {
   margin-bottom: 1rem;
 }
 
-.view-glazes{
+.view-glazes {
   font-size: 1.35rem;
   color: #7E7E80;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .view-glazes:hover{
