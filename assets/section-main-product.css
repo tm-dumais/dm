@@ -1633,3 +1633,8 @@ a.product__text {
   background-color: black;
   color: white;
 }
+
+/* Add price styling to match caption size */
+.price-item {
+  font-size: 1.35rem;  /* Match caption size */
+}
