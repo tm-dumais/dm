@@ -302,6 +302,7 @@ section:last-child .glazes-wrapper{
 
 .glazes-info-extra{
   align-self: end;
+  text-transform: uppercase;
 }
 
 .glazes-info-extra p{
