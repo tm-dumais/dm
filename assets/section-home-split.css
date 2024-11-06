@@ -41,6 +41,7 @@
 
 .home-section-split__content {
   padding: 5rem;
+  padding: 2rem 5rem 7rem;
   display: flex;
   flex-direction: column;
   width: 100%;
