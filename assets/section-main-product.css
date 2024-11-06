@@ -1643,3 +1643,8 @@ a.product__text {
 .price-item {
   font-size: 1.35rem;  /* Match caption size */
 }
+
+/* Add styling for the glaze label */
+.product-form__input--dropdown .form__label {
+  text-transform: uppercase;
+}
