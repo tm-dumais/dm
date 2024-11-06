@@ -3333,3 +3333,12 @@ text-align: left !important;
     outline: none !important;
     border-color: transparent !important;
 }
+
+/* Copyright text in footer uppercase */
+.copyright__content a {
+    text-transform: uppercase !important;
+}
+
+.copyright__content {
+    text-transform: uppercase !important;
+}
