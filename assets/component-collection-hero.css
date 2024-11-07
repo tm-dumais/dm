@@ -3,6 +3,14 @@
   padding: 0 0 2rem 0;
 }
 
+.collection-hero--with-image .gradient {
+  background: transparent !important;
+}
+
+.collection-hero__image-container.media.gradient {
+  background: transparent !important;
+}
+
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
