@@ -82,6 +82,19 @@
   font-family: new-caledonia, serif;
   font-weight: 400 !important;
   font-style: italic !important;
+  font-size: 1.6rem;
+  line-height: calc(1 + 0.35 / var(--font-body-scale));
+}
+
+@media screen and (min-width: 750px) {
+  .collection-hero__description {
+    font-size: 1.8rem;
+    max-width: 55%;
+  }
+
+  .collection-hero--with-image .collection-hero__description {
+    max-width: 100%;
+  }
 }
 
 .collection-hero__description h3,
