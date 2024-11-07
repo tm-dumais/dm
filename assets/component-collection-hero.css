@@ -49,7 +49,7 @@
     justify-content: center;
     flex-direction: row;
     padding-bottom: 0;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .collection-hero--with-image .collection-hero__text-wrapper {
@@ -67,7 +67,7 @@
 }
 
 .collection-hero__title {
-  margin: 8rem 0 3rem !important;
+  margin: 6rem 0 0 !important;
   width: 100%;
   font-family: pitch, monospace;
   text-transform: uppercase;
@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero__title {
-    margin: 8rem 0 3rem;
+    margin: 6rem 0 0 !important;
   }
 }
 
