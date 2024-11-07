@@ -223,3 +223,21 @@
     width: 80% !important;
   }
 }
+
+/* Update the description styles for when there's an image */
+@media screen and (min-width: 750px) {
+  .collection-hero--with-image .collection-hero__description {
+    width: 50% !important; /* Force 50% width */
+    max-width: 50% !important; /* Override previous max-width */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Keep the regular description styles for when there's no image */
+@media screen and (min-width: 750px) {
+  .collection-hero__description {
+    font-size: 1.8rem;
+    max-width: 55%;
+  }
+}
