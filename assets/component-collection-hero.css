@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .collection-hero--with-image .collection-hero__inner {
@@ -32,8 +33,22 @@
 
   .collection-hero__inner {
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     padding-bottom: 0;
+  }
+
+  .collection-hero--with-image .collection-hero__text-wrapper {
+    padding: 4rem;
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .collection-hero__image-container {
+    align-self: center;
+    flex: 1 0 50%;
+    margin-left: 0;
+    min-height: 20rem;
   }
 }
 
@@ -97,6 +112,11 @@
   .collection-hero--with-image .collection-hero__description {
     max-width: 100%;
   }
+
+  .collection-hero__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .collection-hero--with-image .collection-hero__title {
@@ -104,7 +124,8 @@
 }
 
 .collection-hero--with-image .collection-hero__text-wrapper {
-  padding: 5rem 0 4rem;
+  padding: 4rem;
+  text-align: center;
 }
 
 .collection-hero__image-container {
