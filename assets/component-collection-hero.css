@@ -5,8 +5,10 @@
 }
 
 .collection-hero--with-image .collection-hero__inner {
-  margin-bottom: 0;
-  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 750px) {
@@ -152,4 +154,67 @@
   .collection-hero--with-image .collection-hero__text-wrapper {
     text-align: center;
   }
+}
+
+/* Base grid layout similar to home-section-split */
+.collection-hero--with-image .collection-hero__inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Image container styles */
+.collection-hero__image-container {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.collection-hero__image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text content styles */
+.collection-hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 750px) {
+  .collection-hero--with-image .collection-hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* Allow image position switching like home-section-split */
+  .collection-hero--with-image .collection-hero__image-container {
+    order: 1;
+  }
+
+  .collection-hero--with-image .collection-hero__text-wrapper {
+    order: 2;
+    padding: 4rem;
+  }
+
+  /* If you want the image on the right, add this class to your liquid template */
+  .collection-hero--image-right .collection-hero__image-container {
+    order: 2;
+  }
+  
+  .collection-hero--image-right .collection-hero__text-wrapper {
+    order: 1;
+  }
+}
+
+/* Keep center alignment when no image */
+.collection-hero:not(.collection-hero--with-image) .collection-hero__text-wrapper {
+  text-align: center;
 }
