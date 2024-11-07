@@ -147,21 +147,21 @@
 }
 
 .collection-hero__image-container {
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
-  margin: 0 0 3rem 0;
+  width: 100% !important;
+  height: 80vh !important;
+  overflow: hidden !important;
+  margin: 0 0 3rem 0 !important;
   position: relative !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .collection-hero__image-container img {
-  width: 50%;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  width: 50% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
   position: relative !important;
 }
 
@@ -196,8 +196,8 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero__image-container {
-    height: 95vh;
-    margin: 0 0 5rem 0;
+    height: 95vh !important;
+    margin: 0 0 5rem 0 !important;
   }
 
   .collection-hero__description {
@@ -207,6 +207,6 @@
 
 @media screen and (max-width: 749px) {
   .collection-hero__image-container img {
-    width: 80%;
+    width: 80% !important;
   }
 }
