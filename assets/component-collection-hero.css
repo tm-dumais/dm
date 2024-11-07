@@ -1,6 +1,6 @@
 .collection-hero__inner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -22,8 +22,7 @@
 }
 
 .collection-hero__text-wrapper {
-  padding: 5rem 0 4rem;
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 @media screen and (min-width: 750px) {
@@ -36,19 +35,8 @@
     flex-direction: row;
     padding-bottom: 0;
   }
-
-  .collection-hero--with-image .collection-hero__text-wrapper {
-    padding: 4rem 2rem 4rem 0;
-    flex-basis: 50%;
-  }
-
-  .collection-hero__image-container {
-    align-self: stretch;
-    flex: 1 0 50%;
-    margin-left: 3rem;
-    min-height: 20rem;
-  }
 }
+
 
 .collection-hero__title {
   margin-top: 3.5rem;
@@ -117,52 +105,39 @@
 }
 
 .collection-hero--with-image .collection-hero__text-wrapper {
-  padding: 4rem 2rem;
-  width: 100%;
+  padding: 5rem 0 4rem;
 }
 
 .collection-hero__image-container {
-  width: 100%;
-  position: relative;
-  min-height: auto;
-  height: auto;
-  overflow: visible;
-}
-
-.collection-hero__image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-.collection-hero.gradient {
-  background: none;
+  border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
+  border-radius: var(--media-radius);
+  box-shadow: var(--media-shadow-horizontal-offset)
+    var(--media-shadow-vertical-offset)
+    var(--media-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
 @media screen and (max-width: 749px) {
   .collection-hero__image-container {
-    height: auto;
-    min-height: auto;
+    height: 20rem;
   }
 }
 
 @media screen and (min-width: 750px) {
-  .collection-hero__image-container {
-    flex: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    height: auto;
-    min-height: auto;
+  .collection-hero--with-image .collection-hero__text-wrapper {
+    padding: 4rem 2rem 4rem 0;
+    flex-basis: 50%;
   }
 
-  .collection-hero__inner {
-    flex-direction: column !important;
-    gap: 0;
+  .collection-hero__image-container {
+    align-self: stretch;
+    flex: 1 0 50%;
+    margin-left: 3rem;
+    min-height: 20rem;
   }
 }
 
+/* Reverting back to original styles */
 .collection-hero__description h3{
   font-size: 1em !important;
 }
