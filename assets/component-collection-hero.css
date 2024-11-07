@@ -141,3 +141,15 @@
 .collection-hero__description h3{
   font-size: 1em !important;
 }
+
+/* Left alignment when there is an image */
+.collection-hero--with-image .collection-hero__text-wrapper {
+  text-align: left;
+}
+
+/* Keep center alignment on mobile even with image */
+@media screen and (max-width: 749px) {
+  .collection-hero--with-image .collection-hero__text-wrapper {
+    text-align: center;
+  }
+}
