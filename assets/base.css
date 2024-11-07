@@ -3353,3 +3353,24 @@ text-align: left !important;
 
 
 }
+
+/* Button hover styles */
+.button,
+button {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.button:hover,
+button:hover {
+  background-color: #000000 !important; /* Black background */
+  color: #ffffff !important; /* White text */
+  border-color: #000000 !important; /* Match border to background */
+}
+
+/* If you have secondary/outline buttons, you might want this too */
+.button--secondary:hover,
+.button--outline:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
