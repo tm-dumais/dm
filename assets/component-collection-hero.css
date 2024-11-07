@@ -66,7 +66,7 @@
 }
 
 .collection-hero__title {
-  margin: 4rem 0 1rem !important;
+  margin: 2rem 0 1rem !important;
   width: 100%;
   font-family: pitch, monospace;
   text-transform: uppercase;
@@ -159,9 +159,9 @@
 
 .collection-hero__image-container {
   width: 100% !important;
-  height: 80vh !important;
+  height: 60vh !important;
   overflow: hidden !important;
-  margin: 0 0 2rem 0 !important;
+  margin: 0 0 1rem 0 !important;
   position: relative !important;
   display: flex !important;
   justify-content: center !important;
