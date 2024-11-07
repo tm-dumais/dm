@@ -11,9 +11,8 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero.collection-hero--with-image {
-    padding: calc(4rem + var(--page-width-margin)) 0
-      calc(4rem + var(--page-width-margin));
-    overflow: hidden;
+    padding: 0;
+    margin: 0;
   }
 
   .collection-hero--with-image .collection-hero__inner {
@@ -23,7 +22,9 @@
 
 .collection-hero__text-wrapper {
   width: 100%;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 750px) {
@@ -110,19 +111,18 @@
 }
 
 .collection-hero__image-container {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   position: relative;
-  margin: 0;
 }
 
-/* Adjust image height if needed */
 .collection-hero__image-container img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Remove any existing gradient classes if you don't want them */
 .collection-hero.gradient {
   background: none;
 }
@@ -139,12 +139,11 @@
   }
 
   .collection-hero__image-container {
-    align-self: stretch;
-    min-height: 20rem;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
   }
 }
 
-/* Reverting back to original styles */
 .collection-hero__description h3{
   font-size: 1em !important;
 }
