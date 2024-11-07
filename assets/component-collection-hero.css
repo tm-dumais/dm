@@ -112,14 +112,18 @@
 
 .collection-hero__image-container {
   width: 100%;
-  margin: 0;
   position: relative;
+  min-height: auto;
+  height: auto;
+  overflow: visible;
 }
 
 .collection-hero__image-container img {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .collection-hero.gradient {
@@ -128,7 +132,8 @@
 
 @media screen and (max-width: 749px) {
   .collection-hero__image-container {
-    height: 20rem;
+    height: auto;
+    min-height: auto;
   }
 }
 
@@ -136,17 +141,14 @@
   .collection-hero__image-container {
     flex: none !important;
     width: 100% !important;
-    margin-left: 0 !important;
-    align-self: stretch;
-  }
-
-  .collection-hero--with-image .collection-hero__text-wrapper {
-    flex: none !important;
-    width: 100% !important;
+    margin: 0 !important;
+    height: auto;
+    min-height: auto;
   }
 
   .collection-hero__inner {
     flex-direction: column !important;
+    gap: 0;
   }
 }
 
