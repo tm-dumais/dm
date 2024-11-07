@@ -54,15 +54,15 @@
 }
 
 .collection-hero__title {
-  margin-top: 3.5rem;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0 3rem;
+  width: 100%;
   font-family: pitch, monospace;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 750px) {
   .collection-hero__title {
-    margin-top: 5.5rem;
+    margin: 4rem 0 5rem;
   }
 }
 
@@ -75,6 +75,10 @@
 }
 
 .collection-hero__description {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
   font-family: new-caledonia, serif;
   font-weight: 400 !important;
   font-style: italic !important;
@@ -131,9 +135,9 @@
 
 .collection-hero__image-container {
   width: 100%;
-  margin-bottom: 2rem;
   height: 60vh;
   overflow: hidden;
+  margin: 0 0 3rem 0;
 }
 
 .collection-hero__image-container img {
@@ -175,5 +179,10 @@
 @media screen and (min-width: 750px) {
   .collection-hero__image-container {
     height: 80vh;
+    margin: 0 0 5rem 0;
+  }
+
+  .collection-hero__description {
+    margin-bottom: 6rem;
   }
 }

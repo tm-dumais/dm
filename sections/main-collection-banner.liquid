@@ -11,6 +11,13 @@
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width">
+    <!-- Title First -->
+    <h3 class="collection-hero__title">
+      <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+      {{- collection.title | escape -}}
+    </h3>
+
+    <!-- Image Second -->
     {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media gradient">
         <img
@@ -32,16 +39,10 @@
       </div>
     {%- endif -%}
     
-    <div class="collection-hero__text-wrapper">
-      <h3 class="collection-hero__title">
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
-      </h3>
-
-      {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
-      {%- endif -%}
-    </div>
+    <!-- Description Text Last -->
+    {%- if section.settings.show_collection_description -%}
+      <div class="collection-hero__description rte">{{ collection.description }}</div>
+    {%- endif -%}
   </div>
 </div>
 
