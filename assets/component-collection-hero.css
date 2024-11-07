@@ -151,6 +151,7 @@
   height: 80vh;
   overflow: hidden;
   margin: 0 0 3rem 0;
+  position: relative !important;
 }
 
 .collection-hero__image-container img {
