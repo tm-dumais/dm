@@ -159,7 +159,6 @@
 
 .collection-hero__image-container {
   width: 100% !important;
-  height: 60vh !important;
   overflow: hidden !important;
   margin: 0 0 1rem 0 !important;
   position: relative !important;
@@ -218,7 +217,11 @@
 
 @media screen and (max-width: 749px) {
   .collection-hero__image-container img {
-    width: 80% !important;
+    width: 95% !important;
+  }
+
+  .collection-hero__description {
+    width: 95% !important;
   }
 }
 
