@@ -67,7 +67,7 @@
 }
 
 .collection-hero__title {
-  margin: 1rem 0 1rem;
+  margin: 3rem 0 1rem;
   width: 100%;
   font-family: pitch, monospace;
   text-transform: uppercase;
@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero__title {
-    margin: 2rem 0 3rem;
+    margin: 4rem 0 1rem;
   }
 }
 
@@ -163,7 +163,7 @@
   width: 100% !important;
   height: 80vh !important;
   overflow: hidden !important;
-  margin: 3rem 0 1rem 0 !important;
+  margin: 1rem 0 1rem 0 !important;
   position: relative !important;
   display: flex !important;
   justify-content: center !important;
@@ -210,7 +210,7 @@
 @media screen and (min-width: 750px) {
   .collection-hero__image-container {
     height: 95vh !important;
-    margin: 4rem 0 1.5rem 0 !important;
+    margin: 1rem 0 1.5rem 0 !important;
   }
 
   .collection-hero__description {
