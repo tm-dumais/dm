@@ -1,6 +1,6 @@
 .collection-hero__inner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
 }
 
@@ -11,8 +11,9 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero.collection-hero--with-image {
-    padding: 0;
-    margin: 0;
+    padding: calc(4rem + var(--page-width-margin)) 0
+      calc(4rem + var(--page-width-margin));
+    overflow: hidden;
   }
 
   .collection-hero--with-image .collection-hero__inner {
@@ -21,10 +22,8 @@
 }
 
 .collection-hero__text-wrapper {
-  width: 100%;
-  padding: 4rem 2rem;
-  margin: 0 auto;
-  text-align: center;
+  padding: 5rem 0 4rem;
+  flex-basis: 50%;
 }
 
 @media screen and (min-width: 750px) {
@@ -34,10 +33,22 @@
 
   .collection-hero__inner {
     align-items: center;
+    flex-direction: row;
     padding-bottom: 0;
   }
-}
 
+  .collection-hero--with-image .collection-hero__text-wrapper {
+    padding: 4rem 2rem 4rem 0;
+    flex-basis: 50%;
+  }
+
+  .collection-hero__image-container {
+    align-self: stretch;
+    flex: 1 0 50%;
+    margin-left: 3rem;
+    min-height: 20rem;
+  }
+}
 
 .collection-hero__title {
   margin-top: 3.5rem;
