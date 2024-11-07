@@ -242,3 +242,24 @@
     max-width: 55%;
   }
 }
+
+/* Update mobile spacing */
+@media screen and (max-width: 989px) {
+  .collection-hero__inner {
+    gap: 4rem; /* Increased gap between elements */
+  }
+
+  .collection-hero__image-container img {
+    width: 95% !important;
+  }
+
+  .collection-hero__description {
+    width: 95% !important;
+    margin: 0 auto 2rem !important; /* Reduced bottom margin from 3rem to 2rem */
+  }
+
+  /* Reduce bottom padding of the whole section */
+  .collection-hero--with-image {
+    padding: 0 0 0.5rem 0; /* Reduced from 1rem to 0.5rem */
+  }
+}
