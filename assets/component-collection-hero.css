@@ -266,3 +266,13 @@
     padding: 2rem 0 0.5rem 0 !important;
   }
 }
+
+@media screen and (max-width: 989px) {
+  .collection-hero__inner {
+    gap: 2rem !important; /* Keep at 2rem as shown in screenshot */
+  }
+
+  .collection-hero--with-image .collection-hero__inner {
+    padding-bottom: 0 !important; /* Changed from 2rem to 0 */
+  }
+}
