@@ -41,15 +41,15 @@
     "home_section_split_T3BbAC": {
       "type": "home-section-split",
       "settings": {
-        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0001_10A_Dumais_Litchfield_In_Situ_2024_60.jpg",
+        "image": "shopify://shop_images/241101_LCC_probber_pitcher.jpg",
         "image_position": "left",
         "vertical_alignment": "center",
         "horizontal_alignment": "left",
-        "eyebrow_text": "INTRODUCING MODERN BOHEMIA",
-        "heading": "<p>A collection inspired by the rich modernist heritage of our home.</p>",
+        "eyebrow_text": "THE FALL GIFTING DROP",
+        "heading": "<p>From illuminating candle holders to abundant vessels, consider your hosting and gifting needs covered.</p>",
         "heading_size": "h1",
-        "button_label": "DISCOVER",
-        "button_link": "shopify://pages/modern-bohemia",
+        "button_label": "SHOP",
+        "button_link": "shopify://collections/fall-gifting-drop",
         "background_color": "none",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
@@ -140,8 +140,7 @@
         },
         "template--16833782251734__ae31aab5-db35-4f7e-9272-43fe5e5eb537-1675084118512595ff-2": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
