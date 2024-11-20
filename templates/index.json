@@ -56,6 +56,21 @@
         "padding_horizontal_enabled": true
       }
     },
+    "section_home_featured_products_bjzfpy": {
+      "type": "section-home-featured-products",
+      "settings": {
+        "product_1": "holiday-pomegranates",
+        "product_2": "holiday-can-lamp-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "padding_top_enabled": true,
+        "padding_bottom_enabled": true,
+        "padding_horizontal_enabled": false
+      }
+    },
     "home_section_split_yL8grq": {
       "type": "home-section-split",
       "settings": {
@@ -72,21 +87,6 @@
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
         "padding_horizontal_enabled": true
-      }
-    },
-    "section_home_featured_products_bjzfpy": {
-      "type": "section-home-featured-products",
-      "settings": {
-        "product_1": "funnel-floor-lamp",
-        "product_2": "pitch-sconce",
-        "image_ratio": "portrait",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "padding_top_enabled": true,
-        "padding_bottom_enabled": true,
-        "padding_horizontal_enabled": false
       }
     },
     "section_home_image_RjaNNb": {
@@ -191,8 +191,8 @@
   "order": [
     "section_home_hero_U9fz9y",
     "home_section_split_T3BbAC",
-    "home_section_split_yL8grq",
     "section_home_featured_products_bjzfpy",
+    "home_section_split_yL8grq",
     "section_home_image_RjaNNb",
     "home_section_split_6nUKbq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
