@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -17,19 +17,17 @@
         "8bfa3b26-7818-4bda-8fb4-f633ac195ce7": {
           "type": "announcement",
           "settings": {
-            "text": "The Summer Sale | 50% Off In-Stock Applied at Checkout",
+            "text": "THE BLACK FRIDAY SALE | Up to 40% off select lighting & accessories.",
             "text_alignment": "center",
-            "color_scheme": "background-1",
-            "link": "shopify://collections/in-stock"
+            "color_scheme": "accent-1",
+            "link": "shopify://collections/black-friday-sale"
           }
         }
       },
       "block_order": [
         "8bfa3b26-7818-4bda-8fb4-f633ac195ce7"
       ],
-      "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "header": {
       "type": "header",
@@ -163,8 +161,7 @@
         "12ac63be-c44a-4221-baa4-ee4a881b6243",
         "709b98dc-69a1-4ca2-8e41-affc4646fae3"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "split_recover_old_Y9ARCi": {
       "type": "split-recover-old",
