@@ -13,20 +13,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "8bfa3b26-7818-4bda-8fb4-f633ac195ce7": {
-          "type": "announcement",
-          "settings": {
-            "text": "THE BLACK FRIDAY SALE | Up to 40% off select lighting & accessories.",
-            "text_alignment": "center",
-            "color_scheme": "accent-1",
-            "link": "shopify://collections/black-friday-sale"
-          }
-        }
-      },
-      "block_order": [
-        "8bfa3b26-7818-4bda-8fb4-f633ac195ce7"
-      ],
       "settings": {}
     },
     "header": {
