@@ -94,10 +94,9 @@
     },
     "section_home_image_RjaNNb": {
       "type": "section-home-image",
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0001_11A_Dumais_Litchfield_In_Situ_2024_119.jpg",
-        "caption": "<p><a href=\"/products/funnel-side-table\" title=\"Funnel Side Table\">Funnel Side Tables</a> on the grounds of Gagarin II.</p>",
+        "image": "shopify://shop_images/2023_06_16_KD_0213X_dbef5df9-3df3-4838-836a-f1fbeaf4b5a5.jpg",
+        "caption": "<p>Our workroom located in the Bantam Arts Factory in Litchfield, Connecticut.</p>",
         "background_color": "none",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
