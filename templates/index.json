@@ -40,6 +40,7 @@
     },
     "home_section_split_T3BbAC": {
       "type": "home-section-split",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Litchfield_Country_Club_Allegra_Anderson_Photography_43_3acc5de8-e479-4f5f-899c-72ddbfda6051.jpg",
         "image_position": "left",
@@ -58,6 +59,7 @@
     },
     "section_home_featured_products_bjzfpy": {
       "type": "section-home-featured-products",
+      "disabled": true,
       "settings": {
         "product_1": "holiday-pomegranates",
         "product_2": "holiday-can-lamp-1",
@@ -73,6 +75,7 @@
     },
     "home_section_split_yL8grq": {
       "type": "home-section-split",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
         "image_position": "right",
@@ -91,6 +94,7 @@
     },
     "section_home_image_RjaNNb": {
       "type": "section-home-image",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/3A_Dumais_Litchfield_In_Situ_2024_2_0001_11A_Dumais_Litchfield_In_Situ_2024_119.jpg",
         "caption": "<p><a href=\"/products/funnel-side-table\" title=\"Funnel Side Table\">Funnel Side Tables</a> on the grounds of Gagarin II.</p>",
