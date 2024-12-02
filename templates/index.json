@@ -73,20 +73,19 @@
         "padding_horizontal_enabled": false
       }
     },
-    "home_section_split_yL8grq": {
+    "home_section_split_6nUKbq": {
       "type": "home-section-split",
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
-        "image_position": "right",
-        "vertical_alignment": "center",
-        "horizontal_alignment": "center",
-        "eyebrow_text": "MODERN BOHEMIA COLLECTION",
-        "heading": "<p>“Our town has an unexpected and remarkable undercurrent of midcentury design – a legacy that inspired these pieces.”</p>",
+        "image": "shopify://shop_images/2023_06_16_KD_0312.jpg",
+        "image_position": "left",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
+        "eyebrow_text": "THE STUDIO",
+        "heading": "<p>Dumais Made is a ceramic lighting and furniture studio based in Litchfield, Connecticut.<br/><br/>We create objects for living.</p>",
         "heading_size": "h1",
-        "button_label": "Discover",
-        "button_link": "shopify://pages/modern-bohemia",
-        "background_color": "color-1",
+        "button_label": "About Us",
+        "button_link": "shopify://pages/about",
+        "background_color": "color-2",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
         "padding_horizontal_enabled": true
@@ -103,19 +102,19 @@
         "padding_horizontal_enabled": true
       }
     },
-    "home_section_split_6nUKbq": {
+    "home_section_split_yL8grq": {
       "type": "home-section-split",
       "settings": {
-        "image": "shopify://shop_images/2023_06_16_KD_0312.jpg",
-        "image_position": "left",
-        "vertical_alignment": "top",
-        "horizontal_alignment": "left",
-        "eyebrow_text": "",
-        "heading": "<p>Dumais Made is a ceramic lighting and furniture studio based in Litchfield, Connecticut.<br/><br/>We create objects for living.</p>",
+        "image": "shopify://shop_images/10A_Dumais_Litchfield_In_Situ_2024_60_0012_2A_Dumais_Litchfield_In_Situ_2024_28.jpg",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "horizontal_alignment": "center",
+        "eyebrow_text": "MODERN BOHEMIA COLLECTION",
+        "heading": "<p>“Our town has an unexpected and remarkable undercurrent of midcentury design – a legacy that inspired these pieces.”</p>",
         "heading_size": "h1",
-        "button_label": "About Us",
-        "button_link": "shopify://pages/about",
-        "background_color": "color-2",
+        "button_label": "Discover",
+        "button_link": "shopify://pages/modern-bohemia",
+        "background_color": "color-1",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
         "padding_horizontal_enabled": true
@@ -195,9 +194,9 @@
     "section_home_hero_U9fz9y",
     "home_section_split_T3BbAC",
     "section_home_featured_products_bjzfpy",
-    "home_section_split_yL8grq",
-    "section_home_image_RjaNNb",
     "home_section_split_6nUKbq",
+    "section_home_image_RjaNNb",
+    "home_section_split_yL8grq",
     "6a149845-4a58-45e1-a2b9-fe9d41161640",
     "ae31aab5-db35-4f7e-9272-43fe5e5eb537",
     "1678358495ad87d821",
