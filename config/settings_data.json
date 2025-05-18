@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "logo": "shopify://shop_images/Dumais_Made_Logo_8173fbfd-cf8d-4117-9121-2a8ada1916e6.png",
@@ -152,53 +152,24 @@
         "settings": {
           "color_scheme": "background-1"
         }
-      },
-      "section-editorial-page": {
-        "type": "section-editorial-page",
-        "blocks": {
-          "single_image_3qwqpp": {
-            "type": "single_image",
-            "settings": {
-              "caption": ""
-            }
-          },
-          "quote_WMzpGB": {
-            "type": "quote",
-            "settings": {
-              "quote_text": "",
-              "quote_author": ""
-            }
-          }
-        },
-        "block_order": [
-          "single_image_3qwqpp",
-          "quote_WMzpGB"
-        ],
-        "settings": {
-        }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "6279071938380501511": {
         "type": "shopify://apps/powerful-contact-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6858403126979251294": {
         "type": "shopify://apps/eu-gdpr-cookies-notification/blocks/omega-cookies-notification/13cba824-a338-452e-9b8e-c83046a79f21",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
