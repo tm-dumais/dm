@@ -1,7 +1,21 @@
+.collection-hero--with-image {
+  /* background-color: #ebe2d9 !important; */
+  padding: 0 0 1rem 0;
+}
+
+.collection-hero--with-image .gradient {
+  background: transparent !important;
+}
+
+.collection-hero__image-container.media.gradient {
+  background: transparent !important;
+}
+
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .collection-hero--with-image .collection-hero__inner {
@@ -9,10 +23,9 @@
   padding-bottom: 2rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .collection-hero.collection-hero--with-image {
-    padding: calc(4rem + var(--page-width-margin)) 0
-      calc(4rem + var(--page-width-margin));
+    padding: 0;
     overflow: hidden;
   }
 
@@ -25,29 +38,43 @@
   flex-basis: 100%;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .collection-hero {
     padding: 0;
   }
 
   .collection-hero__inner {
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     padding-bottom: 0;
+    gap: 2rem;
+  }
+
+  .collection-hero--with-image .collection-hero__text-wrapper {
+    padding: 2rem;
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .collection-hero__image-container {
+    align-self: center;
+    flex: 0 1 50%;
+    margin-left: 0;
+    min-height: 20rem;
   }
 }
 
-
 .collection-hero__title {
-  margin-top: 3.5rem;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0 1rem !important;
+  width: 100%;
   font-family: pitch, monospace;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .collection-hero__title {
-    margin-top: 5.5rem;
+    margin: 4rem 0 1rem !important;
   }
 }
 
@@ -56,23 +83,51 @@
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
   line-height: calc(1 + 0.35 / var(--font-body-scale));
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.collection-hero__description{
+.collection-hero__description {
+  width: 50% !important;
+  margin: 0 auto 3rem !important;
+  padding: 0 2rem;
   font-family: new-caledonia, serif;
   font-weight: 400 !important;
+  font-style: italic !important;
+  font-size: 1.6rem;
+  line-height: calc(1 + 0.35 / var(--font-body-scale));
 }
 
-.collection-hero__description h3{
-  font-size: 1em !important;
+@media screen and (min-width: 990px) {
+  .collection-hero__description {
+    font-size: 1.8rem;
+    max-width: 55%;
+  }
+
+  .collection-hero--with-image .collection-hero__description {
+    max-width: 100%;
+  }
 }
 
-.collection-hero__description strong{
+.collection-hero__description h3,
+.collection-hero__description h3 em {
+  font-style: italic !important;
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+  font-family: var(--font-heading-family);
+}
+
+@media screen and (max-width: 989px) {
+  .collection-hero__description h3,
+  .collection-hero__description h3 em {
+    font-size: 1.8rem !important;
+  }
+}
+
+.collection-hero__description strong {
   font-weight: 400 !important;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .collection-hero__title + .collection-hero__description {
     font-size: 1.8rem;
     margin-top: 2rem;
@@ -86,6 +141,11 @@
   .collection-hero--with-image .collection-hero__description {
     max-width: 100%;
   }
+
+  .collection-hero__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .collection-hero--with-image .collection-hero__title {
@@ -93,34 +153,126 @@
 }
 
 .collection-hero--with-image .collection-hero__text-wrapper {
-  padding: 5rem 0 4rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 .collection-hero__image-container {
-  border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
-  border-radius: var(--media-radius);
-  box-shadow: var(--media-shadow-horizontal-offset)
-    var(--media-shadow-vertical-offset)
-    var(--media-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--media-shadow-opacity));
+  width: 100% !important;
+  overflow: hidden !important;
+  margin: 0 0 1rem 0 !important;
+  position: relative !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-@media screen and (max-width: 749px) {
+.collection-hero__image-container img {
+  width: 50% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  position: relative !important;
+}
+
+.collection-hero__text-wrapper {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+  .collection-hero__inner {
+    flex-direction: column;
+  }
+
   .collection-hero__image-container {
-    height: 20rem;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .collection-hero__text-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
 }
 
-@media screen and (min-width: 750px) {
-  .collection-hero--with-image .collection-hero__text-wrapper {
-    padding: 4rem 2rem 4rem 0;
-    flex-basis: 50%;
+.collection-hero__description h3 {
+  font-size: 1em !important;
+}
+
+@media screen and (min-width: 990px) {
+  .collection-hero__image-container {
+    height: 95vh !important;
+    margin: 0 0 1rem 0 !important;
   }
 
-  .collection-hero__image-container {
-    align-self: stretch;
-    flex: 1 0 50%;
-    margin-left: 3rem;
-    min-height: 20rem;
+  .collection-hero__description {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection-hero__image-container img {
+    width: 95% !important;
+  }
+
+  .collection-hero__description {
+    width: 95% !important;
+  }
+}
+
+/* Update the description styles for when there's an image */
+@media screen and (min-width: 990px) {
+  .collection-hero--with-image .collection-hero__description {
+    width: 50% !important; /* Force 50% width */
+    max-width: 50% !important; /* Override previous max-width */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Keep the regular description styles for when there's no image */
+@media screen and (min-width: 990px) {
+  .collection-hero__description {
+    font-size: 1.8rem;
+    max-width: 55%;
+  }
+}
+
+/* Update mobile spacing - consolidate the media queries */
+@media screen and (max-width: 989px) {
+  .collection-hero {
+    padding-top: 2rem !important;
+  }
+
+  .collection-hero__inner {
+    gap: 2rem !important; /* Reduced from 4rem to 2rem */
+  }
+
+  .collection-hero__image-container img {
+    width: 95% !important;
+  }
+
+  .collection-hero__description {
+    width: 95% !important;
+    margin: 0 auto 2rem !important;
+  }
+
+  .collection-hero--with-image {
+    padding: 2rem 0 0.5rem 0 !important;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection-hero__inner {
+    gap: 2rem !important; /* Keep at 2rem as shown in screenshot */
+  }
+
+  .collection-hero--with-image .collection-hero__inner {
+    padding-bottom: 0 !important; /* Changed from 2rem to 0 */
   }
 }

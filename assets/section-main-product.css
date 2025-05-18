@@ -5,7 +5,7 @@ html {
 .main-product-wrapper{
   width: 100%;
   height: auto;
-  border-bottom: 1px solid black;
+  border-bottom: 0px solid black;
 }
 
 .main-product:not(.page-width-tablet){
@@ -362,20 +362,24 @@ fieldset.product-form__input .form__label {
   margin: 2rem 0;
 }
 
-.product__description p em strong{
-  font-style: italic;
-  font-family: new-caledonia,serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 2.7rem;
-}
 
 .product__description{
   line-height: 1.6rem;
   font-size: 1.4rem;
   padding-bottom:2.5rem;
   border-bottom: 1px solid black;
+  text-transform: uppercase;
 }
+
+.product__description p em strong{
+  font-style: italic;
+  font-family: new-caledonia,serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-transform: none !important;
+}
+
 .product__description .certification-image {
   display: flex;
   align-items: center;
@@ -441,6 +445,10 @@ a.product__text {
   margin-bottom: .5rem;
 }
 
+.product__title h2 {
+  /* font-style: italic; */
+}
+
 .product__title > * {
   margin: 0;
 }
@@ -463,6 +471,7 @@ a.product__text {
 
 .price{
   margin-top: .5rem;
+  margin-top: 0rem;
 }
 
 .product .price .badge {
@@ -981,6 +990,7 @@ a.product__text {
 .product__atc-etxt {
   margin-bottom: 1.2rem;
   font-size: 1.2rem;
+  text-transform: uppercase !important;
 }
 
 /* Product popup */
@@ -1161,7 +1171,7 @@ a.product__text {
 }
 
 .thumbnail-list_item--variant:not(:first-child) {
-  display: none;
+    display: none;
 }
 
 @media screen and (min-width: 990px) {
@@ -1180,8 +1190,8 @@ a.product__text {
 
 @media screen and (max-width: 749px) {
   .product__media-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   }
 
   .product__modal-opener {
@@ -1189,12 +1199,12 @@ a.product__text {
   }
 
   .thumbnail-slider {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   }
 
   .thumbnail-slider .thumbnail-list.slider {
-    display: flex;
+  display: flex;
     padding: 0.5rem;
     flex: 1;
     scroll-padding-left: 0.5rem;
@@ -1207,8 +1217,8 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
   .product--thumbnail_slider .thumbnail-slider {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   }
 
   .thumbnail-slider .thumbnail-list.slider--tablet-up {
@@ -1227,7 +1237,7 @@ a.product__text {
   }
 
   .product--thumbnail_slider .slider-mobile-gutter .slider-button {
-    display: flex;
+  display: flex;
   }
 }
 
@@ -1260,7 +1270,7 @@ a.product__text {
 }
 
 .thumbnail.global-media-settings img {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .thumbnail[aria-current] {
@@ -1295,7 +1305,7 @@ a.product__text {
 @media screen and (max-width: 749px) {
   .product__media-zoom-hover,
   .product__media-icon--hover {
-    display: flex;
+  display: flex;
   }
 }
 
@@ -1374,16 +1384,16 @@ a.product__text {
 
 .thumbnail-list__item::before {
   content: "";
-  display: block;
+    display: block;
   padding-bottom: 100%;
-}
+  }
 
 .product:not(.featured-product) .product__view-details {
-  display: none;
-}
+    display: none;
+  }
 
 .product__view-details {
-  display: block;
+    display: block;
   text-decoration: none;
 }
 
@@ -1412,7 +1422,7 @@ a.product__text {
 
 /* This keeps the container from getting display: none; applied to it and to make sure we're not introducing some layout shift when switching to an unavailable variant */
 .product__inventory.visibility-hidden:empty {
-  display: block;
+    display: block;
 }
 
 .product__inventory.visibility-hidden:empty::after {
@@ -1528,7 +1538,7 @@ a.product__text {
 
 @media screen and (max-width: 749px) {
   .product-media-container.media-fit-cover {
-    display: flex;
+  display: flex;
     align-self: stretch;
   }
 
@@ -1589,10 +1599,11 @@ a.product__text {
   margin-bottom: 1rem;
 }
 
-.view-glazes{
+.view-glazes {
   font-size: 1.35rem;
   color: #7E7E80;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .view-glazes:hover{
@@ -1601,8 +1612,8 @@ a.product__text {
 
 .product__availabilities--wrapper {
   max-width: 450px;
-  padding-bottom: 1.5rem;
-}
+    padding-bottom: 1.5rem;
+  }
 
 .product__availabilities--wrapper + .product__inventory {
   margin: 0;
@@ -1628,4 +1639,14 @@ a.product__text {
 .product__availabilities--notify.active {
   background-color: black;
   color: white;
+}
+
+/* Add price styling to match caption size */
+.price-item {
+  font-size: 1.35rem;  /* Match caption size */
+}
+
+/* Add styling for the glaze label */
+.product-form__input--dropdown .form__label {
+  text-transform: uppercase;
 }

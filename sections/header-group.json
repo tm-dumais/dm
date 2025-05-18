@@ -1,26 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "8bfa3b26-7818-4bda-8fb4-f633ac195ce7": {
-          "type": "announcement",
-          "settings": {
-            "text": "The Summer Sale | 50% Off In-Stock Applied at Checkout",
-            "text_alignment": "center",
-            "color_scheme": "background-1",
-            "link": "shopify:\/\/collections\/in-stock"
-          }
-        }
-      },
-      "block_order": [
-        "8bfa3b26-7818-4bda-8fb4-f633ac195ce7"
-      ],
-      "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "header": {
       "type": "header",
@@ -44,7 +37,7 @@
           "type": "text",
           "settings": {
             "text": "Verdigris glaze",
-            "swatchImage": "shopify:\/\/shop_images\/2312_Verdigris.jpg",
+            "swatchImage": "shopify://shop_images/2312_Verdigris.jpg",
             "swatchColors": "#9E9E9E"
           }
         },
@@ -87,7 +80,7 @@
           "type": "text",
           "settings": {
             "text": "Matte-black glaze",
-            "swatchImage": "shopify:\/\/shop_images\/2312_Matte_Black.jpg",
+            "swatchImage": "shopify://shop_images/2312_Matte_Black.jpg",
             "swatchColors": "#9E9E9E"
           }
         },
@@ -95,7 +88,7 @@
           "type": "text",
           "settings": {
             "text": "Mushroom glaze",
-            "swatchImage": "shopify:\/\/shop_images\/2312_Mushroom.jpg",
+            "swatchImage": "shopify://shop_images/2312_Mushroom.jpg",
             "swatchColors": "#9E9E9E"
           }
         },
@@ -110,7 +103,7 @@
           "type": "text",
           "settings": {
             "text": "Ochre glaze",
-            "swatchImage": "shopify:\/\/shop_images\/2312_Ochre.jpg",
+            "swatchImage": "shopify://shop_images/2312_Ochre.jpg",
             "swatchColors": "#9E9E9E"
           }
         },
@@ -118,7 +111,7 @@
           "type": "text",
           "settings": {
             "text": "Parchment glaze",
-            "swatchImage": "shopify:\/\/shop_images\/2312_Parchment.jpg",
+            "swatchImage": "shopify://shop_images/2312_Parchment.jpg",
             "swatchColors": "#9E9E9E"
           }
         },
@@ -126,7 +119,7 @@
           "type": "text",
           "settings": {
             "text": "Sea glaze",
-            "swatchImage": "shopify:\/\/shop_images\/2312_Sea.jpg",
+            "swatchImage": "shopify://shop_images/2312_Sea.jpg",
             "swatchColors": "#9E9E9E"
           }
         },
@@ -134,7 +127,7 @@
           "type": "text",
           "settings": {
             "text": "Walnut glaze",
-            "swatchImage": "shopify:\/\/shop_images\/2312_Walnut.jpg",
+            "swatchImage": "shopify://shop_images/2312_Walnut.jpg",
             "swatchColors": "#9E9E9E"
           }
         }
@@ -154,13 +147,58 @@
         "12ac63be-c44a-4221-baa4-ee4a881b6243",
         "709b98dc-69a1-4ca2-8e41-affc4646fae3"
       ],
+      "settings": {}
+    },
+    "split_recover_old_Y9ARCi": {
+      "type": "split-recover-old",
+      "blocks": {
+        "heading_Cz8rPp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_cTrbem": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_JVjUmm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Cz8rPp",
+        "text_cTrbem",
+        "button_JVjUmm"
+      ],
+      "disabled": true,
       "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "button_style_secondary": false,
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "custom-options"
+    "custom-options",
+    "split_recover_old_Y9ARCi"
   ]
 }

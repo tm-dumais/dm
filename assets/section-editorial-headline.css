@@ -1,0 +1,36 @@
+.editorial-headline {
+  width: 100vw;
+  background-color: #EBE2D9;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-style: italic;
+  max-width: 600px;  /* Changed from 550px to 600px */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.25rem; /* This is equivalent to 36px */
+  line-height: 1.2; /* Adjust this value as needed for better readability */
+}
+
+.headline-large {
+  font-size: 1.25em;  /* Increase font size by 25% */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.headline-36px {
+  font-size: 36px;
+  line-height: 1.2; /* Adjust this value as needed for proper line spacing */
+}

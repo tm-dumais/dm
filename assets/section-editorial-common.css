@@ -1,0 +1,47 @@
+.editorial-section {
+  width: 100vw;
+  background-color: #EBE2D9;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.padding-top-6 {
+  padding-top: 8.1rem !important; /* Increased from 6rem to 8.1rem (35% increase) */
+}
+
+.padding-bottom-6 {
+  padding-bottom: 8.1rem !important; /* Increased from 6rem to 8.1rem (35% increase) */
+}
+
+/* Updated caption styles */
+.caption {
+  font-family: 'Pitch', sans-serif;
+  text-transform: uppercase;
+  margin-top: 0.5rem;  /* This is already 0.5rem, so we'll keep it */
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.2; /* Add this to control line height */
+}
+
+/* New class for double image captions */
+.double-image-caption {
+  margin-top: 0.5rem;  /* This is already 0.5rem, so we'll keep it */
+  margin-bottom: 0; /* Ensure no bottom margin */
+}
+
+.reduced-margin {
+  margin-top: 0;
+}
+
+.caption a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.caption a:hover {
+  text-decoration: underline;
+}

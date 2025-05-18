@@ -1,0 +1,77 @@
+{{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
+{{ 'section-editorial-double-image.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-double-image background-color-ebe2d9
+            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
+            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
+  <div class="content-wrapper">
+    <div class="image-container">
+      {% if section.settings.image1 != blank %}
+        <div class="image-wrapper">
+          <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="{{ section.settings.image1.alt | escape }}" class="rounded-image">
+          {% if section.settings.caption1 != blank %}
+            <div class="caption double-image-caption">{{ section.settings.caption1 }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if section.settings.image2 != blank %}
+        <div class="image-wrapper">
+          <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="{{ section.settings.image2.alt | escape }}" class="rounded-image">
+          {% if section.settings.caption2 != blank %}
+            <div class="caption double-image-caption">{{ section.settings.caption2 }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Double Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1"
+    },
+    {
+      "type": "richtext",
+      "id": "caption1",
+      "label": "Caption for Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image 2"
+    },
+    {
+      "type": "richtext",
+      "id": "caption2",
+      "label": "Caption for Image 2"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_top_padding",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bottom_padding",
+      "label": "Add bottom padding",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Double Image",
+      "category": "Editorial"
+    }
+  ]
+}
+{% endschema %}

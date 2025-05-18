@@ -1,0 +1,69 @@
+.editorial-quote {
+  width: 100vw;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  font-family: 'new-caledonia', serif;
+  font-style: italic;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.quote.h2 {
+  font-size: 2.4rem;
+}
+
+.quote.h1 {
+  font-size: 3rem;
+}
+
+.quote.h0 {
+  font-size: 3.6rem;
+}
+
+@media screen and (min-width: 750px) {
+  .quote.h2 {
+    font-size: 3rem;
+  }
+
+  .quote.h1 {
+    font-size: 3.6rem;
+  }
+
+  .quote.h0 {
+    font-size: 4.2rem;
+  }
+}
+
+/* Background color classes */
+.background-none {
+  background-color: transparent;
+}
+
+.background-color-1 {
+  background-color: #EBE2D9 !important;
+}
+
+.background-color-2 {
+  background-color: #B0977B !important;
+}
+
+.background-color-3 {
+  background-color: #95794A !important;
+}

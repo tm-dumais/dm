@@ -1,0 +1,564 @@
+.custom-center-column {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.custom-half-column {
+    width: 50%;
+    float: left;
+}
+
+.stof-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stof-list__item {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 749px) {
+    .custom-center-column,
+    .custom-half-column {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .stof-list {
+        width: 60vw;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.custom-headline-container {
+    position: absolute; /* Position the container absolutely within the ul */
+    top: 0; /* Align the container with the top of the ul */
+    left: 0; /* Align the container with the left of the ul */
+    width: 100%; /* Ensure the container spans the entire width of the ul */
+}
+
+.custom-headline-container .title {
+    display: inline-block;
+    padding-right: 2rem !important; /* Adjust as needed */
+    font-style: italic !important; /* Set the headline in italic */
+    padding-top: 0 !important; /* Remove padding top */
+    padding-bottom: 0 !important; /* Remove padding bottom */
+    margin-top: 0 !important; /* Remove margin top */
+    margin-bottom: 0 !important; /* Remove margin bottom */
+}
+
+.custom-headline::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem; /* Adjust as needed */
+    height: 1.5rem; /* Adjust as needed */
+    background-image: url("path/to/arrow-image.png"); /* Update with the correct path */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 990px) {
+    .custom-headline-container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 90px;
+        background-image: url("https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .stof-list .grid__item.first-row::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 90px;
+        background-image: url("https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .stof-list .grid__item.second-row::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 90px;
+        background-image: url("https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/arrow-down.png?v=1593633369");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.caption-headline {
+    font-size: 16px;
+    font-family: 'Pitch', sans-serif; /* Set font to Pitch */
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+
+.rte.new-caledonia {
+    font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
+    line-height: 1.15; /* Set line height to 115% */
+}
+
+.stof-container {
+    width: 70vw;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 1199px) {
+    .stof-container,
+    .section-semi-bespoke-1 .stof-container,
+    .section-bespoke-1 .stof-container,
+    .section-bespoke-2 .stof-container,
+    .section-bespoke-3 .stof-container {
+        width: 80vw;
+    }
+}
+
+.stof-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+}
+
+.stof-item--half {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem; /* Added gap between columns */
+}
+
+.stof-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.stof-card__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem; /* Add some space between the image and the title */
+    border-radius: 4px; /* Adjust border-radius to match base.css */
+}
+
+.title {
+    align-self: flex-start; /* Ensure the title aligns to the start (top) */
+    margin-bottom: 1rem; /* Add some space between the title and the next element */
+}
+
+.caption-headline {
+    font-family: 'Pitch', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.rte.new-caledonia {
+    font-family: 'New Caledonia', serif;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.stof-arrow {
+    position: relative;
+    left: 30%; /* Move arrow further to the right */
+}
+
+@media screen and (max-width: 749px) {
+    .stof-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .stof-item--half {
+        grid-template-columns: 1fr;
+    }
+
+    .stof-arrow {
+        left: 0; /* Reset arrow position for mobile */
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .stof-item--half .second-column {
+        margin-top: 9rem; /* Updated margin-top for second column */
+    }
+}
+
+.stof-headline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Remove padding */
+}
+
+.stof-headline .title {
+    margin: 0 !important; /* Remove all margins */
+    font-style: italic; /* Set the headline in italic */
+}
+
+.stof-headline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem; /* Add some space between the title and the arrow */
+}
+
+
+
+
+
+.stof-item {
+    display: grid;
+}
+
+.stof-item--full {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.stof-item--full .stof-card {
+    width: 50%;
+}
+
+.stof-item--half {
+    grid-template-columns: 1fr 1fr;
+    gap: 12rem; /* Further increased gap between columns */
+}
+
+.stof-card {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Ensure the content is positioned relative to the card */
+    border-radius: 4px; /* Adjust border-radius to match base.css */
+    overflow: hidden; /* Ensure the content inside the card respects the border-radius */
+}
+
+.stof-card__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem; /* Add some space between the image and the title */
+    border-radius: 4px; /* Adjust border-radius to match base.css */
+}
+
+.title {
+    align-self: flex-start; /* Ensure the title aligns to the start (top) */
+    margin-bottom: 1rem; /* Add some space between the title and the next element */
+}
+
+.caption-headline {
+    font-family: 'Pitch', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.rte.new-caledonia {
+    font-family: 'New Caledonia', serif;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.stof-arrow {
+    width: 50px;
+    height: 90px;
+    background-image: url("arrow-down.png"); /* Update with the correct path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-self: center;
+    margin: 40px auto;
+}
+
+/* Specific styles for each section */
+.section-bespoke-1,
+.section-bespoke-3 {
+    position: relative; /* Ensure the section is positioned relative */
+    margin-bottom: 80px; /* Adjust as needed for spacing between sections */
+    margin-top: 6rem; /* Add margin-top for spacing above the section */
+    padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
+}
+
+.section-bespoke-1 .stof-item--full .stof-card,
+.section-bespoke-3 .stof-item--full .stof-card {
+    width: 50%; /* Ensure the card is centered and has the same width */
+    margin: 0 auto; /* Center the card */
+}
+
+.section-bespoke-2 {
+    margin-bottom: 80px; /* Adjust as needed for spacing between sections */
+    margin-top: 6rem; /* Add margin-top for spacing above the section */
+    padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
+    position: relative; /* Ensure the section is positioned relative */
+}
+
+.section-bespoke-2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0; /* Position the arrow at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369"); /* Updated image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem; /* Add some space between the section and the arrow */
+    z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
+}
+
+.section-bespoke-3 {
+    margin-bottom: 80px; /* Adjust as needed for spacing between sections */
+    margin-top: 6rem; /* Add margin-top for spacing above the section */
+    padding-bottom: 6rem; /* Add padding-bottom for spacing below the section */
+    position: relative; /* Ensure the section is positioned relative */
+}
+
+@media screen and (max-width: 749px) {
+    .stof-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .stof-item--full .stof-card,
+    .stof-item--half {
+        grid-template-columns: 1fr;
+    }
+
+    .stof-item--full .stof-card {
+        width: 100%;
+    }
+
+    .stof-item--half {
+        gap: 3rem; /* Reduced gap for mobile */
+    }
+}
+
+.section-bespoke-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0; /* Reset the bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: none; /* Remove the background image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0; /* Reset the margin-top */
+}
+
+/* Ensure the second column is positioned relative */
+.section-bespoke-2 .stof-card.second-column {
+    position: relative;
+}
+
+/* Add the ::before pseudo-element back to the main component .section-bespoke-2 */
+.section-bespoke-2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -7.5rem; /* Move the arrow further up */
+    left: 55%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-left.png?v=1593634124"); /* Original image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem; /* Add some space between the section and the arrow */
+    z-index: 10; /* Ensure the arrow is above other elements */
+}
+
+.section-bespoke-2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5rem; /* Position the arrow at the bottom */
+    left: 35%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 90px;
+    background-image: url("https://dumaismade.com/cdn/shop/t/1/assets/arrow-right.png?v=1593633369"); /* Updated image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem; /* Add some space between the section and the arrow */
+    z-index: 10000; /* Increase z-index to ensure the arrow is above other elements */
+}
+
+.section-semi-bespoke-1 {
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 12rem; /* Add padding top */
+    padding-bottom: 10rem; /* Add padding bottom */
+}
+
+.section-semi-bespoke-1 .stof-container {
+    width: 70vw; /* Ensure the width is the same as section-bespoke-1 */
+    max-width: 950px; /* Ensure the max-width is the same as section-bespoke-1 */
+    margin: 0 auto;
+    padding: 0 20px; /* Ensure the padding is the same as section-bespoke-1 */
+}
+
+.section-semi-bespoke-1 .stof-content {
+    position: relative; /* Ensure the content is positioned relative */
+}
+
+.background-none {
+    background-color: transparent;
+}
+
+.background-color-1 {
+    background-color: #EBE2D9; /* Color 1 from section-home-split.css */
+}
+
+.background-color-2 {
+    background-color: #B0977B; /* Color 2 from section-home-split.css */
+}
+
+.background-color-3 {
+    background-color: #95794A; /* Color 3 from section-home-split.css */
+}
+
+.section-semi-bespoke-1 .stof-card__image,
+.section-bespoke-1 .stof-card__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem; /* Add some space between the image and the title */
+    border-radius: 4px; /* Adjust border-radius to match base.css */
+}
+
+.section-semi-bespoke-1 .stof-container,
+.section-bespoke-1 .stof-container,
+.section-bespoke-2 .stof-container,
+.section-bespoke-3 .stof-container {
+    width: 70vw; /* Ensure the width is the same for all sections */
+    max-width: 950px; /* Ensure the max-width is the same for all sections */
+    margin: 0 auto;
+    padding: 0 20px; /* Ensure the padding is the same for all sections */
+}
+
+/* Remove the ::after pseudo-element for section-bespoke-3 */
+.section-bespoke-3::after {
+    content: none;
+}
+
+@media screen and (max-width: 749px) {
+    .section-bespoke-1 .stof-container,
+    .section-bespoke-3 .stof-container,
+    .section-semi-bespoke-1 .stof-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .section-bespoke-1 .stof-content,
+    .section-bespoke-3 .stof-content,
+    .section-semi-bespoke-1 .stof-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-bespoke-1 .stof-headline,
+    .section-bespoke-3 .stof-headline,
+    .section-semi-bespoke-1 .stof-headline {
+        position: static;
+        order: -1; /* This moves the headline to the top */
+        margin-bottom: 2rem; /* Add some space between the headline and the content */
+    }
+
+    .section-bespoke-1 .stof-item--full .stof-card,
+    .section-bespoke-3 .stof-item--full .stof-card,
+    .section-semi-bespoke-1 .stof-item--full .stof-card {
+        width: 100%; /* Make the card take up full width on mobile */
+    }
+
+    .section-bespoke-1 .stof-card__image,
+    .section-bespoke-3 .stof-card__image,
+    .section-semi-bespoke-1 .stof-card__image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .section-bespoke-1,
+    .section-bespoke-2,
+    .section-bespoke-3 {
+        margin-top: 8rem; /* Increase top margin for mobile */
+        margin-bottom: 8rem; /* Increase bottom margin for mobile */
+        padding-top: 4rem; /* Add top padding for mobile */
+        padding-bottom: 4rem; /* Add bottom padding for mobile */
+    }
+
+    /* Adjust the first section to remove top margin if needed */
+    .shopify-section:first-child .section-bespoke-1 {
+        margin-top: 0;
+    }
+
+    /* Adjust the last section to remove bottom margin if needed */
+    .shopify-section:last-child .section-bespoke-3 {
+        margin-bottom: 0;
+    }
+
+    .section-bespoke-2::after {
+        bottom: -10rem; /* Adjust the bottom position for mobile */
+        left: 50%; /* Center the arrow horizontally */
+        transform: translateX(-50%); /* Ensure perfect centering */
+    }
+
+    .section-bespoke-3 {
+        margin-bottom: 0; /* Remove bottom margin for mobile */
+    }
+
+    .section-semi-bespoke-1 {
+        padding-top: 10rem; /* 10rem top padding for mobile */
+        padding-bottom: 8rem; /* 8rem bottom padding for mobile */
+    }
+}
+
+
+@media screen and (max-width: 749px) {
+
+    .section-bespoke-1 .stof-headline::after {
+        top: 6rem !important; /* Adjust the top position for mobile */
+        bottom:0 !important;
+    }
+
+    .section-bespoke-1{
+        margin-top: 0 !important;
+    }
+}

@@ -1,0 +1,79 @@
+.editorial-image-with-text {
+  width: 100vw;
+  background-color: #EBE2D9;
+}
+
+.editorial-image-with-text__content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.editorial-image-with-text__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem; /* Changed from 6rem to 3rem to match the double image section */
+}
+
+.editorial-image-with-text__image-container,
+.editorial-image-with-text__text-container {
+  flex: 1;
+  width: 50%;
+}
+
+.editorial-image-with-text__image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.editorial-image-with-text__heading {
+  font-family: 'new-caledonia', serif;
+  margin: 0;
+  font-style: italic;
+  max-width: 90%; /* Added this line to set max-width to 90% */
+}
+
+/* Remove margin for p elements within the heading */
+.editorial-image-with-text__heading p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.editorial-image-with-text__image-second {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 749px) {
+  .editorial-image-with-text__container {
+    flex-direction: column;
+    gap: 3rem; /* Keep the same gap for mobile */
+  }
+
+  .editorial-image-with-text__image-container,
+  .editorial-image-with-text__text-container {
+    width: 100%;
+  }
+
+  .editorial-image-with-text__image-second {
+    flex-direction: column;
+  }
+}
+
+/* Background color classes */
+.editorial-image-with-text--background-none {
+  background-color: transparent;
+}
+
+.editorial-image-with-text--background-color-1 {
+  background-color: #EBE2D9;
+}
+
+.editorial-image-with-text--background-color-2 {
+  background-color: #B0977B;
+}
+
+.editorial-image-with-text--background-color-3 {
+  background-color: #95794A;
+}

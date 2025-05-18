@@ -302,6 +302,7 @@ section:last-child .glazes-wrapper{
 
 .glazes-info-extra{
   align-self: end;
+  text-transform: uppercase;
 }
 
 .glazes-info-extra p{
@@ -336,8 +337,12 @@ section:last-child .glazes-wrapper{
   color: #717173;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  text-transform: uppercase;
 }
 
+.multicolumn-card__info .rte p{
+  text-transform: uppercase;
+}
 .glazes-images .multicolumn-card__info{
   padding-top: 1rem;
   padding-left: 0;

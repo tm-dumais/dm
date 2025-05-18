@@ -1,0 +1,59 @@
+{{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
+{{ 'section-editorial-single-image.css' | asset_url | stylesheet_tag }}
+
+<div class="editorial-single-image background-color-ebe2d9
+            {% if section.settings.add_top_padding %}padding-top-6{% endif %}
+            {% if section.settings.add_bottom_padding %}padding-bottom-6{% endif %}">
+  <div class="content-wrapper">
+    <div class="image-container {% if section.settings.image.aspect_ratio > 1 %}landscape{% else %}portrait{% endif %}">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" class="single-image {% if section.settings.image.aspect_ratio > 1 %}landscape{% else %}portrait{% endif %}">
+      {% else %}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </div>
+    {% if section.settings.caption != blank %}
+      <div class="caption">{{ section.settings.caption }}</div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Editorial Single Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "caption",
+      "label": "Caption"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_top_padding",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bottom_padding",
+      "label": "Add bottom padding",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Single Image",
+      "category": "Editorial"
+    }
+  ]
+}
+{% endschema %}

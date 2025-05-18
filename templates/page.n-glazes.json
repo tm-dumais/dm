@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,8 +23,8 @@
         "template--16834058092758__bc767dd0-f536-495d-b584-6066549ab95b-16749299634a65e006-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_88.jpg",
-            "text": "<p>Dipped Bottle Green Finch Lamp<\/p>",
+            "image": "shopify://shop_images/image_88.jpg",
+            "text": "<p>Dipped Bottle Green Finch Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -23,8 +32,8 @@
         "template--16834058092758__bc767dd0-f536-495d-b584-6066549ab95b-16749299634a65e006-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_93.jpg",
-            "text": "<p>Dipped Bottle Nomad Sconce<\/p>",
+            "image": "shopify://shop_images/image_93.jpg",
+            "text": "<p>Dipped Bottle Nomad Sconce</p>",
             "link_label": "",
             "link": ""
           }
@@ -32,8 +41,8 @@
         "template--16834058092758__bc767dd0-f536-495d-b584-6066549ab95b-16749299634a65e006-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_94.jpg",
-            "text": "<p>Dipped Bantam Lamp<\/p>",
+            "image": "shopify://shop_images/image_94.jpg",
+            "text": "<p>Dipped Bantam Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -41,8 +50,8 @@
         "77209a94-ded7-4804-b964-2aef31596718": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_95.jpg",
-            "text": "<p>Bottle-Green & Matte-Black Hudson Lamp<\/p>",
+            "image": "shopify://shop_images/image_95.jpg",
+            "text": "<p>Bottle-Green & Matte-Black Hudson Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -56,9 +65,9 @@
       ],
       "settings": {
         "title": "Bottle Green",
-        "description": "<p>This glaze takes its name from the black-green hue that’s achieved when multiple layers are applied to the clay’s surface. With one or two layers, the glaze creates a more brown finish. Bottle Green’s high-polished sheen is suited to pieces with multiple intersections, edges and joints, which allow the glaze to pool and feather when fired.<\/p>",
+        "description": "<p>This glaze takes its name from the black-green hue that’s achieved when multiple layers are applied to the clay’s surface. With one or two layers, the glaze creates a more brown finish. Bottle Green’s high-polished sheen is suited to pieces with multiple intersections, edges and joints, which allow the glaze to pool and feather when fired.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>We often combine a thick layer of Bottle Green with Matte-Black, as seen here in the Hudson and Sag Harbor lamps.<\/p>",
+        "combtext": "<p>We often combine a thick layer of Bottle Green with Matte-Black, as seen here in the Hudson and Sag Harbor lamps.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -75,8 +84,8 @@
         "template--16834058092758__5939b579-946c-4a2f-afc4-a86a4d691a4d-1674995677761c1e4b-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_98738f5f-1dc0-4ca1-91b4-cf86b68f61d1.jpg",
-            "text": "<p>Dipped Carriage Red Hanover Lamp<\/p>",
+            "image": "shopify://shop_images/4_98738f5f-1dc0-4ca1-91b4-cf86b68f61d1.jpg",
+            "text": "<p>Dipped Carriage Red Hanover Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -84,8 +93,8 @@
         "template--16834058092758__5939b579-946c-4a2f-afc4-a86a4d691a4d-1674995677761c1e4b-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_5f25b1f0-31e6-4772-b768-93e247c5a698.jpg",
-            "text": "<p>Dipped Carriage Red Clermont Lamp<\/p>",
+            "image": "shopify://shop_images/3_5f25b1f0-31e6-4772-b768-93e247c5a698.jpg",
+            "text": "<p>Dipped Carriage Red Clermont Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -93,8 +102,8 @@
         "template--16834058092758__5939b579-946c-4a2f-afc4-a86a4d691a4d-1674995677761c1e4b-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5_5faceafa-644c-4127-b7da-482a8bef2a03.jpg",
-            "text": "<p>Poured Carriage Red Madeline Vase<\/p>",
+            "image": "shopify://shop_images/5_5faceafa-644c-4127-b7da-482a8bef2a03.jpg",
+            "text": "<p>Poured Carriage Red Madeline Vase</p>",
             "link_label": "",
             "link": ""
           }
@@ -102,8 +111,8 @@
         "aa9754f8-ee55-4996-a839-56e8413ed3af": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_684c485f-f917-4213-ba30-792848abdcf1.jpg",
-            "text": "<p>Dipped Carriage Red Madeline vase<\/p>",
+            "image": "shopify://shop_images/2_684c485f-f917-4213-ba30-792848abdcf1.jpg",
+            "text": "<p>Dipped Carriage Red Madeline vase</p>",
             "link_label": "",
             "link": ""
           }
@@ -118,9 +127,9 @@
       "disabled": true,
       "settings": {
         "title": "Carriage Red",
-        "description": "<p>This glaze is inspired by the sun-weathered barns dotted around the Connecticut countryside, as well as the vermilion maple leaves seen around the studio as the nights draw in. It’s a neutral, adaptable red—neither too blue nor too orange—which varies depending on the application: thinner coats yield an oxblood tone, while thicker coats increase its intensity. Thick or thin, both break nicely along the edges, creating dark brown accents.<\/p>",
+        "description": "<p>This glaze is inspired by the sun-weathered barns dotted around the Connecticut countryside, as well as the vermilion maple leaves seen around the studio as the nights draw in. It’s a neutral, adaptable red—neither too blue nor too orange—which varies depending on the application: thinner coats yield an oxblood tone, while thicker coats increase its intensity. Thick or thin, both break nicely along the edges, creating dark brown accents.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>As this is a newer glaze for us, we’ve yet to combine it with others—we are still getting to know its character and personality. That being said, we have a good hunch about Hide and Walnut as potential pairings.<\/p>",
+        "combtext": "<p>As this is a newer glaze for us, we’ve yet to combine it with others—we are still getting to know its character and personality. That being said, we have a good hunch about Hide and Walnut as potential pairings.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -137,8 +146,8 @@
         "template--16834058092758__742b0eae-0551-4f95-ab5e-62ab02a86497-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Barragan_Chalk_900x_aa9ca1d0-000a-40af-9b25-16a166b2becc.jpg",
-            "text": "<p>Dipped Chalk Barragan Lamp<\/p>",
+            "image": "shopify://shop_images/Barragan_Chalk_900x_aa9ca1d0-000a-40af-9b25-16a166b2becc.jpg",
+            "text": "<p>Dipped Chalk Barragan Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -146,8 +155,8 @@
         "template--16834058092758__742b0eae-0551-4f95-ab5e-62ab02a86497-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Finch_Chalk_Dipped_2_900x_22cec3db-90bf-4a8f-9c58-c9c8525845dd.jpg",
-            "text": "<p>Dipped Chalk Finch Lamp<\/p>",
+            "image": "shopify://shop_images/Finch_Chalk_Dipped_2_900x_22cec3db-90bf-4a8f-9c58-c9c8525845dd.jpg",
+            "text": "<p>Dipped Chalk Finch Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -155,8 +164,8 @@
         "template--16834058092758__742b0eae-0551-4f95-ab5e-62ab02a86497-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Turnier_Chalk_Lead_900x_88a77581-1175-4c6c-8be4-3c09fa9b5dd7.jpg",
-            "text": "<p>Chalk & Lead Turnier Vase<\/p>",
+            "image": "shopify://shop_images/Turnier_Chalk_Lead_900x_88a77581-1175-4c6c-8be4-3c09fa9b5dd7.jpg",
+            "text": "<p>Chalk & Lead Turnier Vase</p>",
             "link_label": "",
             "link": ""
           }
@@ -164,8 +173,8 @@
         "template--16834058092758__742b0eae-0551-4f95-ab5e-62ab02a86497-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Small_Thira_Chalk_Hide_-s_900x_ecae260e-fe67-46a7-812b-4606668dac8f.jpg",
-            "text": "<p>Chalk & Hide Small Thira Lamp<\/p>",
+            "image": "shopify://shop_images/Small_Thira_Chalk_Hide_-s_900x_ecae260e-fe67-46a7-812b-4606668dac8f.jpg",
+            "text": "<p>Chalk & Hide Small Thira Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -179,9 +188,9 @@
       ],
       "settings": {
         "title": "Chalk",
-        "description": "<p>Chalk is a crisp, matte-white glaze that evokes the depth and texture of limewash. A go-to of ours, it captures the subtleties of our clay finishes incredibly well, as it is almost translucent in thinner applications. Further layers create a more opaque effect.<\/p>",
+        "description": "<p>Chalk is a crisp, matte-white glaze that evokes the depth and texture of limewash. A go-to of ours, it captures the subtleties of our clay finishes incredibly well, as it is almost translucent in thinner applications. Further layers create a more opaque effect.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>The versatility of this glaze lends itself to a variety of combinations. We often use it as a clean contrast to our darker and more satin glazes, as seen on the Turnier vase. <\/p><p>It also plays well with others, when overlapped it creates an intensely glossy finish.<\/p>",
+        "combtext": "<p>The versatility of this glaze lends itself to a variety of combinations. We often use it as a clean contrast to our darker and more satin glazes, as seen on the Turnier vase. </p><p>It also plays well with others, when overlapped it creates an intensely glossy finish.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -198,8 +207,8 @@
         "template--16834058092758__46b3eaee-366a-45e3-84dd-2502e941465c-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cistern_Hide_-_s_900x_jpg.webp",
-            "text": "<p>Poured Hide Cistern Lamp<\/p>",
+            "image": "shopify://shop_images/Cistern_Hide_-_s_900x_jpg.webp",
+            "text": "<p>Poured Hide Cistern Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -207,8 +216,8 @@
         "template--16834058092758__46b3eaee-366a-45e3-84dd-2502e941465c-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hanover_Hide_900x_jpg.webp",
-            "text": "<p>Dipped Hide Hanover Lamp<\/p>",
+            "image": "shopify://shop_images/Hanover_Hide_900x_jpg.webp",
+            "text": "<p>Dipped Hide Hanover Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -216,8 +225,8 @@
         "template--16834058092758__46b3eaee-366a-45e3-84dd-2502e941465c-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Small_Thira_Hide_Navy_-s_900x_jpg.webp",
-            "text": "<p>Hide & Navy Small Thira Lamp<\/p>",
+            "image": "shopify://shop_images/Small_Thira_Hide_Navy_-s_900x_jpg.webp",
+            "text": "<p>Hide & Navy Small Thira Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -225,8 +234,8 @@
         "template--16834058092758__46b3eaee-366a-45e3-84dd-2502e941465c-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Madeline_Matte-Black_Hide_900x_jpg.webp",
-            "text": "<p>Hide & Matte-Black Madeline Lamp<\/p>",
+            "image": "shopify://shop_images/Madeline_Matte-Black_Hide_900x_jpg.webp",
+            "text": "<p>Hide & Matte-Black Madeline Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -235,8 +244,8 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Turnier_Lead_Hide_900x_jpg.webp",
-            "text": "<p>Hide & Lead Turnier Lamp<\/p><p><\/p>",
+            "image": "shopify://shop_images/Turnier_Lead_Hide_900x_jpg.webp",
+            "text": "<p>Hide & Lead Turnier Lamp</p><p></p>",
             "link_label": "",
             "link": ""
           }
@@ -251,9 +260,9 @@
       ],
       "settings": {
         "title": "Hide",
-        "description": "<p>Hide is a nod to the leather-like finish that is created with thicker applications of the glaze. On textured surfaces and edges, this matte-satin glaze intensifies, burnishing its buff tone to a warm umber. It also contains a subtle fleck, which shimmers gently under direct light<\/p>",
+        "description": "<p>Hide is a nod to the leather-like finish that is created with thicker applications of the glaze. On textured surfaces and edges, this matte-satin glaze intensifies, burnishing its buff tone to a warm umber. It also contains a subtle fleck, which shimmers gently under direct light</p>",
         "combinations": "Combinations",
-        "combtext": "<p>Like Chalk, this glaze lends itself to a variety of combinations. Hide’s matte warmth pairs perfectly with darker finishes (see our Madeline lamp and Turnier lamp above). <\/p><p>It also overlaps well, intensifying the other glaze, which can be seen on the small Thira lamp.<\/p>",
+        "combtext": "<p>Like Chalk, this glaze lends itself to a variety of combinations. Hide’s matte warmth pairs perfectly with darker finishes (see our Madeline lamp and Turnier lamp above). </p><p>It also overlaps well, intensifying the other glaze, which can be seen on the small Thira lamp.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -270,8 +279,8 @@
         "template--16834058092758__5e08c545-612e-4c02-bb2d-1237f76a10f8-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Turnier_Lead_Hide_20e96a12-7bed-46a6-8ce2-251354a9561a_900x_jpg.webp",
-            "text": "<p>Lead & Hide Turnier Lamp<\/p>",
+            "image": "shopify://shop_images/Turnier_Lead_Hide_20e96a12-7bed-46a6-8ce2-251354a9561a_900x_jpg.webp",
+            "text": "<p>Lead & Hide Turnier Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -279,8 +288,8 @@
         "template--16834058092758__5e08c545-612e-4c02-bb2d-1237f76a10f8-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Houston_Lead_900x_jpg.webp",
-            "text": "<p>Dipped Lead Houston Lamp<\/p>",
+            "image": "shopify://shop_images/Houston_Lead_900x_jpg.webp",
+            "text": "<p>Dipped Lead Houston Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -288,8 +297,8 @@
         "template--16834058092758__5e08c545-612e-4c02-bb2d-1237f76a10f8-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Patrick_Lead_Dipped_smaller_25fbe4f1-63ca-428a-b415-dae9aa9da633_900x_jpg.webp",
-            "text": "<p>Dipped Lead Patrick Sconce<\/p>",
+            "image": "shopify://shop_images/Patrick_Lead_Dipped_smaller_25fbe4f1-63ca-428a-b415-dae9aa9da633_900x_jpg.webp",
+            "text": "<p>Dipped Lead Patrick Sconce</p>",
             "link_label": "",
             "link": ""
           }
@@ -297,8 +306,8 @@
         "template--16834058092758__5e08c545-612e-4c02-bb2d-1237f76a10f8-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Truro_Lead_Matte-Black_r_900x_a90b61c6-59fe-4040-b961-649aec011503.jpg",
-            "text": "<p>Lead & Matte-Black Truro Lamp<\/p>",
+            "image": "shopify://shop_images/Truro_Lead_Matte-Black_r_900x_a90b61c6-59fe-4040-b961-649aec011503.jpg",
+            "text": "<p>Lead & Matte-Black Truro Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -312,9 +321,9 @@
       ],
       "settings": {
         "title": "Lead",
-        "description": "<p>With its depth and sheen, this glaze often gets confused for cast metal. We like to use Lead on textured surfaces, as, when fired, it accentuates the clay’s surface through an interplay of matte and satin finishes.<\/p>",
+        "description": "<p>With its depth and sheen, this glaze often gets confused for cast metal. We like to use Lead on textured surfaces, as, when fired, it accentuates the clay’s surface through an interplay of matte and satin finishes.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>Lead’s graphite color is deceptive, especially when combined with other glazes. When paired with parchment, for instance, it creates a bottle green hue. With a thin overlap of Ochre, it becomes an intensely shiny aubergine. <\/p><p>It also works well with Matte-Black, creating a burnished overlap that contrasts Matte-Black’s pumice-like texture.<\/p>",
+        "combtext": "<p>Lead’s graphite color is deceptive, especially when combined with other glazes. When paired with parchment, for instance, it creates a bottle green hue. With a thin overlap of Ochre, it becomes an intensely shiny aubergine. </p><p>It also works well with Matte-Black, creating a burnished overlap that contrasts Matte-Black’s pumice-like texture.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -331,8 +340,8 @@
         "template--16834058092758__a7959cef-6d82-4121-acc7-fc6d850b80fd-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Santiago_Sconce_Ochre_s_1728x_900x_jpg_ec79284e-b5a4-4a12-ad3a-07a6280cc167.webp",
-            "text": "<p>Dipped Lichen Hanover Lamp<\/p>",
+            "image": "shopify://shop_images/Santiago_Sconce_Ochre_s_1728x_900x_jpg_ec79284e-b5a4-4a12-ad3a-07a6280cc167.webp",
+            "text": "<p>Dipped Lichen Hanover Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -341,8 +350,8 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/5_2e689689-dd23-42f8-809d-369f0ebc68b1_900x_jpg.webp",
-            "text": "<p>Dipped Lichen Prospect Heights Lamp<\/p>",
+            "image": "shopify://shop_images/5_2e689689-dd23-42f8-809d-369f0ebc68b1_900x_jpg.webp",
+            "text": "<p>Dipped Lichen Prospect Heights Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -350,8 +359,8 @@
         "template--16834058092758__a7959cef-6d82-4121-acc7-fc6d850b80fd-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_3574aea4-46a3-4a94-8761-ddabfba27630_900x_jpg.webp",
-            "text": "<p>Dipped Lichen Prospect Heights Lamp<\/p>",
+            "image": "shopify://shop_images/4_3574aea4-46a3-4a94-8761-ddabfba27630_900x_jpg.webp",
+            "text": "<p>Dipped Lichen Prospect Heights Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -359,8 +368,8 @@
         "template--16834058092758__a7959cef-6d82-4121-acc7-fc6d850b80fd-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_9e671b8b-fa73-4115-b506-fe1168af6e6b_900x_jpg.webp",
-            "text": "<p>Dipped Lichen Wainscot Lamp<\/p>",
+            "image": "shopify://shop_images/2_9e671b8b-fa73-4115-b506-fe1168af6e6b_900x_jpg.webp",
+            "text": "<p>Dipped Lichen Wainscot Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -368,8 +377,8 @@
         "2f3fece7-98ca-4d7d-a2b8-04ce64b5e969": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_31a15a47-2a4f-419c-b36d-a877ee130bde_900x_jpg.webp",
-            "text": "<p>Dipped Lichen Mirror<\/p>",
+            "image": "shopify://shop_images/3_31a15a47-2a4f-419c-b36d-a877ee130bde_900x_jpg.webp",
+            "text": "<p>Dipped Lichen Mirror</p>",
             "link_label": "",
             "link": ""
           }
@@ -384,7 +393,7 @@
       ],
       "settings": {
         "title": "Lichen",
-        "description": "<p>Lichen, like its mutualistic namesake, is a fascinating composite. Interspersed in the glaze are flecks of copper that, when fired, oxidize to create grey-green mottling across the clay’s surface. Thinner applications of the glaze are more seafoam in color (they’re also more uniform), while thicker applications are more grey blue. The mottled pattern, like nature, is unpredictable, so we recommend this glaze is used in isolation on simple textures.<\/p>",
+        "description": "<p>Lichen, like its mutualistic namesake, is a fascinating composite. Interspersed in the glaze are flecks of copper that, when fired, oxidize to create grey-green mottling across the clay’s surface. Thinner applications of the glaze are more seafoam in color (they’re also more uniform), while thicker applications are more grey blue. The mottled pattern, like nature, is unpredictable, so we recommend this glaze is used in isolation on simple textures.</p>",
         "combinations": "",
         "combtext": "",
         "heading_size": "h1",
@@ -403,8 +412,8 @@
         "template--16834058092758__306e96f9-d9b0-4b35-a4c9-3e728ac4de69-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Juice_Box_Matte-Black_s_900x_f471bf35-d962-405c-bb66-a76fd2203c54.jpg",
-            "text": "<p>Dipped Matte-Black Juice Box Lamp<\/p>",
+            "image": "shopify://shop_images/Juice_Box_Matte-Black_s_900x_f471bf35-d962-405c-bb66-a76fd2203c54.jpg",
+            "text": "<p>Dipped Matte-Black Juice Box Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -412,8 +421,8 @@
         "template--16834058092758__306e96f9-d9b0-4b35-a4c9-3e728ac4de69-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lincoln_Matte-Black_Dipped_900x_jpg.webp",
-            "text": "<p>Dipped Matte-Black Lincoln Lamp<\/p>",
+            "image": "shopify://shop_images/Lincoln_Matte-Black_Dipped_900x_jpg.webp",
+            "text": "<p>Dipped Matte-Black Lincoln Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -422,8 +431,8 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mattituck_Matte-Black_Navy_900x_jpg.webp",
-            "text": "<p>Matte-Black & Navy Mattituck Lamp<\/p>",
+            "image": "shopify://shop_images/Mattituck_Matte-Black_Navy_900x_jpg.webp",
+            "text": "<p>Matte-Black & Navy Mattituck Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -431,8 +440,8 @@
         "template--16834058092758__306e96f9-d9b0-4b35-a4c9-3e728ac4de69-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hutton_Matte-Black_Parchment_-2_900x_e5235a1b-176a-46f1-816b-6b864d6a484b.jpg",
-            "text": "<p>Matte-Black & Parchment Hudson Lamp<\/p>",
+            "image": "shopify://shop_images/Hutton_Matte-Black_Parchment_-2_900x_e5235a1b-176a-46f1-816b-6b864d6a484b.jpg",
+            "text": "<p>Matte-Black & Parchment Hudson Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -440,8 +449,8 @@
         "eb8a8031-43da-4732-8c18-61d8a96fb5d2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Preston_Matte-Black_Parchment_900x_jpg.webp",
-            "text": "<p>Matte-Black & Parchment New Preston Lamp<\/p>",
+            "image": "shopify://shop_images/New_Preston_Matte-Black_Parchment_900x_jpg.webp",
+            "text": "<p>Matte-Black & Parchment New Preston Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -456,9 +465,9 @@
       ],
       "settings": {
         "title": "Matte-Black",
-        "description": "<p>Our Matte-Black glaze has an earthen quality that intensifies the thicker that it is applied. In thinner applications, it possesses a satin-like finish that accentuates textures – even subtle ones. The more it’s layered, however, the more it becomes volcanic: matte, textured and intensely black.<\/p>",
+        "description": "<p>Our Matte-Black glaze has an earthen quality that intensifies the thicker that it is applied. In thinner applications, it possesses a satin-like finish that accentuates textures – even subtle ones. The more it’s layered, however, the more it becomes volcanic: matte, textured and intensely black.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>This glaze works best in contrast. In contrast to more lustrous finishes, as seen in the Mattituck and Sag Harbor lamp. <\/p><p>In contrast to lighter shades like in the dipped New Preston lamp and in the graphic compositions of the poured Hutton lamp. And even in contrast with itself, when both thick and thin applications are employed.<\/p>",
+        "combtext": "<p>This glaze works best in contrast. In contrast to more lustrous finishes, as seen in the Mattituck and Sag Harbor lamp. </p><p>In contrast to lighter shades like in the dipped New Preston lamp and in the graphic compositions of the poured Hutton lamp. And even in contrast with itself, when both thick and thin applications are employed.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -475,8 +484,8 @@
         "template--16834058092758__deba554d-0b65-43e8-8c23-f6de03022f16-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mushroom-1_900x_jpg.webp",
-            "text": "<p>Mushroom Cereal Lamp<\/p>",
+            "image": "shopify://shop_images/mushroom-1_900x_jpg.webp",
+            "text": "<p>Mushroom Cereal Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -484,8 +493,8 @@
         "template--16834058092758__deba554d-0b65-43e8-8c23-f6de03022f16-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mushroom-2_900x_jpg.webp",
-            "text": "<p>Mushroom Can Lamp<\/p>",
+            "image": "shopify://shop_images/mushroom-2_900x_jpg.webp",
+            "text": "<p>Mushroom Can Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -493,8 +502,8 @@
         "template--16834058092758__deba554d-0b65-43e8-8c23-f6de03022f16-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mushroom-3_900x_jpg.webp",
-            "text": "<p>Mushroom Litchfield Lamp<\/p>",
+            "image": "shopify://shop_images/mushroom-3_900x_jpg.webp",
+            "text": "<p>Mushroom Litchfield Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -502,8 +511,8 @@
         "template--16834058092758__deba554d-0b65-43e8-8c23-f6de03022f16-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Thira_Mushroom_Dipped_900x_jpg.webp",
-            "text": "<p>Mushroom Thira Lamp<\/p>",
+            "image": "shopify://shop_images/Thira_Mushroom_Dipped_900x_jpg.webp",
+            "text": "<p>Mushroom Thira Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -517,7 +526,7 @@
       ],
       "settings": {
         "title": "Mushroom",
-        "description": "<p>The mycological-like finish of this glaze is achieved through the overlap of our Lead and Ochre glazes and is an effect that can be varied. Thinner, more even overlaps result in a more lustrous finish but a more mottled coloration. While thicker overlaps create a rich golden color with red-brown undertones.<\/p>",
+        "description": "<p>The mycological-like finish of this glaze is achieved through the overlap of our Lead and Ochre glazes and is an effect that can be varied. Thinner, more even overlaps result in a more lustrous finish but a more mottled coloration. While thicker overlaps create a rich golden color with red-brown undertones.</p>",
         "combinations": "",
         "combtext": "",
         "heading_size": "h1",
@@ -536,8 +545,8 @@
         "template--16834058092758__b74ceaa3-cc12-422d-9dcf-5398fb985a97-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Preston_Navy_s_900x_jpg.webp",
-            "text": "<p>Dipped Navy New Preston Lamp<\/p>",
+            "image": "shopify://shop_images/New_Preston_Navy_s_900x_jpg.webp",
+            "text": "<p>Dipped Navy New Preston Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -545,8 +554,8 @@
         "template--16834058092758__b74ceaa3-cc12-422d-9dcf-5398fb985a97-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Clermont_Navy_Dipped_-_new_format_900x_jpg.webp",
-            "text": "<p>Dipped Clermont Navy<\/p>",
+            "image": "shopify://shop_images/Clermont_Navy_Dipped_-_new_format_900x_jpg.webp",
+            "text": "<p>Dipped Clermont Navy</p>",
             "link_label": "",
             "link": ""
           }
@@ -554,8 +563,8 @@
         "template--16834058092758__b74ceaa3-cc12-422d-9dcf-5398fb985a97-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Small_Thira_Hide_Navy_-s_6de0f288-c8fe-470b-af45-7b81a77edd26_900x_jpg.webp",
-            "text": "<p>Navy & Hide Small Thira Lamp<\/p>",
+            "image": "shopify://shop_images/Small_Thira_Hide_Navy_-s_6de0f288-c8fe-470b-af45-7b81a77edd26_900x_jpg.webp",
+            "text": "<p>Navy & Hide Small Thira Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -563,8 +572,8 @@
         "template--16834058092758__b74ceaa3-cc12-422d-9dcf-5398fb985a97-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mattituck_Matte-Black_Navy_900x_jpg_b6f61a3d-ac51-4511-8640-8d75a837fb1e.webp",
-            "text": "<p>Navy & Matte-Black Mattituck Lamp<\/p>",
+            "image": "shopify://shop_images/Mattituck_Matte-Black_Navy_900x_jpg_b6f61a3d-ac51-4511-8640-8d75a837fb1e.webp",
+            "text": "<p>Navy & Matte-Black Mattituck Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -579,9 +588,9 @@
       "disabled": true,
       "settings": {
         "title": "Navy",
-        "description": "<p>This glaze behaves similarly to our Bottle Green glaze. A thin dip or pour of Navy is translucent, giving the piece a denim-like color. Thicker applications of Navy result in a black blue, which, under artificial or direct sunlight, reveals an ultramarine sheen.<\/p>",
+        "description": "<p>This glaze behaves similarly to our Bottle Green glaze. A thin dip or pour of Navy is translucent, giving the piece a denim-like color. Thicker applications of Navy result in a black blue, which, under artificial or direct sunlight, reveals an ultramarine sheen.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>Navy can be combined with many glazes. Overlapping Hide and Navy creates an intense gradient. Combining Matte-Black and Navy intensifies the former’s sheen and density. <\/p><p>And pairing Sea and Navy reveals something completely different when fired: a redolent gold. <\/p>",
+        "combtext": "<p>Navy can be combined with many glazes. Overlapping Hide and Navy creates an intense gradient. Combining Matte-Black and Navy intensifies the former’s sheen and density. </p><p>And pairing Sea and Navy reveals something completely different when fired: a redolent gold. </p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -598,8 +607,8 @@
         "template--16834058092758__17eab40e-fe13-4b70-b1a1-9525b853a8bb-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_900x_jpg.webp",
-            "text": "<p>Poured Ochre Depot Lamp<\/p>",
+            "image": "shopify://shop_images/1_900x_jpg.webp",
+            "text": "<p>Poured Ochre Depot Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -607,8 +616,8 @@
         "template--16834058092758__17eab40e-fe13-4b70-b1a1-9525b853a8bb-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_900x_jpg.webp",
-            "text": "<p>Dipped Ochre Santiago Sconce<\/p>",
+            "image": "shopify://shop_images/2_900x_jpg.webp",
+            "text": "<p>Dipped Ochre Santiago Sconce</p>",
             "link_label": "",
             "link": ""
           }
@@ -616,8 +625,8 @@
         "template--16834058092758__17eab40e-fe13-4b70-b1a1-9525b853a8bb-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_900x_jpg.webp",
-            "text": "<p>Dipped Ochre Wedge Lamp<\/p>",
+            "image": "shopify://shop_images/3_900x_jpg.webp",
+            "text": "<p>Dipped Ochre Wedge Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -625,8 +634,8 @@
         "template--16834058092758__17eab40e-fe13-4b70-b1a1-9525b853a8bb-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_900x_jpg.webp",
-            "text": "<p>Ochre & Chalk Hirsch Pendant<\/p>",
+            "image": "shopify://shop_images/4_900x_jpg.webp",
+            "text": "<p>Ochre & Chalk Hirsch Pendant</p>",
             "link_label": "",
             "link": ""
           }
@@ -635,8 +644,8 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/5_900x_jpg.webp",
-            "text": "<p>Ochre & Parchment Gowanus Lamp<\/p>",
+            "image": "shopify://shop_images/5_900x_jpg.webp",
+            "text": "<p>Ochre & Parchment Gowanus Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -651,9 +660,9 @@
       ],
       "settings": {
         "title": "Ochre",
-        "description": "<p>Ochre is one of our original glazes and an enduring favorite. Thinner applications reveal more of the clay’s character, giving the glaze a rich golden color and satin finish. However, when poured or dipped multiple times, Ochre becomes almost khaki in color, with a warm, metallic undertone.<\/p>",
+        "description": "<p>Ochre is one of our original glazes and an enduring favorite. Thinner applications reveal more of the clay’s character, giving the glaze a rich golden color and satin finish. However, when poured or dipped multiple times, Ochre becomes almost khaki in color, with a warm, metallic undertone.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>This glaze works well as a base for more neutral shades such as Chalk and Parchment, which can be seen on the poured Hirsch pendant and dipped Gowanus lamp. In both instances, Ochre gives these glazes a bit of warmth.<\/p>",
+        "combtext": "<p>This glaze works well as a base for more neutral shades such as Chalk and Parchment, which can be seen on the poured Hirsch pendant and dipped Gowanus lamp. In both instances, Ochre gives these glazes a bit of warmth.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -670,8 +679,8 @@
         "template--16834058092758__ed4dbe3f-8d85-4963-9be7-13d900d4b89f-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Madeline_Parchment_Poured_Overlap_900x_jpg.webp",
-            "text": "<p>Dipped Parchment Madeline Lamp<\/p>",
+            "image": "shopify://shop_images/Madeline_Parchment_Poured_Overlap_900x_jpg.webp",
+            "text": "<p>Dipped Parchment Madeline Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -679,8 +688,8 @@
         "template--16834058092758__ed4dbe3f-8d85-4963-9be7-13d900d4b89f-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Madeline_Parchment_Poured_Overlap_1080x_b2aa9d75-be47-4c0a-89eb-0753d0ecc095_900x_jpg.webp",
-            "text": "<p>Poured Parchment Litchfield Lamp<\/p>",
+            "image": "shopify://shop_images/Madeline_Parchment_Poured_Overlap_1080x_b2aa9d75-be47-4c0a-89eb-0753d0ecc095_900x_jpg.webp",
+            "text": "<p>Poured Parchment Litchfield Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -688,8 +697,8 @@
         "template--16834058092758__ed4dbe3f-8d85-4963-9be7-13d900d4b89f-167552411649bf7293-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Walworth_Parchment_Dipped_900x_jpg.webp",
-            "text": "<p>Dipped Parchment Walworth Lamp<\/p>",
+            "image": "shopify://shop_images/Walworth_Parchment_Dipped_900x_jpg.webp",
+            "text": "<p>Dipped Parchment Walworth Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -697,8 +706,8 @@
         "template--16834058092758__ed4dbe3f-8d85-4963-9be7-13d900d4b89f-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/parchment-2_900x_jpg.webp",
-            "text": "<p>Dipped Parchment Mug Lamp<\/p>",
+            "image": "shopify://shop_images/parchment-2_900x_jpg.webp",
+            "text": "<p>Dipped Parchment Mug Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -706,8 +715,8 @@
         "77259e1f-01c4-443a-9c0f-7a4ed91fccb1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/parchment-3_900x_jpg.webp",
-            "text": "<p>Parchment & Ochre Ledner Lamp<\/p>",
+            "image": "shopify://shop_images/parchment-3_900x_jpg.webp",
+            "text": "<p>Parchment & Ochre Ledner Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -715,8 +724,8 @@
         "7ab580f3-fded-4936-894f-238481c536d6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_Hutton_Matte-Black_Parchment_Poured_900x_14edd7c6-ba35-44bb-848c-487eb9f0720a.jpg",
-            "text": "<p>Parchment & Matte-Black Hutton Lamp<\/p>",
+            "image": "shopify://shop_images/2_Hutton_Matte-Black_Parchment_Poured_900x_14edd7c6-ba35-44bb-848c-487eb9f0720a.jpg",
+            "text": "<p>Parchment & Matte-Black Hutton Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -732,9 +741,9 @@
       ],
       "settings": {
         "title": "Parchment",
-        "description": "<p>Parchment takes its name from the paper-like texture that is created when the glaze is poured or dipped multiple times. Rich and creamy, this warm white suits a variety of forms and finishes. It can also be used in thinner applications to accentuate textures, giving the piece a more satin-like finish.<\/p>",
+        "description": "<p>Parchment takes its name from the paper-like texture that is created when the glaze is poured or dipped multiple times. Rich and creamy, this warm white suits a variety of forms and finishes. It can also be used in thinner applications to accentuate textures, giving the piece a more satin-like finish.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>Like Chalk, Parchment lends itself to a variety of combinations. In combination with lighter glazes, such as Ochre, a matte and creamy finish is created, which can mottle and crack if Parchment is applied thickly.<\/p><p>In combination with darker glazes, like Matte-Black, it creates something entirely new: dark green. And in combination with itself, it creates a subtle sweeping gradation, especially when poured.<\/p>",
+        "combtext": "<p>Like Chalk, Parchment lends itself to a variety of combinations. In combination with lighter glazes, such as Ochre, a matte and creamy finish is created, which can mottle and crack if Parchment is applied thickly.</p><p>In combination with darker glazes, like Matte-Black, it creates something entirely new: dark green. And in combination with itself, it creates a subtle sweeping gradation, especially when poured.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -751,8 +760,8 @@
         "template--16834058092758__639d6375-1f5f-4aa1-80e9-c3a854db3de6-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sea-2_900x_jpg.webp",
-            "text": "<p>Poured Sea Pitcher<\/p>",
+            "image": "shopify://shop_images/sea-2_900x_jpg.webp",
+            "text": "<p>Poured Sea Pitcher</p>",
             "link_label": "",
             "link": ""
           }
@@ -760,8 +769,8 @@
         "template--16834058092758__639d6375-1f5f-4aa1-80e9-c3a854db3de6-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sea-1_900x_jpg.webp",
-            "text": "<p>Sea & Navy Small Thira Lamp<\/p><p><\/p>",
+            "image": "shopify://shop_images/sea-1_900x_jpg.webp",
+            "text": "<p>Sea & Navy Small Thira Lamp</p><p></p>",
             "link_label": "",
             "link": ""
           }
@@ -791,9 +800,9 @@
       ],
       "settings": {
         "title": "Sea",
-        "description": "<p>Sea is a new glaze for us. Incredibly matte, this glaze behaves like the sea, hence the name. In thicker applications, like on the Can lamp, it fires as a light blue, much like the water reflecting the sky’s azure. While in thinner applications, Sea possesses a green-ish brown tint, as seen on the Handle pitcher.<\/p>",
+        "description": "<p>Sea is a new glaze for us. Incredibly matte, this glaze behaves like the sea, hence the name. In thicker applications, like on the Can lamp, it fires as a light blue, much like the water reflecting the sky’s azure. While in thinner applications, Sea possesses a green-ish brown tint, as seen on the Handle pitcher.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>Sea is a sensitive glaze, even its position in the kiln can influence the final color, so we’re experimenting with different pairings at the moment to determine what works best.<\/p><p>Currently, we’re captivated by the combination of Sea and Navy, which results in an intense ochre that feathers from matte to shine.<\/p>",
+        "combtext": "<p>Sea is a sensitive glaze, even its position in the kiln can influence the final color, so we’re experimenting with different pairings at the moment to determine what works best.</p><p>Currently, we’re captivated by the combination of Sea and Navy, which results in an intense ochre that feathers from matte to shine.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -811,8 +820,8 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/verd-1_900x_jpg.webp",
-            "text": "<p>Dipped Verdigris Liberty Vase<\/p>",
+            "image": "shopify://shop_images/verd-1_900x_jpg.webp",
+            "text": "<p>Dipped Verdigris Liberty Vase</p>",
             "link_label": "",
             "link": ""
           }
@@ -820,17 +829,8 @@
         "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/verd-2_900x_8ded1171-c467-4f36-81e5-9ecfcc425060.jpg",
-            "text": "<p>Dipped Verdigris New Preston Lamp<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Firefly_Pendant_2_Verdigris_Poured_353de08f-0f00-425e-a5bd-85d609c19389_900x_jpg.webp",
-            "text": "<p>Poured Verdigris Firefly Pendant<\/p>",
+            "image": "shopify://shop_images/verd-2_900x_8ded1171-c467-4f36-81e5-9ecfcc425060.jpg",
+            "text": "<p>Dipped Verdigris New Preston Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -838,17 +838,8 @@
         "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/verd-3_900x_jpg.webp",
-            "text": "<p>Poured Verdigris Truro Lamp<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "53168ad6-7731-4d95-bced-e0e1d490d71d": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Poured_Firefly_Lantern_Verdigris_900x_jpg_154407d7-2b9f-4e99-8be3-9074a4f5f08d.webp",
-            "text": "<p>Poured Firefly Lantern <\/p><p><\/p>",
+            "image": "shopify://shop_images/verd-3_900x_jpg.webp",
+            "text": "<p>Poured Verdigris Truro Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -857,13 +848,11 @@
       "block_order": [
         "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-0",
         "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-1",
-        "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-2",
-        "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-3",
-        "53168ad6-7731-4d95-bced-e0e1d490d71d"
+        "template--16834058092758__805ae172-8fc1-4480-b85e-2e4f175e2f3d-167552411649bf7293-3"
       ],
       "settings": {
         "title": "Verdigris",
-        "description": "<p>Verdigris takes its name from the vivid green pigment that is created when copper oxidizes. However, green is not the only color this glaze is capable of. A single layer of Verdigris gives you a coppery green. A few more layers and it becomes matte and grey. And, after a long heavy dip, it fires a vibrant teal. Due to this range, we tend to use it on its own, as seen on the poured Firefly lantern, which looks as if it has rivulets of oxidized copper streaming across its surface.<\/p>",
+        "description": "<p>Verdigris takes its name from the vivid green pigment that is created when copper oxidizes. However, green is not the only color this glaze is capable of. A single layer of Verdigris gives you a coppery green. A few more layers and it becomes more vibrant. And, after a long heavy dip, it fires matte and grey. Due to this range, we tend to use it on its own, as seen on the poured Truro lamp, which looks as if it has rivulets of oxidized copper streaming across its surface.</p>",
         "combinations": "",
         "combtext": "",
         "heading_size": "h1",
@@ -882,8 +871,8 @@
         "template--16834058092758__445e8890-1aa5-4a6d-a073-41ff8284b895-167552411649bf7293-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/walnut-1_900x_jpg.webp",
-            "text": "<p>Dipped Walnut Thira Lamp<\/p>",
+            "image": "shopify://shop_images/walnut-1_900x_jpg.webp",
+            "text": "<p>Dipped Walnut Thira Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -891,8 +880,8 @@
         "template--16834058092758__445e8890-1aa5-4a6d-a073-41ff8284b895-167552411649bf7293-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/walnut-1_1080x_86d51300-354f-4af2-ab39-4b8c908f733d_900x_jpg.webp",
-            "text": "<p>Walnut & Chalk Can Lamp<\/p>",
+            "image": "shopify://shop_images/walnut-1_1080x_86d51300-354f-4af2-ab39-4b8c908f733d_900x_jpg.webp",
+            "text": "<p>Walnut & Chalk Can Lamp</p>",
             "link_label": "",
             "link": ""
           }
@@ -904,9 +893,9 @@
       ],
       "settings": {
         "title": "Walnut",
-        "description": "<p>Walnut is a rich, chestnut brown glaze that, when applied in thin layers, creates a subtle shine where the glaze breaks across the clay’s surface. Thicker applications of Walnut appear almost black and begin to obscure the piece’s texture.<\/p>",
+        "description": "<p>Walnut is a rich, chestnut brown glaze that, when applied in thin layers, creates a subtle shine where the glaze breaks across the clay’s surface. Thicker applications of Walnut appear almost black and begin to obscure the piece’s texture.</p>",
         "combinations": "Combinations",
-        "combtext": "<p>We combine Walnut with Chalk, which, due to the chemical reaction between the glazes, results in an array of greens, from deep and mossy to a watercolor-like celadon. <\/p><p>Walnut may also be combined with itself for an earthy, tonal palette, as seen on the Thira lamp.<\/p>",
+        "combtext": "<p>We combine Walnut with Chalk, which, due to the chemical reaction between the glazes, results in an array of greens, from deep and mossy to a watercolor-like celadon. </p><p>Walnut may also be combined with itself for an earthy, tonal palette, as seen on the Thira lamp.</p>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -935,13 +924,13 @@
         "template--16834058092758__1b6f39d7-2a00-47a3-8291-10bfe77bd2a5-16785447304be1bcbb-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Glazes are temperamental beings, and, while we try to capture them as best as possible, they're really best viewed in real life. Thankfully, we've put together a handy glazes kit for those who like holding things in their hand.<\/p>"
+            "text": "<p>Glazes are temperamental beings, and, while we try to capture them as best as possible, they're really best viewed in real life. Thankfully, we've put together a handy glazes kit for those who like holding things in their hand.</p>"
           }
         },
         "c6767696-eac0-4821-9bb1-24c02c1ee886": {
           "type": "url",
           "settings": {
-            "product_link": "shopify:\/\/products\/sample-kit"
+            "product_link": "shopify://products/sample-kit"
           }
         },
         "bd89b91e-fbdc-4cc5-a6db-e1990b2f0319": {
@@ -962,7 +951,7 @@
         ".page-intro-section-wrapper {border-bottom: 0px; border-top: 0px solid black; background-color: #fbfbff;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/September_28_2022_232.jpg",
+        "image": "shopify://shop_images/September_28_2022_232.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "padding_top": 36,

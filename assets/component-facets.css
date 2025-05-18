@@ -50,6 +50,7 @@
   color: var(--color-foreground-85);
   font-size: 1.4rem;
   margin: 0 2rem 0 0;
+  text-transform: uppercase !important;
 }
 
 .facet-filters__summary {
@@ -172,8 +173,8 @@
 
 .facets__form {
   display: grid;
-  gap: 0 3.5rem;
   grid-template-columns: 1fr max-content max-content;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 

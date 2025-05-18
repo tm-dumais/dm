@@ -1,0 +1,62 @@
+.editorial-single-image {
+  width: 100vw;
+  background-color: #EBE2D9;
+}
+
+.content-wrapper {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.single-image {
+  height: auto;
+  border-radius: 4px;
+}
+
+.single-image.landscape {
+  width: 100%;
+}
+
+.single-image.portrait {
+  width: 50%;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+/* New styles for portrait images and captions */
+.image-container.portrait {
+  width: 50%;
+}
+
+.image-container.portrait .single-image {
+  width: 100%;
+}
+
+.image-container.portrait + .caption {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 749px) {
+  .single-image.portrait,
+  .image-container.portrait,
+  .image-container.portrait + .caption {
+    width: 100%;
+  }
+}
