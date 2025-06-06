@@ -259,6 +259,7 @@
 
 .image-multicolumn-card__info .rte p strong{
   font-weight: normal;
+  font-family: pitch, monospaced;
   font-size: 1.5rem;
 }
 

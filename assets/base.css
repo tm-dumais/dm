@@ -2746,12 +2746,13 @@ details[open] > .header__submenu {
 }
 
 .header__menu {
-  /* Revert to previous: remove display: flex, gap, and padding if added */
+  padding: 0 1rem;
 }
 
-.header__menu-item,
-.header__submenu .header__menu-item {
-  color: rgb(var(--color-foreground));
+.header__menu-item {
+  padding: 1.2rem;
+  text-decoration: none;
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__menu-item:hover {
@@ -2766,21 +2767,6 @@ details[open] > .header__submenu {
   text-decoration: underline; text-decoration-skip-ink: none;
   text-underline-offset: 0.3rem;
   text-decoration-skip-ink: none;
-}
-
-/* Remove always-on underline for open details */
-/* details[open] > .header__menu-item {
-  text-decoration: underline; text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
-} */
-
-.header__menu-item .icon-caret {
-  width: 1em;
-  height: 0.6em;
-  vertical-align: middle;
-  margin-left: 0.15em;
-  position: relative;
-  top: -0.05em;
 }
 
 details[open] > .header__menu-item {
@@ -2848,12 +2834,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item .icon-caret {
-  width: 0.4em;
-  height: 1em;
-  vertical-align: middle;
-  margin-left: 2em;
-  position: relative;
-  top: 0em;
+  right: 0.8rem;
 }
 
 .header__submenu .icon-caret {

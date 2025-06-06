@@ -112,7 +112,13 @@
 
 .caption-headline {
     font-size: 16px;
+    font-family: 'Pitch', sans-serif; /* Set font to Pitch */
     text-transform: uppercase; /* Transform text to uppercase */
+}
+
+.rte.new-caledonia {
+    font-family: 'New Caledonia', serif; /* Set font to New Caledonia */
+    line-height: 1.15; /* Set line height to 115% */
 }
 
 .stof-container {
@@ -161,6 +167,7 @@
 }
 
 .caption-headline {
+    font-family: 'Pitch', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 10px;
@@ -265,6 +272,7 @@
 }
 
 .caption-headline {
+    font-family: 'Pitch', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 10px;
