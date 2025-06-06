@@ -3303,7 +3303,7 @@ display: none !important;
 }
 
 /* Border bottom on homepage header wrapper */
-.header--homepage .header-wrapper--border-bottom {
+.header-wrapper--border-bottom {
   border-bottom: 1px solid white !important;
 }
 .header--homepage.scrolled .header-wrapper--border-bottom {
