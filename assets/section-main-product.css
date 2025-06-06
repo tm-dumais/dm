@@ -1262,7 +1262,7 @@ a.product__text {
   color: rgb(var(--color-base-text));
   cursor: pointer;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .thumbnail:hover {
@@ -1276,7 +1276,7 @@ a.product__text {
 .thumbnail[aria-current] {
   box-shadow: 0 0 0 0 rgb(var(--color-foreground));
   border-color: rgb(var(--color-foreground));
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .image-magnify-full-size {

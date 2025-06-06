@@ -1,3 +1,19 @@
+:root {
+  --color-charcoal: #2C2F38;
+  --color-slate-blue: #38496F;
+  --color-cool-grey: #7D868D;
+  --color-warm-beige: #EBE2D9;
+  --color-olive-brown: #4A463D;
+  --color-moss: #57564B;
+  --color-mustard-brown: #95794A;
+  --color-sand: #CFA55D;
+  --color-deep-brown: #2A1B12;
+  --color-burgundy: #5E1B1C;
+  --color-taupe: #B0977B;
+  --color-clay: #95634B;
+  --color-stone-grey: #8E9492;
+}
+
 .home-section-split__grid {
   display: flex;
   align-items: stretch;
@@ -56,6 +72,8 @@
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  text-align: center;
 }
 
 .home-section-split__eyebrow {
@@ -90,16 +108,56 @@
   background-color: transparent;
 }
 
-.background-color-1 {
-  background-color: #EBE2D9;
+.background-charcoal {
+  background-color: var(--color-charcoal) !important;
 }
 
-.background-color-2 {
-  background-color: #B0977B;
+.background-slate-blue {
+  background-color: var(--color-slate-blue) !important;
 }
 
-.background-color-3 {
-  background-color: #8E9492;
+.background-cool-grey {
+  background-color: var(--color-cool-grey) !important;
+}
+
+.background-warm-beige {
+  background-color: var(--color-warm-beige) !important;
+}
+
+.background-olive-brown {
+  background-color: var(--color-olive-brown) !important;
+}
+
+.background-moss {
+  background-color: var(--color-moss) !important;
+}
+
+.background-mustard-brown {
+  background-color: var(--color-mustard-brown) !important;
+}
+
+.background-sand {
+  background-color: var(--color-sand) !important;
+}
+
+.background-deep-brown {
+  background-color: var(--color-deep-brown) !important;
+}
+
+.background-burgundy {
+  background-color: var(--color-burgundy) !important;
+}
+
+.background-taupe {
+  background-color: var(--color-taupe) !important;
+}
+
+.background-clay {
+  background-color: var(--color-clay) !important;
+}
+
+.background-stone-grey {
+  background-color: var(--color-stone-grey) !important;
 }
 
 @media screen and (max-width: 749px) {
@@ -204,9 +262,9 @@
   padding-right: 6rem; /* Match home-section-split */
 }
 
-/* Add this rule to set a minimum width for button--secondary */
+/* Remove min-width for home section buttons */
 .button--secondary {
-    min-width: 250px;
+  min-width: unset;
 }
 
 .home-section-image__caption {
@@ -223,4 +281,8 @@
 
 .home-section-image__caption a:hover {
   text-decoration: underline;
+}
+
+.media img {
+  border-radius: 2px;
 }

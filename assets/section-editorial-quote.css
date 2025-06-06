@@ -1,3 +1,19 @@
+:root {
+  --color-charcoal: #2C2F38;
+  --color-slate-blue: #38496F;
+  --color-cool-grey: #7D868D;
+  --color-warm-beige: #EBE2D9;
+  --color-olive-brown: #4A463D;
+  --color-moss: #57564B;
+  --color-mustard-brown: #95794A;
+  --color-sand: #CFA55D;
+  --color-deep-brown: #2A1B12;
+  --color-burgundy: #5E1B1C;
+  --color-taupe: #B0977B;
+  --color-clay: #95634B;
+  --color-stone-grey: #8E9492;
+}
+
 .editorial-quote {
   width: 100vw;
   min-height: 95vh;
@@ -56,14 +72,54 @@
   background-color: transparent;
 }
 
-.background-color-1 {
-  background-color: #EBE2D9 !important;
+.background-charcoal {
+  background-color: var(--color-charcoal) !important;
 }
 
-.background-color-2 {
-  background-color: #B0977B !important;
+.background-slate-blue {
+  background-color: var(--color-slate-blue) !important;
 }
 
-.background-color-3 {
-  background-color: #95794A !important;
+.background-cool-grey {
+  background-color: var(--color-cool-grey) !important;
+}
+
+.background-warm-beige {
+  background-color: var(--color-warm-beige) !important;
+}
+
+.background-olive-brown {
+  background-color: var(--color-olive-brown) !important;
+}
+
+.background-moss {
+  background-color: var(--color-moss) !important;
+}
+
+.background-mustard-brown {
+  background-color: var(--color-mustard-brown) !important;
+}
+
+.background-sand {
+  background-color: var(--color-sand) !important;
+}
+
+.background-deep-brown {
+  background-color: var(--color-deep-brown) !important;
+}
+
+.background-burgundy {
+  background-color: var(--color-burgundy) !important;
+}
+
+.background-taupe {
+  background-color: var(--color-taupe) !important;
+}
+
+.background-clay {
+  background-color: var(--color-clay) !important;
+}
+
+.background-stone-grey {
+  background-color: var(--color-stone-grey) !important;
 }
