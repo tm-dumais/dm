@@ -3245,7 +3245,6 @@ display: none !important;
 /* Homepage header: white on load, black on scroll */
 .header--homepage {
   background: transparent !important;
-  border-bottom: 1px solid white !important;
 }
 .header--homepage .header__heading-link,
 .header--homepage .header__menu-item,
@@ -3253,7 +3252,6 @@ display: none !important;
 .header--homepage .header__icon {
   color: white !important;
   fill: white !important;
-  stroke: white !important;
 }
 .header--homepage .header__heading-logo img,
 .header--homepage .header__heading-logo {
@@ -3270,7 +3268,6 @@ display: none !important;
 .header--homepage.scrolled .header__icon {
   color: black !important;
   fill: black !important;
-  stroke: black !important;
 }
 .header--homepage.scrolled .header__heading-logo img,
 .header--homepage.scrolled .header__heading-logo {
@@ -3307,8 +3304,8 @@ display: none !important;
 
 /* Border bottom on homepage header wrapper */
 .header--homepage .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid white !important;
+  border-bottom: 1px solid white !important;
 }
 .header--homepage.scrolled .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid black !important;
+  border-bottom: 1px solid black !important;
 }
