@@ -2746,6 +2746,9 @@ details[open] > .header__submenu {
 }
 
 .header__menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
   padding: 0 1rem;
 }
 
