@@ -20,7 +20,7 @@
       "settings": {
         "color_scheme": "background-1",
         "logo_position": "middle-left",
-        "menu": "main-menu-n",
+        "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "always",
         "show_line_separator": true,
