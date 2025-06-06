@@ -75,6 +75,46 @@
        url('{{ "NewCaledoniaLTStd-It.woff2" | asset_url }}') format("woff2")
 }
 
+@font-face {
+  font-family: 'Termoli';
+  src: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/files/termoli-semibold-webfont.woff2?v=1749221226') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0414/3782/3127/files/termoli-semibold-webfont.woff?v=1749221226') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Termoli';
+  src: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/files/termoli-bold-webfont.woff2?v=1749221226') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0414/3782/3127/files/termoli-bold-webfont.woff?v=1749221226') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Termoli';
+  src: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/files/termoli-black-webfont.woff2?v=1749221226') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0414/3782/3127/files/termoli-black-webfont.woff?v=1749221226') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, .text-body, h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Termoli', var(--font-body-family), sans-serif;
+  font-weight: 600;
+}
+
+.home-section-split__eyebrow, .eyebrow, .section-eyebrow {
+  font-family: 'Termoli', var(--font-body-family), sans-serif;
+  font-weight: 900;
+}
+
+.button, .button--secondary, button, .newsletter-form__button {
+  font-family: 'Termoli', var(--font-body-family), sans-serif;
+  font-weight: 700;
+}
+
 /* Color custom properties */
 :root,
 .color-background-1 {

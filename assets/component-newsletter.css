@@ -24,16 +24,16 @@
   }
 }
 
-.newsletter-form__field-wrapper {
-  width: 100%;
+.newsletter-form__field-wrapper,
+.newsletter-form__field-wrapper .field {
+  display: flex;
+  align-items: center;
 }
 
 .newsletter-form__field-wrapper .field__input {
-  padding-right: 5rem;
-}
-
-.newsletter-form__field-wrapper .field {
-  z-index: 0;
+  flex: 1 1 auto;
+  width: auto;
+  margin-bottom: 0;
 }
 
 .newsletter-form__message {
@@ -52,15 +52,10 @@
 }
 
 .newsletter-form__button {
-  width: 4.4rem;
-  margin: 0;
-  right: var(--inputs-border-width);
-  top: 0;
-  height: 100%;
-  z-index: 2;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+  width: auto;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
 }
 
 .newsletter-form__button:focus-visible {
