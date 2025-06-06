@@ -2381,9 +2381,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 /* Main Header Layout */
 .header-wrapper {
+  background: none !important;
+  background-color: transparent !important;
   display: block;
   position: relative;
-  background-color: transparent;
 }
 
 .header-wrapper--border-bottom {
