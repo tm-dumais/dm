@@ -2836,12 +2836,12 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item .icon-caret {
-  width: 1em;
-  height: 0.6em;
+  width: 0.4em;
+  height: 1em;
   vertical-align: middle;
-  margin-left: 0.15em;
+  margin-left: 2em;
   position: relative;
-  top: -0.05em;
+  top: 0em;
 }
 
 .header__submenu .icon-caret {
