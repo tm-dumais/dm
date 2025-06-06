@@ -35,7 +35,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/bg.jpg",
-        "video_url": "https://player.vimeo.com/progressive_redirect/playback/1010982134/rendition/1080p/file.mp4?loc=external&signature=89d410e22c5867031b9a4403f861b31aa332cb9c0983354b94e3f7107b66ecc3"
+        "video_url": "https://player.vimeo.com/progressive_redirect/playback/1010982134/rendition/1080p/file.mp4?loc=external&signature=89d410e22c5867031b9a4403f861b31aa332cb9c0983354b94e3f7107b66ecc3",
+        "image_overlay": "shopify://shop_images/image.jpg"
       }
     },
     "home_section_split_T3BbAC": {
