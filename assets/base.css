@@ -3238,6 +3238,6 @@ display: none !important;
   font-size: 12px;
 }
 
-#MainContent {
+.home-hero {
   margin-top: -44px;
 }

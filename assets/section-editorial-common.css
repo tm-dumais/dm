@@ -19,7 +19,6 @@
 
 /* Updated caption styles */
 .caption {
-  text-transform: uppercase;
   margin-top: 0.5rem;  /* This is already 0.5rem, so we'll keep it */
   margin-bottom: 0;
   font-size: 1.4rem;
