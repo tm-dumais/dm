@@ -244,7 +244,6 @@
 
 .multicolumn-card__info .rte p strong{
   font-weight: normal;
-  font-family: pitch, monospaced;
   font-size: 1.5rem;
 }
 
@@ -288,7 +287,6 @@ section:last-child .glazes-wrapper{
 }
 
 .glazes-title{
-  font-family: pitch, monospace;
   text-transform: uppercase;
 
   margin-top:0;
@@ -333,7 +331,6 @@ section:last-child .glazes-wrapper{
 }
 
 .glazes-images .multicolumn-card__info .rte p{
-  font-family: pitch, monospace;
   color: #717173;
   font-size: 1.4rem;
   line-height: 1.8rem;

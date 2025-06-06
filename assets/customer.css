@@ -15,7 +15,6 @@
 .customer > h1,
 .customer__title {
   margin-top: 0;
-  font-family: pitch, monospace;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -47,13 +46,11 @@
 
 .customer h2.form__message {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
-  font-family: pitch, monospace;
 }
 
 @media only screen and (min-width: 750px) {
   .customer h2.form__message {
     font-size: calc(var(--font-heading-scale) * 2.2rem);
-    font-family: pitch, monospace;
   }
 }
 
@@ -451,13 +448,11 @@
 
 :is(.account, .order) h1 {
   margin-bottom: 1rem;
-  font-family: pitch, monospace;
 }
 
 :is(.account, .order) h2 {
   margin-top: 4rem;
   margin-bottom: 1rem;
-  font-family: pitch, monospace;
 
 }
 
@@ -725,14 +720,12 @@ li[data-address] > h2 {
   text-align: center;
   font-size: calc(var(--font-heading-scale) * 1.8rem);
   margin-bottom: 0;
-  font-family: pitch,monospace;
 text-transform:uppercase;
 }
 
 @media only screen and (min-width: 750px) {
   li[data-address] > h2 {
     font-size: calc(var(--font-heading-scale) * 2.2rem);
-    font-family: pitch,monospace;
 text-transform:uppercase;
 
   }
@@ -769,6 +762,5 @@ text-transform:uppercase;
 }
 
 .customer ul h2{
-  font-family: pitch,monospace;
   text-transform:uppercase;
 }

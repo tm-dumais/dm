@@ -2749,10 +2749,9 @@ details[open] > .header__submenu {
   padding: 0 1rem;
 }
 
-.header__menu-item {
-  padding: 1.2rem;
-  text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+.header__menu-item,
+.header__submenu .header__menu-item {
+  color: rgb(var(--color-foreground));
 }
 
 .header__menu-item:hover {
@@ -2834,7 +2833,12 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item .icon-caret {
-  right: 0.8rem;
+  width: 1em;
+  height: 0.6em;
+  vertical-align: middle;
+  margin-left: 0.15em;
+  position: relative;
+  top: -0.05em;
 }
 
 .header__submenu .icon-caret {
