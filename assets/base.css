@@ -3257,3 +3257,7 @@ display: none !important;
 .featured-section-wrapper{
   max-height:100% !important;
 }
+
+:root {
+  --color-foreground: 42, 27, 18;
+}
