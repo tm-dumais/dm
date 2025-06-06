@@ -106,13 +106,13 @@
     "home_section_split_yL8grq": {
       "type": "home-section-split",
       "settings": {
-        "image": "shopify://shop_images/Dumais0950.jpg",
+        "image": "shopify://shop_images/462881603_1729994941171414_2205928799788247709_n.jpg",
         "image_position": "right",
         "vertical_alignment": "top",
         "horizontal_alignment": "left",
         "eyebrow_text": "BESPOKE",
         "heading": "<p>We work closely with clients to create bespoke pieces, whether adapting an existing piece or imagining something entirely new. We view the process as a collaboration.</p>",
-        "heading_size": "medium",
+        "heading_size": "small",
         "button_label": "THE PROCESS",
         "button_link": "shopify://pages/bespoke",
         "background_color": "warm-beige",
