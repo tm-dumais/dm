@@ -154,7 +154,6 @@
   --color-button-text: var(--color-base-outline-button-labels);
   --color-button: var(--color-background);
   --alpha-button-background: 1;
-  min-width: 250px;
 }
 
 .color-background-2 .button--secondary,
@@ -523,7 +522,7 @@ h5,
 
 @media only screen and (min-width: 750px) {
   .h0 {
-    font-size: calc(var(--font-heading-scale) * 4.8rem);
+    font-size: calc(var(--font-heading-scale) * 5.2rem);
   }
 }
 
@@ -1439,7 +1438,6 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
-  text-transform: uppercase; /* Added this line */
 }
 
 .button:before,
@@ -1529,12 +1527,10 @@ button.shopify-payment-button__button--unbranded {
   padding: 1rem 1.5rem;
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
-  text-transform: uppercase; /* Added this line */
 }
 
 .button--small {
   padding: 1.2rem 2.6rem;
-  text-transform: uppercase; /* Added this line */
 }
 
 /* Button - other */
@@ -1603,8 +1599,6 @@ button.shopify-payment-button__button--unbranded {
   margin-left: 0;
   padding-left: 0;
   min-height: 4.4rem;
-  text-decoration: none; /* Add this line to remove the underline */
-  text-transform: uppercase; /* Added this line */
 }
 
 details[open] > .share-button__fallback {
@@ -1790,7 +1784,6 @@ details[open] > .share-button__fallback {
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
   border: 0;
-  text-transform: uppercase; /* Added this line */
 }
 
 .field:before,
@@ -1941,7 +1934,6 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
-  text-transform: uppercase; /* Added this line */
 }
 
 .field__input:focus ~ .field__label,
@@ -2391,7 +2383,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  background-color: transparent;
 }
 
 .header-wrapper--border-bottom {
@@ -2797,17 +2789,16 @@ details[open] > .header__submenu {
 
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
-  text-decoration: underline; /* Add underline on hover */
+}
+
+.header__menu-item span {
+  transition: text-decoration var(--duration-short) ease;
+}
+
+.header__menu-item:hover span {
+  text-decoration: underline; text-decoration-skip-ink: none;
   text-underline-offset: 0.3rem;
-  text-decoration-thickness: 0.1rem;
-}
-
-.header__icon--cart .header__menu-item {
-  text-decoration: none !important; /* Remove underline by default */
-}
-
-.header__icon--cart .header__menu-item:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration-skip-ink: none;
 }
 
 details[open] > .header__menu-item {
@@ -2846,7 +2837,7 @@ details[open] > .header__menu-item .icon-caret {
   border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
   border-style: solid;
   border-width: var(--popup-border-width);
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity)));
+  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
   z-index: -1;
 }
 
@@ -3183,7 +3174,6 @@ details-disclosure > details {
   -webkit-box-shadow: 0 0 0 0 !important;
   border-radius: 4px !important;
   border: 1px solid #B5BBC2 !important;
-  text-transform: uppercase; /* Added this line */
 }
 
 .g-container .footer{
@@ -3193,7 +3183,6 @@ details-disclosure > details {
 .globo-form-id-104568 .globo-form-app .footer button.submit, .globo-form-id-104568 .globo-form-app .footer button.checkout, .globo-form-id-104568 .globo-form-app .footer button.action.loading .spinner{
   font-family: pitch, monospace !important;
   border-radius: 4px !important;
-  text-transform: uppercase; /* Added this line */
 }
 
 .globo-form-id-104568 .globo-form-app .footer button.submit, .globo-form-id-104568 .globo-form-app .footer button.checkout, .globo-form-id-104568 .globo-form-app .footer button.action.loading .spinner{
@@ -3266,111 +3255,4 @@ display: none !important;
 
 .featured-section-wrapper{
   max-height:100% !important;
-}
-
-/* Cookie notification styling */
-.otCookiesNotification,
-.otCookiesNotification * {
-  font-family: 'Pitch', sans-serif !important;
-}
-
-@media only screen and (min-width:768px){
-.otCookiesNotification #cookies-message * {
-text-wrap: auto !important;
-text-align: left !important;
-}
-}
-
-.otCookiesNotification #cookies-message-context {
-  align-items: start !important;
-}
-
-/* Add or update these styles to ensure the cart does not overflow */
-.cart-container {
-    display: inline-block;
-    padding: 0 10px;
-    white-space: nowrap;
-    overflow: visible;
-    box-sizing: border-box;
-    min-width: 80px; /* Adjust this value as needed */
-}
-
-.header__icon--cart {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: auto;
-    padding-right: 10px;
-    text-decoration: none;
-}
-
-.header__icon--cart:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
-    text-decoration-thickness: 0.1rem;
-}
-
-/* Footer menu links uppercase styling */
-.footer-block_details-content .list-menu_item--link,
-.footer-block_details-content .link--text,
-.footer .list-menu__item,
-.footer-block_details-content a {
-    text-transform: uppercase !important;
-}
-
-/* Remove outline from collection sorting dropdown only */
-.facet-filters__sort.select__select:focus,
-.facet-filters__sort.select__select:active,
-.facet-filters__sort.select__select:focus-visible {
-    outline: none !important;
-    box-shadow: none !important;
-    border-color: transparent !important;
-}
-
-.facet-filters__field .select:focus-within,
-.facet-filters__field .select:after {
-    box-shadow: none !important;
-    outline: none !important;
-    border-color: transparent !important;
-}
-
-/* Copyright text in footer uppercase */
-.copyright__content a {
-    text-transform: uppercase !important;
-}
-
-.copyright__content {
-    text-transform: uppercase !important;
-}
-
-#app-embed{
-
-  h2{
-    font-family: new-caledonia, serif !important;
-    font-style: italic !important;
-    font-weight: normal !important;
-  }
-
-
-}
-
-/* Button hover styles */
-.button,
-button {
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-.button:hover,
-button:hover {
-  background-color: #000000 !important; /* Black background */
-  color: #ffffff !important; /* White text */
-  border-color: #000000 !important; /* Match border to background */
-}
-
-/* If you have secondary/outline buttons, you might want this too */
-.button--secondary:hover,
-.button--outline:hover {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border-color: #000000 !important;
 }
