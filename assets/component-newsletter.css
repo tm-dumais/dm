@@ -58,6 +58,9 @@
   top: 0;
   height: 100%;
   z-index: 2;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 .newsletter-form__button:focus-visible {
@@ -77,4 +80,10 @@
 
 .newsletter-form__button .icon {
   width: 1.5rem;
+}
+
+.newsletter-form__field-wrapper .field__input::placeholder {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
