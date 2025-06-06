@@ -36,7 +36,7 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% unless section.settings.background_color == 'none' %} background-{{ section.settings.background_color }}{% endunless %}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social or section.settings.enable_follow_on_shop -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -472,38 +472,38 @@
       "type": "select",
       "id": "color_scheme",
       "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "background-3",
-          "label": "Background 3"
-        },
-
-        {
-          "value": "background-4",
-          "label": "Background 4"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
+        { "value": "accent-1", "label": "t:sections.all.colors.accent_1.label" },
+        { "value": "accent-2", "label": "t:sections.all.colors.accent_2.label" },
+        { "value": "background-1", "label": "t:sections.all.colors.background_1.label" },
+        { "value": "background-2", "label": "t:sections.all.colors.background_2.label" },
+        { "value": "background-3", "label": "Background 3" },
+        { "value": "background-4", "label": "Background 4" },
+        { "value": "inverse", "label": "t:sections.all.colors.inverse.label" }
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        { "value": "none", "label": "No background" },
+        { "value": "charcoal", "label": "Charcoal (#2C2F38)" },
+        { "value": "slate-blue", "label": "Slate Blue (#38496F)" },
+        { "value": "cool-grey", "label": "Cool Grey (#7D868D)" },
+        { "value": "warm-beige", "label": "Warm Beige (#EBE2D9)" },
+        { "value": "olive-brown", "label": "Olive Brown (#4A463D)" },
+        { "value": "moss", "label": "Moss (#57564B)" },
+        { "value": "mustard-brown", "label": "Mustard Brown (#95794A)" },
+        { "value": "sand", "label": "Sand (#CFA55D)" },
+        { "value": "deep-brown", "label": "Deep Brown (#2A1B12)" },
+        { "value": "burgundy", "label": "Burgundy (#5E1B1C)" },
+        { "value": "taupe", "label": "Taupe (#B0977B)" },
+        { "value": "clay", "label": "Clay (#95634B)" },
+        { "value": "stone-grey", "label": "Stone Grey (#8E9492)" }
+      ],
+      "default": "none",
+      "label": "Background color"
     },
     {
       "type": "header",
