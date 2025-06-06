@@ -3276,3 +3276,39 @@ display: none !important;
 .header--homepage.scrolled .header__heading-logo {
   filter: none;
 }
+
+/* Homepage header: white on load, black on scroll */
+.header--homepage .icon-caret {
+  fill: white !important;
+}
+.header--homepage.scrolled .icon-caret {
+  fill: black !important;
+}
+
+.header--homepage .header__heading-link,
+.header--homepage .header__menu-item,
+.header--homepage .header__icon {
+  color: white !important;
+}
+.header--homepage.scrolled .header__heading-link,
+.header--homepage.scrolled .header__menu-item,
+.header--homepage.scrolled .header__icon {
+  color: black !important;
+}
+
+.header--homepage .header__heading-logo img,
+.header--homepage .header__heading-logo {
+  filter: brightness(0) invert(1);
+}
+.header--homepage.scrolled .header__heading-logo img,
+.header--homepage.scrolled .header__heading-logo {
+  filter: none;
+}
+
+/* Border bottom on homepage header wrapper */
+.header--homepage .header-wrapper--border-bottom {
+  border-bottom: 0.1rem solid white !important;
+}
+.header--homepage.scrolled .header-wrapper--border-bottom {
+  border-bottom: 0.1rem solid black !important;
+}
