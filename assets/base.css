@@ -3261,3 +3261,14 @@ display: none !important;
 :root {
   --color-foreground: 42, 27, 18;
 }
+
+.button:after,
+.button--secondary:after {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.button,
+.button--secondary {
+  font-size: 12px;
+}

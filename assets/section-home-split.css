@@ -79,7 +79,7 @@
 .home-section-split__eyebrow {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  font-size: 1.4rem;
+  font-size: 12px;
   font-weight: 500;
   line-height: calc(1 + 0.3 / var(--font-body-scale));
   letter-spacing: 0.1rem;
@@ -201,8 +201,9 @@
 }
 
 /* Add this style for the button */
-.home-section-split .button {
-  background-color: transparent;
+.home-section-split .button,
+.home-section-split .button--secondary {
+  font-size: 12px;
 }
 
 .home-section-split {
