@@ -14,6 +14,9 @@
         widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000'
       }}
     {%- endif -%}
+    {%- if section.settings.image_overlay != blank -%}
+      <img src="{{ section.settings.image_overlay | image_url: width: 3000 }}" class="home-hero__overlay" alt="Overlay" loading="lazy" />
+    {%- endif -%}
   </div>
 
   <div class="home-hero__content-container">
@@ -52,6 +55,11 @@
       "id": "video_url",
       "label": "Background Video URL",
       "info": "Provide a direct link to an MP4 video file"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_overlay",
+      "label": "Image Overlay"
     }
   ],
   "blocks": [
