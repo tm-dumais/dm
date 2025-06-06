@@ -11,7 +11,7 @@
 }
 
 .lb-grid p{
-  font-style: italic;
+  font-style: normal;
 }
 
 @media screen and (max-width: 749px) {

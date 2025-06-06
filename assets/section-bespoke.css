@@ -47,7 +47,6 @@
 .custom-headline-container .title {
     display: inline-block;
     padding-right: 2rem !important; /* Adjust as needed */
-    font-style: italic !important; /* Set the headline in italic */
     padding-top: 0 !important; /* Remove padding top */
     padding-bottom: 0 !important; /* Remove padding bottom */
     margin-top: 0 !important; /* Remove margin top */
@@ -217,7 +216,6 @@
 
 .stof-headline .title {
     margin: 0 !important; /* Remove all margins */
-    font-style: italic; /* Set the headline in italic */
 }
 
 .stof-headline::after {

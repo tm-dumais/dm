@@ -38,7 +38,7 @@
 
 .home-hero__heading {
   margin-bottom: 0.25rem; /* Further reduced from 0.5rem */
-  font-style: italic;
+  font-style: normal;
 }
 
 .home-hero__heading p {

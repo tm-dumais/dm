@@ -5,7 +5,7 @@
 .rich-text em strong{
   font-family: var(--font-body-family);
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 
 .rich-text strong{
