@@ -82,7 +82,7 @@
         "horizontal_alignment": "center",
         "eyebrow_text": "THE STUDIO",
         "heading": "<p>Dumais Made is a ceramic lighting and furniture studio based in Litchfield, Connecticut.</p>",
-        "heading_size": "h2",
+        "heading_size": "small",
         "button_label": "About Us",
         "button_link": "shopify://pages/about",
         "background_color": "color-3",
