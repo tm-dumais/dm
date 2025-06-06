@@ -207,6 +207,7 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
+  min-height: 0;
 }
 
 .home-section-split {
