@@ -833,7 +833,8 @@ summary .icon-caret {
   position: absolute;
   height: 0.6rem;
   right: 1.5rem;
-  top: calc(50% - 0.2rem);
+  width: 6px;
+  top: calc(50% - .3rem);
 }
 
 summary::-webkit-details-marker {
@@ -2834,7 +2835,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item .icon-caret {
-  right: 0.8rem;
+  right: 1.8rem;
 }
 
 .header__submenu .icon-caret {
