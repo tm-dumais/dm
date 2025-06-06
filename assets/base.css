@@ -2562,7 +2562,7 @@ menu-drawer + .header__search {
 .header__search {
   display: inline-flex;
   line-height: 0;
-  display: none;
+  display: none !important;
 }
 
 .header--top-center > .header__search {
