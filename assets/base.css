@@ -3241,3 +3241,38 @@ display: none !important;
 .home-hero {
   margin-top: -44px;
 }
+
+/* Homepage header: white on load, black on scroll */
+.header--homepage {
+  background: transparent !important;
+  border-bottom: 1px solid white !important;
+}
+.header--homepage .header__heading-link,
+.header--homepage .header__menu-item,
+.header--homepage .icon-caret,
+.header--homepage .header__icon {
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
+}
+.header--homepage .header__heading-logo img,
+.header--homepage .header__heading-logo {
+  filter: brightness(0) invert(1);
+}
+
+.header--homepage.scrolled {
+  background: white !important;
+  border-bottom: 1px solid black !important;
+}
+.header--homepage.scrolled .header__heading-link,
+.header--homepage.scrolled .header__menu-item,
+.header--homepage.scrolled .icon-caret,
+.header--homepage.scrolled .header__icon {
+  color: black !important;
+  fill: black !important;
+  stroke: black !important;
+}
+.header--homepage.scrolled .header__heading-logo img,
+.header--homepage.scrolled .header__heading-logo {
+  filter: none;
+}
