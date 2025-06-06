@@ -73,16 +73,16 @@
   font-style: italic;
 }
 
-.home-section-split__heading.h0 {
-  font-size: calc(var(--font-heading-scale) * 4rem);
+.home-section-split__heading.big {
+  font-size: 32px;
 }
 
-.home-section-split__heading.h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+.home-section-split__heading.medium {
+  font-size: 24px;
 }
 
-.home-section-split__heading.h2 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+.home-section-split__heading.small {
+  font-size: 20px;
 }
 
 .background-none {
