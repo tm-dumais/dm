@@ -2746,10 +2746,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  padding: 0 1rem;
+  /* Revert to previous: remove display: flex, gap, and padding if added */
 }
 
 .header__menu-item,
@@ -2769,6 +2766,21 @@ details[open] > .header__submenu {
   text-decoration: underline; text-decoration-skip-ink: none;
   text-underline-offset: 0.3rem;
   text-decoration-skip-ink: none;
+}
+
+/* Remove always-on underline for open details */
+/* details[open] > .header__menu-item {
+  text-decoration: underline; text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+} */
+
+.header__menu-item .icon-caret {
+  width: 1em;
+  height: 0.6em;
+  vertical-align: middle;
+  margin-left: 0.15em;
+  position: relative;
+  top: -0.05em;
 }
 
 details[open] > .header__menu-item {
