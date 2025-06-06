@@ -291,3 +291,9 @@
 .media img {
   border-radius: 2px;
 }
+
+/* Remove left padding if text is left and image is right */
+.home-section-split__media-item--right + .home-section-split__text-item--horizontal-left .home-section-split__content,
+.home-section-split__text-item--horizontal-left .home-section-split__content {
+  padding-left: 0;
+}
