@@ -306,17 +306,12 @@
 
 .page-intro-section__heading {
   margin-bottom: 0;
-
-  font-family: pitch, monospaced;
   text-transform: uppercase;
 }
 
 .page-intro-section__text p {
   margin-top: 0;
   margin-bottom: 1rem;
-
-  font-family: new-caledonia, serif;
-  /* font-style: italic; */
   font-size: 1.8rem;
   line-height: 2rem;
   /* font-size: 1em; */

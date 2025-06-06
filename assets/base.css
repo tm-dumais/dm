@@ -1,80 +1,3 @@
-/* FONTS */
-
-/* fix for live version */
-
-/* @font-face {
-  font-family: "pitch";
-  font-weight: normal;
-  font-style: normal;
-  src: url('{{ "pitch-web-regular.eot" | asset_url }}');
-  src: url('{{ "pitch-web-regular.eot" | asset_url }} ?#iefix') format("embedded-opentype"),
-       url('{{ "pitch-web-regular.woff" | asset_url }}') format("woff"),
-       url('{{ "pitch-web-regular.woff2" | asset_url }}') format("woff2")
-}
-
-@font-face {
-  font-family: "pitch";
-  font-weight: normal;
-  font-style: italic;
-  src: url('{{ "pitch-web-regular-italic.eot" | asset_url }}');
-  src: url('{{ "pitch-web-regular-italic.eot" | asset_url }} ?#iefix') format("embedded-opentype"),
-       url('{{ "pitch-web-regular-italic.woff" | asset_url }}') format("woff"),
-       url('{{ "pitch-web-regular-italic.woff2" | asset_url }}') format("woff2")
-}
-
-@font-face {
-  font-family: "new-caledonia";
-  font-weight: normal;
-  font-style: normal;
-  src: url('{{ "NewCaledoniaLTStd.woff" | asset_url }}') format("woff"),
-       url('{{ "NewCaledoniaLTStd.woff2" | asset_url }}') format("woff2")
-}
-
-@font-face {
-  font-family: "new-caledonia";
-  font-weight: normal;
-  font-style: italic;
-  src: url('{{ "NewCaledoniaLTStd-It.woff" | asset_url }}') format("woff"),
-       url('{{ "NewCaledoniaLTStd-It.woff2" | asset_url }}') format("woff2")
-} */
-
-
-@font-face {
-  font-family: "pitch";
-  font-weight: normal;
-  font-style: normal;
-  src: url('{{ "pitch-web-regular.eot" | asset_url }}');
-  src: url('{{ "pitch-web-regular.eot" | asset_url }} ?#iefix') format("embedded-opentype"),
-       url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/pitch-web-regular.woff?v=42110376663454127231593030622') format("woff"),
-       url('{{ "pitch-web-regular.woff2" | asset_url }}') format("woff2")
-}
-
-@font-face {
-  font-family: "pitch";
-  font-weight: normal;
-  font-style: normal;
-  src: url('{{ "pitch-web-regular.eot" | asset_url }}');
-  src: url('{{ "pitch-web-regular.eot" | asset_url }} ?#iefix') format("embedded-opentype"),
-       url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/pitch-web-regular.woff?v=42110376663454127231593030622') format("woff"),
-       url('{{ "pitch-web-regular.woff2" | asset_url }}') format("woff2")
-}
-
-@font-face {
-  font-family: "new-caledonia";
-  font-weight: normal;
-  font-style: normal;
-  src: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/NewCaledoniaLTStd.woff?v=145673531379719850901593030506') format("woff"),
-       url('{{ "NewCaledoniaLTStd.woff2" | asset_url }}') format("woff2")
-}
-
-@font-face {
-  font-family: "new-caledonia";
-  font-weight: normal;
-  font-style: normal;
-  src: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/t/1/assets/NewCaledoniaLTStd.woff?v=145673531379719850901593030506') format("woff"),
-       url('{{ "NewCaledoniaLTStd.woff2" | asset_url }}') format("woff2")
-}
-
 @font-face {
   font-family: 'Termoli';
   src: url('https://cdn.shopify.com/s/files/1/0414/3782/3127/files/termoli-semibold-webfont.woff2?v=1749221226') format('woff2'),
@@ -634,7 +557,6 @@ h6,
 }
 
 blockquote {
-  font-style: italic;
   color: rgba(var(--color-foreground), 0.75);
   border-left: 0.2rem solid rgba(var(--color-foreground), 0.2);
   padding-left: 1rem;
@@ -662,7 +584,6 @@ blockquote {
   font-size: 1rem;
   letter-spacing: 0.13rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
-  text-transform: uppercase;
 }
 
 .caption-with-letter-spacing--medium {
@@ -3186,7 +3107,6 @@ details-disclosure > details {
 }
 
 .shopify-policy__title h1{
-  font-family: pitch, monospace;
   text-transform: uppercase;
   font-size: 2rem;
 }
@@ -3227,7 +3147,6 @@ details-disclosure > details {
 }
 
 .globo-form-id-104568 .globo-form-app .footer button.submit, .globo-form-id-104568 .globo-form-app .footer button.checkout, .globo-form-id-104568 .globo-form-app .footer button.action.loading .spinner{
-  font-family: pitch, monospace !important;
   border-radius: 4px !important;
 }
 
@@ -3291,7 +3210,6 @@ display: none !important;
 .featured-section-caption{
   text-decoration:none;
   color:black;
-  font-style: italic;
 }
 
 .featured-section-caption p{

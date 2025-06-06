@@ -92,7 +92,6 @@
   padding: 0 2rem;
   font-family: new-caledonia, serif;
   font-weight: 400 !important;
-  font-style: italic !important;
   font-size: 1.6rem;
   line-height: calc(1 + 0.35 / var(--font-body-scale));
 }
@@ -110,7 +109,6 @@
 
 .collection-hero__description h3,
 .collection-hero__description h3 em {
-  font-style: italic !important;
   font-size: 2rem !important;
   line-height: 1.2 !important;
   font-family: var(--font-heading-family);
