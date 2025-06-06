@@ -112,7 +112,7 @@
         "horizontal_alignment": "left",
         "eyebrow_text": "BESPOKE",
         "heading": "<p>We work closely with clients to create bespoke pieces, whether adapting an existing piece or imagining something entirely new. We view the process as a collaboration.</p>",
-        "heading_size": "small",
+        "heading_size": "medium",
         "button_label": "THE PROCESS",
         "button_link": "shopify://pages/bespoke",
         "background_color": "color-1",
