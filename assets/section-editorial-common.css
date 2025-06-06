@@ -19,7 +19,6 @@
 
 /* Updated caption styles */
 .caption {
-  font-family: 'Pitch', sans-serif;
   text-transform: uppercase;
   margin-top: 0.5rem;  /* This is already 0.5rem, so we'll keep it */
   margin-bottom: 0;
