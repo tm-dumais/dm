@@ -100,18 +100,23 @@
   font-display: swap;
 }
 
+:root {
+  --font-body-family: 'Termoli', sans-serif;
+  --font-heading-family: 'Termoli', sans-serif;
+}
+
 body, .text-body, h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
-  font-family: 'Termoli', var(--font-body-family), sans-serif;
+  font-family: var(--font-body-family);
   font-weight: 600;
 }
 
 .home-section-split__eyebrow, .eyebrow, .section-eyebrow {
-  font-family: 'Termoli', var(--font-body-family), sans-serif;
+  font-family: var(--font-body-family);
   font-weight: 900;
 }
 
 .button, .button--secondary, button, .newsletter-form__button {
-  font-family: 'Termoli', var(--font-body-family), sans-serif;
+  font-family: var(--font-body-family);
   font-weight: 700;
 }
 
@@ -857,8 +862,8 @@ details > * {
 }
 
 :root {
-  --font-body-family: pitch;
-  --font-heading-family: new-caledonia;
+  --font-body-family: 'Termoli', sans-serif;
+  --font-heading-family: 'Termoli', sans-serif;
 }
 
 .underlined-link,
