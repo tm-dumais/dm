@@ -76,7 +76,7 @@
     "home_section_split_6nUKbq": {
       "type": "home-section-split",
       "settings": {
-        "image": "shopify://shop_images/Dumais_Camp_Kent_37.jpg",
+        "image": "shopify://shop_images/homepage-1.jpg",
         "image_position": "left",
         "vertical_alignment": "center",
         "horizontal_alignment": "center",
@@ -107,11 +107,11 @@
       "settings": {
         "image": "shopify://shop_images/Dumais_ICF_2023_422.jpg",
         "image_position": "right",
-        "vertical_alignment": "center",
-        "horizontal_alignment": "center",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
         "eyebrow_text": "BESPOKE",
         "heading": "<p>We work closely with clients to create bespoke pieces, whether adapting an existing piece or imagining something entirely new. We view the process as a collaboration.</p>",
-        "heading_size": "h1",
+        "heading_size": "small",
         "button_label": "THE PROCESS",
         "button_link": "shopify://pages/bespoke",
         "background_color": "color-1",
