@@ -9,6 +9,8 @@
 
 {% assign tag = page.metafields.custom.made_to_order_tag %}
 
+<!-- DEBUG: Tag value: '{{ tag }}' -->
+
 {% if tag == blank %}
   <div class="collection-hero">
     <div class="collection-hero__inner page-width">
@@ -18,6 +20,14 @@
   </div>
 {% else %}
   {% assign all_products = collections['all'].products | where: "tags", tag %}
+  <!-- DEBUG: Found {{ all_products.size }} products with tag '{{ tag }}' -->
+  <ul style="background: #fffbe6; color: #222; padding: 1rem; font-size: 1.2rem;">
+    <li><b>DEBUG:</b> Tag: '{{ tag }}'</li>
+    <li>Products found: {{ all_products.size }}</li>
+    {% for product in all_products %}
+      <li>Product: {{ product.title }} (handle: {{ product.handle }})</li>
+    {% endfor %}
+  </ul>
   {% assign collections_with_tagged_products = '' %}
   {% for product in all_products %}
     {% for c in product.collections %}
