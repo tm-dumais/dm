@@ -70,10 +70,6 @@ html {
 }
 
 @media screen and (min-width: 990px) {
-  .product__media-wrapper {
-    overflow-y: auto;
-    max-height: 100vh;
-  }
   .product__info-wrapper {
     position: sticky;
     top: 0;
