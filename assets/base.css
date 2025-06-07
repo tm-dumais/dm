@@ -3341,3 +3341,8 @@ display: none !important;
 #MainContent{
   margin-top:-45px;
 }
+
+/* Remove margin between stacked sections on collection pages */
+.template-collection .section + .section {
+  margin-top: 0 !important;
+}
