@@ -1679,10 +1679,7 @@ a.product__text {
   color: white;
 }
 
-/* Add price styling to match caption size */
-.price-item {
-  font-size: 1.35rem;  /* Match caption size */
-}
+
 
 /* Add styling for the glaze label */
 .product-form__input--dropdown .form__label {
