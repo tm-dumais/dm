@@ -280,3 +280,7 @@
     padding-bottom: 0 !important; /* Changed from 2rem to 0 */
   }
 }
+
+.collection-hero {
+  padding-top: 8rem !important;
+}
