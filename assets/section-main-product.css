@@ -386,7 +386,7 @@ fieldset.product-form__input .form__label {
 .product__info-container .product-form,
 .product__info-container .product__description,
 .product__info-container .icon-with-text {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 
@@ -403,6 +403,7 @@ fieldset.product-form__input .form__label {
   line-height: 2.4rem;
   text-transform: none !important;
   font-style: normal;
+  margin-top: 0.5rem;
 }
 
 .product__description .certification-image {
@@ -472,7 +473,7 @@ a.product__text {
   font-family: 'Termoli', sans-serif;
   font-weight: 900;
   word-break: break-word;
-  margin-bottom: .5rem;
+  margin-bottom: 0rem;
 }
 
 .product__title h2 {
