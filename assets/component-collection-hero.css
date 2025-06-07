@@ -134,7 +134,7 @@
 @media screen and (min-width: 990px) {
   .collection-hero__title + .collection-hero__description {
     font-size: 1.8rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem !important;
     margin-bottom: 2rem;
   }
 
@@ -169,6 +169,8 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .collection-hero__image-container img {
@@ -283,4 +285,10 @@
 
 .collection-hero {
   padding-top: 8rem !important;
+}
+
+@media screen and (min-width: 990px) {
+  .collection-hero__inner {
+    gap: 0 !important;
+  }
 }

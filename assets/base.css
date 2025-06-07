@@ -3346,3 +3346,7 @@ display: none !important;
 .template-collection .section + .section {
   margin-top: 0 !important;
 }
+
+.product-grid-container {
+  padding-top: 3rem !important;
+}
