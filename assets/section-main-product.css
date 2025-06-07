@@ -27,7 +27,13 @@ html {
 
 .product.grid {
   gap: 0;
-  padding-top: 5rem; /* might need to be just for desktop*/
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+  .product.grid {
+    padding-top: 5rem;
+  }
 }
 
 .product--no-media {
