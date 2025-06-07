@@ -69,7 +69,12 @@
       {% assign group = collections[group_handle] %}
       {% assign group_products = '' %}
       {% for product in products %}
-        {% if product.collections contains group %}
+        {% assign product_collection_handles = '' %}
+        {% for c in product.collections %}
+          {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+        {% endfor %}
+        {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+        {% if product_collection_handles contains group_handle %}
           {% assign group_products = group_products | append: product.id | append: ',' %}
         {% endif %}
       {% endfor %}
@@ -88,7 +93,12 @@
           <div class="collection__products page-width">
             <ul class="grid product-grid contains-card contains-card--product">
               {% for product in products %}
-                {% if product.collections contains group %}
+                {% assign product_collection_handles = '' %}
+                {% for c in product.collections %}
+                  {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+                {% endfor %}
+                {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+                {% if product_collection_handles contains group_handle %}
                   <li class="grid__item">
                     {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
                   </li>
