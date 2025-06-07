@@ -463,6 +463,13 @@ a.product__text {
   margin-bottom: .5rem;
 }
 
+.product__title h2 {
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Termoli', sans-serif;
+  font-weight: 900;
+}
 
 .product__title > * {
   margin: 0;
@@ -1691,8 +1698,7 @@ a.product__text {
 .shopify-payment-button__button,
 .product-form__input input,
 .product-form__input select,
-.product-form__input textarea,
-.product-form__quantity .quantity__button {
+.product-form__input textarea {
   background: transparent;
   border: 1px solid #2A1B12;
   border-radius: 4px;
@@ -1704,8 +1710,7 @@ a.product__text {
 
 .button:hover,
 .product-form__submit:hover,
-.shopify-payment-button__button:hover,
-.product-form__quantity .quantity__button:hover {
+.shopify-payment-button__button:hover {
   background: #2A1B12;
   color: #fff;
   border-color: #2A1B12;
