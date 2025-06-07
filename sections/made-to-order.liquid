@@ -34,23 +34,58 @@
     </div>
   </div>
 {% else %}
-  <div class="collection section-pseudo">
+  {% assign products = made_to_order_collection.products %}
+  {% assign grouped_collections = '' %}
+  {% for product in products %}
+    {% for c in product.collections %}
+      {% unless grouped_collections contains c.handle %}
+        {% assign grouped_collections = grouped_collections | append: c.handle | append: ',' %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% assign grouped_collections = grouped_collections | split: ',' | uniq %}
+
+  {% assign found_any = false %}
+  {% for group_handle in grouped_collections %}
+    {% assign group = collections[group_handle] %}
+    {% assign group_products = '' %}
+    {% for product in products %}
+      {% if product.collections contains group %}
+        {% assign group_products = group_products | append: product.id | append: ',' %}
+      {% endif %}
+    {% endfor %}
+    {% assign group_products = group_products | split: ',' | uniq %}
+    {% if group != nil and group_products.size > 1 %} {# size > 1 because of trailing comma #}
+      {% assign found_any = true %}
+      <div class="collection section-pseudo">
+        <div class="collection-hero">
+          <div class="collection-hero__inner page-width">
+            <h3 class="collection-hero__title">{{ group.title }}</h3>
+            {% if group.description != blank %}
+              <div class="collection-hero__description rte">{{ group.description }}</div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="collection__products page-width">
+          <ul class="grid product-grid contains-card contains-card--product">
+            {% for product in products %}
+              {% if product.collections contains group %}
+                <li class="grid__item">
+                  {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  {% unless found_any %}
     <div class="collection-hero">
       <div class="collection-hero__inner page-width">
-        <h3 class="collection-hero__title">{{ made_to_order_collection.title }}</h3>
-        {% if made_to_order_collection.description != blank %}
-          <div class="collection-hero__description rte">{{ made_to_order_collection.description }}</div>
-        {% endif %}
+        <h3 class="collection-hero__title">No products found</h3>
+        <div class="collection-hero__description rte">No products found in the selected collection.</div>
       </div>
     </div>
-    <div class="collection__products page-width">
-      <ul class="grid product-grid contains-card contains-card--product">
-        {% for product in made_to_order_collection.products %}
-          <li class="grid__item">
-            {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+  {% endunless %}
 {% endif %} 
