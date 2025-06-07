@@ -52,7 +52,7 @@
     </div>
   </div>
 {% else %}
-  {% assign products = made_to_order_collection.products %}
+  {% assign products = collections[page.metafields.custom.made_to_order_collection].products %}
   {% assign grouped_collections = '' %}
   {% for product in products %}
     {% for c in product.collections %}
@@ -67,17 +67,11 @@
   {% for group_handle in grouped_collections %}
     {% if group_handle != collection_handle and group_handle != '' %}
       {% assign group = collections[group_handle] %}
-      <div style="background: #fff3cd; color: #222; padding: 1rem; font-size: 1.1rem; border: 1px solid #856404; margin-bottom: 1rem;">
-        <b>GROUP DEBUG:</b> Group handle: '{{ group_handle }}', Group title: '{{ group.title }}'
-      </div>
       {% assign group_has_products = false %}
       <div class="collection section-pseudo">
         <div class="collection-hero">
           <div class="collection-hero__inner page-width">
             <h3 class="collection-hero__title">{{ group.title }}</h3>
-            {% if group.description != blank %}
-              <div class="collection-hero__description rte">{{ group.description }}</div>
-            {% endif %}
           </div>
         </div>
         <div class="collection__products page-width">
