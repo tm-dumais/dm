@@ -1659,8 +1659,7 @@ a.product__text {
   text-transform: uppercase;
 }
 
-/* Enforce 4:5 aspect ratio for product images */
-.product__media.media {
+/* .product__media.media {
   aspect-ratio: 4 / 5;
   width: 100%;
   height: auto;
@@ -1673,4 +1672,4 @@ a.product__text {
   object-fit: cover;
   object-position: center;
   display: block;
-}
+} */
