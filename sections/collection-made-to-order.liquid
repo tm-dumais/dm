@@ -1,0 +1,68 @@
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{% assign products = collection.products %}
+{% assign grouped_collections = '' %}
+{% assign found_any = false %}
+{% for product in products %}
+  {% for c in product.collections %}
+    {% unless grouped_collections contains c.handle %}
+      {% assign grouped_collections = grouped_collections | append: c.handle | append: ',' %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign grouped_collections = grouped_collections | split: ',' | uniq %}
+
+{% assign collection_handle = collection.handle %}
+{% for group_handle in grouped_collections %}
+  {% if group_handle != collection_handle and group_handle != '' %}
+    {% assign group = collections[group_handle] %}
+    {% assign group_has_products = false %}
+    <div class="collection page-width">
+      <div class="loading-overlay gradient"></div>
+      <h3 class="collection-hero__title" style="text-align:center; margin-bottom:2.5rem;">{{ group.title }}</h3>
+      <ul id="product-grid" class="grid product-grid grid--1-col-tablet-down grid--3-col-desktop">
+        {% assign idx = 0 %}
+        {% for product in products %}
+          {% assign product_collection_handles = '' %}
+          {% for c in product.collections %}
+            {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+          {% endfor %}
+          {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+          {% if product_collection_handles contains group_handle %}
+            {% assign group_has_products = true %}
+            {% assign found_any = true %}
+            {% assign idx = idx | plus: 1 %}
+            {% assign lazy_load = false %}
+            {% if idx > 2 %}
+              {% assign lazy_load = true %}
+            {% endif %}
+            <li class="grid__item">
+              {% render 'card-product',
+                card_product: product,
+                media_aspect_ratio: 'portrait',
+                show_secondary_image: false,
+                show_vendor: false,
+                show_rating: false,
+                lazy_load: lazy_load,
+                show_quick_add: false,
+                section_id: group_handle
+              %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% unless found_any %}
+  <div class="collection-hero">
+    <div class="collection-hero__inner page-width">
+      <h3 class="collection-hero__title">No collection found</h3>
+      <div class="collection-hero__description rte">No products found in this collection.</div>
+    </div>
+  </div>
+{% endunless %} 
