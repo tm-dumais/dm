@@ -67,50 +67,41 @@
   {% for group_handle in grouped_collections %}
     {% if group_handle != collection_handle and group_handle != '' %}
       {% assign group = collections[group_handle] %}
-      {% assign group_products = '' %}
-      {% for product in products %}
-        {% assign product_collection_handles = '' %}
-        {% for c in product.collections %}
-          {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
-        {% endfor %}
-        {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
-        {% if product_collection_handles contains group_handle %}
-          {% assign group_products = group_products | append: product.id | append: ',' %}
-        {% endif %}
-      {% endfor %}
-      {% assign group_products = group_products | split: ',' | reject: '' | uniq %}
       <div style="background: #fff3cd; color: #222; padding: 1rem; font-size: 1.1rem; border: 1px solid #856404; margin-bottom: 1rem;">
-        <b>GROUP DEBUG:</b> Group handle: '{{ group_handle }}', Group title: '{{ group.title }}', Products in group: {{ group_products.size }}
+        <b>GROUP DEBUG:</b> Group handle: '{{ group_handle }}', Group title: '{{ group.title }}'
       </div>
-      {% if group != nil and group_products.size > 0 %}
-        {% assign found_any = true %}
-        <div class="collection section-pseudo">
-          <div class="collection-hero">
-            <div class="collection-hero__inner page-width">
-              <h3 class="collection-hero__title">{{ group.title }}</h3>
-              {% if group.description != blank %}
-                <div class="collection-hero__description rte">{{ group.description }}</div>
-              {% endif %}
-            </div>
-          </div>
-          <div class="collection__products page-width">
-            <ul class="grid product-grid contains-card contains-card--product">
-              {% for product in products %}
-                {% assign product_collection_handles = '' %}
-                {% for c in product.collections %}
-                  {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
-                {% endfor %}
-                {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
-                {% if product_collection_handles contains group_handle %}
-                  <li class="grid__item">
-                    {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
+      {% assign group_has_products = false %}
+      <div class="collection section-pseudo">
+        <div class="collection-hero">
+          <div class="collection-hero__inner page-width">
+            <h3 class="collection-hero__title">{{ group.title }}</h3>
+            {% if group.description != blank %}
+              <div class="collection-hero__description rte">{{ group.description }}</div>
+            {% endif %}
           </div>
         </div>
-      {% endif %}
+        <div class="collection__products page-width">
+          <ul class="grid product-grid contains-card contains-card--product">
+            {% for product in products %}
+              {% assign product_collection_handles = '' %}
+              {% for c in product.collections %}
+                {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+              {% endfor %}
+              {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+              {% if product_collection_handles contains group_handle %}
+                {% assign found_any = true %}
+                {% assign group_has_products = true %}
+                <li class="grid__item">
+                  {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% unless group_has_products %}
+        <div style="background: #f8d7da; color: #721c24; padding: 0.5rem; font-size: 1rem; border: 1px solid #f5c6cb; margin-bottom: 1rem;">No products in this group.</div>
+      {% endunless %}
     {% endif %}
   {% endfor %}
   {% unless found_any %}
