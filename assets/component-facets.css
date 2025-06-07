@@ -1113,3 +1113,8 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+.template-collection .facets-wrapper,
+.template-product .facets-wrapper {
+  display: none !important;
+}
