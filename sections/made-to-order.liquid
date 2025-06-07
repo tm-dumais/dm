@@ -12,6 +12,7 @@
 
 {% assign products = collections[page.metafields.custom.made_to_order_collection].products %}
 {% assign grouped_collections = '' %}
+{% assign found_any = false %}
 {% for product in products %}
   {% for c in product.collections %}
     {% unless grouped_collections contains c.handle %}
@@ -39,6 +40,7 @@
           {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
           {% if product_collection_handles contains group_handle %}
             {% assign group_has_products = true %}
+            {% assign found_any = true %}
             {% assign idx = idx | plus: 1 %}
             {% assign lazy_load = false %}
             {% if idx > 2 %}
@@ -63,66 +65,11 @@
   {% endif %}
 {% endfor %}
 
-{% if made_to_order_collection == nil or made_to_order_collection.products_count == 0 %}
+{% unless found_any %}
   <div class="collection-hero">
     <div class="collection-hero__inner page-width">
       <h3 class="collection-hero__title">No collection found</h3>
       <div class="collection-hero__description rte">Please set the 'Made to Order Collection' metafield for this page to a valid collection handle.</div>
     </div>
   </div>
-{% else %}
-  {% assign products = collections[page.metafields.custom.made_to_order_collection].products %}
-  {% assign grouped_collections = '' %}
-  {% for product in products %}
-    {% for c in product.collections %}
-      {% unless grouped_collections contains c.handle %}
-        {% assign grouped_collections = grouped_collections | append: c.handle | append: ',' %}
-      {% endunless %}
-    {% endfor %}
-  {% endfor %}
-  {% assign grouped_collections = grouped_collections | split: ',' | uniq %}
-
-  {% assign found_any = false %}
-  {% for group_handle in grouped_collections %}
-    {% if group_handle != collection_handle and group_handle != '' %}
-      {% assign group = collections[group_handle] %}
-      {% assign group_has_products = false %}
-      <div class="collection section-pseudo">
-        <div class="collection-hero">
-          <div class="collection-hero__inner page-width">
-            <h3 class="collection-hero__title">{{ group.title }}</h3>
-          </div>
-        </div>
-        <div class="collection__products page-width">
-          <ul class="grid product-grid contains-card contains-card--product">
-            {% for product in products %}
-              {% assign product_collection_handles = '' %}
-              {% for c in product.collections %}
-                {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
-              {% endfor %}
-              {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
-              {% if product_collection_handles contains group_handle %}
-                {% assign found_any = true %}
-                {% assign group_has_products = true %}
-                <li class="grid__item">
-                  {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      {% unless group_has_products %}
-        <div style="background: #f8d7da; color: #721c24; padding: 0.5rem; font-size: 1rem; border: 1px solid #f5c6cb; margin-bottom: 1rem;">No products in this group.</div>
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
-  {% unless found_any %}
-    <div class="collection-hero">
-      <div class="collection-hero__inner page-width">
-        <h3 class="collection-hero__title">No products found</h3>
-        <div class="collection-hero__description rte">No products found in the selected collection.</div>
-      </div>
-    </div>
-  {% endunless %}
-{% endif %} 
+{% endunless %} 
