@@ -6,6 +6,7 @@ html {
   width: 100%;
   height: auto;
   border-bottom: 0px solid black;
+  background: #EBE2D9 !important;
 }
 
 .main-product:not(.page-width-tablet){

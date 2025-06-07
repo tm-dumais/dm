@@ -3319,3 +3319,7 @@ display: none !important;
 .template-product, body.template-product {
   background-color: #EBE2D9 !important;
 }
+
+#main-collection-filters{
+  display:none;
+}
