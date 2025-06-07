@@ -73,8 +73,8 @@
           {% assign group_products = group_products | append: product.id | append: ',' %}
         {% endif %}
       {% endfor %}
-      {% assign group_products = group_products | split: ',' | uniq %}
-      {% if group != nil and group_products.size > 1 %}
+      {% assign group_products = group_products | split: ',' | reject: '' | uniq %}
+      {% if group != nil and group_products.size > 0 %}
         {% assign found_any = true %}
         <div class="collection section-pseudo">
           <div class="collection-hero">
