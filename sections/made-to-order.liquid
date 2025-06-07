@@ -17,10 +17,22 @@
     </div>
   </div>
 {% else %}
+  {% assign all_products = collections['all'].products | where: "tags", tag %}
+  {% assign collections_with_tagged_products = '' %}
+  {% for product in all_products %}
+    {% for c in product.collections %}
+      {% unless collections_with_tagged_products contains c.handle %}
+        {% assign collections_with_tagged_products = collections_with_tagged_products | append: c.handle | append: ',' %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% assign collections_with_tagged_products = collections_with_tagged_products | split: ',' | uniq %}
+
   {% assign found_any = false %}
-  {% for collection in collections %}
-    {% assign filtered_products = collection.products | where: "tags", tag %}
-    {% if filtered_products.size > 0 %}
+  {% for collection_handle in collections_with_tagged_products %}
+    {% assign collection = collections[collection_handle] %}
+    {% assign products_in_collection = collection.products | where: "tags", tag %}
+    {% if products_in_collection.size > 0 %}
       {% assign found_any = true %}
       <div class="collection section-pseudo">
         <div class="collection-hero">
@@ -33,7 +45,7 @@
         </div>
         <div class="collection__products page-width">
           <ul class="grid product-grid contains-card contains-card--product">
-            {% for product in filtered_products %}
+            {% for product in products_in_collection %}
               <li class="grid__item">
                 {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
               </li>
