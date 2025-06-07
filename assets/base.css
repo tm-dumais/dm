@@ -692,9 +692,8 @@ h6:empty {
   text-decoration-skip-ink: none;
   color: rgb(var(--color-link));
   background-color: transparent;
-  font-size: 12px;
+  font-size: 14px;
   font-family: inherit;
-  font-weight: 900;
 }
 
 .link--text {
