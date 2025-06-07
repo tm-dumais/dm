@@ -12,6 +12,20 @@
 
 {% assign made_to_order_collection = collections[collection_handle] %}
 
+<div style="background: #ffeeba; color: #222; padding: 2rem; font-size: 1.4rem; border: 2px solid #e0a800; margin-bottom: 2rem;">
+  <b>DEBUG:</b><br>
+  Collection handle: '{{ collection_handle }}'<br>
+  Collection exists: {% if made_to_order_collection %}Yes{% else %}No{% endif %}<br>
+  Products in collection: {% if made_to_order_collection %}{{ made_to_order_collection.products_count }}{% else %}0{% endif %}<br>
+  <ul>
+    {% if made_to_order_collection %}
+      {% for product in made_to_order_collection.products %}
+        <li>{{ product.title }}</li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+</div>
+
 {% if made_to_order_collection == nil or made_to_order_collection.products_count == 0 %}
   <div class="collection-hero">
     <div class="collection-hero__inner page-width">
