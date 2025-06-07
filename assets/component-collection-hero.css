@@ -285,6 +285,7 @@
 
 .collection-hero {
   padding-top: 8rem !important;
+  padding-bottom: 4rem !important;
 }
 
 @media screen and (min-width: 990px) {
