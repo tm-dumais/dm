@@ -1,0 +1,11 @@
+{
+  "name": "Made to Order",
+  "sections": {
+    "main": {
+      "type": "made-to-order"
+    }
+  },
+  "order": [
+    "main"
+  ]
+} 

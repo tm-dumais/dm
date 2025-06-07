@@ -1,0 +1,54 @@
+{% comment %}
+  Dynamic Made to Order page: Displays all products with the tag specified in the page metafield,
+  grouped by their collection. Matches the visual style of collection pages.
+  Metafield: custom.made_to_order_tag
+{% endcomment %}
+
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+
+{% assign tag = page.metafields.custom.made_to_order_tag %}
+
+{% if tag == blank %}
+  <div class="collection-hero">
+    <div class="collection-hero__inner page-width">
+      <h3 class="collection-hero__title">No tag specified</h3>
+      <div class="collection-hero__description rte">Please set the 'Made to Order Tag' metafield for this page.</div>
+    </div>
+  </div>
+{% else %}
+  {% assign found_any = false %}
+  {% for collection in collections %}
+    {% assign filtered_products = collection.products | where: "tags", tag %}
+    {% if filtered_products.size > 0 %}
+      {% assign found_any = true %}
+      <div class="collection section-pseudo">
+        <div class="collection-hero">
+          <div class="collection-hero__inner page-width">
+            <h3 class="collection-hero__title">{{ collection.title }}</h3>
+            {% if collection.description != blank %}
+              <div class="collection-hero__description rte">{{ collection.description }}</div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="collection__products page-width">
+          <ul class="grid product-grid contains-card contains-card--product">
+            {% for product in filtered_products %}
+              <li class="grid__item">
+                {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  {% unless found_any %}
+    <div class="collection-hero">
+      <div class="collection-hero__inner page-width">
+        <h3 class="collection-hero__title">No products found</h3>
+        <div class="collection-hero__description rte">No products found with tag '{{ tag }}'.</div>
+      </div>
+    </div>
+  {% endunless %}
+{% endif %} 
