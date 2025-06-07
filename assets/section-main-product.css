@@ -393,6 +393,10 @@ fieldset.product-form__input .form__label {
   margin: 1rem 0;
 }
 
+.product__description{
+  margin-bottom: 3rem;
+}
+
 
 .product__description{
   line-height: 1.6rem;
