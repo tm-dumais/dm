@@ -70,10 +70,28 @@ html {
 }
 
 @media screen and (min-width: 990px) {
+  .product {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 6rem;
+    align-items: flex-start;
+  }
+  .product__media-wrapper {
+    width: 100%;
+    max-width: none;
+  }
   .product__info-wrapper {
     position: sticky;
     top: 0;
     align-self: flex-start;
+    width: 100%;
+    max-width: none;
+  }
+  .product__info-container {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .product--large:not(.product--no-media) .product__media-wrapper {
