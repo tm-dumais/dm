@@ -1,64 +1,60 @@
 {% comment %}
-  Dynamic Made to Order section: Displays all products with the tag specified in the page metafield,
-  grouped by their collection. Matches the visual style of collection pages.
-  Metafield: custom.made_to_order_tag
+  Made to Order section: Uses a smart collection handle from a page metafield (custom.made_to_order_collection).
+  Displays all products from that collection, grouped by their other collections (e.g., 'Collection 25.01').
+  Matches the collection page layout. Debug output included.
 {% endcomment %}
 
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
-{% assign tag = page.metafields.custom.made_to_order_tag %}
+{% assign collection_handle = page.metafields.custom.made_to_order_collection %}
+<!-- DEBUG: Collection handle: '{{ collection_handle }}' -->
 
-<!-- DEBUG: Tag value: '{{ tag }}' -->
+{% assign made_to_order_collection = collections[collection_handle] %}
 
-{% if tag == blank %}
+{% if made_to_order_collection == nil or made_to_order_collection.products_count == 0 %}
   <div class="collection-hero">
     <div class="collection-hero__inner page-width">
-      <h3 class="collection-hero__title">No tag specified</h3>
-      <div class="collection-hero__description rte">Please set the 'Made to Order Tag' metafield for this page.</div>
+      <h3 class="collection-hero__title">No collection found</h3>
+      <div class="collection-hero__description rte">Please set the 'Made to Order Collection' metafield for this page to a valid collection handle.</div>
     </div>
   </div>
 {% else %}
-  {% assign all_products = collections['all'].products | where: "tags", tag %}
-  <!-- DEBUG: Found {{ all_products.size }} products with tag '{{ tag }}' -->
-  <ul style="background: #fffbe6; color: #222; padding: 1rem; font-size: 1.2rem;">
-    <li><b>DEBUG:</b> Tag: '{{ tag }}'</li>
-    <li>Products found: {{ all_products.size }}</li>
-    {% for product in all_products %}
-      <li>Product: {{ product.title }} (handle: {{ product.handle }})</li>
-    {% endfor %}
-  </ul>
-  {% assign collections_with_tagged_products = '' %}
-  {% for product in all_products %}
+  <!-- DEBUG: Products in collection: {{ made_to_order_collection.products_count }} -->
+  {% assign products = made_to_order_collection.products %}
+  {% assign grouped_collections = '' %}
+  {% for product in products %}
     {% for c in product.collections %}
-      {% unless collections_with_tagged_products contains c.handle %}
-        {% assign collections_with_tagged_products = collections_with_tagged_products | append: c.handle | append: ',' %}
+      {% unless grouped_collections contains c.handle %}
+        {% assign grouped_collections = grouped_collections | append: c.handle | append: ',' %}
       {% endunless %}
     {% endfor %}
   {% endfor %}
-  {% assign collections_with_tagged_products = collections_with_tagged_products | split: ',' | uniq %}
+  {% assign grouped_collections = grouped_collections | split: ',' | uniq %}
 
   {% assign found_any = false %}
-  {% for collection_handle in collections_with_tagged_products %}
-    {% assign collection = collections[collection_handle] %}
-    {% assign products_in_collection = collection.products | where: "tags", tag %}
-    {% if products_in_collection.size > 0 %}
+  {% for group_handle in grouped_collections %}
+    {% assign group = collections[group_handle] %}
+    {% assign group_products = products | where: "collections", group %}
+    {% if group_products.size > 0 %}
       {% assign found_any = true %}
       <div class="collection section-pseudo">
         <div class="collection-hero">
           <div class="collection-hero__inner page-width">
-            <h3 class="collection-hero__title">{{ collection.title }}</h3>
-            {% if collection.description != blank %}
-              <div class="collection-hero__description rte">{{ collection.description }}</div>
+            <h3 class="collection-hero__title">{{ group.title }}</h3>
+            {% if group.description != blank %}
+              <div class="collection-hero__description rte">{{ group.description }}</div>
             {% endif %}
           </div>
         </div>
         <div class="collection__products page-width">
           <ul class="grid product-grid contains-card contains-card--product">
-            {% for product in products_in_collection %}
-              <li class="grid__item">
-                {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
-              </li>
+            {% for product in products %}
+              {% if product.collections contains group %}
+                <li class="grid__item">
+                  {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
@@ -69,7 +65,7 @@
     <div class="collection-hero">
       <div class="collection-hero__inner page-width">
         <h3 class="collection-hero__title">No products found</h3>
-        <div class="collection-hero__description rte">No products found with tag '{{ tag }}'.</div>
+        <div class="collection-hero__description rte">No products found in the selected collection.</div>
       </div>
     </div>
   {% endunless %}
