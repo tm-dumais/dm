@@ -9,12 +9,17 @@ html {
   background: #EBE2D9 !important;
 }
 
-.main-product:not(.page-width-tablet){
-  /* max-width:1200px; */
+.main-product:not(.page-width-tablet) {
   max-width: 100vw;
-  padding: 0rem 5rem;
+  background-color: #ebe2d9;
   padding-top: 45px;
-  background-color: #EBE2D9;
+}
+
+@media screen and (min-width: 990px) {
+  .main-product:not(.page-width-tablet) {
+    padding: 0rem 5rem;
+    padding-top: 45px;
+  }
 }
 
 .product {
@@ -96,7 +101,7 @@ html {
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 55%;
+    max-width: 500px;
     width: calc(55% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
