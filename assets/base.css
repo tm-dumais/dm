@@ -2068,7 +2068,7 @@ input[type='checkbox'] {
 }
 
 .quantity:before {
-  background: rgb(var(--color-background));
+  /* background: rgb(var(--color-background)); */
   pointer-events: none;
   content: '';
   position: absolute;
