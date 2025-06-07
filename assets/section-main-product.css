@@ -109,7 +109,7 @@ html {
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 500px;
+    max-width: 550px;
     padding-top:3.5rem;
     width: calc(55% - var(--grid-desktop-horizontal-spacing) / 2);
   }
