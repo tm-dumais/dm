@@ -3334,3 +3334,7 @@ display: none !important;
 .product-grid-container {
   background-color: #EBE2D9 !important;
 }
+
+#MainContent{
+  margin-top:-45px;
+}
