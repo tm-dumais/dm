@@ -1,0 +1,27 @@
+<div class="product-grid-container" id="ProductGridContainer">
+  <ul
+    id="product-grid"
+    class="grid product-grid grid--3-col-tablet-down grid--3-col-desktop"
+  >
+    {% assign idx = 0 %}
+    {% for product in group_products %}
+      {% assign idx = idx | plus: 1 %}
+      {% assign lazy_load = false %}
+      {% if idx > 2 %}
+        {% assign lazy_load = true %}
+      {% endif %}
+      <li class="grid__item">
+        {% render 'card-product',
+          card_product: product,
+          media_aspect_ratio: 'portrait',
+          show_secondary_image: false,
+          show_vendor: false,
+          show_rating: false,
+          lazy_load: lazy_load,
+          show_quick_add: false,
+          section_id: section_id
+        %}
+      </li>
+    {% endfor %}
+  </ul>
+</div> 
