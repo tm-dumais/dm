@@ -383,7 +383,6 @@ fieldset.product-form__input .form__label {
   font-size: 1.4rem;
   padding-bottom:2.5rem;
   border-bottom: 1px solid black;
-  text-transform: uppercase;
 }
 
 .product__description p em strong{
@@ -391,6 +390,7 @@ fieldset.product-form__input .form__label {
   font-weight: 400;
   line-height: 2.4rem;
   text-transform: none !important;
+  font-size: normal;
 }
 
 .product__description .certification-image {
@@ -454,6 +454,11 @@ a.product__text {
 }
 
 .product__title {
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Termoli', sans-serif;
+  font-weight: 900;
   word-break: break-word;
   margin-bottom: .5rem;
 }
@@ -479,7 +484,10 @@ a.product__text {
   padding: 0 1rem;
 }
 
-.price{
+.price,
+.price-item {
+  font-size: 16px;
+  font-weight: 600;
   margin-top: .5rem;
   margin-top: 0rem;
 }
