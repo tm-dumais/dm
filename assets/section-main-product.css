@@ -394,7 +394,7 @@ fieldset.product-form__input .form__label {
 }
 
 .product__description{
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
 }
 
 
