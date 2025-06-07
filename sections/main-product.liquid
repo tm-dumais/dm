@@ -1,4 +1,4 @@
-<div class="main-product-wrapper isolate gradient color-{{ section.settings.color_scheme }} {%- if section.settings.no_bb %} no_bb{%- endif -%}">
+<div class="main-product-wrapper isolate gradient{%- if section.settings.no_bb %} no_bb{%- endif -%}">
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding main-product {%- if template.suffix == "second-template" %} page-width-tablet{%- endif -%}"
@@ -2264,43 +2264,6 @@
     }
   ],
   "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "background-3",
-          "label": "Background 3"
-        },
-
-        {
-          "value": "background-4",
-          "label": "Background 4"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-2",
-      "label": "t:sections.all.colors.label"
-    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",
