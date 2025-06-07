@@ -1,5 +1,5 @@
-body.template-collection-made-to-order, .template-collection-made-to-order {
-  background-color: #B0977B !important;
+body.template-collection {
+  background: #B0977B !important;
 }
 
 .collection-made-to-order-bg {
@@ -13,5 +13,5 @@ body.template-collection-made-to-order, .template-collection-made-to-order {
 .made-to-order .collection-hero__description,
 .made-to-order .product-grid-container,
 .made-to-order #product-grid {
-  background: #B0977B !important;
+  background: none !important;
 } 
