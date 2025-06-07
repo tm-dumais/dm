@@ -1684,3 +1684,50 @@ a.product__text {
   object-position: center;
   display: block;
 } */
+
+/* Universal button, input, and quantity picker styles for product page */
+.button,
+.product-form__submit,
+.shopify-payment-button__button,
+.product-form__input input,
+.product-form__input select,
+.product-form__input textarea,
+.product-form__quantity .quantity__button {
+  background: transparent;
+  border: 1px solid #2A1B12;
+  border-radius: 4px;
+  color: #2A1B12;
+  box-shadow: none;
+  outline: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.button:hover,
+.product-form__submit:hover,
+.shopify-payment-button__button:hover,
+.product-form__quantity .quantity__button:hover {
+  background: #2A1B12;
+  color: #fff;
+  border-color: #2A1B12;
+}
+
+.product-form__input input,
+.product-form__input select,
+.product-form__input textarea {
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+  color: #2A1B12;
+  background: transparent;
+  border: 1px solid #2A1B12;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+}
+
+.product-form__input input:focus,
+.product-form__input select:focus,
+.product-form__input textarea:focus {
+  border-color: #2A1B12;
+  box-shadow: none;
+  outline: none;
+}
