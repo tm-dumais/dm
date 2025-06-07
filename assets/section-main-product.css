@@ -12,6 +12,8 @@ html {
 .main-product:not(.page-width-tablet){
   /* max-width:1200px; */
   max-width: 100vw;
+  padding: 0rem 5rem;
+  padding-top: 45px;
   background-color: #EBE2D9;
 }
 
@@ -21,6 +23,7 @@ html {
 
 .product.grid {
   gap: 0;
+  padding-top: 5rem; /* might need to be just for desktop*/
 }
 
 .product--no-media {
