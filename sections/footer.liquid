@@ -36,7 +36,7 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% unless section.settings.background_color == 'none' %} background-{{ section.settings.background_color }}{% endunless %}">
+<footer class="footer gradient section-{{ section.id }}-padding{% unless section.settings.background_color == 'none' %} background-{{ section.settings.background_color }}{% endunless %}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social or section.settings.enable_follow_on_shop -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -468,21 +468,6 @@
     }
   ],
   "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        { "value": "accent-1", "label": "t:sections.all.colors.accent_1.label" },
-        { "value": "accent-2", "label": "t:sections.all.colors.accent_2.label" },
-        { "value": "background-1", "label": "t:sections.all.colors.background_1.label" },
-        { "value": "background-2", "label": "t:sections.all.colors.background_2.label" },
-        { "value": "background-3", "label": "Background 3" },
-        { "value": "background-4", "label": "Background 4" },
-        { "value": "inverse", "label": "t:sections.all.colors.inverse.label" }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
-    },
     {
       "type": "select",
       "id": "background_color",

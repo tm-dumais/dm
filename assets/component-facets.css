@@ -1118,3 +1118,8 @@ input.mobile-facets__checkbox {
 .template-product .facets-wrapper {
   display: none !important;
 }
+
+.template-collection .sorting,
+.template-product .sorting {
+  display: none !important;
+}

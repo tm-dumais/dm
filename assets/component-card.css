@@ -405,3 +405,20 @@
   height: 10px;
   line-height: 11px;
 }
+
+.card__heading,
+.card__heading a {
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+}
+
+.card-information .price,
+.card-information .price-item {
+  font-size: 12px !important;
+}
+
+.card__heading a,
+.card__heading a:hover,
+.card__heading a:focus {
+  text-decoration: none !important;
+}

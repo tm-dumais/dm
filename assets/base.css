@@ -3314,3 +3314,8 @@ display: none !important;
 .header--homepage.scrolled .header-wrapper--border-bottom {
   border-bottom: 1px solid black !important;
 }
+
+/* Product page background color */
+.template-product, body.template-product {
+  background-color: #EBE2D9 !important;
+}
