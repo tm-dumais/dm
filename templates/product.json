@@ -61,7 +61,7 @@
       "settings": {
         "enable_sticky_info": false,
         "no_bb": false,
-        "media_size": "medium",
+        "media_size": "balanced",
         "constrain_to_viewport": false,
         "media_fit": "contain",
         "gallery_layout": "stacked",
