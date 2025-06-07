@@ -40,6 +40,10 @@
             "text_align": "center"
           }
         },
+        "quantity_selector_WBTfLx": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -56,6 +60,7 @@
         "caption",
         "description",
         "variant_picker",
+        "quantity_selector_WBTfLx",
         "buy_buttons"
       ],
       "settings": {
