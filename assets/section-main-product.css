@@ -402,7 +402,7 @@ fieldset.product-form__input .form__label {
   font-weight: 400;
   line-height: 2.4rem;
   text-transform: none !important;
-  font-size: normal;
+  font-style: normal;
 }
 
 .product__description .certification-image {
