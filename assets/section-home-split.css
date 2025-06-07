@@ -83,7 +83,7 @@
   font-family: 'Termoli', sans-serif;
   font-weight: 900;
   line-height: calc(1 + 0.3 / var(--font-body-scale));
-  letter-spacing: 0.1rem;
+  letter-spacing: 0rem;
   text-transform: uppercase;
 }
 
