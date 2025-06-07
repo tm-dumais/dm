@@ -678,6 +678,16 @@ noscript .localization-selector.link {
   margin-top: 1rem;
 }
 
-.footer.background-warm-beige {
-  background-color: #EBE2D9 !important;
-}
+.footer.background-charcoal { background-color: #2C2F38 !important; }
+.footer.background-slate-blue { background-color: #38496F !important; }
+.footer.background-cool-grey { background-color: #7D868D !important; }
+.footer.background-warm-beige { background-color: #EBE2D9 !important; }
+.footer.background-olive-brown { background-color: #4A463D !important; }
+.footer.background-moss { background-color: #57564B !important; }
+.footer.background-mustard-brown { background-color: #95794A !important; }
+.footer.background-sand { background-color: #CFA55D !important; }
+.footer.background-deep-brown { background-color: #2A1B12 !important; }
+.footer.background-burgundy { background-color: #5E1B1C !important; }
+.footer.background-taupe { background-color: #B0977B !important; }
+.footer.background-clay { background-color: #95634B !important; }
+.footer.background-stone-grey { background-color: #8E9492 !important; }

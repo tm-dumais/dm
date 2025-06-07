@@ -614,6 +614,7 @@ a.product__text {
 
 .product-form__quantity .form__label {
   margin-bottom: 0.6rem;
+  display: none;
 }
 
 .product-form__quantity-top .form__label {
