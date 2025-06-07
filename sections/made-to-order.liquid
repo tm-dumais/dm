@@ -7,42 +7,48 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
+{% assign products = collections[page.metafields.custom.made_to_order_collection].products %}
+{% assign grouped_collections = '' %}
+{% for product in products %}
+  {% for c in product.collections %}
+    {% unless grouped_collections contains c.handle %}
+      {% assign grouped_collections = grouped_collections | append: c.handle | append: ',' %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign grouped_collections = grouped_collections | split: ',' | uniq %}
+
 {% assign collection_handle = page.metafields.custom.made_to_order_collection %}
-<!-- DEBUG: Collection handle: '{{ collection_handle }}' -->
-
-{% assign made_to_order_collection = collections[collection_handle] %}
-
-<div style="background: #ffeeba; color: #222; padding: 2rem; font-size: 1.4rem; border: 2px solid #e0a800; margin-bottom: 2rem;">
-  <b>DEBUG:</b><br>
-  Collection handle: '{{ collection_handle }}'<br>
-  Collection exists: {% if made_to_order_collection %}Yes{% else %}No{% endif %}<br>
-  Products in collection: {% if made_to_order_collection %}{{ made_to_order_collection.products_count }}{% else %}0{% endif %}<br>
-  <ul>
-    {% if made_to_order_collection %}
-      {% for product in made_to_order_collection.products %}
-        <li>{{ product.title }}</li>
-      {% endfor %}
-    {% endif %}
-  </ul>
-</div>
-
-{% if made_to_order_collection %}
-  <div style="background: #e6f7ff; color: #222; padding: 1.5rem; font-size: 1.2rem; border: 2px solid #1890ff; margin-bottom: 2rem;">
-    <b>PER-PRODUCT COLLECTIONS DEBUG:</b>
-    <ul>
-      {% for product in made_to_order_collection.products %}
-        <li>
-          <b>{{ product.title }}</b>:
-          <ul>
+{% for group_handle in grouped_collections %}
+  {% if group_handle != collection_handle and group_handle != '' %}
+    {% assign group = collections[group_handle] %}
+    {% assign group_has_products = false %}
+    <div class="collection section-pseudo">
+      <div class="collection-hero">
+        <div class="collection-hero__inner page-width">
+          <h3 class="collection-hero__title">{{ group.title }}</h3>
+        </div>
+      </div>
+      <div class="collection__products page-width">
+        <ul class="grid product-grid contains-card contains-card--product">
+          {% for product in products %}
+            {% assign product_collection_handles = '' %}
             {% for c in product.collections %}
-              <li>{{ c.title }} (handle: {{ c.handle }})</li>
+              {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
             {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endif %}
+            {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+            {% if product_collection_handles contains group_handle %}
+              {% assign group_has_products = true %}
+              <li class="grid__item">
+                {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
 
 {% if made_to_order_collection == nil or made_to_order_collection.products_count == 0 %}
   <div class="collection-hero">
