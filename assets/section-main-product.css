@@ -15,9 +15,18 @@ html {
 }
 
 @media screen and (min-width: 990px) {
+  .main-product-wrapper {
+    padding-bottom: 20rem;
+  }
   .main-product:not(.page-width-tablet) {
     padding: 0rem 5rem;
     padding-top: 45px;
+  }
+  .product__info-wrapper {
+    position: sticky;
+    top: 8.5rem;
+    align-self: flex-start;
+    padding-bottom: 2rem;
   }
 }
 
@@ -83,12 +92,6 @@ html {
 }
 
 @media screen and (min-width: 990px) {
-  .product__info-wrapper {
-    position: sticky;
-    top: 8.5rem;
-    align-self: flex-start;
-  }
-
   .product--large:not(.product--no-media) .product__media-wrapper {
     max-width: 65%;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
