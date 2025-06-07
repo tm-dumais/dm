@@ -99,8 +99,8 @@ html {
 
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 45%;
-    width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 40%;
+    width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--stacked .product__media-item {
