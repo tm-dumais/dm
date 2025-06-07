@@ -22,31 +22,61 @@
 {% for group_handle in grouped_collections %}
   {% if group_handle != collection_handle and group_handle != '' %}
     {% assign group = collections[group_handle] %}
-    {% assign group_has_products = false %}
-    <div class="collection section-pseudo">
-      <div class="collection-hero">
-        <div class="collection-hero__inner page-width">
-          <h3 class="collection-hero__title">{{ group.title }}</h3>
+    {% assign group_products = '' %}
+    {% for product in products %}
+      {% assign product_collection_handles = '' %}
+      {% for c in product.collections %}
+        {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+      {% endfor %}
+      {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+      {% if product_collection_handles contains group_handle %}
+        {% assign group_products = group_products | append: product.id | append: ',' %}
+      {% endif %}
+    {% endfor %}
+    {% assign group_products = group_products | split: ',' | reject: '' | uniq %}
+    {% if group != nil and group_products.size > 0 %}
+      <div class="collection section-pseudo">
+        <div class="collection-hero">
+          <div class="collection-hero__inner page-width">
+            <h3 class="collection-hero__title">{{ group.title }}</h3>
+          </div>
+        </div>
+        <div class="product-grid-container" id="ProductGridContainer">
+          <ul
+            id="product-grid"
+            class="grid product-grid grid--3-col-tablet-down grid--3-col-desktop"
+          >
+            {% assign idx = 0 %}
+            {% for product in products %}
+              {% assign product_collection_handles = '' %}
+              {% for c in product.collections %}
+                {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+              {% endfor %}
+              {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+              {% if product_collection_handles contains group_handle %}
+                {% assign idx = idx | plus: 1 %}
+                {% assign lazy_load = false %}
+                {% if idx > 2 %}
+                  {% assign lazy_load = true %}
+                {% endif %}
+                <li class="grid__item">
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: 'portrait',
+                    show_secondary_image: false,
+                    show_vendor: false,
+                    show_rating: false,
+                    lazy_load: lazy_load,
+                    show_quick_add: false,
+                    section_id: 'made-to-order'
+                  %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
         </div>
       </div>
-      <div class="collection__products page-width">
-        <ul class="grid product-grid contains-card contains-card--product">
-          {% for product in products %}
-            {% assign product_collection_handles = '' %}
-            {% for c in product.collections %}
-              {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
-            {% endfor %}
-            {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
-            {% if product_collection_handles contains group_handle %}
-              {% assign group_has_products = true %}
-              <li class="grid__item">
-                {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
+    {% endif %}
   {% endif %}
 {% endfor %}
 
