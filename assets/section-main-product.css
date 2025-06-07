@@ -95,6 +95,10 @@ html {
     max-width: 45%;
     width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
   }
+
+  .product--stacked .product__media-item {
+    max-width: 100%;
+  }
 }
 
 /* Dynamic checkout */

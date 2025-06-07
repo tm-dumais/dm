@@ -1280,15 +1280,15 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-  background-color: rgba(var(--color-foreground), 0.1);
+  background-color: none;
   position: relative;
   overflow: hidden;
 
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .media img{
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .media--transparent {
@@ -3322,4 +3322,15 @@ display: none !important;
 
 #main-collection-filters{
   display:none;
+}
+
+/* Collection page background color */
+.template-collection, body.template-collection {
+  background-color: #EBE2D9 !important;
+}
+.collection,
+.collection-hero,
+.collection-list-wrapper,
+.product-grid-container {
+  background-color: #EBE2D9 !important;
 }
