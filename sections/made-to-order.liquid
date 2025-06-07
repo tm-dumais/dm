@@ -47,37 +47,39 @@
 
   {% assign found_any = false %}
   {% for group_handle in grouped_collections %}
-    {% assign group = collections[group_handle] %}
-    {% assign group_products = '' %}
-    {% for product in products %}
-      {% if product.collections contains group %}
-        {% assign group_products = group_products | append: product.id | append: ',' %}
-      {% endif %}
-    {% endfor %}
-    {% assign group_products = group_products | split: ',' | uniq %}
-    {% if group != nil and group_products.size > 1 %} {# size > 1 because of trailing comma #}
-      {% assign found_any = true %}
-      <div class="collection section-pseudo">
-        <div class="collection-hero">
-          <div class="collection-hero__inner page-width">
-            <h3 class="collection-hero__title">{{ group.title }}</h3>
-            {% if group.description != blank %}
-              <div class="collection-hero__description rte">{{ group.description }}</div>
-            {% endif %}
+    {% if group_handle != collection_handle and group_handle != '' %}
+      {% assign group = collections[group_handle] %}
+      {% assign group_products = '' %}
+      {% for product in products %}
+        {% if product.collections contains group %}
+          {% assign group_products = group_products | append: product.id | append: ',' %}
+        {% endif %}
+      {% endfor %}
+      {% assign group_products = group_products | split: ',' | uniq %}
+      {% if group != nil and group_products.size > 1 %}
+        {% assign found_any = true %}
+        <div class="collection section-pseudo">
+          <div class="collection-hero">
+            <div class="collection-hero__inner page-width">
+              <h3 class="collection-hero__title">{{ group.title }}</h3>
+              {% if group.description != blank %}
+                <div class="collection-hero__description rte">{{ group.description }}</div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="collection__products page-width">
+            <ul class="grid product-grid contains-card contains-card--product">
+              {% for product in products %}
+                {% if product.collections contains group %}
+                  <li class="grid__item">
+                    {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
           </div>
         </div>
-        <div class="collection__products page-width">
-          <ul class="grid product-grid contains-card contains-card--product">
-            {% for product in products %}
-              {% if product.collections contains group %}
-                <li class="grid__item">
-                  {% render 'card-product', card_product: product, section_id: 'made-to-order' %}
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+      {% endif %}
     {% endif %}
   {% endfor %}
   {% unless found_any %}
