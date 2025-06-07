@@ -41,6 +41,7 @@ body, .text-body, h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
 .button, .button--secondary, button, .newsletter-form__button {
   font-family: var(--font-body-family);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Color custom properties */
