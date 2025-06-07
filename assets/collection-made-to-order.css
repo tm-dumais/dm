@@ -15,3 +15,7 @@ body.template-collection {
 .made-to-order #product-grid {
   background: none !important;
 } 
+
+.made-to-order-grid-container {
+  background-color: #B0977B !important;
+}
