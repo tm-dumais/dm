@@ -79,6 +79,9 @@
         {% endif %}
       {% endfor %}
       {% assign group_products = group_products | split: ',' | reject: '' | uniq %}
+      <div style="background: #fff3cd; color: #222; padding: 1rem; font-size: 1.1rem; border: 1px solid #856404; margin-bottom: 1rem;">
+        <b>GROUP DEBUG:</b> Group handle: '{{ group_handle }}', Group title: '{{ group.title }}', Products in group: {{ group_products.size }}
+      </div>
       {% if group != nil and group_products.size > 0 %}
         {% assign found_any = true %}
         <div class="collection section-pseudo">
