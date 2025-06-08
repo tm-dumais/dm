@@ -3562,11 +3562,11 @@ display: none !important;
 }
 
 .ot-btn-group-wrapper button, .ot-btn-group-wrapper .ot-sdk-show-settings {
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
   text-transform: uppercase !important;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  padding: 0.5em 1.2em !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.05em !important;
+  padding: 0.4em 1em !important;
 }
 
 @media (max-width: 989px) {
@@ -3602,4 +3602,19 @@ display: none !important;
     color: #2A1B12 !important;
     fill: #2A1B12 !important;
   }
+}
+
+#ot-cookie-banner, .otCookies-header-banner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.ot-btn-group-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
 }
