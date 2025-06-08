@@ -1899,16 +1899,36 @@ a.product__text {
   gap: 0.5em;
 }
 .variant-radio-input {
-  appearance: radio !important;
-  -webkit-appearance: radio !important;
-  accent-color: #2A1B12;
+  appearance: none;
+  -webkit-appearance: none;
   width: 1.3em;
   height: 1.3em;
+  border: 2px solid #B0977B;
+  border-radius: 50%;
+  background: #f6eee6;
   margin-right: 0.3em;
-  position: relative;
   vertical-align: middle;
-  background: initial !important;
-  border: initial !important;
+  position: relative;
+  transition: border-color 0.2s;
+}
+.variant-radio-input:checked {
+  border-color: #2A1B12;
+  background: #f6eee6;
+}
+.variant-radio-input:checked::before {
+  content: '';
+  display: block;
+  width: 0.7em;
+  height: 0.7em;
+  background: #2A1B12;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+}
+.variant-radio-input:focus {
+  outline: 2px solid #2A1B12;
+  outline-offset: 2px;
 }
 .variant-radio-text {
   font-family: 'Termoli', sans-serif;
