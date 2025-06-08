@@ -3648,3 +3648,7 @@ html, body {
   }
 }
 
+body.submenu-bg-onload .header__submenu.list-menu {
+  background: #EBE2D9 !important;
+}
+
