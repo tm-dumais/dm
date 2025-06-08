@@ -394,3 +394,11 @@ section:last-child .glazes-wrapper {
     width: calc(90% - var(--grid-mobile-horizontal-spacing) - 3rem);
   }
 }
+
+.page-intro-section__text p {
+  font-size: 14px !important;
+}
+
+.page-intro-section-wrapper {
+  background-color: #EBE2D9 !important;
+}
