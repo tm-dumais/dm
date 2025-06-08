@@ -1763,7 +1763,7 @@ a.product__text {
   color: #2A1B12;
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 .enquire-btn:hover {
   background: #2A1B12;
