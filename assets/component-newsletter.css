@@ -147,12 +147,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 8rem 0 !important;
 }
 
 .newsletter__wrapper h2 {
   text-align: center;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
   font-size: 14px !important;
   font-weight: 700 !important;
 }
