@@ -41,13 +41,13 @@
     >
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
-          <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+          <label class="form__label glaze-label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>
           <div class="select">
             <select
               id="Option-{{ section.id }}-{{ forloop.index0 }}"
-              class="select__select"
+              class="select__select glaze-select"
               name="options[{{ option.name | escape }}]"
               form="{{ product_form_id }}"
             >
@@ -58,8 +58,8 @@
         </div>
 
         {%- if forloop.first -%}
-        <div class="view-glazes-wrapper {{ block.settings.text_align }}">
-          <a class="view-glazes" href="../pages/glazes-1">View all glazes</a>
+        <div class="glazes-link-wrapper">
+          <a class="glazes-link" href="/pages/glazes">View all glazes</a>
         </div>
         {%- endif -%}
 
