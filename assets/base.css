@@ -3556,3 +3556,25 @@ display: none !important;
     fill: #2A1B12 !important;
   }
 }
+
+.otCookiesNotification, #ot-cookie-banner, .otCookies-header-banner {
+  text-align: center !important;
+}
+
+.ot-btn-group-wrapper button, .ot-btn-group-wrapper .ot-sdk-show-settings {
+  font-size: 1.2rem !important;
+  text-transform: uppercase !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.5em 1.2em !important;
+}
+
+@media (max-width: 989px) {
+  .header--homepage.scrolled .header__icon--menu,
+  .header--homepage.scrolled .icon-close,
+  .menu-drawer[open] .header__icon--menu,
+  .menu-drawer[open] .icon-close {
+    color: #2A1B12 !important;
+    fill: #2A1B12 !important;
+  }
+}
