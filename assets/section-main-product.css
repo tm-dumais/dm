@@ -1812,8 +1812,8 @@ a.product__text {
 
 /* Make chevron icon in selector 2x size */
 .select__select + svg.icon-caret, .product-form__input .select svg.icon-caret {
-  width: 8px !important;
-  height: 6px !important;
+  width: 6px !important;
+  height: 4.5px !important;
 }
 
 /* Clean .glazes-link styles, no button remnants */
