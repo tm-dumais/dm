@@ -3373,8 +3373,9 @@ display: none !important;
   min-width: 100vw !important;
   margin: 0 !important;
   padding: 0.5em 0;
-  position: absolute !important;
-  top: 100%;
+  position: fixed !important;
+  top: 45px !important;
+  height: 45px !important;
   z-index: 1000;
 }
 
@@ -3390,12 +3391,12 @@ display: none !important;
 .header__submenu .header__menu-item,
 .list-menu--disclosure .header__menu-item {
   font-family: 'Termoli', serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 600;
+  /* text-transform: uppercase; */
   font-size: 1.3rem;
   letter-spacing: 0.05em;
   color: #2A1B12;
-  padding: 0.8em 2em;
+  padding: 0;
   text-align: center;
   transition: color 0.2s, text-decoration 0.2s;
   white-space: nowrap;
