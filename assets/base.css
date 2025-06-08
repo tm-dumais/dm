@@ -3515,3 +3515,30 @@ display: none !important;
 .header--homepage.scrolled .list-menu--disclosure {
   background: #ebe2d9 !important;
 }
+
+.header__menu-item,
+.list-menu--disclosure .header__menu-item,
+.header__submenu .header__menu-item {
+  text-decoration: none !important;
+  font-weight: 600;
+  color: #2A1B12;
+  cursor: pointer !important;
+}
+
+.header__menu-item:hover,
+.list-menu--disclosure .header__menu-item:hover,
+.header__submenu .header__menu-item:hover {
+  text-decoration: underline !important;
+  font-weight: 600;
+  color: #2A1B12 !important;
+  cursor: pointer !important;
+}
+
+.header__active-menu-item,
+.list-menu__item--active,
+.header__submenu .header__menu-item.list-menu__item--active,
+.list-menu--disclosure .header__menu-item.list-menu__item--active {
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  color: #2A1B12 !important;
+}
