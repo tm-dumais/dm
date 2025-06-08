@@ -19,3 +19,10 @@ body.template-collection {
 .made-to-order-grid-container {
   background-color: #B0977B !important;
 }
+
+.made-to-order-grid-container .collection-hero__title {
+  text-align: left !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  padding-left: 2rem !important;
+}
