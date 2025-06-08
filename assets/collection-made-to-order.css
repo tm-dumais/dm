@@ -20,6 +20,10 @@ body.template-collection {
   background-color: #B0977B !important;
 }
 
+.product-grid-container-made-to-order {
+  background-color: #B0977B !important;
+}
+
 .made-to-order-grid-container .collection-hero__title {
   text-align: left !important;
   font-weight: 700 !important;
