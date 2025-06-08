@@ -3475,3 +3475,22 @@ display: none !important;
 .list-menu--disclosure .header__menu-item {
   font-size: 12px !important;
 }
+
+.header__submenu .header__menu-item,
+.list-menu--disclosure .header__menu-item {
+  font-size: 1.4rem;
+}
+
+/* Ensure homepage submenu gets correct background and border on scroll */
+.header--homepage.scrolled .header__submenu,
+.header--homepage.scrolled .list-menu--disclosure {
+  background: #ebe2d9 !important;
+  border-bottom: 1px solid #2A1B12 !important;
+  color: #2A1B12 !important;
+}
+
+/* Remove conflicting transparent/white backgrounds for submenu in scrolled state */
+.header--homepage.scrolled .header__submenu,
+.header--homepage.scrolled .list-menu--disclosure {
+  background: #ebe2d9 !important;
+}
