@@ -3360,7 +3360,7 @@ display: none !important;
 
 .header__submenu,
 .list-menu--disclosure {
-  background: #f6eee6 !important;
+  background: transparent !important;
   border-top: none !important;
   border-bottom: 1px solid #2A1B12 !important;
   border-left: none !important;
@@ -3392,7 +3392,7 @@ display: none !important;
 .list-menu--disclosure .header__menu-item {
   font-family: 'Termoli', serif;
   font-weight: 600;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-size: 1.3rem;
   letter-spacing: 0.05em;
   color: #2A1B12;
@@ -3411,4 +3411,11 @@ display: none !important;
 .list-menu--disclosure.scrolled {
   background: #f6eee6 !important;
   transition: background 0.3s;
+}
+
+.header__submenu .header__menu-item.list-menu__item--active,
+.list-menu--disclosure .header__menu-item.list-menu__item--active {
+  text-decoration: none !important;
+  color: #2A1B12 !important;
+  font-weight: 700;
 }
