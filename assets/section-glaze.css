@@ -237,10 +237,8 @@
   text-decoration-skip-ink: none;
 }
 
-.multicolumn-card__info .rte p{
-  font-family: new-caledonia, serif;
-  font-size: 1.8rem;
-  line-height: 2rem;
+.multicolumn-card__info .rte p {
+  font-family: Termoli, serif !important;
 }
 
 .multicolumn-card__info .rte p strong{
