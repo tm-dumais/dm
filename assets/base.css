@@ -2760,7 +2760,6 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
-  font-family: 'Termoli Black', serif !important;
   font-weight: 700 !important;
   text-decoration: none !important;
   cursor: pointer !important;
@@ -3426,7 +3425,6 @@ display: none !important;
 
 .header__menu-item:hover,
 .list-menu--disclosure .header__menu-item:hover {
-  font-family: 'Termoli Black', serif !important;
   font-weight: 700 !important;
   text-decoration: none !important;
   cursor: pointer !important;
