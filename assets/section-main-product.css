@@ -1768,10 +1768,8 @@ a.product__text {
 }
 
 .glazes-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5em;
+  display: block;
+  margin: 1rem 0;
 }
 .glazes-info-text {
   font-weight: 600;
