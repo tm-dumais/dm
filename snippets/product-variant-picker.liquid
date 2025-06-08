@@ -10,67 +10,43 @@
     {% render 'product-variant-picker', block: block, product: product %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
-  {%- if block.settings.picker_type == 'button' -%}
-    <variant-radios
-      id="variant-radios-{{ section.id }}"
-      class="no-js-hidden"
-      data-section="{{ section.id }}"
-      data-url="{{ product.url }}"
-      {% if update_url == false %}data-update-url="false"{% endif %}
-      {{ block.shopify_attributes }}
-    >
-      {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input">
-          <legend class="form__label">{{ option.name }}</legend>
-          {% render 'product-variant-options', product: product, option: option, block: block %}
-        </fieldset>
-      {%- endfor -%}
-      <script type="application/json">
-        {{ product.variants | json }}
-      </script>
-    </variant-radios>
-  {%- else -%}
-    <variant-selects
-      id="variant-selects-{{ section.id }}"
-      class="no-js-hidden"
-      data-section="{{ section.id }}"
-      data-url="{{ product.url }}"
-      {% if settings.enable_swatches == true %}data-swatches-replace="true"{% endif %}
-      {% if update_url == false %}data-update-url="false"{% endif %}
-      {{ block.shopify_attributes }}
-    >
-      {%- for option in product.options_with_values -%}
-        <div class="product-form__input product-form__input--dropdown">
-          <label class="form__label glaze-label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
-            {{ option.name }}
-          </label>
-          <div class="select">
-            <select
-              id="Option-{{ section.id }}-{{ forloop.index0 }}"
-              class="select__select glaze-select"
-              name="options[{{ option.name | escape }}]"
-              form="{{ product_form_id }}"
-            >
-              {% render 'product-variant-options', product: product, option: option, block: block %}
-            </select>
-            {% render 'icon-caret' %}
-          </div>
+  <variant-radios
+    id="variant-radios-{{ section.id }}"
+    class="no-js-hidden"
+    data-section="{{ section.id }}"
+    data-url="{{ product.url }}"
+    {% if update_url == false %}data-update-url="false"{% endif %}
+    {{ block.shopify_attributes }}
+  >
+    {%- for option in product.options_with_values -%}
+      <fieldset class="js product-form__input">
+        <legend class="form__label">{{ option.name }}</legend>
+        <div class="variant-radio-group">
+          {%- for value in option.values -%}
+            <label class="variant-radio-label">
+              <input type="radio"
+                name="options[{{ option.name | escape }}]"
+                value="{{ value | escape }}"
+                {% if product.selected_or_first_available_variant.options[forloop.parentloop.index0] == value %}checked{% endif %}
+                form="{{ product_form_id }}"
+                class="variant-radio-input"
+              >
+              <span class="variant-radio-text">{{ value }}</span>
+            </label>
+          {%- endfor -%}
         </div>
-
-        {%- if forloop.first -%}
-        <div class="glazes-info">
-          <p class="glazes-info-text">If you'd like to see the other glazes we offer:</p>
-          <a href="/pages/glazes" class="glazes-link">VIEW ALL GLAZES</a>
-        </div>
-        {%- endif -%}
-
-      {%- endfor -%}
-
-      <script type="application/json">
-        {{ product.variants | json }}
-      </script>
-    </variant-selects>
-  {%- endif -%}
+      </fieldset>
+      {%- if forloop.first -%}
+      <div class="glazes-info">
+        <p class="glazes-info-text">If you'd like to see the other glazes we offer:</p>
+        <a href="/pages/glazes" class="glazes-link">VIEW ALL GLAZES</a>
+      </div>
+      {%- endif -%}
+    {%- endfor -%}
+    <script type="application/json">
+      {{ product.variants | json }}
+    </script>
+  </variant-radios>
 {%- endunless -%}
 
 <noscript class="product-form__noscript-wrapper-{{ section.id }}">

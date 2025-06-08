@@ -1877,3 +1877,37 @@ a.product__text {
 .CustomActive.select__select {
   text-transform: uppercase;
 }
+
+.variant-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+.variant-radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Termoli', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  gap: 0.5em;
+}
+.variant-radio-input {
+  accent-color: #2A1B12;
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.4em;
+}
+.variant-radio-text {
+  font-family: 'Termoli', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.variant-radio-input:focus + .variant-radio-text,
+.variant-radio-label:hover .variant-radio-text {
+  color: #2A1B12;
+  text-decoration: underline;
+}
