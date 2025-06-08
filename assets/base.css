@@ -3430,3 +3430,8 @@ display: none !important;
   cursor: pointer !important;
   /* Do not change color on hover */
 }
+
+.header__menu-item,
+.list-menu--disclosure .header__menu-item {
+  cursor: pointer !important;
+}
