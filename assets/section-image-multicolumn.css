@@ -19,6 +19,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  .image-multicolumn-card-spacing {
+    padding-top: 2rem !important;
+  }
 }
 
 

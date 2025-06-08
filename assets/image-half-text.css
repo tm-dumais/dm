@@ -196,6 +196,16 @@
   .image-half-text.collapse-borders:not(.image-half-text--overlap) .image-half-text__content {
     border-top: 0;
   }
+
+  .image-half-text__text p {
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+  .rich-text__blocks .rich-text__heading {
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
 }
 
 .image-half-text__content--mobile-right > * {
@@ -435,19 +445,6 @@
   font-size: 1.7rem;
   line-height: 1.9rem;
 }
-
-@media screen and (max-width: 750px){
-  .image-half-text__content {
-    padding: 2rem calc(0rem / var(--font-body-scale)) 5rem;
-  }
-
-  .image-half-text__text p{
-    line-height: 2.2rem;
-    font-size: 2rem;
-  }
-}
-
-
 
 @media screen and (min-width: 750px) and (max-width: 1200px) {
   .image-half-text__content {
