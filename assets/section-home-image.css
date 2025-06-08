@@ -58,14 +58,8 @@
 }
 
 @media screen and (max-width: 749px) {
-  .home-section-image--padding-horizontal {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-  }
-  .home-section-image--padding-top {
-    padding-top: 2rem !important;
-  }
-  .home-section-image--padding-bottom {
-    padding-bottom: 4rem !important;
+  .home-section-image {
+    padding-top: 4rem !important;
+    padding-bottom: 3rem !important;
   }
 } 
