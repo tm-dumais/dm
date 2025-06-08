@@ -3440,3 +3440,26 @@ display: none !important;
 .list-menu__item--active {
   text-decoration: none !important;
 }
+
+.header--homepage,
+.header--homepage .header__submenu,
+.header--homepage .list-menu--disclosure {
+  background: transparent !important;
+  color: #fff !important;
+  border-bottom: 1px solid #fff !important;
+}
+
+.header--homepage .header__menu-item,
+.header--homepage .header__active-menu-item,
+.header--homepage .header__icon,
+.header--homepage .icon-caret,
+.header--homepage .icon {
+  color: #fff !important;
+  fill: #fff !important;
+  border-color: #fff !important;
+}
+
+.header--homepage .header__submenu,
+.header--homepage .list-menu--disclosure {
+  border-bottom: 1px solid #fff !important;
+}
