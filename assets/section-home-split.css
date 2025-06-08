@@ -190,6 +190,7 @@
 
   .home-section-split__content {
     padding-left: 0 !important;
+    padding-right: 2rem !important;
   }
 
   .home-section-split__heading.h0 {
