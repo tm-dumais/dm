@@ -29,6 +29,13 @@ body.template-collection {
   padding-bottom: 8rem !important;
 }
 
+.shopify-section > .product-grid-container-made-to-order {
+  padding-bottom: 2rem !important;
+}
+.shopify-section > .product-grid-container-made-to-order:last-of-type {
+  padding-bottom: 8rem !important;
+}
+
 .made-to-order-grid-container .collection-hero__title {
   text-align: left !important;
   font-weight: 700 !important;
