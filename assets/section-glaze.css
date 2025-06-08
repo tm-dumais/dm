@@ -254,7 +254,7 @@
   line-height: 2.25rem;
 }
 
-.glazes-wrapper:first-of-type {
+:root > * > .glazes-wrapper:first-of-type {
   margin-top: 45px !important;
 }
 
