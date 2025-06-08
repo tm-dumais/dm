@@ -1926,3 +1926,8 @@ a.product__text {
   color: #2A1B12;
   text-decoration: underline;
 }
+
+.form__label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
