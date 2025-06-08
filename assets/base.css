@@ -2760,7 +2760,11 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  font-family: 'Termoli Black', serif !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  /* Do not change color on hover */
 }
 
 .header__menu-item span {
@@ -3422,7 +3426,9 @@ display: none !important;
 
 .header__menu-item:hover,
 .list-menu--disclosure .header__menu-item:hover {
-  color: #2A1B12 !important;
+  font-family: 'Termoli Black', serif !important;
+  font-weight: 700 !important;
   text-decoration: none !important;
   cursor: pointer !important;
+  /* Do not change color on hover */
 }
