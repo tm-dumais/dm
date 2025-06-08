@@ -39,3 +39,8 @@ body.template-collection {
 .product-grid-container-made-to-order .collection-hero__title {
   margin-top: 0 !important;
 }
+
+.card-product, .card, .card__media {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
