@@ -37,7 +37,7 @@ menu-drawer > details[open] > summary::before {
   top: 100%;
   width: calc(100vw - 4rem);
   padding: 0;
-  border-width: 0 var(--drawer-border-width) 0 0;
+  border-width: 0.5px !important;
   background-color: #ebe2d9 !important;
   overflow-x: hidden;
   border-style: solid;

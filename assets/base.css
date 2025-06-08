@@ -3618,3 +3618,18 @@ display: none !important;
   justify-content: center !important;
   width: 100%;
 }
+
+/* Navigation and submenu borders */
+.header__submenu,
+.list-menu--disclosure,
+.header__menu,
+.header {
+  border-width: 0.5px !important;
+}
+
+/* Mobile menu drawer borders */
+.menu-drawer,
+.menu-drawer__submenu,
+.menu-drawer__menu {
+  border-width: 0.5px !important;
+}
