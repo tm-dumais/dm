@@ -3473,7 +3473,7 @@ display: none !important;
 .header__menu-item,
 .header__submenu .header__menu-item,
 .list-menu--disclosure .header__menu-item {
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 
 .header__submenu .header__menu-item,
