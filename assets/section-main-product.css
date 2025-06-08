@@ -246,13 +246,15 @@ fieldset.product-form__input .form__label {
   margin-bottom: 0.2rem;
 }
 
-.product-form__input input[type='radio'] {
-  clip: rect(0, 0, 0, 0);
+/*
+.product-form__input input[type=radio] {
   overflow: hidden;
   position: absolute;
   height: 1px;
   width: 1px;
+  clip: rect(0,0,0,0);
 }
+*/
 
 .product-form__input input[type='radio'] + label {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
