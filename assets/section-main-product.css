@@ -1896,14 +1896,16 @@ a.product__text {
   gap: 0.5em;
 }
 .variant-radio-input {
-  appearance: radio;
-  -webkit-appearance: radio;
+  appearance: radio !important;
+  -webkit-appearance: radio !important;
   accent-color: #2A1B12;
   width: 1.3em;
   height: 1.3em;
   margin-right: 0.6em;
   position: relative;
   vertical-align: middle;
+  background: initial !important;
+  border: initial !important;
 }
 .variant-radio-text {
   font-family: 'Termoli', sans-serif;
