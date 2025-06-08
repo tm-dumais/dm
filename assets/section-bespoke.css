@@ -550,3 +550,26 @@
         margin-top: 0 !important;
     }
 }
+
+.stof,
+.stof-container,
+.stof-content {
+  background-color: #EBE2D9 !important;
+}
+
+.rte.new-caledonia a {
+  font-family: Termoli, serif !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #2A1B12 !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+
+.rte.new-caledonia a:hover {
+  text-decoration: underline !important;
+}
+
+.rte.new-caledonia a em {
+  font-style: normal !important;
+}
