@@ -409,7 +409,8 @@
 .card__heading,
 .card__heading a {
   font-size: 14px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
 }
 
 .card-information .price-item {
