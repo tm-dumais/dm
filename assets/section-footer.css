@@ -43,8 +43,7 @@
 }
 
 .footer__content-bottom {
-  border-top: 1px solid #B0977B;
-  padding-top: 3rem;
+  display: none !important;
 }
 
 .footer__content-bottom:only-child {
