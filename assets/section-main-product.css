@@ -1903,10 +1903,10 @@ a.product__text {
   -webkit-appearance: none;
   width: 1.3em;
   height: 1.3em;
-  border: 2px solid #2A1B12;
+  border: 1px solid #2A1B12;
   border-radius: 50%;
   background: transparent;
-  margin-right: 0.3em;
+  margin-right: 0;
   vertical-align: middle;
   position: relative;
   transition: border-color 0.2s, background 0.2s;
