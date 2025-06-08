@@ -3637,3 +3637,7 @@ display: none !important;
 .header--homepage.scrolled {
   border-bottom: 0.5px solid #2A1B12 !important;
 }
+
+html, body {
+  color: #2A1B12 !important;
+}

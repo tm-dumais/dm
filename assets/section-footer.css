@@ -3,8 +3,13 @@
   border-bottom: 0.5px solid #2A1B12 !important;
   margin-top: 0 !important;
   width: 100% !important;
-  padding-left: 6rem !important;
-  padding-right: 6rem !important;
+}
+
+@media screen and (min-width: 990px) {
+  .footer {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
 }
 
 .footer:not(.color-background-1) {
