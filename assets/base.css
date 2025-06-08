@@ -3351,3 +3351,9 @@ display: none !important;
   padding-top: 3rem !important;
   padding-bottom: 8rem !important;
 }
+
+.footer {
+  border-top: 1px solid #B0977B !important;
+  border-bottom: 1px solid #B0977B !important;
+  margin-top: 0 !important;
+}
