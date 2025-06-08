@@ -34,3 +34,7 @@ body.template-collection {
 .collection-hero.color-background-1.gradient {
   background-color: #B0977B !important;
 }
+
+.product-grid-container-made-to-order .collection-hero__title {
+  margin-top: 0 !important;
+}
