@@ -1041,7 +1041,7 @@ a.product__text {
 }
 .product__atc-etxt {
   margin-bottom: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 14px;
   text-transform: uppercase !important;
 }
 
