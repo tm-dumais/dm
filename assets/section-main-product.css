@@ -1773,7 +1773,8 @@ a.product__text {
 
 .glazes-info {
   display: block;
-  margin: 1rem 0;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 .glazes-info-text {
   font-weight: 600;
