@@ -25,7 +25,7 @@ body.template-collection {
   padding-bottom: 2rem !important;
 }
 
-.product-grid-container-made-to-order:last-of-type {
+.product-grid-container-made-to-order:has(+ .collection-made-to-order-bg) {
   padding-bottom: 8rem !important;
 }
 
