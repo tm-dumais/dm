@@ -502,12 +502,14 @@
                 {%- endif -%}
               {%- endfor -%}
               {%- if is_made_to_order -%}
-                <button class="btn product-form__submit" style="margin-top: 1em; width: 100%;">
-                  Enquire
-                </button>
-                <div style="margin-top: 1em; font-weight: 600;">
-                  If you'd like to see the other glazes we offer:
-                  <a href="/pages/glazes" style="font-weight: bold; text-transform: uppercase; margin-left: 0.5em;">VIEW ALL GLAZES</a>
+                <div class="enquire-block">
+                  <button type="button" class="enquire-btn" onclick="window.location.href='mailto:custom@dumaismade.com?subject=Enquiry about {{ product.title | escape }}';">
+                    Enquire
+                  </button>
+                  <div class="glazes-info">
+                    <p class="glazes-info-text">If you'd like to see the other glazes we offer:</p>
+                    <a href="/pages/glazes" class="glazes-link">VIEW ALL GLAZES</a>
+                  </div>
                 </div>
               {%- else -%}
                 {%- render 'buy-buttons',
@@ -526,12 +528,14 @@
                 {%- endif -%}
               {%- endfor -%}
               {%- if is_made_to_order -%}
-                <button class="btn product-form__submit" style="margin-top: 1em; width: 100%;" onclick="window.location.href='mailto:custom@dumaismade.com?subject=Enquiry about {{ product.title | escape }}'; return false;">
-                  Enquire
-                </button>
-                <div style="margin-top: 1em; font-weight: 600;">
-                  If you'd like to see the other glazes we offer:
-                  <a href="/pages/glazes" style="font-weight: bold; text-transform: uppercase; margin-left: 0.5em;">VIEW ALL GLAZES</a>
+                <div class="enquire-block">
+                  <button type="button" class="enquire-btn" onclick="window.location.href='mailto:custom@dumaismade.com?subject=Enquiry about {{ product.title | escape }}';">
+                    Enquire
+                  </button>
+                  <div class="glazes-info">
+                    <p class="glazes-info-text">If you'd like to see the other glazes we offer:</p>
+                    <a href="/pages/glazes" class="glazes-link">VIEW ALL GLAZES</a>
+                  </div>
                 </div>
               {%- else -%}
                 {%- render 'buy-buttons-qty',

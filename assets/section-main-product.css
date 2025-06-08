@@ -1736,3 +1736,57 @@ a.product__text {
   color: #fff;
   border-color: #2A1B12;
 }
+
+/* Enquire block for made-to-order products */
+.enquire-block {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.enquire-btn {
+  width: 100%;
+  padding: 1.1em 0;
+  font-family: var(--font-body-family);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 1px solid #2A1B12;
+  border-radius: 4px;
+  background: transparent;
+  color: #2A1B12;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  margin-bottom: 1.5rem;
+}
+.enquire-btn:hover {
+  background: #2A1B12;
+  color: #fff;
+  border-color: #2A1B12;
+}
+
+.glazes-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+.glazes-info-text {
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+}
+.glazes-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2A1B12;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+.glazes-link:hover {
+  text-decoration: underline;
+  color: #000;
+}
