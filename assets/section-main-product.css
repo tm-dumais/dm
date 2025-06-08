@@ -1790,3 +1790,43 @@ a.product__text {
   text-decoration: underline;
   color: #000;
 }
+
+/* Variant selector label styling */
+.product-form__input label.form__label {
+  color: #2A1B12;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Remove background color from dropdown selector */
+.select__select, .CustomSelect, .product-form__input .select, .product-form__input .select select {
+  background: transparent !important;
+}
+
+/* Make chevron icon in selector 2x size */
+.select__select + svg.icon-caret, .product-form__input .select svg.icon-caret {
+  width: 8px !important;
+  height: 6px !important;
+}
+
+/* Make .glazes-link look like a button (like .enquire-btn) */
+.glazes-link {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2A1B12;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #2A1B12;
+  border-radius: 4px;
+  background: transparent;
+  padding: 0.7em 1.5em;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, text-decoration 0.2s;
+  cursor: pointer;
+}
+.glazes-link:hover {
+  background: #2A1B12;
+  color: #fff;
+  border-color: #2A1B12;
+  text-decoration: none;
+}
