@@ -29,10 +29,10 @@ body.template-collection {
   padding-bottom: 8rem !important;
 }
 
-.shopify-section > .product-grid-container-made-to-order {
+main > .product-grid-container-made-to-order {
   padding-bottom: 2rem !important;
 }
-.shopify-section > .product-grid-container-made-to-order:last-of-type {
+main > .product-grid-container-made-to-order:last-of-type {
   padding-bottom: 8rem !important;
 }
 
