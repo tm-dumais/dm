@@ -3633,3 +3633,7 @@ display: none !important;
 .menu-drawer__menu {
   border-width: 0.5px !important;
 }
+
+.header--homepage.scrolled {
+  border-bottom: 0.5px solid #2A1B12 !important;
+}
