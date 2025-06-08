@@ -181,7 +181,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgb(var(--color-background));
+  background-color: #ebe2d9 !important;
   border-left: 0.1rem solid rgba(var(--color-foreground), 0.2);
   z-index: 1;
   transform: translateX(100%);
@@ -255,4 +255,18 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer .list-social__link {
   padding: 1.3rem 1.25rem;
+}
+
+.menu-drawer .icon-caret,
+.menu-drawer .icon-arrow {
+  color: #2A1B12 !important;
+  fill: #2A1B12 !important;
+}
+
+.menu-drawer__submenu {
+  background-color: #ebe2d9 !important;
+}
+
+.menu-drawer__submenu[open] {
+  background-color: #ebe2d9 !important;
 }

@@ -3542,3 +3542,17 @@ display: none !important;
   font-weight: 600 !important;
   color: #2A1B12 !important;
 }
+
+.header--homepage.scrolled .header__icon--menu,
+.menu-drawer-container[open] .header__icon--menu,
+.menu-drawer[open] .header__icon--menu {
+  color: #2A1B12 !important;
+  fill: #2A1B12 !important;
+}
+
+@media (max-width: 989px) {
+  .header__icon--menu {
+    color: #2A1B12 !important;
+    fill: #2A1B12 !important;
+  }
+}
