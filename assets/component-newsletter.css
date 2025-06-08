@@ -138,6 +138,8 @@
 .newsletter__wrapper h2 {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 14px !important;
+  font-weight: 700 !important;
 }
 
 .newsletter-form__field-wrapper .field__input {
