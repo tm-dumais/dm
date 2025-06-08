@@ -43,18 +43,25 @@
   border: 1px solid #B0977B;
   border-radius: 4px;
   text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0;
+  font-size: 14px;
+  font-family: Termoli, serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   padding: 0.75rem 2rem;
   text-align: center;
   background: transparent;
+  color: #6B5B4A;
+  margin-bottom: 0;
 }
 
 .newsletter-form__field-wrapper .field__input::placeholder {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: Termoli, serif;
+  font-weight: 700;
   color: #B0977B;
-  letter-spacing: 0;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .newsletter-form__message {
@@ -75,19 +82,21 @@
 .newsletter-form__button {
   display: block !important;
   width: 100% !important;
-  margin-top: 0.5rem !important;
+  max-width: 600px;
+  height: 60px;
+  margin-top: 0 !important;
   border: 1px solid #2A1B12;
   border-radius: 4px;
   background: transparent;
   color: #2A1B12;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 0;
-  padding: 0.75rem 2rem;
+  font-size: 14px;
+  font-family: Termoli, serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
   margin-bottom: 0;
   align-items: center;
-  height: 44px;
 }
 
 .newsletter-form__button:focus-visible {
@@ -146,7 +155,7 @@
   border: 1px solid #B0977B;
   border-radius: 4px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0;
   padding: 0.75rem 2rem;
   text-align: center;
@@ -156,7 +165,7 @@
 
 .newsletter-form__field-wrapper .field__input::placeholder {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   color: #B0977B;
   letter-spacing: 0;
 }
@@ -180,7 +189,7 @@
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  gap: 2rem !important;
+  gap: 1rem !important;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -189,15 +198,15 @@
 .newsletter-form__field-wrapper .field__input {
   width: 100%;
   max-width: 600px;
-  height: 110px;
-  border: 2.5px solid #B0977B;
-  border-radius: 10px;
+  height: 60px;
+  border: 1px solid #B0977B;
+  border-radius: 4px;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 14px;
   font-family: Termoli, serif;
   font-weight: 700;
   letter-spacing: 0.02em;
-  padding: 0 2rem;
+  padding: 0.75rem 2rem;
   text-align: center;
   background: transparent;
   color: #6B5B4A;
@@ -206,7 +215,7 @@
 
 .newsletter-form__field-wrapper .field__input::placeholder {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 14px;
   font-family: Termoli, serif;
   font-weight: 700;
   color: #B0977B;
@@ -218,14 +227,14 @@
   display: block !important;
   width: 100% !important;
   max-width: 600px;
-  height: 110px;
+  height: 60px;
   margin-top: 0 !important;
-  border: 2.5px solid #2A1B12;
-  border-radius: 10px;
+  border: 1px solid #2A1B12;
+  border-radius: 4px;
   background: transparent;
   color: #2A1B12;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 14px;
   font-family: Termoli, serif;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -237,13 +246,13 @@
 @media (max-width: 749px) {
   .newsletter-form__field-wrapper .field__input,
   .newsletter-form__button {
-    font-size: 20px;
-    height: 60px;
+    font-size: 14px;
+    height: 48px;
     max-width: 100%;
-    border-radius: 6px;
-    padding: 0 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
   }
   .newsletter-form__field-wrapper {
-    gap: 1rem !important;
+    gap: 0.75rem !important;
   }
 }
