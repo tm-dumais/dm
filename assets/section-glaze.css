@@ -61,8 +61,7 @@
 }
 
 .multicolumn:not(.background-none) .multicolumn-card {
-  background: rgb(var(--color-background));
-  height: 100%;
+  background: none !important;
 }
 
 .multicolumn.background-primary .multicolumn-card {
