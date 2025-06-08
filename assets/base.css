@@ -3652,3 +3652,30 @@ body.submenu-bg-onload .header__submenu.list-menu {
   background: #EBE2D9 !important;
 }
 
+.cart-items {
+  min-height: 100svh !important;
+  background-color: #EBE2D9 !important;
+}
+
+.cart-title {
+  font-size: 14px !important;
+  font-family: Termoli, serif !important;
+  font-weight: 900 !important;
+  color: #2A1B12 !important;
+}
+
+.cart-items th {
+  opacity: 1 !important;
+  font-family: Termoli, serif !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #2A1B12 !important;
+}
+
+.title-wrapper-with-link a {
+  font-size: 14px !important;
+  font-family: Termoli, serif !important;
+  text-transform: uppercase !important;
+  color: #2A1B12 !important;
+}
+
