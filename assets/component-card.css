@@ -408,13 +408,12 @@
 
 .card__heading,
 .card__heading a {
-  font-size: 12px !important;
-  text-transform: uppercase !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
 }
 
-.card-information .price,
 .card-information .price-item {
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 
 .card__heading a,

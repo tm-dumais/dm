@@ -3435,3 +3435,35 @@ display: none !important;
 .list-menu--disclosure .header__menu-item {
   cursor: pointer !important;
 }
+
+.header__active-menu-item,
+.list-menu__item--active {
+  text-decoration: none !important;
+}
+
+.header--homepage {
+  background: #fff !important;
+}
+.header--homepage .header__submenu,
+.header--homepage .list-menu--disclosure {
+  background: #fff !important;
+  border-bottom: 1px solid #fff !important;
+}
+.header--homepage .header__icon,
+.header--homepage .header__heading-link,
+.header--homepage .header__menu-item {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+.header--homepage.scrolled,
+.header--homepage.scrolled .header__submenu,
+.header--homepage.scrolled .list-menu--disclosure,
+.header--homepage.scrolled .header__icon,
+.header--homepage.scrolled .header__heading-link,
+.header--homepage.scrolled .header__menu-item {
+  background: #ebe2d9 !important;
+  border-bottom: 1px solid #2A1B12 !important;
+  color: #2A1B12 !important;
+  fill: #2A1B12 !important;
+}
