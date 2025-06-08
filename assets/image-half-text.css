@@ -198,8 +198,8 @@
   }
 
   .image-half-text__text-item p {
-    font-size: 14px !important;
-    line-height: 1.333 !important;
+    font-size: 20px !important;
+    line-height: 1.5 !important;
   }
 
   .image-half-text__content {
@@ -509,5 +509,12 @@
   .image-half-text__text-item p {
     font-size: 14px !important;
     line-height: 1.333 !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .rich-text__blocks .rich-text__heading {
+    font-size: 20px !important;
+    line-height: 1.5 !important;
   }
 }
