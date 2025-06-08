@@ -25,6 +25,10 @@ body.template-collection {
   padding-bottom: 2rem !important;
 }
 
+.product-grid-container-made-to-order > :last-child {
+  padding-bottom: 8rem !important;
+}
+
 .made-to-order-grid-container .collection-hero__title {
   text-align: left !important;
   font-weight: 700 !important;
