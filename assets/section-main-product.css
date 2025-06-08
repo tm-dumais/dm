@@ -1787,13 +1787,9 @@ a.product__text {
   color: #2A1B12;
   text-decoration: none;
   font-size: 14px;
-  background: none;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  margin-left: 0.3em;
-  display: inline;
   cursor: pointer;
+  display: inline;
+  margin-left: 0.3em;
   transition: color 0.2s, text-decoration 0.2s;
 }
 .glazes-link:hover {
