@@ -3756,5 +3756,6 @@ cart-items.is-empty {
 
 .template{
   background-color: #EBE2D9;
+  background: #EBE2D9 !important;
 }
 
