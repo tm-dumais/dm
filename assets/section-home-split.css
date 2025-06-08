@@ -189,7 +189,7 @@
   }
 
   .home-section-split__content {
-    padding: 3rem 1.5rem;
+    padding-left: 0 !important;
   }
 
   .home-section-split__heading.h0 {
