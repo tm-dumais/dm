@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "home_section_split_MX3xCT": {
@@ -70,7 +70,7 @@
         "image": "shopify://shop_images/Frasier-Lamp_-Overlap-3.jpg",
         "caption_headline": "",
         "text": "<p>We also offer a semi-bespoke experience for our designers who want to modify an existing design’s scale, glaze, texture or shade to suit your space.</p>",
-        "background_color": "color-3",
+        "background_color": "clay",
         "image_alt": ""
       }
     },
@@ -115,8 +115,7 @@
         },
         "template--16834058158294__836d8415-0c97-4bca-b60c-33c0f3cd7b52-16746738185959ea04-2": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
