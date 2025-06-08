@@ -3409,7 +3409,7 @@ display: none !important;
 .header.scrolled,
 .header__submenu.scrolled,
 .list-menu--disclosure.scrolled {
-  background: #f6eee6 !important;
+  background: #ebe2d9 !important;
   transition: background 0.3s;
 }
 
