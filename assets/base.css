@@ -3463,3 +3463,15 @@ display: none !important;
 .header--homepage .list-menu--disclosure {
   border-bottom: 1px solid #fff !important;
 }
+
+.header__submenu.scrolled,
+.list-menu--disclosure.scrolled {
+  background: #ebe2d9 !important;
+  border-bottom: 1px solid #2A1B12 !important;
+}
+
+.header__menu-item,
+.header__submenu .header__menu-item,
+.list-menu--disclosure .header__menu-item {
+  font-size: 12px !important;
+}
