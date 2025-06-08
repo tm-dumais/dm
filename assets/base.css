@@ -3361,7 +3361,7 @@ display: none !important;
 .header__submenu,
 .list-menu--disclosure {
   background: #f6eee6 !important;
-  border-top: 1px solid #2A1B12 !important;
+  border-top: none !important;
   border-bottom: 1px solid #2A1B12 !important;
   border-left: none !important;
   border-right: none !important;
