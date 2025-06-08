@@ -1862,4 +1862,14 @@ a.product__text {
 
 .SelectOption.select__select {
   text-transform: uppercase;
+  transition: color 0.2s;
+}
+.SelectOption.select__select:hover,
+.SelectOption.select__select:focus {
+  color: #2A1B12;
+}
+/* Prevent layout shift on custom selects */
+.select__select, .CustomSelect {
+  min-width: 100%;
+  box-sizing: border-box;
 }
