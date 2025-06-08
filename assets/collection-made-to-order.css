@@ -30,3 +30,7 @@ body.template-collection {
   font-size: 12px !important;
   padding-left: 2rem !important;
 }
+
+.collection-hero.color-background-1.gradient {
+  background-color: #B0977B !important;
+}
