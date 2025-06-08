@@ -3357,3 +3357,10 @@ display: none !important;
   border-bottom: 1px solid #2A1B12 !important;
   margin-top: 0 !important;
 }
+
+.header__submenu,
+.list-menu--disclosure {
+  background: #f6eee6 !important;
+  border: 1px solid #2A1B12 !important;
+  border-radius: 0 !important;
+}
