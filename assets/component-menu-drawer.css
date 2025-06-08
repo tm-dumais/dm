@@ -38,7 +38,7 @@ menu-drawer > details[open] > summary::before {
   width: calc(100vw - 4rem);
   padding: 0;
   border-width: 0 var(--drawer-border-width) 0 0;
-  background-color: rgb(var(--color-background));
+  background-color: #ebe2d9 !important;
   overflow-x: hidden;
   border-style: solid;
   border-color: rgba(var(--color-foreground), var(--drawer-border-opacity));
@@ -127,6 +127,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 1.1rem 3.2rem;
   text-decoration: none;
   font-size: 1.8rem;
+  text-transform: uppercase !important;
 }
 
 .no-js .menu-drawer__menu-item {
@@ -203,6 +204,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   text-align: left;
+  text-transform: uppercase !important;
 }
 
 .no-js .menu-drawer__close-button {
@@ -217,6 +219,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__utility-links {
   padding: 2rem;
   background-color: rgba(var(--color-foreground), 0.03);
+  text-transform: uppercase !important;
 }
 
 .menu-drawer__account {
@@ -227,6 +230,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-left: -1.2rem;
   font-size: 1.4rem;
   color: rgb(var(--color-foreground));
+  text-transform: uppercase !important;
 }
 
 .menu-drawer__account .icon-account {
