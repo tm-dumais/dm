@@ -1899,10 +1899,11 @@ a.product__text {
   appearance: radio;
   -webkit-appearance: radio;
   accent-color: #2A1B12;
-  width: 1.1em;
-  height: 1.1em;
+  width: 1.3em;
+  height: 1.3em;
   margin-right: 0.6em;
   position: relative;
+  vertical-align: middle;
 }
 .variant-radio-text {
   font-family: 'Termoli', sans-serif;
