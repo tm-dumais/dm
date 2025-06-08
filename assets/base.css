@@ -3434,11 +3434,32 @@ display: none !important;
 .header__menu-item,
 .list-menu--disclosure .header__menu-item {
   cursor: pointer !important;
+  text-decoration: none !important;
+  font-weight: 600;
 }
 
 .header__active-menu-item,
-.list-menu__item--active {
+.list-menu__item--active,
+.header__submenu .header__menu-item.list-menu__item--active,
+.list-menu--disclosure .header__menu-item.list-menu__item--active {
   text-decoration: none !important;
+  font-weight: 900 !important;
+  color: #2A1B12 !important;
+}
+
+.header__submenu .header__menu-item,
+.list-menu--disclosure .header__menu-item {
+  text-decoration: none !important;
+  font-weight: 600;
+  cursor: pointer !important;
+}
+
+.header__submenu .header__menu-item:hover,
+.list-menu--disclosure .header__menu-item:hover {
+  text-decoration: none !important;
+  font-weight: 600;
+  color: inherit !important;
+  cursor: pointer !important;
 }
 
 .header--homepage,
