@@ -3586,3 +3586,20 @@ display: none !important;
   color: #fff !important;
   fill: #fff !important;
 }
+
+.header--homepage .header__menu-item:hover,
+.header--homepage .list-menu--disclosure .header__menu-item:hover,
+.header--homepage .header__submenu .header__menu-item:hover {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+@media (max-width: 989px) {
+  .header--homepage.scrolled .header__icon--menu svg,
+  .header--homepage.scrolled .icon-close svg,
+  .menu-drawer[open] .header__icon--menu svg,
+  .menu-drawer[open] .icon-close svg {
+    color: #2A1B12 !important;
+    fill: #2A1B12 !important;
+  }
+}
