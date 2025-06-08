@@ -1858,6 +1858,7 @@ a.product__text {
   justify-content: center;
   height: 100%;
   width: 100%;
+  pointer-events: none;
 }
 
 .SelectOption.select__select {
