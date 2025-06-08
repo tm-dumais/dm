@@ -482,14 +482,17 @@
 }
 
 .rich-text__blocks a {
-  font-family: Termoli, serif !important;
-  font-weight: 600 !important;
-  font-size: 14px !important;
-  color: #2A1B12 !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
 }
 
-.rich-text__blocks a em {
-  font-style: normal !important;
+.rich-text__blocks a:hover {
+  text-decoration: underline !important;
+}
+
+.rich-text,
+.arrow-wrapper {
+  background-color: #EBE2D9 !important;
 }
 
 .image-half-text-wrapper,
