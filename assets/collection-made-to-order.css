@@ -22,7 +22,7 @@ body.template-collection {
 
 .product-grid-container-made-to-order {
   background-color: #B0977B !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 2rem !important;
 }
 
 .made-to-order-grid-container .collection-hero__title {
