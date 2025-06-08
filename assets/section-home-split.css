@@ -212,6 +212,11 @@
   .home-section-split__text-item--horizontal-center .home-section-split__content {
     max-width: 100%;
   }
+
+  .home-section-image--padding-horizontal {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
 
 /* Add this style for the button */
@@ -317,4 +322,11 @@
 .home-section-split__media-item--right + .home-section-split__text-item--horizontal-left .home-section-split__content,
 .home-section-split__text-item--horizontal-left .home-section-split__content {
   padding-left: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .home-section-image--padding-horizontal {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
