@@ -55,4 +55,17 @@
 }
 .background-stone-grey {
   background-color: var(--color-stone-grey) !important;
+}
+
+@media screen and (max-width: 749px) {
+  .home-section-image--padding-horizontal {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .home-section-image--padding-top {
+    padding-top: 2rem !important;
+  }
+  .home-section-image--padding-bottom {
+    padding-bottom: 4rem !important;
+  }
 } 
