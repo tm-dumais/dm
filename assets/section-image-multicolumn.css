@@ -74,7 +74,7 @@
 }
 
 .image-multicolumn:not(.background-none) .image-multicolumn-card {
-  background: rgb(var(--color-background));
+  background-color: #EBE2D9;
   height: 100%;
 }
 
@@ -310,7 +310,7 @@
 }
 
 .image-multicolumn{
-  background-color: #FFF9F3;
+  background-color: #EBE2D9;
 }
 
 .image-multicolumn .page-width {
@@ -321,5 +321,5 @@
 }
 
 .image-multicolumn:not(.background-none) .image-multicolumn-card{
-  background-color: #FFF9F3;
+  background-color: #EBE2D9;
 }
