@@ -3419,3 +3419,10 @@ display: none !important;
   color: #2A1B12 !important;
   font-weight: 700;
 }
+
+.header__menu-item:hover,
+.list-menu--disclosure .header__menu-item:hover {
+  color: #2A1B12 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
