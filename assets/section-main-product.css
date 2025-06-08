@@ -1895,16 +1895,25 @@ a.product__text {
   gap: 0.5em;
 }
 .variant-radio-input {
+  appearance: radio;
+  -webkit-appearance: radio;
   accent-color: #2A1B12;
   width: 1.1em;
   height: 1.1em;
-  margin-right: 0.4em;
+  margin-right: 0.6em;
+  position: relative;
 }
 .variant-radio-text {
   font-family: 'Termoli', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #7E7E80;
+  transition: color 0.2s, font-weight 0.2s;
+}
+.variant-radio-input:checked + .variant-radio-text {
+  color: #2A1B12;
+  font-weight: 700;
 }
 .variant-radio-input:focus + .variant-radio-text,
 .variant-radio-label:hover .variant-radio-text {
