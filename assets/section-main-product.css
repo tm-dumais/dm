@@ -1899,17 +1899,14 @@ a.product__text {
   gap: 0.5em;
 }
 .variant-radio-input {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 1.6em;
-  height: 1.6em;
-  border: 3px solid #2A1B12;
-  border-radius: 50%;
-  background: none;
+  appearance: radio !important;
+  -webkit-appearance: radio !important;
+  accent-color: #2A1B12;
+  width: 1.3em;
+  height: 1.3em;
   margin-right: 0.3em;
   vertical-align: middle;
   position: relative;
-  transition: border-color 0.2s;
 }
 .variant-radio-input:checked {
   border-color: #2A1B12;
