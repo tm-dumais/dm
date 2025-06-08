@@ -1848,3 +1848,18 @@ a.product__text {
 }
 /* Remove old view-glazes styles if not used */
 .view-glazes, .view-glazes-wrapper { display: none !important; }
+
+.quantity__button-text {
+  font-family: 'Termoli', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.SelectOption.select__select {
+  text-transform: uppercase;
+}
