@@ -479,21 +479,51 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', block: block, product: product %}
             {%- when 'buy_buttons' -%}
-              {%- render 'buy-buttons',
-                block: block,
-                product: product,
-                product_form_id: product_form_id,
-                show_pickup_availability: block.settings.show_pickup_availability
-                show_inventory: block.settings.show_inventory
-              -%}
+              {%- assign is_made_to_order = false -%}
+              {%- for tag in product.tags -%}
+                {%- if tag == 'made-to-order' -%}
+                  {%- assign is_made_to_order = true -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if is_made_to_order -%}
+                <div class="product__price">
+                  {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                </div>
+                <a href="mailto:custom@dumaismade.com?subject=Enquiry about {{ product.title | escape }}" class="btn enquire-btn" style="margin-top: 1em;">
+                  Enquire
+                </a>
+              {%- else -%}
+                {%- render 'buy-buttons',
+                  block: block,
+                  product: product,
+                  product_form_id: product_form_id,
+                  show_pickup_availability: block.settings.show_pickup_availability
+                  show_inventory: block.settings.show_inventory
+                -%}
+              {%- endif -%}
             {%- when 'buy_buttons_qty' -%}
-              {%- render 'buy-buttons-qty',
-                block: block,
-                product: product,
-                product_form_id: product_form_id,
-                show_pickup_availability: block.settings.show_pickup_availability
-                show_inventory: block.settings.show_inventory
-              -%}
+              {%- assign is_made_to_order = false -%}
+              {%- for tag in product.tags -%}
+                {%- if tag == 'made-to-order' -%}
+                  {%- assign is_made_to_order = true -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if is_made_to_order -%}
+                <div class="product__price">
+                  {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                </div>
+                <a href="mailto:custom@dumaismade.com?subject=Enquiry about {{ product.title | escape }}" class="btn enquire-btn" style="margin-top: 1em;">
+                  Enquire
+                </a>
+              {%- else -%}
+                {%- render 'buy-buttons-qty',
+                  block: block,
+                  product: product,
+                  product_form_id: product_form_id,
+                  show_pickup_availability: block.settings.show_pickup_availability
+                  show_inventory: block.settings.show_inventory
+                -%}
+              {%- endif -%}
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
