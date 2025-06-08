@@ -164,3 +164,86 @@
 .newsletter-form__button svg {
   display: none;
 }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+.newsletter-form__field-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 2rem !important;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-form__field-wrapper .field__input {
+  width: 100%;
+  max-width: 600px;
+  height: 110px;
+  border: 2.5px solid #B0977B;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: Termoli, serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0 2rem;
+  text-align: center;
+  background: transparent;
+  color: #6B5B4A;
+  margin-bottom: 0;
+}
+
+.newsletter-form__field-wrapper .field__input::placeholder {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: Termoli, serif;
+  font-weight: 700;
+  color: #B0977B;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.newsletter-form__button {
+  display: block !important;
+  width: 100% !important;
+  max-width: 600px;
+  height: 110px;
+  margin-top: 0 !important;
+  border: 2.5px solid #2A1B12;
+  border-radius: 10px;
+  background: transparent;
+  color: #2A1B12;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: Termoli, serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+@media (max-width: 749px) {
+  .newsletter-form__field-wrapper .field__input,
+  .newsletter-form__button {
+    font-size: 20px;
+    height: 60px;
+    max-width: 100%;
+    border-radius: 6px;
+    padding: 0 1rem;
+  }
+  .newsletter-form__field-wrapper {
+    gap: 1rem !important;
+  }
+}

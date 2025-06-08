@@ -47,7 +47,7 @@
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
-                <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                <label class="field__label visually-hidden" for="NewsletterForm--{{ section.id }}">
                   {{ 'newsletter.label' | t }}
                 </label>
                 <input
@@ -67,7 +67,7 @@
                   {% elsif form.posted_successfully? %}
                     aria-describedby="Newsletter-success--{{ section.id }}"
                   {% endif %}
-                  placeholder="{{ 'newsletter.label' | t }}"
+                  placeholder="EMAIL ADDRESS"
                   required
                 >
                 <button
@@ -75,9 +75,9 @@
                   class="newsletter-form__button"
                   name="commit"
                   id="Subscribe"
-                  aria-label="{{ 'newsletter.button_label' | t }}"
+                  aria-label="Sign up"
                 >
-                  {% render 'icon-arrow' %}
+                  SIGN UP
                 </button>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
@@ -94,7 +94,6 @@
                   tabindex="-1"
                   autofocus
                 >
-                  {% render 'icon-success' -%}
                   {{- 'newsletter.success' | t }}
                 </h3>
               {%- endif -%}
