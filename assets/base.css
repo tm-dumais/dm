@@ -2443,7 +2443,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__heading-logo {
   height: auto;
-  height: 1.75rem;
+  height: 1.5rem;
   width: auto;
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
@@ -3404,4 +3404,11 @@ display: none !important;
 
 .header__active-menu-item {
   text-decoration: none !important;
+}
+
+.header.scrolled,
+.header__submenu.scrolled,
+.list-menu--disclosure.scrolled {
+  background: #f6eee6 !important;
+  transition: background 0.3s;
 }

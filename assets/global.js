@@ -1140,3 +1140,20 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Only run if NOT homepage
+  if (!window.location.pathname.match(/^\/?(index\.html)?$/)) {
+    var header = document.querySelector('.header');
+    var dropdowns = document.querySelectorAll('.header__submenu, .list-menu--disclosure');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 0) {
+        header && header.classList.add('scrolled');
+        dropdowns.forEach(function(el) { el.classList.add('scrolled'); });
+      } else {
+        header && header.classList.remove('scrolled');
+        dropdowns.forEach(function(el) { el.classList.remove('scrolled'); });
+      }
+    });
+  }
+});
