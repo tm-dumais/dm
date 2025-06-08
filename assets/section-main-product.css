@@ -1914,7 +1914,7 @@ a.product__text {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #7E7E80;
+  color: #B0977B;
   transition: color 0.2s, font-weight 0.2s;
 }
 .variant-radio-input:checked + .variant-radio-text {
