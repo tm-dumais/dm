@@ -37,6 +37,7 @@ main > .product-grid-container-made-to-order:last-of-type {
 }
 
 .made-to-order-grid-container .collection-hero__title {
+  text-align: left !important;
   font-weight: 700 !important;
   font-size: 12px !important;
 }
