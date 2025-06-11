@@ -3585,8 +3585,8 @@ display: none !important;
 .header--homepage .header__menu-item:focus,
 .header--homepage .header__active-menu-item,
 .header--homepage .list-menu__item--active {
-  color: #fff !important;
-  fill: #fff !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 .header--homepage .header__menu-item:hover,
@@ -3760,5 +3760,24 @@ cart-items.is-empty {
 
 .template-{
   background-color: #EBE2D9;
+}
+
+/* Override menu hover colors */
+.header__menu-item:hover,
+.header__submenu .header__menu-item:hover,
+.list-menu--disclosure .header__menu-item:hover {
+  color: #2A1B12 !important;
+}
+
+.header--homepage .header__menu-item:hover,
+.header--homepage .header__submenu .header__menu-item:hover,
+.header--homepage .list-menu--disclosure .header__menu-item:hover {
+  color: #fff !important;
+}
+
+.header--homepage.scrolled .header__menu-item:hover,
+.header--homepage.scrolled .header__submenu .header__menu-item:hover,
+.header--homepage.scrolled .list-menu--disclosure .header__menu-item:hover {
+  color: #2A1B12 !important;
 }
 
