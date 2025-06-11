@@ -451,6 +451,7 @@
   }
 
   .image-half-text__text p{
+    list-style: 1.1 !important;
   }
 }
 
