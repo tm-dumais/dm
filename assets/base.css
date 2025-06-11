@@ -3812,3 +3812,9 @@ cart-items.is-empty {
   font-size: 1.4rem;
 }
 
+/* ... existing code ... */
+.template-collection-made-to-order .header--homepage.scrolled,
+.template-collection-made-to-order .footer {
+  background-color: #B0977B !important;
+}
+
