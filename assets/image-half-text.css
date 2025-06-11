@@ -198,7 +198,6 @@
   }
 
   .image-half-text__text-item p {
-    font-size: 20px !important;
     line-height: 1.5 !important;
   }
 
@@ -464,7 +463,7 @@
 .image-half-text__text-item p {
   font-family: Termoli, serif !important;
   font-weight: 600 !important;
-  font-size: 24px !important;
+  font-size: 20px !important;
   color: #2A1B12 !important;
 }
 
