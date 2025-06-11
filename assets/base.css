@@ -3800,3 +3800,13 @@ cart-items.is-empty {
   color: #2A1B12 !important;
 }
 
+/* ... existing code ... */
+.template-collection .card-wrapper .card__heading {
+  text-align: left;
+}
+
+/* ... existing code ... */
+.template-page-n-about .rte p {
+  font-size: 1.4rem;
+}
+
