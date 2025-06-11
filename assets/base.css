@@ -3492,7 +3492,7 @@ display: none !important;
 .header__submenu.scrolled,
 .list-menu--disclosure.scrolled {
   background: #ebe2d9 !important;
-  border-bottom: 1px solid #2A1B12 !important;
+  border-bottom: 0.5px solid #2A1B12 !important;
 }
 
 .header__menu-item,
