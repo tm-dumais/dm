@@ -60,6 +60,6 @@ main > .product-grid-container-made-to-order:last-of-type {
 .header__submenu.scrolled,
 .list-menu--disclosure.scrolled,
 .footer,
-.header__submenu.list-menu {
+body.submenu-bg-onload .header__submenu.list-menu {
   background-color: #B0977B !important;
 }
