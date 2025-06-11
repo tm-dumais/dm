@@ -41,7 +41,7 @@
     
     <!-- Description Text Last -->
     {%- if section.settings.show_collection_description -%}
-      <div class="collection-hero__description rte">{{ collection.description }}</div>
+      <div class="collection-hero__description rte {{ section.settings.content_alignment }}">{{ collection.description }}</div>
     {%- endif -%}
   </div>
 </div>
@@ -60,6 +60,30 @@
       "id": "show_collection_description",
       "default": true,
       "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.rich-text.settings.content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.rich-text.settings.content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.rich-text.settings.content_alignment.options__3.label"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.rich-text.settings.content_alignment.label"
     },
     {
       "type": "checkbox",
