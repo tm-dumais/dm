@@ -58,6 +58,8 @@ main > .product-grid-container-made-to-order:last-of-type {
 .header.scrolled,
 .header__submenu.scrolled,
 .list-menu--disclosure.scrolled,
-.footer {
+.footer,
+.header__submenu,
+.list-menu--disclosure {
   background-color: #B0977B !important;
 }
