@@ -54,3 +54,10 @@ main > .product-grid-container-made-to-order:last-of-type {
   transform: translateZ(0);
   backface-visibility: hidden;
 }
+
+.header.scrolled,
+.header__submenu.scrolled,
+.list-menu--disclosure.scrolled,
+.footer {
+  background-color: #B0977B !important;
+}
