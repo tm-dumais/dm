@@ -3781,3 +3781,13 @@ cart-items.is-empty {
   color: #2A1B12 !important;
 }
 
+.header--homepage.scrolled .header__submenu .header__menu-item:hover,
+.header--homepage.scrolled .list-menu--disclosure .header__menu-item:hover {
+  color: #2A1B12 !important;
+}
+
+.header--homepage.scrolled .header__active-menu-item,
+.header--homepage.scrolled .list-menu__item--active {
+  color: #2A1B12 !important;
+}
+
