@@ -3377,9 +3377,9 @@ display: none !important;
   margin: 0 !important;
   padding: 0.5em 12.5% !important;
   position: fixed !important;
-  top: 45px !important;
+  top: 44.5px !important;
   height: auto !important;
-  min-height: 44.5px !important;
+  min-height: 45px !important;
   z-index: 1000;
   box-sizing: border-box;
 }
