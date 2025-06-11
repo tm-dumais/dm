@@ -3379,6 +3379,7 @@ display: none !important;
   position: fixed !important;
   top: 45px !important;
   height: auto !important;
+  min-height: 45px !important;
   z-index: 1000;
   box-sizing: border-box;
 }
@@ -3388,6 +3389,7 @@ display: none !important;
   display: flex !important;
   flex-direction: row !important;
   justify-content: center !important;
+  align-items: center !important;
   flex-wrap: wrap;
   column-gap: 2.5rem;
   row-gap: 1rem;
