@@ -3388,7 +3388,8 @@ display: none !important;
   flex-direction: row !important;
   justify-content: center !important;
   flex-wrap: wrap;
-  gap: 1rem 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 1rem;
 }
 
 .header__submenu .header__menu-item,
