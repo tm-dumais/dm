@@ -3380,6 +3380,7 @@ display: none !important;
   top: 45px !important;
   height: auto !important;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 .header__submenu.list-menu,
