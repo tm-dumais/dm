@@ -386,6 +386,7 @@
 .image-half-text__text p {
   margin-top: 0;
   margin-bottom: 1rem;
+    line-height: 1.1 !important;
 }
 
 @media screen and (max-width: 749px) {
@@ -448,10 +449,6 @@
 @media screen and (min-width: 750px) and (max-width: 1200px) {
   .image-half-text__content {
     padding: 2rem calc(2rem / var(--font-body-scale)) 5rem;
-  }
-
-  .image-half-text__text p{
-    list-style: 1.1 !important;
   }
 }
 
