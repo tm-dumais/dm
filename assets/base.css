@@ -3378,7 +3378,7 @@ display: none !important;
   padding: 0.5em 0;
   position: fixed !important;
   top: 45px !important;
-  height: 45px !important;
+  height: auto !important;
   z-index: 1000;
 }
 
@@ -3387,7 +3387,7 @@ display: none !important;
   display: flex !important;
   flex-direction: row !important;
   justify-content: center !important;
-  align-items: center !important;
+  flex-wrap: wrap;
   gap: 2.5rem;
 }
 
