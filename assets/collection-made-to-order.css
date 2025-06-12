@@ -67,7 +67,14 @@ main > .product-grid-container-made-to-order:last-of-type {
   background-color: #B0977B !important;
 }
 
-
 body.submenu-bg-onload .header__submenu.list-menu {
   background-color: #B0977B !important;
+}
+
+/* Style the "Load more" button to match the "Add to Cart" button */
+#eg-infinite-pagination .button {
+  background: #2A1B12 !important; 
+  color: #fff !important;
+  border-color: #2A1B12 !important;
+  font-weight: 700 !important;
 }
