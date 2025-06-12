@@ -182,7 +182,7 @@
       "type": "section-editorial-cta",
       "settings": {
         "button_label": "Shop Modern Bohemia",
-        "button_link": "shopify://collections/modern-bohemia",
+        "button_link": "shopify://collections/collection-24-02",
         "background_color": "color-1",
         "add_top_padding": false,
         "add_bottom_padding": false
