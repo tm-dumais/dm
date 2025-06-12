@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -32,9 +41,9 @@
         "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_332.jpg",
+            "image": "shopify://shop_images/Dumais_ICF_2023_332.jpg",
             "title": "Collection #1, 2023",
-            "text": "<p>Inspired by Josef Alber & Anni Alber<\/p>",
+            "text": "<p>Inspired by Josef Alber & Anni Alber</p>",
             "link_label": "",
             "link": ""
           }
@@ -42,9 +51,9 @@
         "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_49_c3c7fef3-93f0-4447-a757-f6c4a8b81f31.jpg",
+            "image": "shopify://shop_images/Dumais_ICF_2023_49_c3c7fef3-93f0-4447-a757-f6c4a8b81f31.jpg",
             "title": "Collection #2, 2023",
-            "text": "<p>Inspired by Mithé Espelt<\/p>",
+            "text": "<p>Inspired by Mithé Espelt</p>",
             "link_label": "",
             "link": ""
           }
@@ -52,9 +61,9 @@
         "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/c-3-intro.jpg",
+            "image": "shopify://shop_images/c-3-intro.jpg",
             "title": "Collection #3, 2023",
-            "text": "<p>Inspired by JB Blunk<\/p>",
+            "text": "<p>Inspired by JB Blunk</p>",
             "link_label": "",
             "link": ""
           }
@@ -65,6 +74,7 @@
         "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-2",
         "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "See our latest collections",
         "heading_size": "h1",
