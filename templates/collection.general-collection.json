@@ -4,6 +4,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
+        "content_alignment": "justify",
         "show_collection_image": false,
         "color_scheme": "background-1"
       }
@@ -18,74 +19,17 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
-        "enable_filtering": true,
+        "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 100
-      }
-    },
-    "9927c78f-c50b-4582-a2cb-f916954ed106": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_332.jpg",
-            "title": "Collection #1, 2023",
-            "text": "<p>Inspired by Josef Alber & Anni Alber<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Dumais_ICF_2023_49_c3c7fef3-93f0-4447-a757-f6c4a8b81f31.jpg",
-            "title": "Collection #2, 2023",
-            "text": "<p>Inspired by Mithé Espelt<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/c-3-intro.jpg",
-            "title": "Collection #3, 2023",
-            "text": "<p>Inspired by JB Blunk<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-1",
-        "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-2",
-        "template--16927600771286__9927c78f-c50b-4582-a2cb-f916954ed106-column-3"
-      ],
-      "settings": {
-        "title": "See our latest collections",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "banner",
-    "product-grid",
-    "9927c78f-c50b-4582-a2cb-f916954ed106"
+    "product-grid"
   ]
 }

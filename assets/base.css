@@ -119,10 +119,10 @@ body, .text-body, h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .button--secondary {
-  --color-button: var(--color-base-outline-button-labels);
-  --color-button-text: var(--color-base-outline-button-labels);
-  --color-button: var(--color-background);
-  --alpha-button-background: 1;
+  background: #2A1B12;
+  color: #fff;
+  border: 1px solid #2A1B12;
+  font-weight: 700;
 }
 
 .color-background-2 .button--secondary,
