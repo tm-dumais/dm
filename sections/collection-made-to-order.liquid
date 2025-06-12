@@ -20,9 +20,13 @@
 {% for group_handle in grouped_collections %}
   {% if group_handle != collection.handle and group_handle != '' %}
     {% assign handle_parts = group_handle | split: '-' %}
-    {% assign year = handle_parts[1] | plus: 0 %}
-    {% assign number = handle_parts[2] | plus: 0 %}
-    {% assign sort_key = year | times: 100 | plus: number %}
+    {% assign year = handle_parts[1] %}
+    {% assign number = handle_parts[2] %}
+    {% assign padded_year = '00' | append: year %}
+    {% assign padded_year = padded_year | slice: -2, 2 %}
+    {% assign padded_number = '00' | append: number %}
+    {% assign padded_number = padded_number | slice: -2, 2 %}
+    {% assign sort_key = padded_year | append: padded_number %}
     {% assign sorted_collections = sorted_collections | append: sort_key | append: '|' | append: group_handle | append: ',' %}
   {% endif %}
 {% endfor %}
