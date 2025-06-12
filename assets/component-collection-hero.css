@@ -88,17 +88,15 @@
   margin: 0 auto;
 }
 
-.collection-hero__description {
+.collection-hero__description, .collection-hero__description p {
   font-family: 'Termoli', sans-serif !important;
   font-weight: 600 !important;
   font-size: 1.6rem !important;
-  text-align: center !important;
+  text-align: justify !important;
 }
 
-.collection-hero__description p {
-  font-family: 'Termoli', sans-serif !important;
-  font-weight: 600 !important;
-  font-size: 1.6rem !important;
+.template-collection-general-collection .collection-hero__description,
+.template-collection-general-collection .collection-hero__description p {
   text-align: center !important;
 }
 

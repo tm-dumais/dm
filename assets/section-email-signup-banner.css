@@ -1,3 +1,9 @@
+/* Update button color variables for email signup banner */
+:root {
+  --color-button: 42, 27, 18;
+  --color-button-text: 255, 255, 255;
+}
+
 .email-signup-banner .newsletter-form,
 .email-signup-banner .newsletter-form__field-wrapper {
   display: inline-block;

@@ -1951,3 +1951,9 @@ a.product__text {
   text-transform: uppercase;
   font-size: 14px;
 }
+
+/* Update button color variables for product section */
+:root {
+  --color-button: 42, 27, 18;
+  --color-button-text: 255, 255, 255;
+}

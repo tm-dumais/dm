@@ -26,6 +26,8 @@
 :root {
   --font-body-family: 'Termoli', sans-serif;
   --font-heading-family: 'Termoli', sans-serif;
+  --color-button: 42, 27, 18;
+  --color-button-text: 255, 255, 255;
 }
 
 body, .text-body, h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
