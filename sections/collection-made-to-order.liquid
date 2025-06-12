@@ -6,7 +6,6 @@
 
 {% assign products = collection.products %}
 {% assign grouped_collections = '' %}
-{% assign found_any = false %}
 {% for product in products %}
   {% for c in product.collections %}
     {% unless grouped_collections contains c.handle %}
@@ -16,9 +15,25 @@
 {% endfor %}
 {% assign grouped_collections = grouped_collections | split: ',' | uniq %}
 
-{% assign collection_handle = collection.handle %}
+{% assign sorted_collections = '' %}
+
 {% for group_handle in grouped_collections %}
-  {% if group_handle != collection_handle and group_handle != '' %}
+  {% if group_handle != collection.handle and group_handle != '' %}
+    {% assign handle_parts = group_handle | split: '-' %}
+    {% assign year = handle_parts[1] | plus: 0 %}
+    {% assign number = handle_parts[2] | plus: 0 %}
+    {% assign sort_key = year | times: 100 | plus: number %}
+    {% assign sorted_collections = sorted_collections | append: sort_key | append: '|' | append: group_handle | append: ',' %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_collections = sorted_collections | split: ',' | sort | reverse %}
+
+{% assign found_any = false %}
+{% for item in sorted_collections %}
+  {% assign parts = item | split: '|' %}
+  {% assign group_handle = parts[1] %}
+  {% if group_handle != '' %}
     {% assign group = collections[group_handle] %}
     {% assign group_has_products = false %}
     <div class="product-grid-container product-grid-container-made-to-order" id="ProductGridContainer">
