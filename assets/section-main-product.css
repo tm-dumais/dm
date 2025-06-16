@@ -24,7 +24,7 @@ html {
   }
   .product__info-wrapper {
     position: sticky;
-    top: 8.5rem;
+    top: 5.5rem;
     align-self: flex-start;
     padding-bottom: 2rem;
   }
