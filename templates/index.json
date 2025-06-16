@@ -114,7 +114,7 @@
         "heading": "<p>We work closely with clients to create bespoke pieces, whether adapting an existing piece or imagining something entirely new. We view the process as a collaboration.</p>",
         "heading_size": "small",
         "button_label": "LEARN MORE",
-        "button_link": "",
+        "button_link": "shopify://pages/bespoke",
         "background_color": "warm-beige",
         "padding_top_enabled": true,
         "padding_bottom_enabled": true,
