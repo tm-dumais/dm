@@ -3820,3 +3820,15 @@ cart-items.is-empty {
   background-color: #B0977B !important;
 }
 
+#app-embed, [data-form-root="true"] {
+  font-family: 'Termoli', serif !important;
+}
+#app-embed h1, #app-embed h2, #app-embed h3,
+#app-embed p, #app-embed label, #app-embed input, #app-embed textarea, #app-embed button {
+  font-family: 'Termoli', serif !important;
+}
+[data-form-root="true"] h1, [data-form-root="true"] h2, [data-form-root="true"] h3,
+[data-form-root="true"] p, [data-form-root="true"] label, [data-form-root="true"] input, [data-form-root="true"] textarea, [data-form-root="true"] button {
+  font-family: 'Termoli', serif !important;
+}
+
