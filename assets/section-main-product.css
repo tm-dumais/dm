@@ -1781,6 +1781,7 @@ a.product__text {
   display: block;
   margin-top: 0rem;
   margin-bottom: 1rem;
+  display: none;;
 }
 .glazes-info-text {
   font-weight: 600;
