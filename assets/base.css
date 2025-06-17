@@ -3840,10 +3840,19 @@ cart-items.is-empty {
   .home-section-image__media img{
     filter: grayscale(100%) !important;
   }
+  .image-half-text__media-item{
+    mix-blend-mode: multiply;
+  }
+  .home-section-image__media{
+    mix-blend-mode: multiply;
+  }
 }
 
 .template-page-n-about{
   .image-half-text__media img{
     filter: grayscale(100%) !important;
+  }
+  .image-half-text__media-item{
+    mix-blend-mode: multiply;
   }
 }
