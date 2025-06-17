@@ -44,31 +44,37 @@
       <div class="collection page-width made-to-order-grid-container">
         <div class="loading-overlay gradient"></div>
         <h3 class="collection-hero__title" style="text-align:center; margin-bottom:2.5rem;">{{ group.title }}</h3>
-        {% paginate group.products by 50 %}
         <ul id="product-grid" class="grid product-grid grid--1-col-tablet-down grid--3-col-desktop">
           {% assign idx = 0 %}
-          {% for product in group.products %}
-            <li class="grid__item">
-              {% render 'card-product',
-                card_product: product,
-                media_aspect_ratio: 'portrait',
-                show_secondary_image: false,
-                show_vendor: false,
-                show_rating: false,
-                lazy_load: idx > 2,
-                show_quick_add: false,
-                section_id: group_handle
-              %}
-            </li>
-            {% assign idx = idx | plus: 1 %}
+          {% for product in products %}
+            {% assign product_collection_handles = '' %}
+            {% for c in product.collections %}
+              {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+            {% endfor %}
+            {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+            {% if product_collection_handles contains group_handle %}
+              {% assign group_has_products = true %}
+              {% assign found_any = true %}
+              {% assign idx = idx | plus: 1 %}
+              {% assign lazy_load = false %}
+              {% if idx > 2 %}
+                {% assign lazy_load = true %}
+              {% endif %}
+              <li class="grid__item">
+                {% render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: 'portrait',
+                  show_secondary_image: false,
+                  show_vendor: false,
+                  show_rating: false,
+                  lazy_load: lazy_load,
+                  show_quick_add: false,
+                  section_id: group_handle
+                %}
+              </li>
+            {% endif %}
           {% endfor %}
         </ul>
-        {% if paginate.pages > 1 %}
-          <div class="pagination-wrapper">
-            {% render 'pagination', paginate: paginate %}
-          </div>
-        {% endif %}
-        {% endpaginate %}
       </div>
     </div>
   {% endif %}
