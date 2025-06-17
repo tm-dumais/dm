@@ -3835,3 +3835,15 @@ cart-items.is-empty {
 .template-page-n-trade .shopify-section{
   background-color: #EBE2D9 !important;
 }
+
+.template-page-n-trade{
+  .home-section-image__media img{
+    filter: grayscale(100%);
+  }
+}
+
+.template-page-n-about{
+  .image-half-text__media img{
+    filter: grayscale(100%);
+  }
+}
