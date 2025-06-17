@@ -4,7 +4,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
-{% assign products = collection.products %}
+{% assign products = collection.all_products %}
 {% assign grouped_collections = '' %}
 {% for product in products %}
   {% for c in product.collections %}
