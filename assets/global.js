@@ -1157,3 +1157,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Look for all form-embed elements on the page
+  const formEmbeds = document.querySelectorAll('form-embed');
+  formEmbeds.forEach(form => {
+    // Wait for the shadowRoot to be available
+    const tryInject = () => {
+      if (!form.shadowRoot) {
+        setTimeout(tryInject, 100);
+        return;
+      }
+      // Prevent double-injection
+      if (form.shadowRoot.querySelector('link[data-termoli-form-embed]')) return;
+      const linkEl = document.createElement('link');
+      linkEl.setAttribute('rel', 'stylesheet');
+      linkEl.setAttribute('href', window.termoliFormEmbedCss || '/assets/form-embed-styles.css');
+      linkEl.setAttribute('data-termoli-form-embed', 'true');
+      form.shadowRoot.appendChild(linkEl);
+      form.classList.add('loaded');
+    };
+    tryInject();
+  });
+});

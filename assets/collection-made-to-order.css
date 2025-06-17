@@ -78,16 +78,3 @@ body.submenu-bg-onload .header__submenu.list-menu {
   border-color: #2A1B12 !important;
   font-weight: 700 !important;
 }
-
-.made-to-order .collection-hero__description, .made-to-order .collection-hero__description p {
-  text-align: center !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.collection-hero__description,
-.collection-hero__description p {
-  text-align: center !important;
-  justify-content: center !important;
-  align-items: center !important;
-}

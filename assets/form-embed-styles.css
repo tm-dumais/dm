@@ -1,0 +1,71 @@
+/* Termoli font for all embedded form content */
+:host, * {
+  font-family: 'Termoli', serif !important;
+  color: #2A1B12 !important;
+}
+
+h1, h2, h3, h4, h5, h6, label, p, span, input, textarea, select, button {
+  font-family: 'Termoli', serif !important;
+  color: #2A1B12 !important;
+}
+
+input, textarea, select, button {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  border: 1px solid #B0977B !important;
+  background: #fff !important;
+  padding: 0.75rem 1.2rem !important;
+  margin-bottom: 1rem !important;
+  box-sizing: border-box !important;
+}
+
+button, input[type="submit"] {
+  background: #2A1B12 !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  cursor: pointer !important;
+  border: none !important;
+  padding: 0.9rem 2.2rem !important;
+  border-radius: 4px !important;
+  transition: background 0.2s, color 0.2s !important;
+}
+
+button:disabled, input[type="submit"][disabled] {
+  background: #B0977B !important;
+  color: #fff !important;
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+}
+
+label {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.3rem !important;
+  display: block !important;
+}
+
+.form-container, .formFieldContainer_1yxdx_5, .formFieldset_ed7ce_68 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 900 !important;
+  margin-bottom: 0.7rem !important;
+}
+
+/* Paragraphs */
+p, .formDisclaimer_ed7ce_38 {
+  font-size: 1rem !important;
+  color: #2A1B12 !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Remove default box-shadow and outline */
+input, textarea, select, button {
+  box-shadow: none !important;
+  outline: none !important;
+} 
