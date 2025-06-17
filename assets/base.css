@@ -3838,12 +3838,12 @@ cart-items.is-empty {
 
 .template-page-n-trade{
   .home-section-image__media img{
-    filter: grayscale(100%);
+    filter: grayscale(100%) !important;
   }
 }
 
 .template-page-n-about{
   .image-half-text__media img{
-    filter: grayscale(100%);
+    filter: grayscale(100%) !important;
   }
 }
