@@ -4,87 +4,89 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
-{% assign products = collection.all_products %}
-{% assign grouped_collections = '' %}
-{% for product in products %}
-  {% for c in product.collections %}
-    {% unless grouped_collections contains c.handle %}
-      {% assign grouped_collections = grouped_collections | append: c.handle | append: ',' %}
-    {% endunless %}
+{% paginate collection.products by 1000 %}
+  {% assign products = collection.products %}
+  {% assign grouped_collections = '' %}
+  {% for product in products %}
+    {% for c in product.collections %}
+      {% unless grouped_collections contains c.handle %}
+        {% assign grouped_collections = grouped_collections | append: c.handle | append: ',' %}
+      {% endunless %}
+    {% endfor %}
   {% endfor %}
-{% endfor %}
-{% assign grouped_collections = grouped_collections | split: ',' | uniq %}
+  {% assign grouped_collections = grouped_collections | split: ',' | uniq %}
 
-{% assign sorted_collections = '' %}
+  {% assign sorted_collections = '' %}
 
-{% for group_handle in grouped_collections %}
-  {% if group_handle != collection.handle and group_handle != '' %}
-    {% assign handle_parts = group_handle | split: '-' %}
-   {% assign year = handle_parts[1] %}
-    {% assign number = handle_parts[2] %}
-    {% assign padded_year = '00' | append: year %}
-    {% assign padded_year = padded_year | slice: -2, 2 %}
-    {% assign padded_number = '00' | append: number %}
-    {% assign padded_number = padded_number | slice: -2, 2 %}
-    {% assign sort_key = padded_year | append: padded_number %}
-    {% assign sorted_collections = sorted_collections | append: sort_key | append: '|' | append: group_handle | append: ',' %}
-  {% endif %}
-{% endfor %}
+  {% for group_handle in grouped_collections %}
+    {% if group_handle != collection.handle and group_handle != '' %}
+      {% assign handle_parts = group_handle | split: '-' %}
+      {% assign year = handle_parts[1] %}
+      {% assign number = handle_parts[2] %}
+      {% assign padded_year = '00' | append: year %}
+      {% assign padded_year = padded_year | slice: -2, 2 %}
+      {% assign padded_number = '00' | append: number %}
+      {% assign padded_number = padded_number | slice: -2, 2 %}
+      {% assign sort_key = padded_year | append: padded_number %}
+      {% assign sorted_collections = sorted_collections | append: sort_key | append: '|' | append: group_handle | append: ',' %}
+    {% endif %}
+  {% endfor %}
 
-{% assign sorted_collections = sorted_collections | split: ',' | sort | reverse %}
+  {% assign sorted_collections = sorted_collections | split: ',' | sort | reverse %}
 
-{% assign found_any = false %}
-{% for item in sorted_collections %}
-  {% assign parts = item | split: '|' %}
-  {% assign group_handle = parts[1] %}
-  {% if group_handle != '' %}
-    {% assign group = collections[group_handle] %}
-    {% assign group_has_products = false %}
-    <div class="product-grid-container product-grid-container-made-to-order" id="ProductGridContainer">
-      <div class="collection page-width made-to-order-grid-container">
-        <div class="loading-overlay gradient"></div>
-        <h3 class="collection-hero__title" style="text-align:center; margin-bottom:2.5rem;">{{ group.title }}</h3>
-        <ul id="product-grid" class="grid product-grid grid--1-col-tablet-down grid--3-col-desktop">
-          {% assign idx = 0 %}
-          {% for product in products %}
-            {% assign product_collection_handles = '' %}
-            {% for c in product.collections %}
-              {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
-            {% endfor %}
-            {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
-            {% if product_collection_handles contains group_handle %}
-              {% assign group_has_products = true %}
-              {% assign found_any = true %}
-              {% assign idx = idx | plus: 1 %}
-              {% assign lazy_load = false %}
-              {% if idx > 2 %}
-                {% assign lazy_load = true %}
+  {% assign found_any = false %}
+  {% for item in sorted_collections %}
+    {% assign parts = item | split: '|' %}
+    {% assign group_handle = parts[1] %}
+    {% if group_handle != '' %}
+      {% assign group = collections[group_handle] %}
+      {% assign group_has_products = false %}
+      <div class="product-grid-container product-grid-container-made-to-order" id="ProductGridContainer">
+        <div class="collection page-width made-to-order-grid-container">
+          <div class="loading-overlay gradient"></div>
+          <h3 class="collection-hero__title" style="text-align:center; margin-bottom:2.5rem;">{{ group.title }}</h3>
+          <ul id="product-grid" class="grid product-grid grid--1-col-tablet-down grid--3-col-desktop">
+            {% assign idx = 0 %}
+            {% for product in products %}
+              {% assign product_collection_handles = '' %}
+              {% for c in product.collections %}
+                {% assign product_collection_handles = product_collection_handles | append: c.handle | append: ',' %}
+              {% endfor %}
+              {% assign product_collection_handles = product_collection_handles | split: ',' | uniq %}
+              {% if product_collection_handles contains group_handle %}
+                {% assign group_has_products = true %}
+                {% assign found_any = true %}
+                {% assign idx = idx | plus: 1 %}
+                {% assign lazy_load = false %}
+                {% if idx > 2 %}
+                  {% assign lazy_load = true %}
+                {% endif %}
+                <li class="grid__item">
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: 'portrait',
+                    show_secondary_image: false,
+                    show_vendor: false,
+                    show_rating: false,
+                    lazy_load: lazy_load,
+                    show_quick_add: false,
+                    section_id: group_handle
+                  %}
+                </li>
               {% endif %}
-              <li class="grid__item">
-                {% render 'card-product',
-                  card_product: product,
-                  media_aspect_ratio: 'portrait',
-                  show_secondary_image: false,
-                  show_vendor: false,
-                  show_rating: false,
-                  lazy_load: lazy_load,
-                  show_quick_add: false,
-                  section_id: group_handle
-                %}
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% unless found_any %}
+    <div class="collection-hero">
+      <div class="collection-hero__inner page-width">
+        <h3 class="collection-hero__title">No collection found</h3>
+        <div class="collection-hero__description rte">No products found in this collection.</div>
       </div>
     </div>
-  {% endif %}
-{% endfor %}
-
-{% unless found_any %}
-  <div class="collection-hero">
-    <div class="collection-hero__inner page-width">
-      <h3 class="collection-hero__title">No collection found</h3>
-      <div class="collection-hero__description rte">No products found in this collection.</div>
-    </div>
-  </div>
-{% endunless %}
+  {% endunless %}
+{% endpaginate %}
