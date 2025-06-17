@@ -28,6 +28,16 @@
         "padding_horizontal_enabled": false
       }
     },
+    "custom_liquid_q4rnQP": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script>\n  window.formStyles || (window.formStyles = new Map);\n  formStyles.set('custom-font-rules', `\n    h2 {\n      font-family: \"Mouse Memoirs\", serif !important;\n    }\n  `);\n</script>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "d55197ba-860b-4b5f-a49d-3b9419c755f2": {
       "type": "trade-form",
       "blocks": {
@@ -97,6 +107,7 @@
   "order": [
     "main",
     "section_home_image_QCh4fK",
+    "custom_liquid_q4rnQP",
     "d55197ba-860b-4b5f-a49d-3b9419c755f2",
     "1728482708d75b4a95"
   ]
