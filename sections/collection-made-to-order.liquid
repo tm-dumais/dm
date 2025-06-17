@@ -20,7 +20,7 @@
 {% for group_handle in grouped_collections %}
   {% if group_handle != collection.handle and group_handle != '' %}
     {% assign handle_parts = group_handle | split: '-' %}
-    {% assign year = handle_parts[1] %}
+   {% assign year = handle_parts[1] %}
     {% assign number = handle_parts[2] %}
     {% assign padded_year = '00' | append: year %}
     {% assign padded_year = padded_year | slice: -2, 2 %}
@@ -88,5 +88,3 @@
     </div>
   </div>
 {% endunless %}
-
-<div class="collection-made-to-order-bg"> 
