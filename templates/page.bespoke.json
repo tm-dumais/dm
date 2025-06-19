@@ -16,7 +16,7 @@
         ".home-section-split--padding-top {padding-top: 3rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/1_8d50f509-5e6b-48d9-9b88-39891258df9b.jpg",
+        "image": "shopify://shop_images/1_36fd3ace-cbef-47a5-b946-aeba939ebf02.jpg",
         "image_position": "left",
         "vertical_alignment": "top",
         "horizontal_alignment": "left",
@@ -36,7 +36,7 @@
       "settings": {
         "title": "Bespoke",
         "heading_size": "h1",
-        "image": "shopify://shop_images/2_ca5b7606-ca3b-4f1c-9cf0-5940a7ff1a20.jpg",
+        "image": "shopify://shop_images/2_dc51c50c-b1bb-436d-bf56-98ea7a7f3a2f.jpg",
         "caption_headline": "First we talk",
         "text": "<p></p><p>Regardless of whether you're adapting an existing piece or creating something completely new, making something for yourself or someone else, the first thing we do is talk. </p><p>We want to know who the piece is for, what it’s for, when will it be used, where it will live, and, most importantly, why you’re doing it. It helps us to determine the piece’s form and function, as well as share relevant things that excite us and that we’re interested in. </p>"
       }
@@ -44,10 +44,10 @@
     "section_bespoke_2_8NVNqN": {
       "type": "section-bespoke-2",
       "settings": {
-        "image_1": "shopify://shop_images/3_80318f20-8720-4804-b843-7dfd52beb75f.jpg",
+        "image_1": "shopify://shop_images/3_133c1627-7406-4473-93f8-4c3967707ed0.jpg",
         "caption_headline_1": "Then we try things out",
         "text_1": "<p></p><p>Once we’ve settled on a direction, we’ll get to work, creating sketches, illustrations, or renderings of your piece, as well as collecting relevant material samples. It’s a process where we’ll be trying things out and narrowing down what the piece will be, one that we want to share with you. </p><p>If we're creating something from scratch, or if you're producing a large number of pieces for a commercial or hospitality project, we'll also create test pieces to ensure that the design is structurally sound and achieves the desired effect. </p>",
-        "image_2": "shopify://shop_images/4_677ebf67-9e7a-4b0e-8cc6-8d8b78615191.jpg",
+        "image_2": "shopify://shop_images/4_cd3cddf7-5c7f-4874-9ad7-240162bc9a69.jpg",
         "caption_headline_2": "",
         "text_2": ""
       }
