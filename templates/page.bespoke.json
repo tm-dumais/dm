@@ -62,33 +62,6 @@
         "text": "<p>Once approved, we put our collaborative and imaginative pieces into production: we’ll cut, assemble, dry, fire, glaze, fire, fit, shade and test your finished product. This process takes between 10 to 14 weeks.</p>"
       }
     },
-    "section_semi_bespoke_KHWPBH": {
-      "type": "section-semi-bespoke",
-      "settings": {
-        "title": "Semi-Bespoke",
-        "heading_size": "h1",
-        "image": "shopify://shop_images/Frasier-Lamp_-Overlap-3.jpg",
-        "caption_headline": "",
-        "text": "<p>We also offer a semi-bespoke experience for our designers who want to modify an existing design’s scale, glaze, texture or shade to suit your space.</p>",
-        "background_color": "clay",
-        "image_alt": ""
-      }
-    },
-    "section_home_text_banner_KxhiGy": {
-      "type": "section-home-text-banner",
-      "settings": {
-        "vertical_alignment": "top",
-        "eyebrow_text": "",
-        "heading": "<p>“A modernist take on ceramic lighting and furniture.”</p>",
-        "heading_size": "h1",
-        "button_label": "Contact Sales",
-        "button_link": "mailto:studio@dumaismade.com",
-        "background_color": "none",
-        "padding_top_enabled": true,
-        "padding_bottom_enabled": true,
-        "padding_horizontal_enabled": false
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -137,8 +110,6 @@
     "section_bespoke_1_qnAAb6",
     "section_bespoke_2_8NVNqN",
     "section_bespoke_3_3Mf34V",
-    "section_semi_bespoke_KHWPBH",
-    "section_home_text_banner_KxhiGy",
     "main",
     "836d8415-0c97-4bca-b60c-33c0f3cd7b52"
   ]
