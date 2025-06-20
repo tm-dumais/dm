@@ -415,11 +415,7 @@
               {%- else -%}
                 </search-form>
               {%- endif -%}
-              <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                  <use href="#icon-close">
-                </svg>
-              </button>
+              <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset">Close</button>
             </div>
           </div>
         </details>
@@ -565,15 +561,12 @@
                         {%- else -%}
                           </search-form>
                         {%- endif -%}
-                      <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                        <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                          <use href="#icon-close">
-                        </svg>
-                      </button>
+                        <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset">Close</button>
+                      </div>
                     </div>
-                  </div>
-                </details>
-              </details-modal>
+                  </details>
+                </details-modal>
+              </li>
             </li>
           </ul>
         </nav>
