@@ -3841,10 +3841,10 @@ cart-items.is-empty {
     filter: grayscale(100%) !important;
   }
   .image-half-text__media-item{
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
   }
   .home-section-image__media{
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
   }
 }
 
@@ -3853,6 +3853,6 @@ cart-items.is-empty {
     filter: grayscale(100%) !important;
   }
   .image-half-text__media-item{
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
   }
 }
