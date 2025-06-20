@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,13 +23,13 @@
         "d37e6280-721a-4fac-a78c-dcdcaa94c1fe": {
           "type": "heading",
           "settings": {
-            "heading": "CONTACT US"
+            "heading": ""
           }
         },
         "template--16833782186198__087ff8b0-df6b-42cd-bff0-9c686e01ab93-16750992892440aa63-1": {
           "type": "text",
           "settings": {
-            "text": "<p><em>Showroom Hours<br\/><\/em>Monday - Friday<em><br\/><\/em>9am - 5pm EST<br\/><br\/><\/p><p><em>Sales and General Inquiries<br\/><\/em><a href=\"mailto:studio@dumaismade.com\" target=\"_blank\" title=\"mailto:studio@dumaismade.com\">studio@dumaismade.com<\/a><br\/><br\/><\/p><p><em>Custom Inquiries<br\/><\/em><a href=\"mailto:studio@dumaismade.com\" target=\"_blank\" title=\"mailto:custom@dumaismade.com\">custom@dumaismade.com<\/a><br\/><br\/><\/p><p><em>Press Inquiries<\/em><br\/><a href=\"mailto:dumais@dadagoldberg.com\" target=\"_blank\" title=\"Press Inquiries\">dumais@dadagoldberg.com<\/a><\/p>"
+            "text": "<p></p><p>CONTACT<br/><br/>Showroom Hours<br/>Monday - Friday<br/>9am - 5pm EST<br/><br/></p><p>Sales and General Inquiries<br/><a href=\"mailto:studio@dumaismade.com\" target=\"_blank\" title=\"mailto:studio@dumaismade.com\">studio@dumaismade.com</a><br/><br/></p><p>Custom Inquiries<br/><a href=\"mailto:studio@dumaismade.com\" target=\"_blank\" title=\"mailto:custom@dumaismade.com\">custom@dumaismade.com</a><br/><br/></p><p>Press Inquiries<br/><a href=\"mailto:dumais@dadagoldberg.com\" target=\"_blank\" title=\"Press Inquiries\">dumais@dadagoldberg.com</a></p>"
           }
         }
       },
@@ -32,10 +41,10 @@
         ".page-intro-section-wrapper {max-height: none !important;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2019_03_25_KD_0009X_fcebc87a-1277-4817-b6a0-d693a1b2e6ee.jpg",
+        "image": "shopify://shop_images/2019_03_25_KD_0009X_fcebc87a-1277-4817-b6a0-d693a1b2e6ee.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
-        "padding_top": 36,
+        "padding_top": 72,
         "padding_bottom": 100
       }
     },
