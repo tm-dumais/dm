@@ -2568,7 +2568,7 @@ menu-drawer + .header__search {
 .header__search {
   display: inline-flex;
   line-height: 0;
-  display: none !important;
+  /* display: none !important; */
 }
 
 .header--top-center > .header__search {
@@ -3881,7 +3881,7 @@ cart-items.is-empty {
 
 .template-search__header{
 
-  margin-top: 8rem;
+  margin-top: 10rem;
   margin-bottom: 3rem !important;
 
   .search__input{
