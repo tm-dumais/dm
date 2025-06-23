@@ -3881,6 +3881,9 @@ cart-items.is-empty {
 
 .template-search__header{
 
+  margin-top: 8rem;
+
+
   h1{
     display: none;
   }
