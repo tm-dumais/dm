@@ -3874,3 +3874,15 @@ cart-items.is-empty {
     /* mix-blend-mode: multiply; */
   }
 }
+
+.template-search{
+  background-color: #EBE2D9 !important;
+}
+
+.template-search__header{
+
+  h1{
+    display: none;
+  }
+
+}
