@@ -3882,10 +3882,17 @@ cart-items.is-empty {
 .template-search__header{
 
   margin-top: 8rem;
+  margin-bottom: 3rem !important;
 
+  .search__input{
+    background: transparent !important;
+  }
 
   h1{
     display: none;
   }
+}
 
+.predictive-search{
+  border-color: #2A1B12!important;
 }
