@@ -3931,5 +3931,5 @@ cart-items.is-empty {
 
 .predictive-search--header {
   margin-top: .5rem !important;
-  border-top: 1px solid !important;
+  border-top: 1px solid #2A1B12 !important;
 }
