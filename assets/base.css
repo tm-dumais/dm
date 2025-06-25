@@ -3918,12 +3918,12 @@ cart-items.is-empty {
 /* Move close button to far right of modal, vertically centered */
 .search-modal__close-button {
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 2rem;
   height: 100%;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 12px;
   background: none;
   border: none;
   box-shadow: none;
