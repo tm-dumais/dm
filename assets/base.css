@@ -3933,3 +3933,9 @@ cart-items.is-empty {
   margin-top: .5rem !important;
   border-top: 1px solid #2A1B12 !important;
 }
+
+.search-modal__form .reset__button .icon-close {
+  color: #2A1B12 !important;
+  stroke: #2A1B12 !important;
+  fill: none !important;
+}
