@@ -3928,36 +3928,3 @@ cart-items.is-empty {
   border: none;
   box-shadow: none;
 }
-
-.header__search-dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100vw;
-  background: #EBE2D9;
-  border-bottom: 1px solid #2A1B12;
-  z-index: 1001;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 2rem 10vw 2rem 10vw;
-  transition: opacity 0.2s, transform 0.2s;
-  opacity: 0;
-  transform: translateY(-10px);
-}
-.header__search-dropdown.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-.header__search-dropdown .search-modal__close-button {
-  position: absolute;
-  top: 0;
-  right: 2rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  background: none;
-  border: none;
-  box-shadow: none;
-}
