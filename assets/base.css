@@ -3928,3 +3928,8 @@ cart-items.is-empty {
   border: none;
   box-shadow: none;
 }
+
+.predictive-search--header {
+  margin-top: .5rem !important;
+  border-top: 1px solid !important;
+}
