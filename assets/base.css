@@ -3530,7 +3530,7 @@ display: none !important;
 .header--homepage.scrolled .header__submenu,
 .header--homepage.scrolled .list-menu--disclosure {
   background: #ebe2d9 !important;
-  border-bottom: 1px solid #2A1B12 !important;
+  border-bottom: .5px solid #2A1B12 !important;
   color: #2A1B12 !important;
 }
 
