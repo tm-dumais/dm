@@ -3896,3 +3896,15 @@ cart-items.is-empty {
 .predictive-search{
   border-color: #2A1B12!important;
 }
+
+.header--homepage .header__icon,
+.header--homepage .header__icon--search .icon {
+  color: white !important;
+  fill: white !important;
+}
+
+.header--homepage.scrolled .header__icon,
+.header--homepage.scrolled .header__icon--search .icon {
+  color: black !important;
+  fill: black !important;
+}
