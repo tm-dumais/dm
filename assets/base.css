@@ -3908,3 +3908,23 @@ cart-items.is-empty {
   color: black !important;
   fill: black !important;
 }
+
+/* Force search icon in modal to always be black */
+.search-modal__form .search__button .icon-search {
+  color: black !important;
+  fill: black !important;
+}
+
+/* Move close button to far right of modal, vertically centered */
+.search-modal__close-button {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
