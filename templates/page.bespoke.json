@@ -16,7 +16,7 @@
         ".home-section-split--padding-top {padding-top: 3rem;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/1_36fd3ace-cbef-47a5-b946-aeba939ebf02.jpg",
+        "image": "shopify://shop_images/4IMG_9817.jpg",
         "image_position": "left",
         "vertical_alignment": "top",
         "horizontal_alignment": "left",
@@ -44,10 +44,10 @@
     "section_bespoke_2_8NVNqN": {
       "type": "section-bespoke-2",
       "settings": {
-        "image_1": "shopify://shop_images/3_133c1627-7406-4473-93f8-4c3967707ed0.jpg",
+        "image_1": "shopify://shop_images/4IMG_9817-2_352d8413-0788-4f06-a37c-1c248007d3ef.jpg",
         "caption_headline_1": "Then we try things out",
         "text_1": "<p></p><p>Once we’ve settled on a direction, we’ll get to work, creating sketches, illustrations, or renderings of your piece, as well as collecting relevant material samples. It’s a process where we’ll be trying things out and narrowing down what the piece will be, one that we want to share with you. </p><p>If we're creating something from scratch, or if you're producing a large number of pieces for a commercial or hospitality project, we'll also create test pieces to ensure that the design is structurally sound and achieves the desired effect. </p>",
-        "image_2": "shopify://shop_images/4_cd3cddf7-5c7f-4874-9ad7-240162bc9a69.jpg",
+        "image_2": "shopify://shop_images/4IMG_9817-2_352d8413-0788-4f06-a37c-1c248007d3ef.jpg",
         "caption_headline_2": "",
         "text_2": ""
       }
