@@ -11,32 +11,19 @@
 <div class="home-section-image__media">
 {%- if section.settings.video_url != blank -%}
 <div class="custom-vimeo-player" id="custom-vimeo-{{ section.id }}">
-  <div class="custom-vimeo-player__frame-wrap">
-    <iframe
-      id="vimeo-iframe-{{ section.id }}"
-      src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?title=0&byline=0&portrait=0&controls=0"
-      class="home-section-image__media-video"
-      style="width: 100%; aspect-ratio: 16 / 9; display: block; border: 0;"
-      frameborder="0"
-      allow="autoplay; fullscreen; picture-in-picture"
-      loading="lazy"
-      title="{{ section.settings.caption | strip_html | escape }}"
-    ></iframe>
-  </div>
-  <div class="custom-vimeo-player__controls">
-    <button type="button" class="custom-vimeo-player__play" aria-label="Play">
-      <svg class="icon-play" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
-      <svg class="icon-pause" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path fill="currentColor" d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-    </button>
-    <span class="custom-vimeo-player__time custom-vimeo-player__time--current">0:00</span>
-    <input type="range" class="custom-vimeo-player__scrubber" min="0" max="100" value="0" step="0.1" aria-label="Seek">
-    <span class="custom-vimeo-player__time custom-vimeo-player__time--duration">0:00</span>
-    <button type="button" class="custom-vimeo-player__mute" aria-label="Mute">
-      <svg class="icon-vol-on" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4.03v8.06A4.5 4.5 0 0 0 16.5 12z"/></svg>
-      <svg class="icon-vol-off" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path fill="currentColor" d="M3 10v4h4l5 5V5L7 10H3zm14.59-1.41L16 10.17l-1.59-1.58L13 10l1.58 1.59L13 13.17l1.41 1.42L16 13l1.59 1.59L19 13.17l-1.58-1.58L19 10z"/></svg>
-    </button>
-    <input type="range" class="custom-vimeo-player__volume" min="0" max="100" value="100" step="1" aria-label="Volume">
-  </div>
+  <iframe
+    id="vimeo-iframe-{{ section.id }}"
+    src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?title=0&byline=0&portrait=0&controls=0"
+    class="home-section-image__media-video"
+    style="width: 100%; aspect-ratio: 16 / 9; display: block; border: 0;"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    loading="lazy"
+    title="{{ section.settings.caption | strip_html | escape }}"
+  ></iframe>
+  <button type="button" class="custom-vimeo-player__play-btn" aria-label="Play video">
+    <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+  </button>
 </div>
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script>
@@ -46,100 +33,19 @@
   if (!iframe || !wrap || typeof Vimeo === 'undefined') return;
 
   var player = new Vimeo.Player(iframe);
-  var playBtn = wrap.querySelector('.custom-vimeo-player__play');
-  var iconPlay = wrap.querySelector('.icon-play');
-  var iconPause = wrap.querySelector('.icon-pause');
-  var muteBtn = wrap.querySelector('.custom-vimeo-player__mute');
-  var iconVolOn = wrap.querySelector('.icon-vol-on');
-  var iconVolOff = wrap.querySelector('.icon-vol-off');
-  var scrubber = wrap.querySelector('.custom-vimeo-player__scrubber');
-  var volumeSlider = wrap.querySelector('.custom-vimeo-player__volume');
-  var currentTimeEl = wrap.querySelector('.custom-vimeo-player__time--current');
-  var durationEl = wrap.querySelector('.custom-vimeo-player__time--duration');
-  var isSeeking = false;
-
-  function formatTime(sec) {
-    sec = Math.floor(sec || 0);
-    var m = Math.floor(sec / 60);
-    var s = sec % 60;
-    return m + ':' + (s < 10 ? '0' : '') + s;
-  }
-
-  player.getDuration().then(function(duration) {
-    durationEl.textContent = formatTime(duration);
-  });
+  var playBtn = wrap.querySelector('.custom-vimeo-player__play-btn');
 
   playBtn.addEventListener('click', function() {
-    player.getPaused().then(function(paused) {
-      if (paused) {
-        player.play();
-      } else {
-        player.pause();
-      }
-    });
-  });
-
-  player.on('play', function() {
-    iconPlay.style.display = 'none';
-    iconPause.style.display = '';
-    playBtn.setAttribute('aria-label', 'Pause');
+    player.play();
+    playBtn.style.display = 'none';
   });
 
   player.on('pause', function() {
-    iconPlay.style.display = '';
-    iconPause.style.display = 'none';
-    playBtn.setAttribute('aria-label', 'Play');
+    playBtn.style.display = 'flex';
   });
 
-  player.on('timeupdate', function(data) {
-    if (isSeeking) return;
-    currentTimeEl.textContent = formatTime(data.seconds);
-    scrubber.value = data.percent * 100;
-  });
-
-  scrubber.addEventListener('input', function() {
-    isSeeking = true;
-    player.getDuration().then(function(duration) {
-      var seekTo = (scrubber.value / 100) * duration;
-      currentTimeEl.textContent = formatTime(seekTo);
-    });
-  });
-
-  scrubber.addEventListener('change', function() {
-    player.getDuration().then(function(duration) {
-      var seekTo = (scrubber.value / 100) * duration;
-      player.setCurrentTime(seekTo).then(function() {
-        isSeeking = false;
-      });
-    });
-  });
-
-  muteBtn.addEventListener('click', function() {
-    player.getVolume().then(function(vol) {
-      if (vol > 0) {
-        muteBtn.dataset.prevVolume = vol;
-        player.setVolume(0);
-      } else {
-        var restore = parseFloat(muteBtn.dataset.prevVolume) || 1;
-        player.setVolume(restore);
-      }
-    });
-  });
-
-  volumeSlider.addEventListener('input', function() {
-    var vol = volumeSlider.value / 100;
-    player.setVolume(vol);
-  });
-
-  player.on('volumechange', function(data) {
-    if (data.volume > 0) {
-      iconVolOn.style.display = '';
-      iconVolOff.style.display = 'none';
-      volumeSlider.value = data.volume * 100;
-    } else {
-      iconVolOn.style.display = 'none';
-      iconVolOff.style.display = '';
-    }
+  player.on('ended', function() {
+    playBtn.style.display = 'flex';
   });
 })();
 </script>
@@ -148,45 +54,26 @@
   position: relative;
   width: 100%;
 }
-.custom-vimeo-player__frame-wrap {
-  position: relative;
-  width: 100%;
-}
-.custom-vimeo-player__controls {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 12px;
-  background: #111;
-}
-.custom-vimeo-player__play,
-.custom-vimeo-player__mute {
-  background: none;
-  border: none;
+.custom-vimeo-player__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
+  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
-  flex-shrink: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
-.custom-vimeo-player__time {
-  color: #fff;
-  font-size: 12px;
-  font-variant-numeric: tabular-nums;
-  flex-shrink: 0;
-  min-width: 34px;
-}
-.custom-vimeo-player__scrubber {
-  flex: 1;
-  height: 3px;
-  cursor: pointer;
-}
-.custom-vimeo-player__volume {
-  width: 70px;
-  height: 3px;
-  cursor: pointer;
+.custom-vimeo-player__play-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%) scale(1.05);
 }
 </style>
 {%- elsif section.settings.image != blank -%}
