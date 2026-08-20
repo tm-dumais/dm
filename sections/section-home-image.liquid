@@ -3,105 +3,97 @@
 {{ 'section-home-split.css' | asset_url | stylesheet_tag }}
 {{ 'section-editorial-common.css' | asset_url | stylesheet_tag }}
 
-<div class="home-section-image homepage-section background-{{ section.settings.background_color }}
-{% if section.settings.padding_top_enabled %}home-section-image--padding-top{% endif %}
-{% if section.settings.padding_bottom_enabled %}home-section-image--padding-bottom{% endif %}
-{% if section.settings.padding_horizontal_enabled %}home-section-image--padding-horizontal{% endif %}">
-<div class="home-section-image__container">
-<div class="home-section-image__media">
-{%- if section.settings.video_url != blank -%}
-{{ section.settings.video_url | external_video_tag: image: section.settings.image, class: 'home-section-image__media-video' }}
-{%- elsif section.settings.image != blank -%}
-{{ section.settings.image | image_url: width: 1500 | image_tag:
-loading: 'lazy',
-width: "100%",
-height: "auto",
-sizes: "100vw",
-widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-class: "home-section-image__media-image"
-}}
-{%- else -%}
-{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-{%- endif -%}
-</div>
-{%- if section.settings.caption != blank -%}
-<div class="caption home-section-image__caption">{{ section.settings.caption }}</div>
-{%- endif -%}
-</div>
+<div class="home-section-image background-{{ section.settings.background_color }}
+            {% if section.settings.padding_top_enabled %}home-section-image--padding-top{% endif %}
+            {% if section.settings.padding_bottom_enabled %}home-section-image--padding-bottom{% endif %}
+            {% if section.settings.padding_horizontal_enabled %}home-section-image--padding-horizontal{% endif %}">
+  <div class="home-section-image__container">
+    <div class="home-section-image__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          width: "100%",
+          height: "auto",
+          sizes: "100vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          class: "home-section-image__media-image"
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+    {%- if section.settings.caption != blank -%}
+      <div class="caption home-section-image__caption">{{ section.settings.caption }}</div>
+    {%- endif -%}
+  </div>
 </div>
 
 {% schema %}
 {
-"name": "Home Image Section",
-"class": "section",
-"settings": [
+  "name": "Home Image Section",
+  "class": "section",
+  "settings": [
     {
-"type": "video_url",
-"id": "video_url",
-"accept": ["vimeo"],
-"label": "Video (Vimeo URL)",
-"info": "If set, this plays instead of the image below."
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     },
     {
-"type": "image_picker",
-"id": "image",
-"label": "Image",
-"info": "Used as a fallback if no video is set, and as the poster/cover image for the video."
+      "type": "richtext",
+      "id": "caption",
+      "label": "Caption"
     },
     {
-"type": "richtext",
-"id": "caption",
-"label": "Caption"
-    },
-    {
-"type": "select",
-"id": "background_color",
-"options": [
-        { "value": "none", "label": "No background" },
-        { "value": "charcoal", "label": "Charcoal (#2C2F38)" },
-        { "value": "slate-blue", "label": "Slate Blue (#38496F)" },
-        { "value": "cool-grey", "label": "Cool Grey (#7D868D)" },
-        { "value": "warm-beige", "label": "Warm Beige (#EBE2D9)" },
-        { "value": "olive-brown", "label": "Olive Brown (#4A463D)" },
-        { "value": "moss", "label": "Moss (#57564B)" },
-        { "value": "mustard-brown", "label": "Mustard Brown (#95794A)" },
-        { "value": "sand", "label": "Sand (#CFA55D)" },
-        { "value": "deep-brown", "label": "Deep Brown (#2A1B12)" },
-        { "value": "burgundy", "label": "Burgundy (#5E1B1C)" },
-        { "value": "taupe", "label": "Taupe (#B0977B)" },
-        { "value": "clay", "label": "Clay (#95634B)" },
-        { "value": "stone-grey", "label": "Stone Grey (#8E9492)" }
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        {
+          "value": "none",
+          "label": "No background"
+        },
+        {
+          "value": "color-1",
+          "label": "Color 1"
+        },
+        {
+          "value": "color-2",
+          "label": "Color 2"
+        },
+        {
+          "value": "color-3",
+          "label": "Color 3"
+        }
       ],
-"default": "none",
-"label": "Background color"
+      "default": "none",
+      "label": "Background color"
     },
     {
-"type": "header",
-"content": "Section padding"
+      "type": "header",
+      "content": "Section padding"
     },
     {
-"type": "checkbox",
-"id": "padding_top_enabled",
-"label": "Enable top padding",
-"default": false
+      "type": "checkbox",
+      "id": "padding_top_enabled",
+      "label": "Enable top padding",
+      "default": false
     },
     {
-"type": "checkbox",
-"id": "padding_bottom_enabled",
-"label": "Enable bottom padding",
-"default": false
+      "type": "checkbox",
+      "id": "padding_bottom_enabled",
+      "label": "Enable bottom padding",
+      "default": false
     },
     {
-"type": "checkbox",
-"id": "padding_horizontal_enabled",
-"label": "Enable horizontal padding",
-"default": false
+      "type": "checkbox",
+      "id": "padding_horizontal_enabled",
+      "label": "Enable horizontal padding",
+      "default": false
     }
   ],
-"presets": [
+  "presets": [
     {
-"name": "Home Image Section",
-"category": "Image"
+      "name": "Home Image Section",
+      "category": "Image"
     }
   ]
 }
