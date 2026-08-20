@@ -10,7 +10,16 @@
 <div class="home-section-image__container">
 <div class="home-section-image__media">
 {%- if section.settings.video_url != blank -%}
-{{ section.settings.video_url | external_video_tag: image: section.settings.image, class: 'home-section-image__media-video' }}
+<iframe
+src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}"
+class="home-section-image__media-video"
+style="width: 100%; aspect-ratio: 16 / 9; display: block; border: 0;"
+frameborder="0"
+allow="autoplay; fullscreen; picture-in-picture"
+allowfullscreen
+loading="lazy"
+title="{{ section.settings.caption | strip_html | escape }}"
+></iframe>
 {%- elsif section.settings.image != blank -%}
 {{ section.settings.image | image_url: width: 1500 | image_tag:
 loading: 'lazy',
